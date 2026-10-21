@@ -1,0 +1,8 @@
+{
+  "team_id": "905382299754566378",
+  "team_name": "SMB - Tribe SMB Digitalization",
+  "last_indexed_iso": "2026-10-21T04:39:44Z",
+  "total_files": 431,
+  "cache_path": "scratch/all_files_deep_index.json",
+  "incremental_strategy": "Compare each file's 'last_modified' timestamp from Figma API against 'last_indexed_iso'. Only re-fetch and parse nodes for files where last_modified > last_indexed_iso, or for newly created files."
+}
