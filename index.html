@@ -200,7 +200,7 @@
     }
     .search-row {
       display: flex;
-      gap: 10px;
+      gap: 8px;
       align-items: stretch;
     }
     .search-input {
@@ -219,9 +219,27 @@
       border-color: var(--primary);
       box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
     }
+    .search-btn {
+      height: 44px;
+      padding: 0 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary);
+      color: #0f172a;
+      border: none;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, opacity 0.15s;
+    }
+    .search-btn:hover {
+      background: var(--primary-hover);
+    }
     .clear-btn {
       height: 44px;
-      padding: 0 18px;
+      padding: 0 16px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -342,7 +360,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
       gap: 8px;
     }
     .card-folder-text {
@@ -358,49 +376,48 @@
       white-space: nowrap;
     }
     .card-title-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+    }
+    .card-title-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline;
     }
     .card-title {
       font-size: 15.5px;
       font-weight: 700;
       color: var(--text);
       line-height: 1.35;
-      flex: 1;
+      display: inline;
+      transition: color 0.15s;
     }
-    .card-title-actions {
+    .card-title-link:hover .card-title {
+      color: var(--primary);
+    }
+    .card-title .ext-icon {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-left: 4px;
+      transition: color 0.15s;
+    }
+    .card-title-link:hover .ext-icon {
+      color: var(--primary);
+    }
+    .card-meta-row {
       display: flex;
       align-items: center;
-      gap: 8px;
-      flex-shrink: 0;
+      gap: 6px;
+      margin-bottom: 8px;
     }
     .card-page-count {
       font-size: 11.5px;
       font-weight: 600;
-      color: var(--text-muted);
-      white-space: nowrap;
-    }
-    .btn-ghost-open {
-      display: inline-flex;
-      align-items: center;
-      padding: 3px 8px;
-      border-radius: 6px;
-      font-size: 11.5px;
-      font-weight: 500;
-      color: var(--text-muted);
-      border: 1px solid var(--input-border);
-      background: transparent;
-      text-decoration: none;
-      white-space: nowrap;
-      transition: all 0.15s;
-    }
-    .btn-ghost-open:hover {
       color: var(--primary);
-      border-color: var(--primary);
-      background: rgba(56, 189, 248, 0.08);
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      padding: 2px 7px;
+      border-radius: 4px;
+      display: inline-block;
     }
 
     /* Standardized Card Chips */
@@ -452,18 +469,38 @@
       font-weight: 600;
     }
 
-    /* Pages Container on Top & Visible */
+    /* Pages Container on Top & Visible - Adaptive Height without scrollbar trap */
     .pages-container {
-      max-height: 320px;
-      overflow-y: auto;
       border: 1px solid var(--card-border);
       border-radius: 8px;
       padding: 8px;
       background: var(--page-item-bg);
-      margin-bottom: 0;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 6px;
+    }
+    .extra-pages-wrap {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .btn-more-pages {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px dashed var(--page-item-border);
+      border-radius: 6px;
+      padding: 6px;
+      color: var(--text-muted);
+      font-size: 11.5px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.15s;
+      width: 100%;
+    }
+    .btn-more-pages:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+      background: rgba(56, 189, 248, 0.08);
     }
 
     /* Each Page Item - whole row is clickable */
@@ -486,14 +523,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 8px 10px;
-      gap: 6px;
+      padding: 7px 10px;
+      gap: 8px;
       user-select: none;
     }
     .page-link-wrap {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 4px;
       flex: 1;
       overflow: hidden;
     }
@@ -505,9 +542,16 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
     }
     .page-link:hover {
       text-decoration: underline;
+    }
+    .page-link .ext-icon {
+      font-size: 10px;
+      opacity: 0.7;
     }
     .page-right-info {
       display: flex;
@@ -517,21 +561,37 @@
     }
     .screen-count {
       font-size: 11px;
+      color: var(--text-dim);
+    }
+    .sections-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10.5px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(148, 163, 184, 0.1);
+      border: 1px solid rgba(148, 163, 184, 0.2);
       color: var(--text-muted);
+      transition: all 0.15s;
+    }
+    .page-item:hover .sections-badge {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .page-item.open .sections-badge {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: var(--primary);
+      color: var(--primary);
     }
     .chevron-icon {
-      font-size: 10px;
-      color: var(--text-muted);
+      font-size: 9px;
+      color: inherit;
       transition: transform 0.2s ease;
       display: inline-block;
-      width: 14px;
-      height: 14px;
-      line-height: 14px;
-      text-align: center;
     }
     .page-item.open .chevron-icon {
       transform: rotate(90deg);
-      color: var(--primary);
     }
 
     /* Collapsible Headings panel under each page */
@@ -599,7 +659,8 @@
     <!-- Seamless Controls -->
     <div class="controls">
       <div class="search-row">
-        <input type="text" id="searchInput" class="search-input" placeholder="Search screen name, heading title, feature (e.g. 'instruksi', 'bulk listing', 'approval'), role, or folder..." autofocus>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search screen name, heading title, feature, role, or folder..." autofocus>
+        <button type="button" id="searchBtn" class="search-btn">Search</button>
         <button type="button" id="clearBtn" class="clear-btn">Clear</button>
       </div>
 
@@ -667,9 +728,22 @@
 
     // Toggle page headings panel when clicking row
     function togglePageItem(el, e) {
-      // If user clicked directly on the Figma deep link anchor, let it navigate
-      if (e.target.tagName === 'A') return;
+      if (e.target.tagName === 'A' || e.target.closest('a')) return;
       el.classList.toggle('open');
+    }
+
+    function toggleMorePages(btn) {
+      const wrap = btn.previousElementSibling;
+      if (!wrap) return;
+      const isHidden = window.getComputedStyle(wrap).display === "none";
+      wrap.style.display = isHidden ? "flex" : "none";
+      btn.innerText = isHidden ? "Show less" : `+ ${wrap.children.length} more pages`;
+    }
+
+    function executeSearch() {
+      const val = document.getElementById("searchInput").value.trim();
+      state.search = val;
+      render();
     }
 
     // 2. RENDER FUNCTION
@@ -733,7 +807,7 @@
 
         let pagesHtml = "";
         if (f.deep_pages && f.deep_pages.length > 0) {
-          const pagesList = f.deep_pages.map(p => {
+          const renderPageItem = (p) => {
             const encId = p.page_id ? p.page_id.replace(':', '%3A') : '';
             const pUrl = encId ? `${f.url}?node-id=${encId}` : f.url;
             const isPageMatch = q && p.page_name.toLowerCase().includes(q);
@@ -741,9 +815,9 @@
 
             const hasHeadings = p.headings && p.headings.length > 0;
             const hasMatch = q && hasHeadings && p.headings.some(h => h.toLowerCase().includes(q));
-            const openClass = hasMatch ? "open" : "";
+            const openClass = (hasMatch || (q && isPageMatch)) ? "open" : "";
             const clickableClass = hasHeadings ? "has-headings" : "";
-            const chevron = hasHeadings ? `<span class="chevron-icon">▶</span>` : "";
+            const sectionBadge = hasHeadings ? `<span class="sections-badge">${p.headings.length} sections <span class="chevron-icon">▶</span></span>` : "";
 
             let headingsUnderPage = "";
             if (hasHeadings) {
@@ -760,23 +834,39 @@
               <div class="page-item ${openClass} ${clickableClass}" ${clickAttr}>
                 <div class="page-title-row">
                   <div class="page-link-wrap">
-                    <a href="${pUrl}" target="_blank" class="page-link ${isPageMatch ? 'highlight' : ''}">${p.page_name}</a>
+                    <a href="${pUrl}" target="_blank" class="page-link ${isPageMatch ? 'highlight' : ''}" onclick="event.stopPropagation()">
+                      ${p.page_name} <span class="ext-icon">↗</span>
+                    </a>
                   </div>
                   <div class="page-right-info">
                     ${screenText}
-                    ${chevron}
+                    ${sectionBadge}
                   </div>
                 </div>
                 ${headingsUnderPage}
               </div>
             `;
-          }).join("");
+          };
 
-          pagesHtml = `
-            <div class="pages-container">
-              ${pagesList}
-            </div>
-          `;
+          const PAGE_LIMIT = 4;
+          if (q || f.deep_pages.length <= PAGE_LIMIT) {
+            pagesHtml = `
+              <div class="pages-container">
+                ${f.deep_pages.map(renderPageItem).join("")}
+              </div>
+            `;
+          } else {
+            const firstPages = f.deep_pages.slice(0, PAGE_LIMIT).map(renderPageItem).join("");
+            const remainingPages = f.deep_pages.slice(PAGE_LIMIT).map(renderPageItem).join("");
+            const remainingCount = f.deep_pages.length - PAGE_LIMIT;
+            pagesHtml = `
+              <div class="pages-container">
+                ${firstPages}
+                <div class="extra-pages-wrap">${remainingPages}</div>
+                <button type="button" class="btn-more-pages" onclick="toggleMorePages(this)">+ ${remainingCount} more pages</button>
+              </div>
+            `;
+          }
         }
 
         return `
@@ -787,11 +877,12 @@
                 <span class="card-updated-text">Updated ${f.last_modified}</span>
               </div>
               <div class="card-title-row">
-                <div class="card-title">${f.name}</div>
-                <div class="card-title-actions">
-                  <span class="card-page-count">${pageCountText}</span>
-                  <a href="${f.url}" target="_blank" class="btn-ghost-open">Open Figma ↗</a>
-                </div>
+                <a href="${f.url}" target="_blank" class="card-title-link" title="Open Figma file in new tab">
+                  <h3 class="card-title">${f.name} <span class="ext-icon">↗</span></h3>
+                </a>
+              </div>
+              <div class="card-meta-row">
+                <span class="card-page-count">${pageCountText}</span>
               </div>
               <div class="card-tags">
                 ${statusTag}
@@ -846,13 +937,21 @@
 
     // 4. EVENT LISTENERS
     document.addEventListener("DOMContentLoaded", () => {
-      document.getElementById("searchInput").addEventListener("input", e => {
-        state.search = e.target.value;
-        render();
+      const searchInput = document.getElementById("searchInput");
+
+      searchInput.addEventListener("keydown", e => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          executeSearch();
+        }
+      });
+
+      document.getElementById("searchBtn").addEventListener("click", () => {
+        executeSearch();
       });
 
       document.getElementById("clearBtn").addEventListener("click", () => {
-        document.getElementById("searchInput").value = "";
+        searchInput.value = "";
         state.search = "";
         render();
       });
