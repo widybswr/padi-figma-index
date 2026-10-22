@@ -7,70 +7,23 @@
   <meta name="robots" content="noindex, nofollow">
   <style>
     :root {
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --card-border: #e2e8f0;
-      --text: #0f172a;
-      --text-muted: #64748b;
-      --input-bg: #ffffff;
-      --input-border: #cbd5e1;
-      --folder-text: #64748b;
-      --footer-border: #f1f5f9;
-      --primary: #0284c7;
-      --primary-hover: #0369a1;
-
-      /* Standardized badge design tokens */
-      --badge-radius: 6px;
-      --badge-font-size: 11.5px;
-      --badge-padding: 4px 9px;
-
-      --chip-status-bg: #f1f5f9;
-      --chip-status-text: #334155;
-      --chip-status-border: #cbd5e1;
-
-      --chip-role-bg: #fef3c7;
-      --chip-role-text: #92400e;
-      --chip-role-border: #fde68a;
-
-      --chip-feat-bg: #e0f2fe;
-      --chip-feat-text: #0369a1;
-      --chip-feat-border: #bae6fd;
-
-      --chip-origin-bg: #fef9c3;
-      --chip-origin-text: #854d0e;
-      --chip-origin-border: #fef08a;
-
-      --chip-master-bg: #dcfce7;
-      --chip-master-text: #166534;
-      --chip-master-border: #bbf7d0;
-
-      --chip-sprint-bg: #e0e7ff;
-      --chip-sprint-text: #3730a3;
-      --chip-sprint-border: #c7d2fe;
-
-      /* Page item */
-      --page-item-bg: #f8fafc;
-      --page-item-border: #e2e8f0;
-      --heading-tag-bg: #ffffff;
-      --heading-tag-border: #cbd5e1;
-      --heading-tag-text: #334155;
-
-      --btn-open-bg: #0f172a;
-      --btn-open-text: #ffffff;
-    }
-
-    [data-theme="dark"] {
       --bg: #0b1120;
       --card-bg: #1e293b;
       --card-border: #334155;
       --text: #f8fafc;
       --text-muted: #94a3b8;
+      --text-dim: #64748b;
       --input-bg: #0f172a;
       --input-border: #475569;
       --folder-text: #94a3b8;
       --footer-border: #334155;
       --primary: #38bdf8;
       --primary-hover: #0284c7;
+
+      /* Standardized badge design tokens */
+      --badge-radius: 6px;
+      --badge-font-size: 11.5px;
+      --badge-padding: 4px 9px;
 
       --chip-status-bg: #334155;
       --chip-status-text: #cbd5e1;
@@ -96,6 +49,7 @@
       --chip-sprint-text: #c7d2fe;
       --chip-sprint-border: #3730a3;
 
+      /* Page item */
       --page-item-bg: #0f172a;
       --page-item-border: #334155;
       --heading-tag-bg: #1e293b;
@@ -112,7 +66,6 @@
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
-      transition: background 0.2s, color 0.2s;
     }
     
     /* Lock Screen Overlay */
@@ -160,7 +113,7 @@
     .lock-btn {
       width: 100%;
       background: var(--primary);
-      color: #ffffff;
+      color: #0f172a;
       padding: 12px;
       border: none;
       border-radius: 8px;
@@ -169,7 +122,6 @@
       cursor: pointer;
       transition: background 0.15s;
     }
-    [data-theme="dark"] .lock-btn { color: #0f172a; }
     .lock-btn:hover { background: var(--primary-hover); }
     .lock-error { color: #ef4444; font-size: 13px; margin-top: 10px; display: none; }
 
@@ -204,33 +156,40 @@
     .header-right {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 12px;
       flex-wrap: wrap;
     }
-    .last-indexed-badge {
-      background: var(--chip-status-bg);
-      border: 1px solid var(--input-border);
-      padding: 6px 12px;
-      border-radius: 8px;
+
+    /* Toned down last indexed regular text */
+    .last-indexed-text {
       font-size: 12px;
-      color: var(--chip-status-text);
-      display: flex;
+      color: var(--text-dim);
+      display: inline-flex;
       align-items: center;
       gap: 6px;
     }
-    .last-indexed-badge b {
-      color: var(--primary);
-      font-family: monospace;
-      font-size: 12px;
+    .last-indexed-text .copy-link {
+      color: var(--text-muted);
+      text-decoration: underline;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 11.5px;
+      font-family: inherit;
+      padding: 0;
     }
+    .last-indexed-text .copy-link:hover {
+      color: var(--primary);
+    }
+
     .header-btn {
       background: var(--card-bg);
       border: 1px solid var(--input-border);
       border-radius: 6px;
-      padding: 6px 12px;
-      font-size: 12px;
+      padding: 5px 10px;
+      font-size: 11.5px;
       cursor: pointer;
-      color: var(--text);
+      color: var(--text-muted);
       transition: all 0.15s;
       display: inline-flex;
       align-items: center;
@@ -238,6 +197,7 @@
       font-weight: 500;
     }
     .header-btn:hover {
+      color: var(--text);
       border-color: var(--primary);
     }
 
@@ -250,7 +210,7 @@
       padding: 18px;
       border-radius: 12px;
       border: 1px solid var(--card-border);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     }
     .search-row {
       display: flex;
@@ -363,7 +323,7 @@
     }
     .card:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 16px -4px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 16px -4px rgba(0,0,0,0.3);
       border-color: var(--primary);
     }
 
@@ -577,7 +537,7 @@
     </div>
   </div>
 
-  <!-- Main Catalog App -->
+  <!-- Main Catalog App (Dark Mode Only) -->
   <div id="mainApp">
     <header>
       <div>
@@ -585,11 +545,9 @@
         <div class="subtitle">Search 431 files with detailed user-flow pages, canvas headings & section titles</div>
       </div>
       <div class="header-right">
-        <button class="header-btn" id="themeToggleBtn" onclick="toggleTheme()" title="Switch Light/Dark Mode">Dark Mode</button>
-        <div class="last-indexed-badge">
-          <span>Last Indexed: <b>October 21, 2026 at 04:39 UTC</b></span>
-          <button class="header-btn" style="padding: 2px 6px; font-size: 11px;" onclick="navigator.clipboard.writeText('2026-10-21T04:39:44Z'); alert('Copied timestamp: 2026-10-21T04:39:44Z');" title="Copy ISO Date">Copy ISO</button>
-        </div>
+        <span class="last-indexed-text">
+          Last indexed October 21, 2026 at 04:39 UTC · <button class="copy-link" onclick="navigator.clipboard.writeText('2026-10-21T04:39:44Z'); alert('Copied timestamp: 2026-10-21T04:39:44Z');" title="Copy ISO Date for incremental scans">copy ISO</button>
+        </span>
         <button class="header-btn" onclick="lockCatalog()" title="Lock session">Lock</button>
       </div>
     </header>
@@ -662,27 +620,7 @@
                 .trim();
     }
 
-    // 2. THEME MANAGEMENT
-    function initTheme() {
-      const savedTheme = localStorage.getItem("padi_theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      applyTheme(savedTheme);
-    }
-
-    function applyTheme(theme) {
-      document.documentElement.setAttribute("data-theme", theme);
-      localStorage.setItem("padi_theme", theme);
-      const btn = document.getElementById("themeToggleBtn");
-      if (btn) {
-        btn.innerHTML = theme === "dark" ? "Light Mode" : "Dark Mode";
-      }
-    }
-
-    function toggleTheme() {
-      const current = document.documentElement.getAttribute("data-theme") || "light";
-      applyTheme(current === "dark" ? "light" : "dark");
-    }
-
-    // 3. RENDER FUNCTION
+    // 2. RENDER FUNCTION
     function render() {
       const q = state.search.toLowerCase().trim();
       const filtered = files.filter(f => {
@@ -808,7 +746,7 @@
       }).join("");
     }
 
-    // 4. SECURITY & AUTH
+    // 3. SECURITY & AUTH
     const EXPECTED_HASH = "1eacc1ec9a210116b3665e184a2eea76317fe24c572df5cb83e7ce00c27791bb";
 
     async function sha256(str) {
@@ -847,10 +785,8 @@
       document.getElementById("passInput").focus();
     }
 
-    // 5. EVENT LISTENERS
+    // 4. EVENT LISTENERS
     document.addEventListener("DOMContentLoaded", () => {
-      initTheme();
-
       document.getElementById("searchInput").addEventListener("input", e => {
         state.search = e.target.value;
         render();
