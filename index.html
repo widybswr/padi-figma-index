@@ -430,12 +430,12 @@
     }
     .pinned-card-actions {
       display: flex;
+      align-self: stretch;
       align-items: stretch;
       gap: 0;
       margin: 0;
       padding: 0;
       flex-shrink: 0;
-      height: 100%;
     }
     .btn-copy-url {
       display: inline-flex;
@@ -481,15 +481,16 @@
 
     /* Flush Full-Height Pinned Card Buttons */
     .pinned-card-actions .btn-copy-url {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0 16px;
+      align-self: stretch;
+      height: auto;
+      padding: 0 18px;
       border-radius: 0;
       border: none;
       border-left: 1px solid var(--card-border);
       background: rgba(30, 41, 59, 0.7);
-      height: 100%;
     }
     .pinned-card-actions .btn-copy-url:hover {
       color: var(--text);
@@ -501,15 +502,16 @@
       font-weight: 600;
     }
     .pinned-card-actions .btn-open-figma {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0 16px;
+      align-self: stretch;
+      height: auto;
+      padding: 0 18px;
       border-radius: 0;
       border: none;
       border-left: 1px solid rgba(255, 255, 255, 0.15);
       transition: background 0.15s;
-      height: 100%;
     }
     .pinned-card-actions .btn-open-figma:hover {
       background: var(--primary-hover);
@@ -740,28 +742,27 @@
     .tree-page-top {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       gap: 6px;
     }
     .tree-page-left {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      overflow: hidden;
       flex: 1;
       min-width: 0;
+      line-height: 1.35;
+    }
+    .tree-page-title-wrap {
+      display: inline;
+      line-height: 1.35;
     }
     .tree-page-link {
       color: var(--primary);
       font-size: 12px;
       font-weight: 600;
       text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      line-height: 1.35;
+      word-break: break-word;
+      white-space: normal;
+      display: inline;
     }
     .tree-page-link:hover {
       text-decoration: underline;
@@ -769,6 +770,8 @@
     .tree-page-link .ext-icon {
       font-size: 10px;
       opacity: 0.7;
+      margin-left: 2px;
+      display: inline-block;
     }
     .tree-screen-count {
       font-size: 10.5px;
@@ -918,8 +921,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       border-radius: 4px;
       background: rgba(51, 65, 85, 0.4);
       border: 1px solid rgba(71, 85, 105, 0.4);
@@ -928,7 +931,8 @@
       transition: all 0.15s ease;
       flex-shrink: 0;
       padding: 0;
-      vertical-align: middle;
+      vertical-align: -3px;
+      margin-left: 4px;
       box-sizing: border-box;
     }
     .btn-copy-icon:hover {
@@ -997,28 +1001,27 @@
     .card-page-header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       gap: 8px;
     }
     .card-page-left {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      overflow: hidden;
       flex: 1;
       min-width: 0;
+      line-height: 1.35;
+    }
+    .card-page-title-wrap {
+      display: inline;
+      line-height: 1.35;
     }
     .card-page-link {
       color: var(--primary);
       font-size: 12px;
       font-weight: 600;
       text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      line-height: 1.35;
+      word-break: break-word;
+      white-space: normal;
+      display: inline;
     }
     .card-page-link:hover {
       text-decoration: underline;
@@ -1026,6 +1029,8 @@
     .card-page-link .ext-icon {
       font-size: 10px;
       opacity: 0.7;
+      margin-left: 2px;
+      display: inline-block;
     }
     .card-screen-text {
       font-size: 10.5px;
@@ -1496,12 +1501,14 @@
               <div class="tree-page-card">
                 <div class="tree-page-top">
                   <div class="tree-page-left">
-                    <a href="${pUrl}" target="_blank" class="tree-page-link ${isPageMatch ? 'highlight' : ''}" onclick="event.stopPropagation()" title="Open page in Figma">
-                      ${p.page_name} <span class="ext-icon">↗</span>
-                    </a>
-                    <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('${pUrl}', this, event)" title="Copy Page Link">
-                      ${SVG_COPY_ICON}
-                    </button>
+                    <span class="tree-page-title-wrap">
+                      <a href="${pUrl}" target="_blank" class="tree-page-link ${isPageMatch ? 'highlight' : ''}" onclick="event.stopPropagation()" title="Open page in Figma">
+                        ${p.page_name} <span class="ext-icon">↗</span>
+                      </a>
+                      <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('${pUrl}', this, event)" title="Copy Page Link">
+                        ${SVG_COPY_ICON}
+                      </button>
+                    </span>
                   </div>
                   ${screenText}
                 </div>
@@ -1589,12 +1596,14 @@
               <div class="card-page-row">
                 <div class="card-page-header">
                   <div class="card-page-left">
-                    <a href="${pUrl}" target="_blank" class="card-page-link ${isPageMatch ? 'highlight' : ''}" title="Open page in Figma">
-                      ${p.page_name} <span class="ext-icon">↗</span>
-                    </a>
-                    <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('${pUrl}', this, event)" title="Copy Page Link">
-                      ${SVG_COPY_ICON}
-                    </button>
+                    <span class="card-page-title-wrap">
+                      <a href="${pUrl}" target="_blank" class="card-page-link ${isPageMatch ? 'highlight' : ''}" title="Open page in Figma">
+                        ${p.page_name} <span class="ext-icon">↗</span>
+                      </a>
+                      <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('${pUrl}', this, event)" title="Copy Page Link">
+                        ${SVG_COPY_ICON}
+                      </button>
+                    </span>
                   </div>
                   ${screenText ? `<span class="card-screen-text">${screenText}</span>` : ''}
                 </div>
