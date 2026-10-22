@@ -473,6 +473,33 @@
       background: var(--primary-hover);
     }
 
+    /* Flush Full-Height Pinned Card Buttons */
+    .pinned-card-actions .btn-copy-url {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      border-radius: 0;
+      border: none;
+      border-left: 1px solid var(--card-border);
+      background: rgba(30, 41, 59, 0.7);
+      height: 100%;
+    }
+    .pinned-card-actions .btn-copy-url:hover {
+      color: var(--text);
+      background: rgba(56, 189, 248, 0.15);
+    }
+    .pinned-card-actions .btn-open-figma {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      border-radius: 0;
+      border: none;
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+      height: 100%;
+    }
+
     /* Toolbar: Stats & View Switcher */
     .toolbar-row {
       display: flex;
@@ -734,8 +761,26 @@
        2. CARD VIEW STYLES (Masonry & Content-Hugging, No Boxes)
        ======================================================== */
     .grid {
-      columns: 3 360px;
+      columns: 4 280px;
       column-gap: 16px;
+    }
+    @media (max-width: 1200px) {
+      .grid {
+        columns: 3 280px;
+      }
+    }
+    @media (max-width: 860px) {
+      .grid {
+        columns: 2 280px;
+      }
+    }
+    @media (max-width: 640px) {
+      .grid {
+        columns: 1 !important;
+      }
+      .pinned-ds-grid {
+        grid-template-columns: 1fr;
+      }
     }
     .card {
       break-inside: avoid;
@@ -1048,6 +1093,20 @@
           <div class="pinned-card-actions">
             <button type="button" class="btn-copy-url" onclick="copyFigmaUrl('https://www.figma.com/file/In5vqn9Uz9fJSKEllww5XW', this)">Copy URL</button>
             <a href="https://www.figma.com/file/In5vqn9Uz9fJSKEllww5XW" target="_blank" class="btn-open-figma">Open Figma ↗</a>
+          </div>
+        </div>
+
+        <div class="pinned-ds-card">
+          <div class="pinned-card-left">
+            <span class="ds-symbol">🖼️</span>
+            <div class="ds-meta">
+              <span class="ds-name">PaDi Illustrations v1.0</span>
+              <span class="ds-folder">SMB - PaDi - Design System · Key: <code class="ds-key">iIgDoHcElZgp1nrg1zNL6F</code></span>
+            </div>
+          </div>
+          <div class="pinned-card-actions">
+            <button type="button" class="btn-copy-url" onclick="copyFigmaUrl('https://www.figma.com/design/iIgDoHcElZgp1nrg1zNL6F', this)">Copy URL</button>
+            <a href="https://www.figma.com/design/iIgDoHcElZgp1nrg1zNL6F" target="_blank" class="btn-open-figma">Open Figma ↗</a>
           </div>
         </div>
       </div>
