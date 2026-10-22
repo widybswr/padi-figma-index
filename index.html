@@ -340,103 +340,60 @@
     /* ========================================================
        PINNED CORE DESIGN SYSTEM LIBRARIES BAR
        ======================================================== */
-    .pinned-ds-container {
-      background: rgba(30, 41, 59, 0.6);
-      border: 1px solid #334155;
-      border-radius: 10px;
-      padding: 10px 14px;
-      margin-bottom: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .pinned-ds-header {
+    .pinned-ds-bar {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 10px 0 16px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+    }
+    .pinned-ds-label {
       font-size: 11px;
-      font-weight: 600;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .pinned-badge {
-      font-size: 10px;
-      background: rgba(56, 189, 248, 0.12);
-      color: var(--primary);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      padding: 1px 6px;
-      border-radius: 4px;
-      font-weight: 500;
-    }
-    .pinned-ds-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 10px;
-    }
-    .pinned-ds-card {
-      background: #0f172a;
-      border: 1px solid var(--card-border);
-      border-radius: 8px;
-      padding: 0;
-      display: flex;
-      align-items: stretch;
-      justify-content: space-between;
-      overflow: hidden;
-      min-height: 48px;
-      transition: border-color 0.15s;
-    }
-    .pinned-ds-card:hover {
-      border-color: var(--primary);
-    }
-    .pinned-card-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 14px;
-      overflow: hidden;
-      flex: 1;
-    }
-    .ds-symbol {
-      font-size: 18px;
-      flex-shrink: 0;
-    }
-    .ds-meta {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-      overflow: hidden;
-    }
-    .ds-name {
-      font-size: 13px;
       font-weight: 700;
-      color: var(--text);
-      white-space: nowrap;
-    }
-    .ds-folder {
-      font-size: 11px;
       color: var(--text-dim);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
     }
-    .ds-key {
-      color: #94a3b8;
-      font-family: monospace;
-      font-size: 10px;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 1px 4px;
-      border-radius: 3px;
-    }
-    .pinned-card-actions {
+    .pinned-ds-items {
       display: flex;
-      align-self: stretch;
-      align-items: stretch;
-      gap: 0;
-      margin: 0;
-      padding: 0;
-      flex-shrink: 0;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
+    .pinned-ds-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .pinned-ds-item .ds-icon {
+      font-size: 14px;
+    }
+    .pinned-ds-link {
+      color: var(--primary);
+      font-size: 12.5px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      transition: color 0.15s;
+    }
+    .pinned-ds-link:hover {
+      text-decoration: underline;
+      color: #7dd3fc;
+    }
+    .pinned-ds-link .ext-icon {
+      font-size: 10px;
+      opacity: 0.7;
+    }
+    .pinned-sep {
+      color: var(--text-dim);
+      opacity: 0.4;
+      font-size: 12px;
+    }
+
     .btn-copy-url {
       display: inline-flex;
       align-items: center;
@@ -461,60 +418,6 @@
       border-color: #059669 !important;
       background: rgba(16, 185, 129, 0.15) !important;
       font-weight: 600;
-    }
-    .btn-open-figma {
-      display: inline-flex;
-      align-items: center;
-      padding: 4px 10px;
-      border-radius: 6px;
-      font-size: 11.5px;
-      font-weight: 600;
-      color: #0f172a;
-      background: var(--primary);
-      text-decoration: none;
-      white-space: nowrap;
-      transition: background 0.15s;
-    }
-    .btn-open-figma:hover {
-      background: var(--primary-hover);
-    }
-
-    /* Flush Full-Height Pinned Card Buttons */
-    .pinned-card-actions .btn-copy-url {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      align-self: stretch;
-      height: auto;
-      padding: 0 18px;
-      border-radius: 0;
-      border: none;
-      border-left: 1px solid var(--card-border);
-      background: rgba(30, 41, 59, 0.7);
-    }
-    .pinned-card-actions .btn-copy-url:hover {
-      color: var(--text);
-      background: rgba(56, 189, 248, 0.15);
-    }
-    .pinned-card-actions .btn-copy-url.copied {
-      color: #34d399 !important;
-      background: rgba(16, 185, 129, 0.2) !important;
-      font-weight: 600;
-    }
-    .pinned-card-actions .btn-open-figma {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      align-self: stretch;
-      height: auto;
-      padding: 0 18px;
-      border-radius: 0;
-      border: none;
-      border-left: 1px solid rgba(255, 255, 255, 0.15);
-      transition: background 0.15s;
-    }
-    .pinned-card-actions .btn-open-figma:hover {
-      background: var(--primary-hover);
     }
 
     /* Toolbar: Stats & View Switcher */
@@ -841,9 +744,6 @@
       .grid {
         column-count: 1 !important;
       }
-      .pinned-ds-grid {
-        grid-template-columns: 1fr;
-      }
     }
     .card {
       display: inline-block;
@@ -1148,53 +1048,41 @@
     </div>
 
     <!-- Pinned Core Design System Libraries Bar -->
-    <div class="pinned-ds-container">
-      <div class="pinned-ds-header">
-        <span class="pinned-icon">📌</span>
-        <span class="pinned-title">Core Design System Libraries</span>
-        <span class="pinned-badge">Always Ready</span>
-      </div>
-      <div class="pinned-ds-grid">
-        <div class="pinned-ds-card">
-          <div class="pinned-card-left">
-            <span class="ds-symbol">🎨</span>
-            <div class="ds-meta">
-              <span class="ds-name">PaDi DS v3.0</span>
-              <span class="ds-folder">SMB - PaDi - Design System · Key: <code class="ds-key">eJ2zmG6e6i86o9aVdCg95k</code></span>
-            </div>
-          </div>
-          <div class="pinned-card-actions">
-            <button type="button" class="btn-copy-url" onclick="copyFigmaUrl('https://www.figma.com/design/eJ2zmG6e6i86o9aVdCg95k/PaDi-DS-v3.0', this)">Copy URL</button>
-            <a href="https://www.figma.com/design/eJ2zmG6e6i86o9aVdCg95k/PaDi-DS-v3.0" target="_blank" class="btn-open-figma">Open Figma ↗</a>
-          </div>
+    <div class="pinned-ds-bar">
+      <span class="pinned-ds-label">Core Libraries:</span>
+      <div class="pinned-ds-items">
+        <div class="pinned-ds-item">
+          <span class="ds-icon">🎨</span>
+          <a href="https://www.figma.com/design/eJ2zmG6e6i86o9aVdCg95k/PaDi-DS-v3.0" target="_blank" class="pinned-ds-link" title="Open PaDi DS v3.0 in Figma">
+            PaDi DS v3.0 <span class="ext-icon">↗</span>
+          </a>
+          <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('https://www.figma.com/design/eJ2zmG6e6i86o9aVdCg95k/PaDi-DS-v3.0', this, event)" title="Copy PaDi DS URL">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          </button>
         </div>
 
-        <div class="pinned-ds-card">
-          <div class="pinned-card-left">
-            <span class="ds-symbol">❖</span>
-            <div class="ds-meta">
-              <span class="ds-name">PaDi Icons v1.0</span>
-              <span class="ds-folder">SMB - PaDi - Design System · Key: <code class="ds-key">In5vqn9Uz9fJSKEllww5XW</code></span>
-            </div>
-          </div>
-          <div class="pinned-card-actions">
-            <button type="button" class="btn-copy-url" onclick="copyFigmaUrl('https://www.figma.com/file/In5vqn9Uz9fJSKEllww5XW', this)">Copy URL</button>
-            <a href="https://www.figma.com/file/In5vqn9Uz9fJSKEllww5XW" target="_blank" class="btn-open-figma">Open Figma ↗</a>
-          </div>
+        <span class="pinned-sep">·</span>
+
+        <div class="pinned-ds-item">
+          <span class="ds-icon">❖</span>
+          <a href="https://www.figma.com/file/In5vqn9Uz9fJSKEllww5XW" target="_blank" class="pinned-ds-link" title="Open PaDi Icons v1.0 in Figma">
+            PaDi Icons v1.0 <span class="ext-icon">↗</span>
+          </a>
+          <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('https://www.figma.com/file/In5vqn9Uz9fJSKEllww5XW', this, event)" title="Copy PaDi Icons URL">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          </button>
         </div>
 
-        <div class="pinned-ds-card">
-          <div class="pinned-card-left">
-            <span class="ds-symbol">🖼️</span>
-            <div class="ds-meta">
-              <span class="ds-name">PaDi Illustrations v1.0</span>
-              <span class="ds-folder">SMB - PaDi - Design System · Key: <code class="ds-key">iIgDoHcElZgp1nrg1zNL6F</code></span>
-            </div>
-          </div>
-          <div class="pinned-card-actions">
-            <button type="button" class="btn-copy-url" onclick="copyFigmaUrl('https://www.figma.com/design/iIgDoHcElZgp1nrg1zNL6F', this)">Copy URL</button>
-            <a href="https://www.figma.com/design/iIgDoHcElZgp1nrg1zNL6F" target="_blank" class="btn-open-figma">Open Figma ↗</a>
-          </div>
+        <span class="pinned-sep">·</span>
+
+        <div class="pinned-ds-item">
+          <span class="ds-icon">🖼️</span>
+          <a href="https://www.figma.com/design/iIgDoHcElZgp1nrg1zNL6F" target="_blank" class="pinned-ds-link" title="Open PaDi Illustrations v1.0 in Figma">
+            PaDi Illustrations v1.0 <span class="ext-icon">↗</span>
+          </a>
+          <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('https://www.figma.com/design/iIgDoHcElZgp1nrg1zNL6F', this, event)" title="Copy PaDi Illustrations URL">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          </button>
         </div>
       </div>
     </div>
