@@ -760,7 +760,40 @@
     /* ========================================================
        2. CARD VIEW STYLES (Masonry & Content-Hugging, No Boxes)
        ======================================================== */
-    .grid {
+    
+    /* Load More Button */
+    .load-more-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 28px 0 48px;
+      width: 100%;
+    }
+    .btn-load-more {
+      background: #1e293b;
+      color: var(--primary);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 10px 24px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .btn-load-more:hover {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(56, 189, 248, 0.15);
+    }
+    .load-more-end {
+      color: var(--text-dim);
+      font-size: 12px;
+      text-align: center;
+      padding: 12px;
+    }
+.grid {
       display: block;
       column-count: 4;
       column-gap: 16px;
@@ -784,14 +817,18 @@
       }
     }
     .card {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
       break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      vertical-align: top;
       margin-bottom: 16px;
       background: var(--card-bg);
       border-radius: 12px;
       border: 1px solid var(--card-border);
       padding: 18px;
-      display: flex;
-      flex-direction: column;
       height: auto;
       transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
     }
@@ -972,7 +1009,10 @@
       font-size: 10.5px;
       line-height: 1.25;
       max-width: 100%;
-      word-break: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
     }
     .highlight {
       background: #fef08a !important;
@@ -1150,6 +1190,9 @@
 
     <!-- Card Grid Container (Preserved) -->
     <div class="grid" id="gridContainer" style="display: none;"></div>
+
+    <!-- Progressive Load More Container -->
+    <div class="load-more-wrap" id="loadMoreContainer"></div>
   </div>
 
   <script>
@@ -1162,7 +1205,9 @@
       role: "all",
       feat: "all",
       viewMode: localStorage.getItem("padi_catalog_view_mode") || "table",
-      allCollapsed: false
+      allCollapsed: false,
+      visibleCount: 32,
+      pageSize: 32
     };
 
     function cleanTag(str) {
@@ -1246,9 +1291,33 @@
     function executeSearch() {
       const val = document.getElementById("searchInput").value.trim();
       state.search = val;
+      state.visibleCount = state.pageSize;
       render();
     }
 
+
+    function loadMore() {
+      state.visibleCount += state.pageSize;
+      render();
+    }
+
+    function renderLoadMore(current, total) {
+      const container = document.getElementById("loadMoreContainer");
+      if (!container) return;
+      if (total <= state.pageSize) {
+        container.innerHTML = "";
+      } else if (current >= total) {
+        container.innerHTML = `<div class="load-more-end">Showing all ${total} files</div>`;
+      } else {
+        const remaining = total - current;
+        const nextBatch = Math.min(remaining, state.pageSize);
+        container.innerHTML = `
+          <button type="button" class="btn-load-more" onclick="loadMore()">
+            Load More Files (+${nextBatch} of ${remaining} remaining)
+          </button>
+        `;
+      }
+    }
     // 2. RENDER FUNCTION
     function render() {
       const q = state.search.toLowerCase().trim();
@@ -1301,17 +1370,23 @@
         return true;
       });
 
-      document.getElementById("statsBar").innerText = `Showing ${filtered.length} of ${files.length} files`;
+      const totalFiltered = filtered.length;
+      const currentShowing = Math.min(state.visibleCount, totalFiltered);
+      const visibleFiles = filtered.slice(0, state.visibleCount);
+
+      document.getElementById("statsBar").innerText = `Showing ${currentShowing} of ${totalFiltered} files${totalFiltered !== files.length ? ' (filtered from ' + files.length + ')' : ''}`;
 
       const isTableView = state.viewMode === "table";
       document.getElementById("tableContainer").style.display = isTableView ? "block" : "none";
       document.getElementById("gridContainer").style.display = isTableView ? "none" : "block";
 
       if (isTableView) {
-        renderTableView(filtered, q);
+        renderTableView(visibleFiles, q);
       } else {
-        renderCardView(filtered, q);
+        renderCardView(visibleFiles, q);
       }
+
+      renderLoadMore(currentShowing, totalFiltered);
     }
 
     // --- RENDER TABLE / TREE VIEW (Option A) ---
@@ -1370,7 +1445,9 @@
             if (p.headings && p.headings.length > 0) {
               chipsHtml = p.headings.map(h => {
                 const isHeadingMatch = q && h.toLowerCase().includes(q);
-                return `<span class="heading-chip ${isHeadingMatch ? 'highlight' : ''}">${h}</span>`;
+                const displayH = h.length > 45 ? h.slice(0, 45) + '…' : h;
+                const safeH = h.replace(/"/g, '&quot;');
+                return `<span class="heading-chip ${isHeadingMatch ? 'highlight' : ''}" title="${safeH}">${displayH}</span>`;
               }).join("");
             }
 
@@ -1458,7 +1535,9 @@
             if (p.headings && p.headings.length > 0) {
               hChips = p.headings.map(h => {
                 const isHeadingMatch = q && h.toLowerCase().includes(q);
-                return `<span class="heading-chip ${isHeadingMatch ? 'highlight' : ''}">${h}</span>`;
+                const displayH = h.length > 45 ? h.slice(0, 45) + '…' : h;
+                const safeH = h.replace(/"/g, '&quot;');
+                return `<span class="heading-chip ${isHeadingMatch ? 'highlight' : ''}" title="${safeH}">${displayH}</span>`;
               }).join("");
             }
 
@@ -1560,14 +1639,23 @@
       document.getElementById("clearBtn").addEventListener("click", () => {
         searchInput.value = "";
         state.search = "";
+        state.visibleCount = state.pageSize;
         render();
       });
+
+      if (document.getElementById("searchScope")) {
+        document.getElementById("searchScope").addEventListener("change", () => {
+          state.visibleCount = state.pageSize;
+          render();
+        });
+      }
 
       document.querySelectorAll(".pill[data-type]").forEach(btn => {
         btn.addEventListener("click", () => {
           const type = btn.getAttribute("data-type");
           const val = btn.getAttribute("data-val");
           state[type] = val;
+          state.visibleCount = state.pageSize;
           document.querySelectorAll(`.pill[data-type="${type}"]`).forEach(p => p.classList.remove("active"));
           btn.classList.add("active");
           render();
