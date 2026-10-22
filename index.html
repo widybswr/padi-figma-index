@@ -22,32 +22,32 @@
 
       /* Standardized badge design tokens */
       --badge-radius: 6px;
-      --badge-font-size: 11.5px;
-      --badge-padding: 4px 9px;
+      --badge-font-size: 11px;
+      --badge-padding: 3px 8px;
 
       --chip-status-bg: #1e293b;
       --chip-status-text: #cbd5e1;
       --chip-status-border: #334155;
 
-      --chip-role-bg: #451a03;
-      --chip-role-text: #fde68a;
-      --chip-role-border: #78350f;
+      --chip-role-bg: rgba(180, 83, 9, 0.15);
+      --chip-role-text: #fcd34d;
+      --chip-role-border: rgba(180, 83, 9, 0.28);
 
-      --chip-feat-bg: #082f49;
-      --chip-feat-text: #bae6fd;
-      --chip-feat-border: #0369a1;
+      --chip-feat-bg: rgba(14, 165, 233, 0.12);
+      --chip-feat-text: #7dd3fc;
+      --chip-feat-border: rgba(14, 165, 233, 0.25);
 
-      --chip-origin-bg: #422006;
-      --chip-origin-text: #fef08a;
-      --chip-origin-border: #713f12;
+      --chip-origin-bg: rgba(217, 119, 6, 0.15);
+      --chip-origin-text: #fde68a;
+      --chip-origin-border: rgba(217, 119, 6, 0.28);
 
-      --chip-master-bg: #052e16;
-      --chip-master-text: #a7f3d0;
-      --chip-master-border: #14532d;
+      --chip-master-bg: rgba(16, 185, 129, 0.12);
+      --chip-master-text: #6ee7b7;
+      --chip-master-border: rgba(16, 185, 129, 0.25);
 
-      --chip-sprint-bg: #1e1b4b;
+      --chip-sprint-bg: rgba(99, 102, 241, 0.14);
       --chip-sprint-text: #c7d2fe;
-      --chip-sprint-border: #3730a3;
+      --chip-sprint-border: rgba(99, 102, 241, 0.28);
 
       /* Page item */
       --page-item-bg: #0f172a;
@@ -55,9 +55,6 @@
       --heading-tag-bg: #1e293b;
       --heading-tag-border: #475569;
       --heading-tag-text: #e2e8f0;
-
-      --btn-open-bg: #38bdf8;
-      --btn-open-text: #0f172a;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -129,29 +126,26 @@
     #mainApp {
       display: none;
       padding: 24px 32px;
+      max-width: 1600px;
+      margin: 0 auto;
     }
     header {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       padding-bottom: 16px;
       border-bottom: 1px solid var(--card-border);
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
       flex-wrap: wrap;
       gap: 12px;
     }
     h1 {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
       color: var(--text);
       display: flex;
       align-items: center;
       gap: 10px;
-    }
-    .subtitle {
-      color: var(--text-muted);
-      font-size: 14px;
-      margin-top: 4px;
     }
     .header-right {
       display: flex;
@@ -159,15 +153,12 @@
       gap: 12px;
       flex-wrap: wrap;
     }
-
-    /* Toned down last indexed regular text */
     .last-indexed-text {
       font-size: 12px;
       color: var(--text-dim);
       display: inline-flex;
       align-items: center;
     }
-
     .header-btn {
       background: var(--card-bg);
       border: 1px solid var(--input-border);
@@ -192,7 +183,7 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       padding: 0;
       background: transparent;
       border: none;
@@ -329,12 +320,240 @@
       box-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
     }
 
+    /* Toolbar: Stats & View Switcher */
+    .toolbar-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
     .stats {
       font-size: 13px;
       color: var(--text-muted);
-      margin-bottom: 14px;
       font-weight: 500;
     }
+    .view-switcher {
+      display: inline-flex;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .view-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s;
+    }
+    .view-btn:hover {
+      color: var(--text);
+    }
+    .view-btn.active {
+      background: #334155;
+      color: var(--text);
+      font-weight: 600;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ========================================================
+       1. TABLE / TREE VIEW STYLES (Option A)
+       ======================================================== */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    }
+    .figma-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      text-align: left;
+    }
+    .figma-table th {
+      background: #141f32;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--card-border);
+      white-space: nowrap;
+    }
+    .table-row {
+      border-bottom: 1px solid rgba(51, 65, 85, 0.6);
+      transition: background 0.15s;
+    }
+    .table-row:hover {
+      background: rgba(56, 189, 248, 0.04);
+    }
+    .table-row td {
+      padding: 12px 16px;
+      vertical-align: middle;
+    }
+    .file-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .table-toggle-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 10px;
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: all 0.15s;
+      flex-shrink: 0;
+    }
+    .table-toggle-btn:hover {
+      color: var(--primary);
+      background: rgba(56, 189, 248, 0.12);
+    }
+    .table-row.open .table-toggle-btn {
+      transform: rotate(90deg);
+      color: var(--primary);
+    }
+    .table-file-title {
+      color: var(--text);
+      font-weight: 600;
+      font-size: 13px;
+      text-decoration: none;
+      transition: color 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      line-height: 1.35;
+    }
+    .table-file-title:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .table-file-title .ext-icon {
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+    .table-folder {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+    .table-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .table-pages-badge {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--primary);
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      padding: 2px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .table-date {
+      font-size: 11.5px;
+      color: var(--text-dim);
+      white-space: nowrap;
+    }
+    .table-btn-open {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      border: 1px solid var(--input-border);
+      background: transparent;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    .table-btn-open:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+      background: rgba(56, 189, 248, 0.08);
+    }
+
+    /* Nested Sub-panel Tree in Table */
+    .subrow-panel {
+      display: none;
+      background: #0f172a;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .table-row.open + .subrow-panel {
+      display: table-row;
+    }
+    .subrow-panel td {
+      padding: 12px 16px 16px 44px;
+    }
+    .tree-container {
+      border-left: 2px solid var(--primary);
+      padding-left: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .tree-page-item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .tree-page-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .tree-page-link {
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .tree-page-link:hover {
+      text-decoration: underline;
+    }
+    .tree-screen-count {
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+    .tree-headings-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding-left: 2px;
+    }
+
+    /* ========================================================
+       2. CARD VIEW STYLES
+       ======================================================== */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
@@ -355,7 +574,6 @@
       box-shadow: 0 8px 16px -4px rgba(0,0,0,0.3);
       border-color: var(--primary);
     }
-
     .card-breadcrumb-row {
       display: flex;
       justify-content: space-between;
@@ -419,13 +637,11 @@
       border-radius: 4px;
       display: inline-block;
     }
-
-    /* Standardized Card Chips */
     .card-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
     .tag {
       display: inline-flex;
@@ -518,7 +734,6 @@
     .page-item.has-headings {
       cursor: pointer;
     }
-    
     .page-title-row {
       display: flex;
       justify-content: space-between;
@@ -700,8 +915,38 @@
       </div>
     </div>
 
-    <div class="stats" id="statsBar">Showing 431 files</div>
-    <div class="grid" id="gridContainer"></div>
+    <!-- Toolbar: Stats & View Switcher -->
+    <div class="toolbar-row">
+      <div class="stats" id="statsBar">Showing 431 files</div>
+      <div class="view-switcher">
+        <button type="button" class="view-btn active" id="btnViewTable" onclick="setViewMode('table')">
+          <span>☰</span> Table
+        </button>
+        <button type="button" class="view-btn" id="btnViewCards" onclick="setViewMode('cards')">
+          <span>⊞</span> Cards
+        </button>
+      </div>
+    </div>
+
+    <!-- Table / Tree View Container (Option A) -->
+    <div class="table-container" id="tableContainer">
+      <table class="figma-table">
+        <thead>
+          <tr>
+            <th style="width: 36%;">File Name & Flow Pages</th>
+            <th style="width: 17%;">Folder / Squad</th>
+            <th style="width: 22%;">Tags</th>
+            <th style="width: 9%;">Pages</th>
+            <th style="width: 8%;">Updated</th>
+            <th style="width: 8%; text-align: right;">Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Card Grid Container (Preserved) -->
+    <div class="grid" id="gridContainer" style="display: none;"></div>
   </div>
 
   <script>
@@ -712,7 +957,8 @@
       search: "",
       scope: "master_or_active",
       role: "all",
-      feat: "all"
+      feat: "all",
+      viewMode: localStorage.getItem("padi_catalog_view_mode") || "table"
     };
 
     function cleanTag(str) {
@@ -726,7 +972,23 @@
                 .trim();
     }
 
-    // Toggle page headings panel when clicking row
+    function setViewMode(mode) {
+      state.viewMode = mode;
+      localStorage.setItem("padi_catalog_view_mode", mode);
+      document.getElementById("btnViewTable").classList.toggle("active", mode === "table");
+      document.getElementById("btnViewCards").classList.toggle("active", mode === "cards");
+      render();
+    }
+
+    // Toggle table row tree expansion
+    function toggleTableRow(rowId) {
+      const row = document.getElementById(rowId);
+      if (row) {
+        row.classList.toggle("open");
+      }
+    }
+
+    // Toggle card page headings panel when clicking row
     function togglePageItem(el, e) {
       if (e.target.tagName === 'A' || e.target.closest('a')) return;
       el.classList.toggle('open');
@@ -784,6 +1046,112 @@
 
       document.getElementById("statsBar").innerText = `Showing ${filtered.length} of ${files.length} files`;
 
+      const isTableView = state.viewMode === "table";
+      document.getElementById("tableContainer").style.display = isTableView ? "block" : "none";
+      document.getElementById("gridContainer").style.display = isTableView ? "none" : "grid";
+
+      if (isTableView) {
+        renderTableView(filtered, q);
+      } else {
+        renderCardView(filtered, q);
+      }
+    }
+
+    // --- RENDER TABLE / TREE VIEW (Option A) ---
+    function renderTableView(filtered, q) {
+      const tbody = document.getElementById("tableBody");
+      tbody.innerHTML = filtered.map((f, idx) => {
+        const isSmooets = f.folder_path && f.folder_path.includes("Smooets");
+        const isSprint = Boolean(f.is_sprint || (f.name && f.name.toLowerCase().startsWith("sprint ")));
+
+        let statusTag = "";
+        if (isSprint) {
+          statusTag = `<span class="tag sprint">${f.name.split(' - ')[0]}</span>`;
+        } else if (isSmooets) {
+          statusTag = `<span class="tag origin">2022 Origin</span>`;
+        } else if (f.is_master) {
+          statusTag = `<span class="tag master">Master</span>`;
+        } else {
+          statusTag = `<span class="tag">${cleanTag(f.status)}</span>`;
+        }
+
+        const roleTags = f.roles.map(r => `<span class="tag role">${cleanTag(r)}</span>`).join("");
+        const featTags = f.feats.map(t => `<span class="tag feat">${cleanTag(t)}</span>`).join("");
+
+        const pageCount = f.deep_pages ? f.deep_pages.length : 0;
+        const pageCountText = pageCount > 0 ? `${pageCount} pages` : "0 pages";
+
+        const hasPages = pageCount > 0;
+        const hasMatch = q && f.deep_pages && f.deep_pages.some(p => p.page_name.toLowerCase().includes(q) || (p.headings && p.headings.some(h => h.toLowerCase().includes(q))));
+        const openClass = hasMatch ? "open" : "";
+
+        let treePagesHtml = "";
+        if (hasPages) {
+          treePagesHtml = f.deep_pages.map(p => {
+            const encId = p.page_id ? p.page_id.replace(':', '%3A') : '';
+            const pUrl = encId ? `${f.url}?node-id=${encId}` : f.url;
+            const isPageMatch = q && p.page_name.toLowerCase().includes(q);
+            const screenText = p.screen_count > 0 ? `<span class="tree-screen-count">(${p.screen_count} screens)</span>` : "";
+
+            let chipsHtml = "";
+            if (p.headings && p.headings.length > 0) {
+              chipsHtml = p.headings.map(h => {
+                const isHeadingMatch = q && h.toLowerCase().includes(q);
+                return `<span class="heading-chip ${isHeadingMatch ? 'highlight' : ''}">${h}</span>`;
+              }).join("");
+            }
+
+            return `
+              <div class="tree-page-item">
+                <div class="tree-page-header">
+                  <a href="${pUrl}" target="_blank" class="tree-page-link ${isPageMatch ? 'highlight' : ''}">
+                    ${p.page_name} <span class="ext-icon">↗</span>
+                  </a>
+                  ${screenText}
+                </div>
+                ${chipsHtml ? `<div class="tree-headings-chips">${chipsHtml}</div>` : ''}
+              </div>
+            `;
+          }).join("");
+        }
+
+        const toggleBtn = hasPages 
+          ? `<button type="button" class="table-toggle-btn" onclick="toggleTableRow('trow-${idx}')" title="Expand flow pages">▶</button>`
+          : `<span style="width:22px; display:inline-block;"></span>`;
+
+        return `
+          <tr class="table-row ${openClass}" id="trow-${idx}">
+            <td>
+              <div class="file-cell">
+                ${toggleBtn}
+                <a href="${f.url}" target="_blank" class="table-file-title">
+                  ${f.name} <span class="ext-icon">↗</span>
+                </a>
+              </div>
+            </td>
+            <td><span class="table-folder">${f.folder_short}</span></td>
+            <td><div class="table-tags">${statusTag} ${roleTags} ${featTags}</div></td>
+            <td><span class="table-pages-badge">${pageCountText}</span></td>
+            <td><span class="table-date">${f.last_modified}</span></td>
+            <td style="text-align: right;">
+              <a href="${f.url}" target="_blank" class="table-btn-open">Open ↗</a>
+            </td>
+          </tr>
+          ${hasPages ? `
+            <tr class="subrow-panel" id="tsub-${idx}">
+              <td colspan="6">
+                <div class="tree-container">
+                  ${treePagesHtml}
+                </div>
+              </td>
+            </tr>
+          ` : ''}
+        `;
+      }).join("");
+    }
+
+    // --- RENDER CARD VIEW (Option C preserved) ---
+    function renderCardView(filtered, q) {
       const grid = document.getElementById("gridContainer");
       grid.innerHTML = filtered.map(f => {
         const isSmooets = f.folder_path && f.folder_path.includes("Smooets");
@@ -923,6 +1291,10 @@
     function unlockUI() {
       document.getElementById("lockOverlay").style.display = "none";
       document.getElementById("mainApp").style.display = "block";
+      // Initialize view button states
+      const mode = state.viewMode;
+      document.getElementById("btnViewTable").classList.toggle("active", mode === "table");
+      document.getElementById("btnViewCards").classList.toggle("active", mode === "cards");
       render();
     }
 
