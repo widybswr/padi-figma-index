@@ -735,21 +735,22 @@
     }
 
     /* ========================================================
-       2. CARD VIEW STYLES (Preserved)
+       2. CARD VIEW STYLES (Masonry & Content-Hugging, No Boxes)
        ======================================================== */
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-      gap: 16px;
+      columns: 3 360px;
+      column-gap: 16px;
     }
     .card {
+      break-inside: avoid;
+      margin-bottom: 16px;
       background: var(--card-bg);
       border-radius: 12px;
       border: 1px solid var(--card-border);
       padding: 18px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      height: auto;
       transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
     }
     .card:hover {
@@ -785,7 +786,7 @@
       display: inline;
     }
     .card-title {
-      font-size: 15.5px;
+      font-size: 15px;
       font-weight: 700;
       color: var(--text);
       line-height: 1.35;
@@ -806,200 +807,89 @@
     }
     .card-meta-row {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 6px;
-      margin-bottom: 8px;
+      gap: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
     }
-    .card-page-count {
+    .card-page-count-text {
       font-size: 11.5px;
-      font-weight: 600;
-      color: var(--primary);
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.22);
-      padding: 2px 7px;
-      border-radius: 4px;
-      display: inline-block;
+      font-weight: 500;
+      color: var(--text-dim);
+      white-space: nowrap;
     }
-    .card-tags {
+    .card-tags-muted {
+      font-size: 11px;
+      color: var(--text-dim);
+      text-align: right;
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
-      margin-bottom: 12px;
-    }
-    .tag {
-      display: inline-flex;
+      gap: 3px;
+      justify-content: flex-end;
       align-items: center;
-      font-size: var(--badge-font-size);
-      font-weight: 500;
-      line-height: 1;
-      padding: var(--badge-padding);
-      border-radius: var(--badge-radius);
-      border: 1px solid var(--chip-status-border);
-      background: var(--chip-status-bg);
-      color: var(--chip-status-text);
-      text-transform: capitalize;
     }
-    .tag.role {
-      background: var(--chip-role-bg);
-      color: var(--chip-role-text);
-      border-color: var(--chip-role-border);
+    .muted-tag-item {
+      color: var(--text-muted);
     }
-    .tag.feat {
-      background: var(--chip-feat-bg);
-      color: var(--chip-feat-text);
-      border-color: var(--chip-feat-border);
-    }
-    .tag.master {
-      background: var(--chip-master-bg);
-      color: var(--chip-master-text);
-      border-color: var(--chip-master-border);
-      font-weight: 600;
-    }
-    .tag.origin {
-      background: var(--chip-origin-bg);
-      color: var(--chip-origin-text);
-      border-color: var(--chip-origin-border);
-      font-weight: 600;
-    }
-    .tag.sprint {
-      background: var(--chip-sprint-bg);
-      color: var(--chip-sprint-text);
-      border-color: var(--chip-sprint-border);
-      font-weight: 600;
+    .tag-sep {
+      color: var(--text-dim);
+      opacity: 0.5;
     }
 
-    .pages-container {
-      border: 1px solid var(--card-border);
-      border-radius: 8px;
-      padding: 8px;
-      background: var(--page-item-bg);
+    /* Card Pages List - Zero boxes, seamless typography */
+    .card-pages-list {
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      border-top: 1px solid rgba(51, 65, 85, 0.4);
     }
-    .extra-pages-wrap {
-      display: none;
+    .card-page-row {
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.25);
+      display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 3px;
     }
-    .btn-more-pages {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px dashed var(--page-item-border);
-      border-radius: 6px;
-      padding: 6px;
-      color: var(--text-muted);
-      font-size: 11.5px;
-      font-weight: 500;
-      cursor: pointer;
-      text-align: center;
-      transition: all 0.15s;
-      width: 100%;
+    .card-page-row:last-child {
+      border-bottom: none;
     }
-    .btn-more-pages:hover {
-      color: var(--primary);
-      border-color: var(--primary);
-      background: rgba(56, 189, 248, 0.08);
-    }
-
-    .page-item {
-      background: var(--card-bg);
-      border: 1px solid var(--page-item-border);
-      border-radius: 6px;
-      overflow: hidden;
-      font-size: 12px;
-      transition: border-color 0.15s;
-    }
-    .page-item:hover {
-      border-color: var(--primary);
-    }
-    .page-item.has-headings {
-      cursor: pointer;
-    }
-    .page-title-row {
+    .card-page-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 7px 10px;
       gap: 8px;
-      user-select: none;
     }
-    .page-link-wrap {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      flex: 1;
-      overflow: hidden;
-    }
-    .page-link {
+    .card-page-link {
       color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
       font-size: 12px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      font-weight: 600;
+      text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 3px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex: 1;
     }
-    .page-link:hover {
+    .card-page-link:hover {
       text-decoration: underline;
     }
-    .page-link .ext-icon {
+    .card-page-link .ext-icon {
       font-size: 10px;
       opacity: 0.7;
     }
-    .page-right-info {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      white-space: nowrap;
-    }
-    .screen-count {
-      font-size: 11px;
-      color: var(--text-dim);
-    }
-    .sections-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
+    .card-screen-text {
       font-size: 10.5px;
-      padding: 2px 6px;
-      border-radius: 4px;
-      background: rgba(148, 163, 184, 0.1);
-      border: 1px solid rgba(148, 163, 184, 0.2);
-      color: var(--text-muted);
-      transition: all 0.15s;
+      color: var(--text-dim);
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-    .page-item:hover .sections-badge {
-      border-color: var(--primary);
-      color: var(--primary);
-    }
-    .page-item.open .sections-badge {
-      background: rgba(56, 189, 248, 0.15);
-      border-color: var(--primary);
-      color: var(--primary);
-    }
-    .chevron-icon {
-      font-size: 9px;
-      color: inherit;
-      transition: transform 0.2s ease;
-      display: inline-block;
-    }
-    .page-item.open .chevron-icon {
-      transform: rotate(90deg);
-    }
-
-    .page-headings-panel {
-      display: none;
-      padding: 8px 10px;
-      border-top: 1px dashed var(--page-item-border);
-      background: rgba(15, 23, 42, 0.4);
-      flex-wrap: wrap;
-      gap: 4px;
-    }
-    .page-item.open .page-headings-panel {
+    .card-headings-list {
       display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+      margin-top: 2px;
     }
 
     .heading-chip {
@@ -1423,115 +1313,72 @@
       }).join("");
     }
 
-    // --- RENDER CARD VIEW (Option C preserved) ---
+    // --- RENDER CARD VIEW (Masonry, unboxed pages, muted plain text tags) ---
     function renderCardView(filtered, q) {
       const grid = document.getElementById("gridContainer");
       grid.innerHTML = filtered.map(f => {
         const isSmooets = f.folder_path && f.folder_path.includes("Smooets");
         const isSprint = Boolean(f.is_sprint || (f.name && f.name.toLowerCase().startsWith("sprint ")));
 
-        let statusTag = "";
-        if (isSprint) {
-          statusTag = `<span class="tag sprint">${f.name.split(' - ')[0]}</span>`;
-        } else if (isSmooets) {
-          statusTag = `<span class="tag origin">2022 Origin Design</span>`;
-        } else if (f.is_master) {
-          statusTag = `<span class="tag master">Master</span>`;
-        } else {
-          statusTag = `<span class="tag">${cleanTag(f.status)}</span>`;
-        }
+        const tagItems = [];
+        if (isSprint) tagItems.push(f.name.split(' - ')[0]);
+        else if (isSmooets) tagItems.push("2022 Origin");
+        else if (f.is_master) tagItems.push("Master");
+        else if (f.status) tagItems.push(cleanTag(f.status));
 
-        const roleTags = f.roles.map(r => `<span class="tag role">${cleanTag(r)}</span>`).join("");
-        const featTags = f.feats.map(t => `<span class="tag feat">${cleanTag(t)}</span>`).join("");
+        f.roles.forEach(r => tagItems.push(cleanTag(r)));
+        f.feats.forEach(t => tagItems.push(cleanTag(t)));
+        const cardTagsMutedHtml = tagItems.filter(Boolean).map(t => `<span class="muted-tag-item">${t}</span>`).join('<span class="tag-sep"> · </span>');
 
-        const pageCountText = f.deep_pages && f.deep_pages.length > 0 ? `${f.deep_pages.length} pages` : "";
+        const pageCount = f.deep_pages ? f.deep_pages.length : 0;
+        const pageCountText = pageCount > 0 ? `${pageCount} pages` : "0 pages";
 
         let pagesHtml = "";
         if (f.deep_pages && f.deep_pages.length > 0) {
-          const renderPageItem = (p) => {
+          pagesHtml = f.deep_pages.map(p => {
             const encId = p.page_id ? p.page_id.replace(':', '%3A') : '';
             const pUrl = encId ? `${f.url}?node-id=${encId}` : f.url;
             const isPageMatch = q && p.page_name.toLowerCase().includes(q);
-            const screenText = p.screen_count > 0 ? `<span class="screen-count">${p.screen_count} screens</span>` : "";
+            const screenText = p.screen_count > 0 ? `${p.screen_count} screens` : "";
 
-            const hasHeadings = p.headings && p.headings.length > 0;
-            const hasMatch = q && hasHeadings && p.headings.some(h => h.toLowerCase().includes(q));
-            const openClass = (hasMatch || (q && isPageMatch)) ? "open" : "";
-            const clickableClass = hasHeadings ? "has-headings" : "";
-            const sectionBadge = hasHeadings ? `<span class="sections-badge">${p.headings.length} sections <span class="chevron-icon">▶</span></span>` : "";
-
-            let headingsUnderPage = "";
-            if (hasHeadings) {
-              const hChips = p.headings.map(h => {
+            let hChips = "";
+            if (p.headings && p.headings.length > 0) {
+              hChips = p.headings.map(h => {
                 const isHeadingMatch = q && h.toLowerCase().includes(q);
                 return `<span class="heading-chip ${isHeadingMatch ? 'highlight' : ''}">${h}</span>`;
               }).join("");
-              headingsUnderPage = `<div class="page-headings-panel">${hChips}</div>`;
             }
 
-            const clickAttr = hasHeadings ? `onclick="togglePageItem(this, event)"` : "";
-
             return `
-              <div class="page-item ${openClass} ${clickableClass}" ${clickAttr}>
-                <div class="page-title-row">
-                  <div class="page-link-wrap">
-                    <a href="${pUrl}" target="_blank" class="page-link ${isPageMatch ? 'highlight' : ''}" onclick="event.stopPropagation()">
-                      ${p.page_name} <span class="ext-icon">↗</span>
-                    </a>
-                  </div>
-                  <div class="page-right-info">
-                    ${screenText}
-                    ${sectionBadge}
-                  </div>
+              <div class="card-page-row">
+                <div class="card-page-header">
+                  <a href="${pUrl}" target="_blank" class="card-page-link ${isPageMatch ? 'highlight' : ''}">
+                    ${p.page_name} <span class="ext-icon">↗</span>
+                  </a>
+                  ${screenText ? `<span class="card-screen-text">${screenText}</span>` : ''}
                 </div>
-                ${headingsUnderPage}
+                ${hChips ? `<div class="card-headings-list">${hChips}</div>` : ''}
               </div>
             `;
-          };
-
-          const PAGE_LIMIT = 4;
-          if (q || f.deep_pages.length <= PAGE_LIMIT) {
-            pagesHtml = `
-              <div class="pages-container">
-                ${f.deep_pages.map(renderPageItem).join("")}
-              </div>
-            `;
-          } else {
-            const firstPages = f.deep_pages.slice(0, PAGE_LIMIT).map(renderPageItem).join("");
-            const remainingPages = f.deep_pages.slice(PAGE_LIMIT).map(renderPageItem).join("");
-            const remainingCount = f.deep_pages.length - PAGE_LIMIT;
-            pagesHtml = `
-              <div class="pages-container">
-                ${firstPages}
-                <div class="extra-pages-wrap">${remainingPages}</div>
-                <button type="button" class="btn-more-pages" onclick="toggleMorePages(this)">+ ${remainingCount} more pages</button>
-              </div>
-            `;
-          }
+          }).join("");
         }
 
         return `
           <div class="card">
-            <div>
-              <div class="card-breadcrumb-row">
-                <span class="card-folder-text">${f.folder_short}</span>
-                <span class="card-updated-text">Updated ${f.last_modified}</span>
-              </div>
-              <div class="card-title-row">
-                <a href="${f.url}" target="_blank" class="card-title-link" title="Open Figma file in new tab">
-                  <h3 class="card-title">${f.name} <span class="ext-icon">↗</span></h3>
-                </a>
-              </div>
-              <div class="card-meta-row">
-                <span class="card-page-count">${pageCountText}</span>
-              </div>
-              <div class="card-tags">
-                ${statusTag}
-                ${roleTags}
-                ${featTags}
-              </div>
-              ${pagesHtml}
+            <div class="card-breadcrumb-row">
+              <span class="card-folder-text">${f.folder_short}</span>
+              <span class="card-updated-text">${f.last_modified}</span>
             </div>
+            <div class="card-title-row">
+              <a href="${f.url}" target="_blank" class="card-title-link" title="Open Figma file in new tab">
+                <h3 class="card-title">${f.name} <span class="ext-icon">↗</span></h3>
+              </a>
+            </div>
+            <div class="card-meta-row">
+              <span class="card-page-count-text">${pageCountText}</span>
+              <div class="card-tags-muted">${cardTagsMutedHtml}</div>
+            </div>
+            ${pagesHtml ? `<div class="card-pages-list">${pagesHtml}</div>` : ''}
           </div>
         `;
       }).join("");
