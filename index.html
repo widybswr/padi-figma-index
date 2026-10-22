@@ -761,22 +761,23 @@
        2. CARD VIEW STYLES (Masonry & Content-Hugging, No Boxes)
        ======================================================== */
     .grid {
-      columns: 4 280px;
+      display: block;
+      column-count: 4;
       column-gap: 16px;
     }
-    @media (max-width: 1200px) {
+    @media (max-width: 1280px) {
       .grid {
-        columns: 3 280px;
+        column-count: 3;
       }
     }
-    @media (max-width: 860px) {
+    @media (max-width: 900px) {
       .grid {
-        columns: 2 280px;
+        column-count: 2;
       }
     }
     @media (max-width: 640px) {
       .grid {
-        columns: 1 !important;
+        column-count: 1 !important;
       }
       .pinned-ds-grid {
         grid-template-columns: 1fr;
@@ -1304,7 +1305,7 @@
 
       const isTableView = state.viewMode === "table";
       document.getElementById("tableContainer").style.display = isTableView ? "block" : "none";
-      document.getElementById("gridContainer").style.display = isTableView ? "none" : "grid";
+      document.getElementById("gridContainer").style.display = isTableView ? "none" : "block";
 
       if (isTableView) {
         renderTableView(filtered, q);
