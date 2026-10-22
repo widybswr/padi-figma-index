@@ -701,25 +701,21 @@
       align-items: center;
       gap: 6px;
     }
-    .tree-page-link {
-      color: var(--primary);
+    .tree-page-left {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      overflow: hidden;
+      flex: 1;
+      min-width: 0;
+    }
+    .tree-page-name {
+      color: var(--text);
       font-size: 12px;
       font-weight: 600;
-      text-decoration: none;
-      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-      flex: 1;
-    }
-    .tree-page-link:hover {
-      text-decoration: underline;
-    }
-    .tree-page-link .ext-icon {
-      font-size: 10px;
-      opacity: 0.7;
+      white-space: nowrap;
     }
     .tree-screen-count {
       font-size: 10.5px;
@@ -777,35 +773,67 @@
       color: var(--text-dim);
       white-space: nowrap;
     }
+        /* Inline Action Buttons (Copy / Open next to plain text titles) */
+    .title-actions-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      margin-left: 6px;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+    .btn-action-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background: rgba(51, 65, 85, 0.45);
+      border: 1px solid rgba(71, 85, 105, 0.45);
+      color: var(--text-dim);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .btn-action-icon:hover {
+      background: rgba(56, 189, 248, 0.18);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-1px);
+    }
+    .btn-action-icon.copied {
+      border-color: #4ade80 !important;
+      background: rgba(74, 222, 128, 0.2) !important;
+      color: #4ade80 !important;
+    }
+    .btn-action-icon svg {
+      pointer-events: none;
+    }
+
     .card-title-row {
+      display: flex;
+      align-items: flex-start;
       margin-bottom: 6px;
     }
-    .card-title-link {
-      text-decoration: none;
-      color: inherit;
-      display: inline;
+    .card-title-wrap {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
+      width: 100%;
     }
     .card-title {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       color: var(--text);
       line-height: 1.35;
       display: inline;
-      transition: color 0.15s;
     }
-    .card-title-link:hover .card-title {
-      color: var(--primary);
-    }
-    .card-title .ext-icon {
-      font-size: 12px;
-      color: var(--text-dim);
-      margin-left: 4px;
-      transition: color 0.15s;
-    }
-    .card-title-link:hover .ext-icon {
-      color: var(--primary);
-    }
-    .card-meta-row {
+.card-meta-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -859,25 +887,21 @@
       align-items: center;
       gap: 8px;
     }
-    .card-page-link {
-      color: var(--primary);
+    .card-page-left {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      overflow: hidden;
+      flex: 1;
+      min-width: 0;
+    }
+    .card-page-name {
+      color: var(--text);
       font-size: 12px;
       font-weight: 600;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      flex: 1;
-    }
-    .card-page-link:hover {
-      text-decoration: underline;
-    }
-    .card-page-link .ext-icon {
-      font-size: 10px;
-      opacity: 0.7;
     }
     .card-screen-text {
       font-size: 10.5px;
@@ -1105,13 +1129,23 @@
     function copyFigmaUrl(url, btn, e) {
       if (e) e.stopPropagation();
       navigator.clipboard.writeText(url).then(() => {
-        const orig = btn.innerText;
-        btn.innerText = "✓ Copied!";
-        btn.classList.add("copied");
-        setTimeout(() => {
-          btn.innerText = orig;
-          btn.classList.remove("copied");
-        }, 1500);
+        if (btn.classList.contains("btn-copy-url")) {
+          const orig = btn.innerText;
+          btn.innerText = "✓ Copied!";
+          btn.classList.add("copied");
+          setTimeout(() => {
+            btn.innerText = orig;
+            btn.classList.remove("copied");
+          }, 1500);
+        } else {
+          const origHtml = btn.innerHTML;
+          btn.innerHTML = '<span style="color:#4ade80;font-size:11px;font-weight:bold;line-height:1;">✓</span>';
+          btn.classList.add("copied");
+          setTimeout(() => {
+            btn.innerHTML = origHtml;
+            btn.classList.remove("copied");
+          }, 1500);
+        }
       });
     }
 
@@ -1221,6 +1255,23 @@
     }
 
     // --- RENDER TABLE / TREE VIEW (Option A) ---
+        // Reusable action icons
+    const SVG_COPY_ICON = `<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>`;
+    const SVG_OPEN_ICON = `<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>`;
+
+    function renderInlineActions(url, label) {
+      return `
+        <span class="title-actions-group">
+          <button type="button" class="btn-action-icon" onclick="copyFigmaUrl('${url}', this, event)" title="Copy ${label} Link">
+            ${SVG_COPY_ICON}
+          </button>
+          <a href="${url}" target="_blank" class="btn-action-icon" title="Open ${label} in Figma ↗" onclick="event.stopPropagation()">
+            ${SVG_OPEN_ICON}
+          </a>
+        </span>
+      `;
+    }
+
     function renderTableView(filtered, q) {
       const tbody = document.getElementById("tableBody");
       tbody.innerHTML = filtered.map((f, idx) => {
@@ -1266,9 +1317,10 @@
             return `
               <div class="tree-page-card">
                 <div class="tree-page-top">
-                  <a href="${pUrl}" target="_blank" class="tree-page-link ${isPageMatch ? 'highlight' : ''}" onclick="event.stopPropagation()">
-                    ${p.page_name} <span class="ext-icon">↗</span>
-                  </a>
+                  <div class="tree-page-left">
+                    <span class="tree-page-name ${isPageMatch ? 'highlight' : ''}">${p.page_name}</span>
+                    ${renderInlineActions(pUrl, 'Page')}
+                  </div>
                   ${screenText}
                 </div>
                 ${chipsHtml ? `<div class="tree-headings-chips">${chipsHtml}</div>` : ''}
@@ -1289,6 +1341,7 @@
               <div class="file-cell">
                 ${toggleBtn}
                 <span class="table-file-title-plain">${f.name}</span>
+                ${renderInlineActions(f.url, 'File')}
               </div>
             </td>
             <td><span class="table-folder">${f.folder_short}</span></td>
@@ -1352,9 +1405,10 @@
             return `
               <div class="card-page-row">
                 <div class="card-page-header">
-                  <a href="${pUrl}" target="_blank" class="card-page-link ${isPageMatch ? 'highlight' : ''}">
-                    ${p.page_name} <span class="ext-icon">↗</span>
-                  </a>
+                  <div class="card-page-left">
+                    <span class="card-page-name ${isPageMatch ? 'highlight' : ''}">${p.page_name}</span>
+                    ${renderInlineActions(pUrl, 'Page')}
+                  </div>
                   ${screenText ? `<span class="card-screen-text">${screenText}</span>` : ''}
                 </div>
                 ${hChips ? `<div class="card-headings-list">${hChips}</div>` : ''}
@@ -1370,9 +1424,10 @@
               <span class="card-updated-text">${f.last_modified}</span>
             </div>
             <div class="card-title-row">
-              <a href="${f.url}" target="_blank" class="card-title-link" title="Open Figma file in new tab">
-                <h3 class="card-title">${f.name} <span class="ext-icon">↗</span></h3>
-              </a>
+              <div class="card-title-wrap">
+                <h3 class="card-title">${f.name}</h3>
+                ${renderInlineActions(f.url, 'File')}
+              </div>
             </div>
             <div class="card-meta-row">
               <span class="card-page-count-text">${pageCountText}</span>
