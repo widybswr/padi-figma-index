@@ -166,20 +166,6 @@
       color: var(--text-dim);
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-    }
-    .last-indexed-text .copy-link {
-      color: var(--text-muted);
-      text-decoration: underline;
-      cursor: pointer;
-      background: none;
-      border: none;
-      font-size: 11.5px;
-      font-family: inherit;
-      padding: 0;
-    }
-    .last-indexed-text .copy-link:hover {
-      color: var(--primary);
     }
 
     .header-btn {
@@ -201,7 +187,7 @@
       border-color: var(--primary);
     }
 
-    /* Seamless Controls (Box removed, clean spacing directly on canvas) */
+    /* Seamless Controls */
     .controls {
       display: flex;
       flex-direction: column;
@@ -214,23 +200,45 @@
     }
     .search-row {
       display: flex;
-      gap: 12px;
-      align-items: center;
+      gap: 10px;
+      align-items: stretch;
     }
     .search-input {
       flex: 1;
-      padding: 12px 18px;
-      font-size: 15px;
+      height: 44px;
+      padding: 0 16px;
+      font-size: 14.5px;
       background: var(--input-bg);
       color: var(--text);
       border: 1px solid var(--input-border);
-      border-radius: 10px;
+      border-radius: 8px;
       outline: none;
       transition: all 0.2s;
     }
     .search-input:focus {
       border-color: var(--primary);
       box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+    }
+    .clear-btn {
+      height: 44px;
+      padding: 0 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--card-bg);
+      border: 1px solid var(--input-border);
+      border-radius: 8px;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s;
+    }
+    .clear-btn:hover {
+      color: var(--text);
+      border-color: var(--primary);
+      background: rgba(56, 189, 248, 0.1);
     }
     .filters-group {
       display: flex;
@@ -239,65 +247,68 @@
       align-items: center;
     }
     .filter-label {
-      font-size: 11.5px;
-      font-weight: 700;
-      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-dim);
       margin-right: 4px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      letter-spacing: normal;
     }
 
-    /* Standardized Filter Pills Matching Card Badges */
+    /* Toned Down Filter Pills */
     .pill {
       display: inline-flex;
       align-items: center;
       font-size: var(--badge-font-size);
-      font-weight: 500;
+      font-weight: 450;
       line-height: 1;
       padding: var(--badge-padding);
       border-radius: var(--badge-radius);
-      border: 1px solid var(--chip-status-border);
-      background: var(--chip-status-bg);
-      color: var(--chip-status-text);
+      border: 1px solid #334155;
+      background: #1e293b;
+      color: #94a3b8;
       cursor: pointer;
       user-select: none;
       transition: all 0.15s;
     }
     .pill:hover {
-      opacity: 0.85;
-      transform: translateY(-1px);
+      color: #f1f5f9;
+      border-color: #475569;
+      background: #243248;
     }
     .pill.role {
-      background: var(--chip-role-bg);
-      color: var(--chip-role-text);
-      border-color: var(--chip-role-border);
+      background: rgba(180, 83, 9, 0.12);
+      color: #fcd34d;
+      border-color: rgba(180, 83, 9, 0.25);
     }
     .pill.feat {
-      background: var(--chip-feat-bg);
-      color: var(--chip-feat-text);
-      border-color: var(--chip-feat-border);
+      background: rgba(14, 165, 233, 0.10);
+      color: #7dd3fc;
+      border-color: rgba(14, 165, 233, 0.22);
     }
     .pill.master {
-      background: var(--chip-master-bg);
-      color: var(--chip-master-text);
-      border-color: var(--chip-master-border);
+      background: rgba(16, 185, 129, 0.10);
+      color: #6ee7b7;
+      border-color: rgba(16, 185, 129, 0.22);
     }
     .pill.origin {
-      background: var(--chip-origin-bg);
-      color: var(--chip-origin-text);
-      border-color: var(--chip-origin-border);
+      background: rgba(217, 119, 6, 0.12);
+      color: #fde68a;
+      border-color: rgba(217, 119, 6, 0.25);
     }
     .pill.sprint {
-      background: var(--chip-sprint-bg);
-      color: var(--chip-sprint-text);
-      border-color: var(--chip-sprint-border);
+      background: rgba(99, 102, 241, 0.12);
+      color: #a5b4fc;
+      border-color: rgba(99, 102, 241, 0.25);
     }
 
     /* Active State Indicator */
     .pill.active {
-      font-weight: 700;
-      box-shadow: 0 0 0 2px var(--primary);
-      border-color: var(--primary) !important;
+      background: #38bdf8 !important;
+      color: #0f172a !important;
+      font-weight: 600;
+      border-color: #38bdf8 !important;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
     }
 
     .stats {
@@ -327,20 +338,69 @@
       border-color: var(--primary);
     }
 
+    .card-breadcrumb-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 8px;
+    }
     .card-folder-text {
       font-size: 11px;
       font-weight: 500;
       color: var(--folder-text);
-      margin-bottom: 4px;
       letter-spacing: 0.2px;
       text-transform: capitalize;
     }
+    .card-updated-text {
+      font-size: 11px;
+      color: var(--text-dim);
+      white-space: nowrap;
+    }
+    .card-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
     .card-title {
-      font-size: 16px;
+      font-size: 15.5px;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 8px;
       line-height: 1.35;
+      flex: 1;
+    }
+    .card-title-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .card-page-count {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+    .btn-ghost-open {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      border: 1px solid var(--input-border);
+      background: transparent;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    .btn-ghost-open:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+      background: rgba(56, 189, 248, 0.08);
     }
 
     /* Standardized Card Chips */
@@ -400,84 +460,93 @@
       border-radius: 8px;
       padding: 8px;
       background: var(--page-item-bg);
-      margin-bottom: 12px;
+      margin-bottom: 0;
       display: flex;
       flex-direction: column;
       gap: 8px;
     }
-    .pages-header-title {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .pages-header-title span {
-      color: var(--text-muted);
-      font-size: 11px;
-      font-weight: normal;
-    }
 
-    /* Each Page Item */
+    /* Each Page Item - whole row is clickable */
     .page-item {
       background: var(--card-bg);
       border: 1px solid var(--page-item-border);
       border-radius: 6px;
-      padding: 8px 10px;
+      overflow: hidden;
       font-size: 12px;
+      transition: border-color 0.15s;
     }
+    .page-item:hover {
+      border-color: var(--primary);
+    }
+    .page-item.has-headings {
+      cursor: pointer;
+    }
+    
     .page-title-row {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
+      padding: 8px 10px;
       gap: 6px;
+      user-select: none;
+    }
+    .page-link-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex: 1;
+      overflow: hidden;
     }
     .page-link {
       color: var(--primary);
       text-decoration: none;
       font-weight: 600;
       font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .page-link:hover {
       text-decoration: underline;
     }
+    .page-right-info {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
     .screen-count {
       font-size: 11px;
       color: var(--text-muted);
-      white-space: nowrap;
+    }
+    .chevron-icon {
+      font-size: 10px;
+      color: var(--text-muted);
+      transition: transform 0.2s ease;
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      line-height: 14px;
+      text-align: center;
+    }
+    .page-item.open .chevron-icon {
+      transform: rotate(90deg);
+      color: var(--primary);
     }
 
-    /* Accordion for Headings under each page */
-    .headings-accordion {
-      margin-top: 6px;
+    /* Collapsible Headings panel under each page */
+    .page-headings-panel {
+      display: none;
+      padding: 8px 10px;
       border-top: 1px dashed var(--page-item-border);
-      padding-top: 6px;
-    }
-    .headings-summary {
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--text-muted);
-      cursor: pointer;
-      user-select: none;
-      outline: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .headings-summary:hover {
-      color: var(--primary);
-    }
-    .headings-summary::marker {
-      color: var(--primary);
-    }
-    .headings-chips-wrap {
-      display: flex;
+      background: rgba(15, 23, 42, 0.4);
       flex-wrap: wrap;
       gap: 4px;
-      margin-top: 6px;
     }
+    .page-item.open .page-headings-panel {
+      display: flex;
+    }
+
     .heading-chip {
       display: inline-block;
       background: var(--heading-tag-bg);
@@ -495,30 +564,6 @@
       font-weight: bold;
       color: #854d0e !important;
       border-color: #fde047 !important;
-    }
-
-    .card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: auto;
-      padding-top: 12px;
-      border-top: 1px solid var(--footer-border);
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-    .btn-open {
-      background: var(--btn-open-bg);
-      color: var(--btn-open-text);
-      padding: 6px 12px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 600;
-      transition: background 0.15s, opacity 0.15s;
-    }
-    .btn-open:hover {
-      opacity: 0.9;
     }
   </style>
 </head>
@@ -542,21 +587,20 @@
     <header>
       <div>
         <h1>📚 PaDi UMKM — Figma Screen & Feature Index</h1>
-        <div class="subtitle">Search 431 files with detailed user-flow pages, canvas headings & section titles</div>
       </div>
       <div class="header-right">
         <span class="last-indexed-text">
-          Last indexed October 21, 2026 at 04:39 UTC · <button class="copy-link" onclick="navigator.clipboard.writeText('2026-10-21T04:39:44Z'); alert('Copied timestamp: 2026-10-21T04:39:44Z');" title="Copy ISO Date for incremental scans">copy ISO</button>
+          Last indexed October 21, 2026 at 04:39 UTC
         </span>
         <button class="header-btn" onclick="lockCatalog()" title="Lock session">Lock</button>
       </div>
     </header>
 
-    <!-- Seamless Controls without outer container box -->
+    <!-- Seamless Controls -->
     <div class="controls">
       <div class="search-row">
         <input type="text" id="searchInput" class="search-input" placeholder="Search screen name, heading title, feature (e.g. 'instruksi', 'bulk listing', 'approval'), role, or folder..." autofocus>
-        <span class="pill" id="clearBtn">Clear</span>
+        <button type="button" id="clearBtn" class="clear-btn">Clear</button>
       </div>
 
       <div class="filters-group">
@@ -621,6 +665,13 @@
                 .trim();
     }
 
+    // Toggle page headings panel when clicking row
+    function togglePageItem(el, e) {
+      // If user clicked directly on the Figma deep link anchor, let it navigate
+      if (e.target.tagName === 'A') return;
+      el.classList.toggle('open');
+    }
+
     // 2. RENDER FUNCTION
     function render() {
       const q = state.search.toLowerCase().trim();
@@ -678,6 +729,8 @@
         const roleTags = f.roles.map(r => `<span class="tag role">${cleanTag(r)}</span>`).join("");
         const featTags = f.feats.map(t => `<span class="tag feat">${cleanTag(t)}</span>`).join("");
 
+        const pageCountText = f.deep_pages && f.deep_pages.length > 0 ? `${f.deep_pages.length} pages` : "";
+
         let pagesHtml = "";
         if (f.deep_pages && f.deep_pages.length > 0) {
           const pagesList = f.deep_pages.map(p => {
@@ -686,29 +739,33 @@
             const isPageMatch = q && p.page_name.toLowerCase().includes(q);
             const screenText = p.screen_count > 0 ? `<span class="screen-count">${p.screen_count} screens</span>` : "";
 
-            let headingsUnderPage = "";
-            if (p.headings && p.headings.length > 0) {
-              const hasMatch = q && p.headings.some(h => h.toLowerCase().includes(q));
-              const openAttr = hasMatch ? "open" : "";
+            const hasHeadings = p.headings && p.headings.length > 0;
+            const hasMatch = q && hasHeadings && p.headings.some(h => h.toLowerCase().includes(q));
+            const openClass = hasMatch ? "open" : "";
+            const clickableClass = hasHeadings ? "has-headings" : "";
+            const chevron = hasHeadings ? `<span class="chevron-icon">▶</span>` : "";
 
+            let headingsUnderPage = "";
+            if (hasHeadings) {
               const hChips = p.headings.map(h => {
                 const isHeadingMatch = q && h.toLowerCase().includes(q);
                 return `<span class="heading-chip ${isHeadingMatch ? 'highlight' : ''}">${h}</span>`;
               }).join("");
-
-              headingsUnderPage = `
-                <details class="headings-accordion" ${openAttr}>
-                  <summary class="headings-summary">Sections & Headings (${p.headings.length})</summary>
-                  <div class="headings-chips-wrap">${hChips}</div>
-                </details>
-              `;
+              headingsUnderPage = `<div class="page-headings-panel">${hChips}</div>`;
             }
 
+            const clickAttr = hasHeadings ? `onclick="togglePageItem(this, event)"` : "";
+
             return `
-              <div class="page-item">
+              <div class="page-item ${openClass} ${clickableClass}" ${clickAttr}>
                 <div class="page-title-row">
-                  <a href="${pUrl}" target="_blank" class="page-link ${isPageMatch ? 'highlight' : ''}">${p.page_name}</a>
-                  ${screenText}
+                  <div class="page-link-wrap">
+                    <a href="${pUrl}" target="_blank" class="page-link ${isPageMatch ? 'highlight' : ''}">${p.page_name}</a>
+                  </div>
+                  <div class="page-right-info">
+                    ${screenText}
+                    ${chevron}
+                  </div>
                 </div>
                 ${headingsUnderPage}
               </div>
@@ -717,10 +774,6 @@
 
           pagesHtml = `
             <div class="pages-container">
-              <div class="pages-header-title">
-                <b>Pages & Flows</b>
-                <span>${f.deep_pages.length} pages</span>
-              </div>
               ${pagesList}
             </div>
           `;
@@ -729,18 +782,23 @@
         return `
           <div class="card">
             <div>
-              <div class="card-folder-text">${f.folder_short}</div>
-              <div class="card-title">${f.name}</div>
+              <div class="card-breadcrumb-row">
+                <span class="card-folder-text">${f.folder_short}</span>
+                <span class="card-updated-text">Updated ${f.last_modified}</span>
+              </div>
+              <div class="card-title-row">
+                <div class="card-title">${f.name}</div>
+                <div class="card-title-actions">
+                  <span class="card-page-count">${pageCountText}</span>
+                  <a href="${f.url}" target="_blank" class="btn-ghost-open">Open Figma ↗</a>
+                </div>
+              </div>
               <div class="card-tags">
                 ${statusTag}
                 ${roleTags}
                 ${featTags}
               </div>
               ${pagesHtml}
-            </div>
-            <div class="card-footer">
-              <span>Updated: ${f.last_modified}</span>
-              <a href="${f.url}" target="_blank" class="btn-open">Open Figma ↗</a>
             </div>
           </div>
         `;
