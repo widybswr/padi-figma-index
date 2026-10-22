@@ -371,18 +371,19 @@
     }
     .pinned-ds-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 10px;
     }
     .pinned-ds-card {
       background: #0f172a;
       border: 1px solid var(--card-border);
       border-radius: 8px;
-      padding: 8px 12px;
+      padding: 0;
       display: flex;
-      align-items: center;
+      align-items: stretch;
       justify-content: space-between;
-      gap: 12px;
+      overflow: hidden;
+      min-height: 48px;
       transition: border-color 0.15s;
     }
     .pinned-ds-card:hover {
@@ -392,7 +393,9 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      padding: 10px 14px;
       overflow: hidden;
+      flex: 1;
     }
     .ds-symbol {
       font-size: 18px;
@@ -427,9 +430,12 @@
     }
     .pinned-card-actions {
       display: flex;
-      align-items: center;
-      gap: 6px;
+      align-items: stretch;
+      gap: 0;
+      margin: 0;
+      padding: 0;
       flex-shrink: 0;
+      height: 100%;
     }
     .btn-copy-url {
       display: inline-flex;
@@ -478,7 +484,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0 14px;
+      padding: 0 16px;
       border-radius: 0;
       border: none;
       border-left: 1px solid var(--card-border);
@@ -489,15 +495,24 @@
       color: var(--text);
       background: rgba(56, 189, 248, 0.15);
     }
+    .pinned-card-actions .btn-copy-url.copied {
+      color: #34d399 !important;
+      background: rgba(16, 185, 129, 0.2) !important;
+      font-weight: 600;
+    }
     .pinned-card-actions .btn-open-figma {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0 14px;
+      padding: 0 16px;
       border-radius: 0;
       border: none;
       border-left: 1px solid rgba(255, 255, 255, 0.15);
+      transition: background 0.15s;
       height: 100%;
+    }
+    .pinned-card-actions .btn-open-figma:hover {
+      background: var(--primary-hover);
     }
 
     /* Toolbar: Stats & View Switcher */
@@ -729,20 +744,31 @@
       gap: 6px;
     }
     .tree-page-left {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 4px;
       overflow: hidden;
       flex: 1;
       min-width: 0;
     }
-    .tree-page-name {
-      color: var(--text);
+    .tree-page-link {
+      color: var(--primary);
       font-size: 12px;
       font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+    .tree-page-link:hover {
+      text-decoration: underline;
+    }
+    .tree-page-link .ext-icon {
+      font-size: 10px;
+      opacity: 0.7;
     }
     .tree-screen-count {
       font-size: 10.5px;
@@ -830,12 +856,6 @@
       border: 1px solid var(--card-border);
       padding: 18px;
       height: auto;
-      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
-    }
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 16px -4px rgba(0,0,0,0.3);
-      border-color: var(--primary);
     }
     .card-breadcrumb-row {
       display: flex;
@@ -856,58 +876,22 @@
       color: var(--text-dim);
       white-space: nowrap;
     }
-        /* Inline Action Buttons (Copy / Open next to plain text titles) */
-    .title-actions-group {
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-      margin-left: 6px;
-      vertical-align: middle;
-      flex-shrink: 0;
-    }
-    .btn-action-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 20px;
-      height: 20px;
-      border-radius: 4px;
-      background: rgba(51, 65, 85, 0.45);
-      border: 1px solid rgba(71, 85, 105, 0.45);
-      color: var(--text-dim);
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.15s ease;
-      flex-shrink: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    .btn-action-icon:hover {
-      background: rgba(56, 189, 248, 0.18);
-      border-color: var(--primary);
-      color: var(--primary);
-      transform: translateY(-1px);
-    }
-    .btn-action-icon.copied {
-      border-color: #4ade80 !important;
-      background: rgba(74, 222, 128, 0.2) !important;
-      color: #4ade80 !important;
-    }
-    .btn-action-icon svg {
-      pointer-events: none;
-    }
 
     .card-title-row {
-      display: flex;
-      align-items: flex-start;
       margin-bottom: 6px;
     }
-    .card-title-wrap {
+    .card-title-left {
       display: inline-flex;
       align-items: center;
+      gap: 6px;
       flex-wrap: wrap;
+    }
+    .card-title-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline-flex;
+      align-items: center;
       gap: 4px;
-      width: 100%;
     }
     .card-title {
       font-size: 14.5px;
@@ -915,8 +899,54 @@
       color: var(--text);
       line-height: 1.35;
       display: inline;
+      transition: color 0.15s;
     }
-.card-meta-row {
+    .card-title-link:hover .card-title {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .card-title-link .ext-icon {
+      font-size: 11px;
+      color: var(--text-dim);
+      transition: color 0.15s;
+    }
+    .card-title-link:hover .ext-icon {
+      color: var(--primary);
+    }
+
+    .btn-copy-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background: rgba(51, 65, 85, 0.4);
+      border: 1px solid rgba(71, 85, 105, 0.4);
+      color: var(--text-dim);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+      padding: 0;
+      vertical-align: middle;
+      box-sizing: border-box;
+    }
+    .btn-copy-icon:hover {
+      background: rgba(56, 189, 248, 0.18);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-1px);
+    }
+    .btn-copy-icon.copied {
+      border-color: #4ade80 !important;
+      background: rgba(74, 222, 128, 0.2) !important;
+      color: #4ade80 !important;
+    }
+    .btn-copy-icon svg {
+      pointer-events: none;
+    }
+
+    .card-meta-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -971,20 +1001,31 @@
       gap: 8px;
     }
     .card-page-left {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 4px;
       overflow: hidden;
       flex: 1;
       min-width: 0;
     }
-    .card-page-name {
-      color: var(--text);
+    .card-page-link {
+      color: var(--primary);
       font-size: 12px;
       font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+    .card-page-link:hover {
+      text-decoration: underline;
+    }
+    .card-page-link .ext-icon {
+      font-size: 10px;
+      opacity: 0.7;
     }
     .card-screen-text {
       font-size: 10.5px;
@@ -1455,8 +1496,12 @@
               <div class="tree-page-card">
                 <div class="tree-page-top">
                   <div class="tree-page-left">
-                    <span class="tree-page-name ${isPageMatch ? 'highlight' : ''}">${p.page_name}</span>
-                    ${renderInlineActions(pUrl, 'Page')}
+                    <a href="${pUrl}" target="_blank" class="tree-page-link ${isPageMatch ? 'highlight' : ''}" onclick="event.stopPropagation()" title="Open page in Figma">
+                      ${p.page_name} <span class="ext-icon">↗</span>
+                    </a>
+                    <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('${pUrl}', this, event)" title="Copy Page Link">
+                      ${SVG_COPY_ICON}
+                    </button>
                   </div>
                   ${screenText}
                 </div>
@@ -1478,7 +1523,6 @@
               <div class="file-cell">
                 ${toggleBtn}
                 <span class="table-file-title-plain">${f.name}</span>
-                ${renderInlineActions(f.url, 'File')}
               </div>
             </td>
             <td><span class="table-folder">${f.folder_short}</span></td>
@@ -1545,8 +1589,12 @@
               <div class="card-page-row">
                 <div class="card-page-header">
                   <div class="card-page-left">
-                    <span class="card-page-name ${isPageMatch ? 'highlight' : ''}">${p.page_name}</span>
-                    ${renderInlineActions(pUrl, 'Page')}
+                    <a href="${pUrl}" target="_blank" class="card-page-link ${isPageMatch ? 'highlight' : ''}" title="Open page in Figma">
+                      ${p.page_name} <span class="ext-icon">↗</span>
+                    </a>
+                    <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('${pUrl}', this, event)" title="Copy Page Link">
+                      ${SVG_COPY_ICON}
+                    </button>
                   </div>
                   ${screenText ? `<span class="card-screen-text">${screenText}</span>` : ''}
                 </div>
@@ -1563,9 +1611,13 @@
               <span class="card-updated-text">${f.last_modified}</span>
             </div>
             <div class="card-title-row">
-              <div class="card-title-wrap">
-                <h3 class="card-title">${f.name}</h3>
-                ${renderInlineActions(f.url, 'File')}
+              <div class="card-title-left">
+                <a href="${f.url}" target="_blank" class="card-title-link" title="Open Figma file in new tab">
+                  <h3 class="card-title">${f.name} <span class="ext-icon">↗</span></h3>
+                </a>
+                <button type="button" class="btn-copy-icon" onclick="copyFigmaUrl('${f.url}', this, event)" title="Copy File Link">
+                  ${SVG_COPY_ICON}
+                </button>
               </div>
             </div>
             <div class="card-meta-row">
