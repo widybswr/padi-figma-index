@@ -728,7 +728,7 @@
 .grid {
       display: block;
       column-count: 4;
-      column-gap: 16px;
+      column-gap: 12px;
     }
     @media (max-width: 1280px) {
       .grid {
@@ -753,11 +753,11 @@
       -webkit-column-break-inside: avoid;
       page-break-inside: avoid;
       vertical-align: top;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       background: var(--card-bg);
-      border-radius: 12px;
+      border-radius: 10px;
       border: 1px solid var(--card-border);
-      padding: 18px;
+      padding: 13px 15px;
       height: auto;
     }
     .card-breadcrumb-row {
@@ -821,30 +821,30 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 18px;
-      height: 18px;
-      border-radius: 4px;
-      background: rgba(51, 65, 85, 0.4);
-      border: 1px solid rgba(71, 85, 105, 0.4);
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      background: transparent;
+      border: none;
       color: var(--text-dim);
+      opacity: 0.55;
       cursor: pointer;
       transition: all 0.15s ease;
       flex-shrink: 0;
       padding: 0;
-      vertical-align: -3px;
+      vertical-align: -2px;
       margin-left: 4px;
       box-sizing: border-box;
     }
     .btn-copy-icon:hover {
-      background: rgba(56, 189, 248, 0.18);
-      border-color: var(--primary);
+      opacity: 1;
       color: var(--primary);
-      transform: translateY(-1px);
+      background: rgba(56, 189, 248, 0.15);
     }
     .btn-copy-icon.copied {
-      border-color: #4ade80 !important;
-      background: rgba(74, 222, 128, 0.2) !important;
+      opacity: 1;
       color: #4ade80 !important;
+      background: rgba(74, 222, 128, 0.15) !important;
     }
     .btn-copy-icon svg {
       pointer-events: none;
@@ -855,7 +855,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 8px;
-      margin-bottom: 12px;
+      margin-bottom: 7px;
       flex-wrap: wrap;
     }
     .card-page-count-text {
@@ -886,14 +886,14 @@
     .card-pages-list {
       display: flex;
       flex-direction: column;
-      border-top: 1px solid rgba(51, 65, 85, 0.4);
+      border-top: 1px solid rgba(51, 65, 85, 0.3);
     }
     .card-page-row {
-      padding: 7px 0;
-      border-bottom: 1px solid rgba(51, 65, 85, 0.25);
+      padding: 3.5px 0;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.18);
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 2px;
     }
     .card-page-row:last-child {
       border-bottom: none;
