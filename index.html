@@ -341,7 +341,6 @@
       border-color: var(--primary);
     }
 
-    /* Top text for folder */
     .card-folder-text {
       font-size: 11px;
       font-weight: 500;
@@ -358,7 +357,6 @@
       line-height: 1.35;
     }
 
-    /* Standardized Card Chips */
     .card-tags {
       display: flex;
       flex-wrap: wrap;
@@ -409,7 +407,7 @@
 
     /* Pages Container on Top & Visible */
     .pages-container {
-      max-height: 250px;
+      max-height: 320px;
       overflow-y: auto;
       border: 1px solid var(--card-border);
       border-radius: 8px;
@@ -464,16 +462,34 @@
       white-space: nowrap;
     }
 
-    /* Scrollable Box for Headings under each page */
-    .page-headings-box {
+    /* Accordion for Headings under each page */
+    .headings-accordion {
       margin-top: 6px;
-      padding-top: 6px;
       border-top: 1px dashed var(--page-item-border);
+      padding-top: 6px;
+    }
+    .headings-summary {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      outline: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .headings-summary:hover {
+      color: var(--primary);
+    }
+    .headings-summary::marker {
+      color: var(--primary);
+    }
+    .headings-chips-wrap {
       display: flex;
       flex-wrap: wrap;
       gap: 4px;
-      max-height: 80px;
-      overflow-y: auto;
+      margin-top: 6px;
     }
     .heading-chip {
       display: inline-block;
@@ -608,7 +624,6 @@
       feat: "all"
     };
 
-    // Helper to clean tags: removes '#', 'role/', 'feat/', 'status/', emojis
     function cleanTag(str) {
       return str.replace(/[`#]/g, '')
                 .replace(/^role\//, '')
@@ -683,7 +698,6 @@
         const isSmooets = f.folder_path && f.folder_path.includes("Smooets");
         const isSprint = f.is_sprint;
 
-        // Standardized chips (no emojis, clean text)
         let statusTag = "";
         if (isSprint) {
           statusTag = `<span class="tag sprint">${f.name.split(' - ')[0]}</span>`;
@@ -698,7 +712,6 @@
         const roleTags = f.roles.map(r => `<span class="tag role">${cleanTag(r)}</span>`).join("");
         const featTags = f.feats.map(t => `<span class="tag feat">${cleanTag(t)}</span>`).join("");
 
-        // Build Pages with their specific sub-headings nested inside
         let pagesHtml = "";
         if (f.deep_pages && f.deep_pages.length > 0) {
           const pagesList = f.deep_pages.map(p => {
@@ -709,11 +722,21 @@
 
             let headingsUnderPage = "";
             if (p.headings && p.headings.length > 0) {
+              // Auto-open accordion if user searched and one of the headings matches
+              const hasMatch = q && p.headings.some(h => h.toLowerCase().includes(q));
+              const openAttr = hasMatch ? "open" : "";
+
               const hChips = p.headings.map(h => {
                 const isHeadingMatch = q && h.toLowerCase().includes(q);
                 return `<span class="heading-chip ${isHeadingMatch ? 'highlight' : ''}">${h}</span>`;
               }).join("");
-              headingsUnderPage = `<div class="page-headings-box">${hChips}</div>`;
+
+              headingsUnderPage = `
+                <details class="headings-accordion" ${openAttr}>
+                  <summary class="headings-summary">Sections & Headings (${p.headings.length})</summary>
+                  <div class="headings-chips-wrap">${hChips}</div>
+                </details>
+              `;
             }
 
             return `
