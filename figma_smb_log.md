@@ -1,4 +1,26 @@
-# figma smb log (updated October 21, 2026)
+# figma smb log (updated October 26, 2026)
+
+> [!TIP] PaDi Domain Glossary & Search Cheat Sheet (ID ⟷ EN ⟷ Acronym)
+> Use this cross-reference index to quickly search across legacy and current naming conventions across design files:
+>
+> | Business Flow / Domain | Acronym | Indonesian (UI Copy / Squads) | English / System Terms | Common Obsidian Tags |
+> | :--- | :--- | :--- | :--- | :--- |
+> | **Purchase Order** | `PO` | Pesanan Pembelian, Detail Pesanan, Order | Purchase Order, Order Detail | `#feat/transaction` |
+> | **Purchase Request** | `PR` | Permintaan Pembelian, Pengajuan Belanja | Purchase Requisition, Request | `#feat/transaction` |
+> | **Request for Quotation** | `RFQ` | Permintaan Penawaran, Nego Harga, Tender | Quotation, Bidding, Negotiation | `#feat/transaction` |
+> | **Goods Handover** | `BAST` | Berita Acara Serah Terima, Penerimaan Barang | Goods Receipt, Handover, Delivery | `#feat/transaction` |
+> | **Billing & Taxes** | `INV` / `FP` | Tagihan, Faktur Pajak, Kuitansi, Bukti Bayar | Billing, Invoice, Tax Invoice | `#feat/finance` `#feat/payment` |
+> | **Payment Terms** | `TOP` | Termin Pembayaran, Tempo, Bayar Nanti | Terms of Payment, Deferred Payment | `#feat/finance` |
+> | **Payment Methods** | `VA` / `QRIS` / `EDC` | Transfer Bank, Saldo PaDi, Uang Muka (DP) | Virtual Account, Cashless, Down Payment | `#feat/payment` |
+> | **Storefront & Catalog** | `Toko` / `Katalog` | Profil Toko, Kelola Produk, Etalase | Seller Profile, Product Catalog, Store | `#feat/product` `#feat/seller` |
+> | **Procurement Tender** | `Tender` | Proyek Pengadaan, Seleksi Vendor, Paket | Procurement Project, Vendor Selection | `#feat/transaction` |
+> | **Point of Sale** | `POS` / `Kasir` | PaDi Kasir, Aplikasi Kasir, Struk Kasir | Point of Sale, Cashier App, Receipt | `#prod/kdkmp` `#feat/general` |
+> | **Shipping & Tracking** | `Resi` / `Kurir` | Pengiriman, Pelacakan Resi, Ongkos Kirim | Logistics, Shipment Tracking, Courier | `#feat/shipping` |
+> | **Organization & Approval** | `Org` | Kelompok Pembeli, Alur Persetujuan, Limit | Buyer Group, Approval Matrix, Budget Limit | `#feat/buyer-group` `#feat/approval` |
+>
+> **Obsidian Search Tips:**
+> - Search by tag: `tag:#feat/transaction` or `tag:#role/buyer` or `tag:#collection/smooets-2022`
+> - Search by node link: Press `Cmd + F` and search either acronym (`"BAST"`) or Indonesian term (`"Berita Acara"`).
 
 ---
 
