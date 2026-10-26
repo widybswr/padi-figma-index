@@ -2,6 +2,35 @@
 
 ---
 
+## Template Pengadaan Tender Kilat (last edited 2026-10-26)
+url: https://www.figma.com/design/ePOVafSVry8DkPTJoRoYnA
+tags: #role/seller #role/buyer #feat/general #prod/b2b-marketplace #flow/rfq #flow/penawaran #flow/quotation
+pages:
+[📙 Thumbnail ↗](https://www.figma.com/design/ePOVafSVry8DkPTJoRoYnA?node-id=0%3A1) (2 screens · 2 headings):
+  headings:
+  - Template Thumbnail project
+  - PaDi UMKM - [nama fitur]
+  screens inside this page:
+  - 1600x960
+  - Slide 16:9 - 1
+[🧩 Local Component ↗](https://www.figma.com/design/ePOVafSVry8DkPTJoRoYnA?node-id=1%3A2) (1 screens):
+  screens inside this page:
+  - .HeaderMid
+[📝 Notes Design ↗](https://www.figma.com/design/ePOVafSVry8DkPTJoRoYnA?node-id=1%3A3) (0 screens):
+  screens inside this page:
+  - (no screens)
+[🎨  Hi-Fi ↗](https://www.figma.com/design/ePOVafSVry8DkPTJoRoYnA?node-id=1%3A6) (3 screens):
+  screens inside this page:
+  - RFQ
+  - Pengadaan Card
+  - Tambah Produk Barang
+[🗑️ Trash ↗](https://www.figma.com/design/ePOVafSVry8DkPTJoRoYnA?node-id=1%3A11) (0 screens):
+  screens inside this page:
+  - (no screens)
+[Page 1 ↗](https://www.figma.com/design/ePOVafSVry8DkPTJoRoYnA?node-id=4001%3A2) (0 screens):
+  screens inside this page:
+  - (no screens)
+
 ## Epic 10 (last edited 2026-01-26)
 url: https://www.figma.com/design/Lz3wCd0qZDo1fnZveVq7pC
 tags: #status/archive #role/all #feat/general #prod/kdkmp #flow/pos #flow/kasir
@@ -11025,7 +11054,7 @@ pages:
   screens inside this page:
   - Thumbnail
 
-## PaDi Icons v1.0 (last edited 2026-10-15)
+## PaDi Icons v1.0 (last edited 2026-10-23T07:39:47Z)
 url: https://www.figma.com/design/In5vqn9Uz9fJSKEllww5XW
 tags: #collection/master #status/master #role/all #feat/design-system
 pages:
@@ -25420,7 +25449,7 @@ pages:
   screens inside this page:
   - Filter Search Result Product
 
-## Task Force - Premium Seller (last edited 2026-09-07)
+## Task Force - Premium Seller (last edited 2026-10-22T03:17:00Z)
 url: https://www.figma.com/design/abWzIAFrqrvUCPDiIDNOQi
 tags: #collection/master #status/master #role/seller #feat/general
 pages:
@@ -25434,9 +25463,10 @@ pages:
 [🧩 Local Component ↗](https://www.figma.com/design/abWzIAFrqrvUCPDiIDNOQi?node-id=1%3A2) (0 screens):
   screens inside this page:
   - (no screens)
-[🖥️ Desktop ↗](https://www.figma.com/design/abWzIAFrqrvUCPDiIDNOQi?node-id=2102%3A181241) (18 screens · 2 headings):
+[🖥️ Desktop ↗](https://www.figma.com/design/abWzIAFrqrvUCPDiIDNOQi?node-id=2102%3A181241) (18 screens · 3 headings):
   headings:
   - Seller Name
+  - Samsung Premium Seller
   - Purchase Order > Rp1M sebesar 0,25%
   screens inside this page:
   - Header
@@ -27206,7 +27236,7 @@ pages:
   - Table 4
   - Table 6
 
-## New Add Product (last edited 2026-10-21)
+## New Add Product (last edited 2026-10-23T02:56:23Z)
 url: https://www.figma.com/design/6AG9LSx1GAag28roAt2luP
 tags: #status/archive #role/all #feat/product-mgmt #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
@@ -27220,7 +27250,9 @@ pages:
 [📝 Notes ↗](https://www.figma.com/design/6AG9LSx1GAag28roAt2luP?node-id=1%3A3) (0 screens):
   screens inside this page:
   - (no screens)
-[🧩 Local Component ↗](https://www.figma.com/design/6AG9LSx1GAag28roAt2luP?node-id=1%3A2) (18 screens):
+[🧩 Local Component ↗](https://www.figma.com/design/6AG9LSx1GAag28roAt2luP?node-id=1%3A2) (18 screens · 1 headings):
+  headings:
+  - label_text
   screens inside this page:
   - Sertifikat
   - info produk
@@ -27694,7 +27726,7 @@ pages:
   screens inside this page:
   - desktop
 
-## Seller / Header (Copy) (last edited 2026-09-25)
+## Seller / Header (Copy) (last edited 2026-10-22T07:25:39Z)
 url: https://www.figma.com/design/vgok7TytgrlGPDktb5Xora
 tags: #status/archive #role/seller #feat/nav-layout
 pages:
@@ -29662,7 +29694,7 @@ pages:
   - Checkout - VA BNI - 14
   - Checkout - VA BNI - 15
 
-## Mimin / Balance History (last edited 2026-10-15)
+## Mimin / Balance History (last edited 2026-10-23T07:35:08Z)
 url: https://www.figma.com/design/8joR4kShLsLVNXWjNm1uOV
 tags: #collection/master #status/master #role/mimin #feat/disbursement-saldo
 pages:
@@ -31960,7 +31992,7 @@ pages:
   screens inside this page:
   - (no screens)
 
-## Fitur Chat (last edited 2026-10-16)
+## Fitur Chat (last edited 2026-10-26T03:09:34Z)
 url: https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu
 tags: #status/active #role/all #feat/chat
 pages:
@@ -32010,11 +32042,41 @@ pages:
 [🔄 Design ↗](https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu?node-id=1%3A7) (0 screens):
   screens inside this page:
   - (no screens)
-[In-App Chat Room Request Action User Button ↗](https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu?node-id=6691%3A11121) (3 screens):
+[In-App Chat Room Request Action User Button [Phase 2] ↗](https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu?node-id=6897%3A9365) (12 screens · 10 headings):
+  headings:
+  - FLOW 1: SENDER SELLER ➔ RECEIVER BUYER (2 Action)
+  - SISI 1: SENDER SELLER (Pengirim Request)
+  - Action 1: Terima Barang / Jasa (Tempo & Termin)
+  - Tampilan di Seller:
+  - • Tombol (+): "Minta Tindak Lanjut"
+  - 2.1 Proses Pesanan
+  - Sender Buyer: Pilih PO
+  - Langsung/Tempo: Pilih 1 PO
+  - Termin: Pilih PO + Tahap 1
+  - (Tahap 2 dan 3 tidak lewat sini)
   screens inside this page:
   - Opsi 3
   - buyer
   - seller
+  - Frame
+  - state master
+  - card master
+  - buyer (sender)
+  - status message
+  - bubble message
+  - state
+  - seller (sender)
+  - ideation
+[In-App Chat Room Request Action User Button ↗](https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu?node-id=6691%3A11121) (5 screens · 2 headings):
+  headings:
+  - [BUYER] Sender
+  - [SELLER] Sender
+  screens inside this page:
+  - Opsi 3
+  - buyer
+  - seller
+  - Frame 1958764624
+  - Frame 1958764625
 [temp ↗](https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu?node-id=6699%3A41632) (2 screens):
   screens inside this page:
   - Kotak Pesan - Seller On
@@ -32121,7 +32183,14 @@ pages:
 [🗞️ Prototype ↗](https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu?node-id=1%3A10) (0 screens):
   screens inside this page:
   - (no screens)
-[🗑️ Trash ↗](https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu?node-id=1%3A11) (23 screens):
+[🗑️ Trash ↗](https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu?node-id=1%3A11) (23 screens · 6 headings):
+  headings:
+  - Jupiter Gaming
+  - Topik
+  - Deskripsi
+  - Produk
+  - Legalitas Perusahaan
+  - Informasi legalitas dan dokumen perusahaan Anda.
   screens inside this page:
   - Web
   - Mobile
@@ -34188,7 +34257,7 @@ pages:
   - POF list opsi 10
   - filter
 
-## PO Financing Revival (last edited 2026-10-21)
+## PO Financing Revival (last edited 2026-10-22T02:36:58Z)
 url: https://www.figma.com/design/SyAvzqHZ3gn9wg41RphSnB
 tags: #status/active #role/all #feat/financing #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/approval #flow/persetujuan
 pages:
@@ -34322,9 +34391,9 @@ pages:
   - CMS
   - Modal
 
-## [MIMIN] Dashboard Financing (last edited 2026-10-12)
+## [MIMIN] Dashboard Financing (last edited 2026-10-26T03:08:48Z)
 url: https://www.figma.com/design/MLThU5HkzE2r7CBL2GkmQv
-tags: #status/active #role/mimin #feat/financing #feat/dashboard-analytics
+tags: #status/active #role/mimin #feat/financing #feat/dashboard-analytics #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan
 pages:
 [dashboard ↗](https://www.figma.com/design/MLThU5HkzE2r7CBL2GkmQv?node-id=0%3A1) (10 screens):
   screens inside this page:
@@ -34343,10 +34412,11 @@ pages:
   - master
   - .Pengaturan
   - Push Notification
-[financier criteria ↗](https://www.figma.com/design/MLThU5HkzE2r7CBL2GkmQv?node-id=724%3A3122) (2 screens):
+[financier criteria ↗](https://www.figma.com/design/MLThU5HkzE2r7CBL2GkmQv?node-id=724%3A3122) (3 screens):
   screens inside this page:
   - master
   - Modal
+  - Financier Criteria - Pemisahan PO dan Invoice Financing
 
 ## [MIMIN] Invoice Financing / Detail Pinjaman - Update status manual (last edited 2026-10-12)
 url: https://www.figma.com/design/fqBpnjGyx7j7AMWP1NXkbL
@@ -36507,7 +36577,7 @@ pages:
   - Email
   - In App Notif
 
-## Shipping Subscription (last edited 2026-01-26)
+## Shipping Subscription (last edited 2026-10-21T08:23:00Z)
 url: https://www.figma.com/design/QDnmoBLHOz5lOoA2T5JanJ
 tags: #status/active #role/all #feat/login-auth #feat/shipping-fulfilment #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
@@ -36863,11 +36933,11 @@ pages:
   - mobile
   - IF
 
-## Landing Torasera, PaDi Seller, PaDi B2B (last edited 2026-10-21)
+## Landing Torasera, PaDi Seller, PaDi B2B (last edited 2026-10-23T13:33:30Z)
 url: https://www.figma.com/design/WERrgS6hnyJlXGa8DWfY3K
 tags: #status/active #role/seller #feat/homepage-landing #prod/torasera
 pages:
-[brand biru padi ↗](https://www.figma.com/design/WERrgS6hnyJlXGa8DWfY3K?node-id=780%3A3280) (14 screens · 3 headings):
+[brand biru padi ↗](https://www.figma.com/design/WERrgS6hnyJlXGa8DWfY3K?node-id=780%3A3280) (15 screens · 3 headings):
   headings:
   - Full Scroll
   - Full Scroll logo BUMN
@@ -36887,6 +36957,7 @@ pages:
   - Frame 1958764212
   - Frame 1958764406
   - Frame 1958764403
+  - Frame 1958764342
 [Page 1 ↗](https://www.figma.com/design/WERrgS6hnyJlXGa8DWfY3K?node-id=0%3A1) (6 screens):
   screens inside this page:
   - Landing page trasit Tora
@@ -39560,7 +39631,7 @@ pages:
   - daftar transaksi card - buyer
   - Admin - Voucher - Lihat Voucher Massal
 
-## Revisi Pesanan - 2025 (last edited 2026-08-26)
+## Revisi Pesanan - 2025 (last edited 2026-10-26T02:59:47Z)
 url: https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il
 tags: #status/active #role/all #feat/order-trx #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/approval #flow/persetujuan
 pages:
@@ -39573,11 +39644,14 @@ pages:
 [🧩 Local Component ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=1%3A2) (0 screens):
   screens inside this page:
   - (no screens)
-[🖥️ Desktop ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=2331%3A95686) (21 screens · 3 headings):
+[🖥️ Desktop ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=2331%3A95686) (21 screens · 6 headings):
   headings:
+  - Rp12.500.000
   - Rp10.000.000
+  - Rumah Huni
   - Ringkasan Belanja
   - Pesanan 1
+  - Rp23.000.000
   screens inside this page:
   - .Catatan Untuk Penjual
   - .Produk Di Keranjang
@@ -39600,14 +39674,18 @@ pages:
   - Keranjang Buyer
   - Pre / Transaction / Buyer
   - Checkout
-[📱 Mobile ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=2331%3A99388) (18 screens · 6 headings):
+[📱 Mobile ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=2331%3A99388) (18 screens · 10 headings):
   headings:
   - Jenis
   - Product IA
   - Nama prod
   - Harga
   - Property Prod
+  - Minimal Pembelian 5
+  - Hapus
   - Ringkasan Belanja
+  - Pesanan 1
+  - Rp999.999.999.000
   screens inside this page:
   - .Catatan Produk Mobile
   - Frame 624786
@@ -39627,9 +39705,10 @@ pages:
   - .Information per-Product
   - Checkout
   - Payment
-[📝 Notes Design & Technical Critique ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=1%3A3) (22 screens · 1 headings):
+[📝 Notes Design & Technical Critique ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=1%3A3) (22 screens · 2 headings):
   headings:
   - Cart
+  - Belum ada barang
   screens inside this page:
   - Frame 48097717
   - Frame 48097718
@@ -39671,7 +39750,7 @@ pages:
 [🔄 Design ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=1%3A7) (0 screens):
   screens inside this page:
   - (no screens)
-[🖥️ Desktop V.3 - Revisi Pesanan (Enhancement) ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=5426%3A27206) (18 screens):
+[🖥️ Desktop V.3.5 - Revisi Pesanan (Enhancement) ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=5426%3A27206) (18 screens):
   screens inside this page:
   - DOD
   - Transaksi
@@ -39691,15 +39770,6 @@ pages:
   - Daftar Transaksi
   - Update 2026
   - Update 2026 - multiseller
-[🖥️ Desktop V.2 - Revisi Pesanan ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=3466%3A35757) (7 screens):
-  screens inside this page:
-  - DOD
-  - Transaksi
-  - Keranjang Buyer
-  - Frame 1958764151
-  - Daftar Transaksi - Approval - Detail Pesanan - Disetujui
-  - Checkout
-  - Frame 1958764154
 [🖥️ Desktop V.3 - Revisi Pesanan ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=5150%3A20437) (17 screens):
   screens inside this page:
   - DOD
@@ -39719,6 +39789,15 @@ pages:
   - Frame 1958764156
   - Frame 1958764157
   - Daftar Transaksi
+[🖥️ Desktop V.2 - Revisi Pesanan ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=3466%3A35757) (7 screens):
+  screens inside this page:
+  - DOD
+  - Transaksi
+  - Keranjang Buyer
+  - Frame 1958764151
+  - Daftar Transaksi - Approval - Detail Pesanan - Disetujui
+  - Checkout
+  - Frame 1958764154
 [🤖 Development ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=1%3A8) (0 screens):
   screens inside this page:
   - (no screens)
@@ -39728,9 +39807,10 @@ pages:
 [🗞️ Prototype ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=1%3A10) (0 screens):
   screens inside this page:
   - (no screens)
-[🗑️ Trash ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=1%3A11) (9 screens · 1 headings):
+[🗑️ Trash ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=1%3A11) (9 screens · 2 headings):
   headings:
   - Keranjang
+  - Lihat Selengkapnya
   screens inside this page:
   - Homapage 3
   - .Preview Keranjang Opsi 3
@@ -39985,7 +40065,7 @@ tags: #status/active #role/all #feat/notif-email
 pages:
   (no pages indexed)
 
-## Trx - Produk Jasa (last edited 2026-05-18)
+## Trx - Produk Jasa (last edited 2026-10-23T07:21:53Z)
 url: https://www.figma.com/design/RkH7rv9Q7SJtl5OFANrEp0
 tags: #status/active #role/all #feat/product-mgmt #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
@@ -44603,19 +44683,26 @@ pages:
   - Kode Pos - Manual Opsi 2
   - Kode Pos - Manual
 
-## Visit - Leveling Compliance Seller (Seller Ranking) (last edited 2026-10-21)
+## Visit - Leveling Compliance Seller (Seller Ranking) (last edited 2026-10-23T04:14:55Z)
 url: https://www.figma.com/design/l1N7OlwMTrxzmpt2IwoGDU
 tags: #status/active #role/seller #feat/general
 pages:
-[buyer ↗](https://www.figma.com/design/l1N7OlwMTrxzmpt2IwoGDU?node-id=0%3A1) (7 screens):
+[buyer ↗](https://www.figma.com/design/l1N7OlwMTrxzmpt2IwoGDU?node-id=0%3A1) (11 screens):
   screens inside this page:
   - .PDP v2
   - level compliance
   - badge
   - level
-  - PDP & Seller Profile
-  - profil toko
-  - Frame 1958764238
+  - .Profil Seller
+  - .badge
+  - .profil toko
+  - PDP Mweb v2 Barang
+  - .detail compliance
+  - PDP Mobile
+  - .Profile Seller Mweb
+[mimin ↗](https://www.figma.com/design/l1N7OlwMTrxzmpt2IwoGDU?node-id=4038%3A39069) (1 screens):
+  screens inside this page:
+  - Mimin / Penjual
 [thumbnail ↗](https://www.figma.com/design/l1N7OlwMTrxzmpt2IwoGDU?node-id=2040%3A22769) (1 screens · 2 headings):
   headings:
   - Dokumen SPPKP
