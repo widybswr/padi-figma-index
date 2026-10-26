@@ -107,7 +107,7 @@
       padding: 14px 24px;
     }
     .top-bar-inner {
-      max-width: 1100px;
+      max-width: 1440px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -178,7 +178,7 @@
 
     /* Main Container */
     .container {
-      max-width: 1100px;
+      max-width: 1440px;
       margin: 0 auto;
       padding: 24px 20px;
     }
@@ -272,11 +272,22 @@
       background: rgba(56, 189, 248, 0.2);
     }
 
-    /* The Single Log View Stream */
+    /* The 3-Column Log Stream Grid */
     .log-stream {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
+      align-items: start;
+    }
+    @media (max-width: 1200px) {
+      .log-stream {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .log-stream {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* File Card Block */
@@ -284,31 +295,36 @@
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: 10px;
-      padding: 20px 22px;
-      transition: border-color 0.15s;
+      padding: 16px 18px;
+      transition: all 0.15s;
+      display: flex;
+      flex-direction: column;
     }
     .file-block:hover {
       border-color: #3b82f6;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     }
 
     .file-header {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
+      align-items: flex-start;
       gap: 8px;
       margin-bottom: 6px;
     }
     .file-title-wrap {
       display: flex;
-      align-items: baseline;
-      gap: 8px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 2px;
+      flex: 1;
+      min-width: 0;
     }
     .file-h2 {
-      font-size: 16px;
+      font-size: 14.5px;
       font-weight: 700;
       color: var(--text);
+      line-height: 1.35;
+      word-break: break-word;
     }
     .file-h2 a {
       color: var(--text);
@@ -320,25 +336,26 @@
       text-decoration: underline;
     }
     .file-edited {
-      font-size: 12px;
+      font-size: 11.5px;
       color: var(--text-dim);
     }
     .file-actions {
       display: inline-flex;
-      gap: 6px;
+      gap: 4px;
       align-items: center;
+      flex-shrink: 0;
     }
     .btn-icon {
       background: #172338;
       border: 1px solid var(--card-border);
       color: var(--text-muted);
       border-radius: 5px;
-      padding: 4px 8px;
+      padding: 3px 6px;
       font-size: 11px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
       text-decoration: none;
       transition: all 0.15s;
     }
@@ -349,10 +366,12 @@
 
     .file-url-line {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 11.5px;
+      font-size: 11px;
       color: var(--text-dim);
-      margin-bottom: 10px;
-      word-break: break-all;
+      margin-bottom: 8px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .file-url-line a {
       color: #60a5fa;
@@ -366,20 +385,20 @@
     .tags-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: 4px;
       align-items: center;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
     .tags-label {
       font-family: ui-monospace, monospace;
-      font-size: 11.5px;
+      font-size: 11px;
       color: var(--text-dim);
       margin-right: 2px;
     }
     .tag-badge {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
-      font-size: 11px;
-      padding: 2px 7px;
+      font-size: 10.5px;
+      padding: 2px 6px;
       border-radius: 4px;
       background: var(--accent-tag-bg);
       border: 1px solid var(--accent-tag-border);
@@ -402,30 +421,83 @@
       border-color: #10b981;
     }
 
-    /* Pages Container */
+    /* Accordion Bar */
+    .accordion-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(51, 65, 85, 0.5);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s;
+      margin-top: auto;
+    }
+    .accordion-bar:hover {
+      background: rgba(56, 189, 248, 0.08);
+      border-color: var(--primary);
+      color: var(--text);
+    }
+    .accordion-bar.open {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-color: rgba(56, 189, 248, 0.4);
+      background: rgba(56, 189, 248, 0.06);
+      color: var(--primary);
+    }
+    .acc-chevron {
+      font-size: 11px;
+      color: var(--text-dim);
+      transition: transform 0.15s;
+    }
+    .accordion-content {
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-top: none;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      background: #0f172a;
+      padding: 10px 12px;
+      max-height: 420px;
+      overflow-y: auto;
+    }
+
+    /* Pages inside Accordion */
     .pages-container {
-      border-top: 1px solid rgba(51, 65, 85, 0.4);
-      padding-top: 12px;
+      padding-top: 2px;
     }
     .pages-label {
       font-family: ui-monospace, monospace;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 600;
       color: var(--text-muted);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .page-item {
-      margin-left: 12px;
-      margin-bottom: 12px;
+      margin-left: 8px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.3);
+    }
+    .page-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
     .page-title-row {
       display: flex;
       align-items: baseline;
-      gap: 8px;
+      gap: 6px;
       margin-bottom: 4px;
+      flex-wrap: wrap;
     }
     .page-link {
-      font-size: 13.5px;
+      font-size: 12.5px;
       font-weight: 600;
       color: #38bdf8;
       text-decoration: none;
@@ -434,31 +506,31 @@
       text-decoration: underline;
     }
     .page-metrics {
-      font-size: 11.5px;
+      font-size: 11px;
       color: var(--text-dim);
     }
 
     .sub-section {
-      margin-left: 16px;
-      margin-top: 4px;
-      margin-bottom: 4px;
+      margin-left: 10px;
+      margin-top: 3px;
+      margin-bottom: 3px;
     }
     .sub-label {
       font-family: ui-monospace, monospace;
-      font-size: 11.5px;
+      font-size: 10.5px;
       color: var(--text-dim);
       margin-bottom: 2px;
     }
     .item-list {
       list-style: none;
-      padding-left: 10px;
+      padding-left: 8px;
     }
     .item-list li {
-      font-size: 12px;
+      font-size: 11px;
       color: #cbd5e1;
-      line-height: 1.45;
+      line-height: 1.4;
       position: relative;
-      padding-left: 12px;
+      padding-left: 10px;
       margin-bottom: 2px;
     }
     .item-list li::before {
@@ -543,6 +615,9 @@
         <div class="toolbar-row">
           <div id="statsBar">Showing 432 files</div>
           <div class="toolbar-actions">
+            <button type="button" class="btn-tool" id="btnToggleAllAccordions" onclick="toggleAllAccordions()">
+              <span>↕</span> Expand All
+            </button>
             <button type="button" class="btn-tool primary" id="btnCopyMd" onclick="copyFilteredMarkdown()">
               <span>📋</span> Copy Markdown
             </button>
@@ -567,9 +642,34 @@
 
     let state = {
       search: "",
-      visibleCount: 25,
-      pageSize: 25
+      visibleCount: 48,
+      pageSize: 48
     };
+
+    let allAccordionsOpen = false;
+
+    function toggleCardAccordion(bar) {
+      const content = bar.nextElementSibling;
+      const isOpen = content.style.display !== "none";
+      content.style.display = isOpen ? "none" : "block";
+      bar.classList.toggle("open", !isOpen);
+      const chevron = bar.querySelector(".acc-chevron");
+      if (chevron) chevron.innerText = isOpen ? "▾" : "▴";
+    }
+
+    function toggleAllAccordions() {
+      allAccordionsOpen = !allAccordionsOpen;
+      document.querySelectorAll(".accordion-content").forEach(c => {
+        c.style.display = allAccordionsOpen ? "block" : "none";
+      });
+      document.querySelectorAll(".accordion-bar").forEach(bar => {
+        bar.classList.toggle("open", allAccordionsOpen);
+        const chevron = bar.querySelector(".acc-chevron");
+        if (chevron) chevron.innerText = allAccordionsOpen ? "▴" : "▾";
+      });
+      const btn = document.getElementById("btnToggleAllAccordions");
+      if (btn) btn.innerHTML = allAccordionsOpen ? "<span>↕</span> Collapse All" : "<span>↕</span> Expand All";
+    }
 
     async function sha256(str) {
       const buf = new TextEncoder().encode(str);
@@ -740,6 +840,20 @@
           pagesHtml = `<div style="color:var(--text-dim);font-size:12px;margin-left:12px;">(no pages indexed)</div>`;
         }
 
+        const pageCount = f.deep_pages ? f.deep_pages.length : 0;
+        let totalScreens = 0;
+        let totalHeadings = 0;
+        if (f.deep_pages) {
+          f.deep_pages.forEach(p => {
+            totalScreens += (p.screen_count || 0);
+            totalHeadings += (p.headings ? p.headings.length : 0);
+          });
+        }
+        let accMetrics = [`${pageCount} pages`, `${totalScreens} screens`];
+        if (totalHeadings > 0) accMetrics.push(`${totalHeadings} headings`);
+        const accText = `▶ pages (${accMetrics.join(' · ')})`;
+        const isOpen = allAccordionsOpen;
+
         return `
           <article class="file-block">
             <div class="file-header">
@@ -748,8 +862,8 @@
                 <span class="file-edited">(last edited ${lastMod})</span>
               </div>
               <div class="file-actions">
-                <button type="button" class="btn-icon" onclick="copyFigmaUrl('${fileUrl}', this)">📋 Copy URL</button>
-                <a href="${fileUrl}" target="_blank" rel="noopener" class="btn-icon">Open Figma ↗</a>
+                <button type="button" class="btn-icon" onclick="copyFigmaUrl('${fileUrl}', this)">📋 Copy</button>
+                <a href="${fileUrl}" target="_blank" rel="noopener" class="btn-icon">Open ↗</a>
               </div>
             </div>
 
@@ -762,9 +876,17 @@
               ${tagsHtml}
             </div>
 
-            <div class="pages-container">
-              <div class="pages-label">pages:</div>
-              ${pagesHtml}
+            <!-- Accordion Toggle Bar -->
+            <div class="accordion-bar ${isOpen ? 'open' : ''}" onclick="toggleCardAccordion(this)">
+              <span>${accText}</span>
+              <span class="acc-chevron">${isOpen ? '▴' : '▾'}</span>
+            </div>
+
+            <!-- Collapsible Pages Content -->
+            <div class="accordion-content" style="display: ${isOpen ? 'block' : 'none'};">
+              <div class="pages-container">
+                ${pagesHtml}
+              </div>
             </div>
           </article>
         `;
