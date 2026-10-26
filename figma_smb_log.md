@@ -1,32 +1,10 @@
 # figma smb log (updated October 26, 2026)
 
-> [!TIP] PaDi Domain Glossary & Search Cheat Sheet (ID ⟷ EN ⟷ Acronym)
-> Use this cross-reference index to quickly search across legacy and current naming conventions across design files:
->
-> | Business Flow / Domain | Acronym | Indonesian (UI Copy / Squads) | English / System Terms | Common Obsidian Tags |
-> | :--- | :--- | :--- | :--- | :--- |
-> | **Purchase Order** | `PO` | Pesanan Pembelian, Detail Pesanan, Order | Purchase Order, Order Detail | `#feat/transaction` |
-> | **Purchase Request** | `PR` | Permintaan Pembelian, Pengajuan Belanja | Purchase Requisition, Request | `#feat/transaction` |
-> | **Request for Quotation** | `RFQ` | Permintaan Penawaran, Nego Harga, Tender | Quotation, Bidding, Negotiation | `#feat/transaction` |
-> | **Goods Handover** | `BAST` | Berita Acara Serah Terima, Penerimaan Barang | Goods Receipt, Handover, Delivery | `#feat/transaction` |
-> | **Billing & Taxes** | `INV` / `FP` | Tagihan, Faktur Pajak, Kuitansi, Bukti Bayar | Billing, Invoice, Tax Invoice | `#feat/finance` `#feat/payment` |
-> | **Payment Terms** | `TOP` | Termin Pembayaran, Tempo, Bayar Nanti | Terms of Payment, Deferred Payment | `#feat/finance` |
-> | **Payment Methods** | `VA` / `QRIS` / `EDC` | Transfer Bank, Saldo PaDi, Uang Muka (DP) | Virtual Account, Cashless, Down Payment | `#feat/payment` |
-> | **Storefront & Catalog** | `Toko` / `Katalog` | Profil Toko, Kelola Produk, Etalase | Seller Profile, Product Catalog, Store | `#feat/product` `#feat/seller` |
-> | **Procurement Tender** | `Tender` | Proyek Pengadaan, Seleksi Vendor, Paket | Procurement Project, Vendor Selection | `#feat/transaction` |
-> | **Point of Sale** | `POS` / `Kasir` | PaDi Kasir, Aplikasi Kasir, Struk Kasir | Point of Sale, Cashier App, Receipt | `#prod/kdkmp` `#feat/general` |
-> | **Shipping & Tracking** | `Resi` / `Kurir` | Pengiriman, Pelacakan Resi, Ongkos Kirim | Logistics, Shipment Tracking, Courier | `#feat/shipping` |
-> | **Organization & Approval** | `Org` | Kelompok Pembeli, Alur Persetujuan, Limit | Buyer Group, Approval Matrix, Budget Limit | `#feat/buyer-group` `#feat/approval` |
->
-> **Obsidian Search Tips:**
-> - Search by tag: `tag:#feat/transaction` or `tag:#role/buyer` or `tag:#collection/smooets-2022`
-> - Search by node link: Press `Cmd + F` and search either acronym (`"BAST"`) or Indonesian term (`"Berita Acara"`).
-
 ---
 
 ## Epic 10 (last edited 2026-01-26)
 url: https://www.figma.com/design/Lz3wCd0qZDo1fnZveVq7pC
-tags: #status/archive #role/all #feat/general #prod/kdkmp
+tags: #status/archive #role/all #feat/general #prod/kdkmp #flow/pos #flow/kasir
 pages:
 [Epic 10 ↗](https://www.figma.com/design/Lz3wCd0qZDo1fnZveVq7pC?node-id=2126%3A60005) (15 screens):
   screens inside this page:
@@ -136,7 +114,7 @@ pages:
 
 ## Koperasi Merah Putih (last edited 2026-07-31)
 url: https://www.figma.com/design/kWcD6eQXh20t0HZrdIaaOR
-tags: #status/archive #role/all #feat/general #prod/kdkmp
+tags: #status/archive #role/all #feat/general #prod/kdkmp #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Candi Loro Digi 1 ↗](https://www.figma.com/design/kWcD6eQXh20t0HZrdIaaOR?node-id=0%3A1) (6 screens · 1 headings):
   headings:
@@ -459,7 +437,7 @@ pages:
 
 ## Ambil di Tempat (last edited 2026-01-29)
 url: https://www.figma.com/design/JtPferIAT4JqMSV9IoRfS7
-tags: #status/archive #role/seller #feat/shipping-fulfilment
+tags: #status/archive #role/seller #feat/shipping-fulfilment #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/JtPferIAT4JqMSV9IoRfS7?node-id=0%3A1) (1 screens · 3 headings):
   headings:
@@ -547,7 +525,7 @@ pages:
 
 ## Biaya Transaksi Penjual (last edited 2026-01-29)
 url: https://www.figma.com/design/Y9FkRr7Z8eHXxDzvkPimpK
-tags: #status/archive #role/seller #feat/order-trx #feat/payment
+tags: #status/archive #role/seller #feat/order-trx #feat/payment #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/Y9FkRr7Z8eHXxDzvkPimpK?node-id=0%3A1) (2 screens · 3 headings):
   headings:
@@ -1154,7 +1132,7 @@ pages:
 
 ## Koperasi Merah Putih - for external (last edited 2026-01-29)
 url: https://www.figma.com/design/ydbtC1uw1XoIFiWwG8ZIk1
-tags: #status/archive #role/seller #feat/general #prod/kdkmp
+tags: #status/archive #role/seller #feat/general #prod/kdkmp #flow/pos #flow/kasir
 pages:
 [Candi 1 ↗](https://www.figma.com/design/ydbtC1uw1XoIFiWwG8ZIk1?node-id=0%3A1) (3 screens):
   screens inside this page:
@@ -1274,7 +1252,7 @@ pages:
 
 ## Monetisasi - Landing Page (last edited 2026-01-29)
 url: https://www.figma.com/design/JtotGBAHERYoNBJXuIfe5n
-tags: #status/archive #role/seller #feat/homepage-landing
+tags: #status/archive #role/seller #feat/homepage-landing #flow/shipping #flow/pengiriman
 pages:
 [Local Components ↗](https://www.figma.com/design/JtotGBAHERYoNBJXuIfe5n?node-id=18%3A53224) (4 screens):
   screens inside this page:
@@ -1347,7 +1325,7 @@ pages:
 
 ## Monetisasi - Q4 2022 (last edited 2026-01-29)
 url: https://www.figma.com/design/n3jKYjJPCkiJTYPdGM2hk6
-tags: #status/archive #role/seller #feat/general
+tags: #status/archive #role/seller #feat/general #flow/shipping #flow/pengiriman
 pages:
 [--- seller --- ↗](https://www.figma.com/design/n3jKYjJPCkiJTYPdGM2hk6?node-id=70%3A44862) (0 screens):
   screens inside this page:
@@ -1442,7 +1420,7 @@ pages:
 
 ## PaDi Kasir (last edited 2026-08-12)
 url: https://www.figma.com/design/jkXpnPPG0s6pyB2ApurJ07
-tags: #status/archive #role/seller #feat/general #prod/padikasir
+tags: #status/archive #role/seller #feat/general #prod/padikasir #flow/invoice #flow/tagihan #flow/pos #flow/kasir #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/jkXpnPPG0s6pyB2ApurJ07?node-id=0%3A1) (2 screens · 3 headings):
   headings:
@@ -1641,7 +1619,7 @@ pages:
 
 ## Pengaturan dan Akun - Pengiriman (last edited 2026-01-29)
 url: https://www.figma.com/design/O0Xx5kQyOlWe2OrHJrGNtf
-tags: #status/archive #role/seller #feat/account-profile #feat/shipping-fulfilment
+tags: #status/archive #role/seller #feat/account-profile #feat/shipping-fulfilment #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/O0Xx5kQyOlWe2OrHJrGNtf?node-id=124%3A73738) (2 screens · 3 headings):
   headings:
@@ -2095,7 +2073,7 @@ pages:
 
 ## Pesanan dan Transaksi - Detail Pesanan (last edited 2026-04-16)
 url: https://www.figma.com/design/ZMiPveOuTHM76ElAdhnHby
-tags: #status/archive #role/seller #feat/order-trx
+tags: #status/archive #role/seller #feat/order-trx #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/ZMiPveOuTHM76ElAdhnHby?node-id=0%3A1) (2 screens · 3 headings):
   headings:
@@ -2268,7 +2246,7 @@ pages:
 
 ## Pesanan dan Transaksi - Info Pembayaran Tempo (last edited 2026-01-29)
 url: https://www.figma.com/design/A0FcN8uJXkprdJwKkktNDy
-tags: #status/archive #role/seller #feat/order-trx #feat/payment
+tags: #status/archive #role/seller #feat/order-trx #feat/payment #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/A0FcN8uJXkprdJwKkktNDy?node-id=0%3A1) (2 screens · 3 headings):
   headings:
@@ -2688,7 +2666,7 @@ pages:
 
 ## Produk - Tambah dan Ubah Produk v2 (last edited 2026-01-29)
 url: https://www.figma.com/design/yGh0StOInYcnAcbdLPD1Ci
-tags: #status/archive #role/seller #feat/product-mgmt
+tags: #status/archive #role/seller #feat/product-mgmt #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/yGh0StOInYcnAcbdLPD1Ci?node-id=0%3A1) (2 screens · 3 headings):
   headings:
@@ -2936,7 +2914,7 @@ pages:
 
 ## Produk - Walkthrough Pajak dan Pengiriman (last edited 2026-05-11)
 url: https://www.figma.com/design/qcoFr3QDdepcXZ9KmqBUe1
-tags: #status/archive #role/seller #feat/shipping-fulfilment #feat/docs-tax-invoice
+tags: #status/archive #role/seller #feat/shipping-fulfilment #feat/docs-tax-invoice #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/qcoFr3QDdepcXZ9KmqBUe1?node-id=0%3A1) (2 screens · 3 headings):
   headings:
@@ -3396,7 +3374,7 @@ pages:
 
 ## SD-155 [ACQUISITION] Create Webview Registrasi User PADI (last edited 2026-01-29)
 url: https://www.figma.com/design/K5PIKYtmFEh6Acs1t9SAJk
-tags: #status/archive #role/seller #feat/register-kyc
+tags: #status/archive #role/seller #feat/register-kyc #flow/pos #flow/kasir
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/K5PIKYtmFEh6Acs1t9SAJk?node-id=0%3A1) (2 screens · 3 headings):
   headings:
@@ -3632,7 +3610,7 @@ pages:
 
 ## Sprint 00 - Q3 2022 (last edited 2026-01-29)
 url: https://www.figma.com/design/mEUCSkq5RA540KAvV2506i
-tags: #collection/sprint-00 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-00 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/rfq #flow/penawaran #flow/quotation #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Jasa ↗](https://www.figma.com/design/mEUCSkq5RA540KAvV2506i?node-id=81798%3A395033) (0 screens):
   screens inside this page:
@@ -3822,7 +3800,7 @@ pages:
 
 ## Sprint 01 - Q4 2022 (last edited 2026-01-29)
 url: https://www.figma.com/design/O7543aHBJSgd2zsA5MBnzm
-tags: #collection/sprint-01 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-01 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/rfq #flow/penawaran #flow/quotation #flow/invoice #flow/tagihan
 pages:
 [RFQ ↗](https://www.figma.com/design/O7543aHBJSgd2zsA5MBnzm?node-id=204%3A62112) (1 screens):
   screens inside this page:
@@ -3908,7 +3886,7 @@ pages:
 
 ## Sprint 02 - Q4 2022 (last edited 2026-01-29)
 url: https://www.figma.com/design/hVDvKabimGWCBszql5oeyD
-tags: #collection/sprint-02 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-02 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/rfq #flow/penawaran #flow/quotation #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [thumb ↗](https://www.figma.com/design/hVDvKabimGWCBszql5oeyD?node-id=1907%3A16015) (1 screens):
   screens inside this page:
@@ -4011,7 +3989,7 @@ pages:
 
 ## Sprint 03 - Q4 2022 (last edited 2026-04-13)
 url: https://www.figma.com/design/3n4IE2cGKDv7HGrN7C7rsC
-tags: #collection/sprint-03 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-03 #status/archive #role/seller #feat/sprint-bundle #flow/bast #flow/serah-terima #flow/handover #flow/top #flow/tempo #flow/termin
 pages:
 [thumb ↗](https://www.figma.com/design/3n4IE2cGKDv7HGrN7C7rsC?node-id=4450%3A24323) (1 screens):
   screens inside this page:
@@ -4059,7 +4037,7 @@ pages:
 
 ## Sprint 04 - Q4 2022 (last edited 2026-01-29)
 url: https://www.figma.com/design/HBmvm3x9dAS74wKWKblAYR
-tags: #collection/sprint-04 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-04 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [thumb ↗](https://www.figma.com/design/HBmvm3x9dAS74wKWKblAYR?node-id=4502%3A2900) (1 screens):
   screens inside this page:
@@ -4223,7 +4201,7 @@ pages:
 
 ## Sprint 07 - Q1 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/4436NwKfpifFGfnnlOLVmV
-tags: #collection/sprint-07 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-07 #status/archive #role/seller #feat/sprint-bundle #flow/top #flow/tempo #flow/termin
 pages:
 [thumb ↗](https://www.figma.com/design/4436NwKfpifFGfnnlOLVmV?node-id=1701%3A7949) (1 screens):
   screens inside this page:
@@ -4250,7 +4228,7 @@ pages:
 
 ## Sprint 08 - Q1 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/nSnhjXm4B1SkJreCSCxoX5
-tags: #collection/sprint-08 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-08 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order
 pages:
 [thumb ↗](https://www.figma.com/design/nSnhjXm4B1SkJreCSCxoX5?node-id=1801%3A149465) (1 screens):
   screens inside this page:
@@ -4278,7 +4256,7 @@ pages:
 
 ## Sprint 09 - Q1 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/1XBqpsumCv2fCXfYXin2oU
-tags: #collection/sprint-09 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-09 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [thumb ↗](https://www.figma.com/design/1XBqpsumCv2fCXfYXin2oU?node-id=2801%3A23194) (1 screens):
   screens inside this page:
@@ -4399,7 +4377,7 @@ pages:
 
 ## Sprint 11 - Q1 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/QcAsbyE45pq4cq7CklxybR
-tags: #collection/sprint-11 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-11 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/top #flow/tempo #flow/termin
 pages:
 [-- Sprint 11 -- ↗](https://www.figma.com/design/QcAsbyE45pq4cq7CklxybR?node-id=0%3A1) (2 screens):
   screens inside this page:
@@ -4480,7 +4458,7 @@ pages:
 
 ## Sprint 12 - Q1 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/KMN0byMlfw3hCWG4bu6hDF
-tags: #collection/sprint-12 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-12 #status/archive #role/seller #feat/sprint-bundle #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [SD-57 Revamp 'Tambah Produk' dan 'Ubah Produk' ↗](https://www.figma.com/design/KMN0byMlfw3hCWG4bu6hDF?node-id=85%3A129191) (0 screens):
   screens inside this page:
@@ -4586,7 +4564,7 @@ pages:
 
 ## Sprint 13 - Q2 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/kRyEDWxtwPzERdPDZxDsTA
-tags: #collection/sprint-13 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-13 #status/archive #role/seller #feat/sprint-bundle #flow/pos #flow/kasir #flow/shipping #flow/pengiriman
 pages:
 [SD-129 [VMS] Walkthrough Bagi User Baru ↗](https://www.figma.com/design/kRyEDWxtwPzERdPDZxDsTA?node-id=7%3A24188) (0 screens):
   screens inside this page:
@@ -4690,7 +4668,7 @@ pages:
 
 ## Sprint 14 - Q2 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/OwU1njfQitrHRZiSYqRQTi
-tags: #collection/sprint-14 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-14 #status/archive #role/seller #feat/sprint-bundle #flow/pos #flow/kasir #flow/shipping #flow/pengiriman
 pages:
 [SD-132 [TRX] Simplify Flow Penagihan Adjustment ↗](https://www.figma.com/design/OwU1njfQitrHRZiSYqRQTi?node-id=238%3A202392) (6 screens):
   screens inside this page:
@@ -4778,7 +4756,7 @@ pages:
 
 ## Sprint 15 - Q2 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/zZoSzgtgcMVx3LTgEFGSpv
-tags: #collection/sprint-15 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-15 #status/archive #role/seller #feat/sprint-bundle #flow/pos #flow/kasir #flow/shipping #flow/pengiriman
 pages:
 [Backlog List ↗](https://www.figma.com/design/zZoSzgtgcMVx3LTgEFGSpv?node-id=903%3A165684) (1 screens):
   screens inside this page:
@@ -4817,7 +4795,7 @@ pages:
 
 ## Sprint 16 - Q2 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/0ZcxW9zWEb1nrxalbLkhuu
-tags: #collection/sprint-16 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-16 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/shipping #flow/pengiriman
 pages:
 [Backlog List ↗](https://www.figma.com/design/0ZcxW9zWEb1nrxalbLkhuu?node-id=907%3A275521) (1 screens):
   screens inside this page:
@@ -4930,7 +4908,7 @@ pages:
 
 ## Sprint 18 - Q2 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/0M4QuuEExRE4916oH7mldi
-tags: #collection/sprint-18 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-18 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order
 pages:
 [Backlog List ↗](https://www.figma.com/design/0M4QuuEExRE4916oH7mldi?node-id=133%3A182683) (2 screens):
   screens inside this page:
@@ -4990,7 +4968,7 @@ pages:
 
 ## Sprint 19 - Q2 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/mq3BPQepdB2gnOAgLKWNJb
-tags: #collection/sprint-19 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-19 #status/archive #role/seller #feat/sprint-bundle #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [thumb ↗](https://www.figma.com/design/mq3BPQepdB2gnOAgLKWNJb?node-id=1085%3A32) (1 screens):
   screens inside this page:
@@ -5097,7 +5075,7 @@ pages:
 
 ## Sprint 20 - Q3 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/5o5unGVO5egBKP0kb6PeUS
-tags: #collection/sprint-20 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-20 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/shipping #flow/pengiriman
 pages:
 [=====Fulfilment===== ↗](https://www.figma.com/design/5o5unGVO5egBKP0kb6PeUS?node-id=0%3A1) (0 screens):
   screens inside this page:
@@ -5196,7 +5174,7 @@ pages:
 
 ## Sprint 21 - Q3 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/1Ul7KYI9cC5hyjDXiQXgKI
-tags: #collection/sprint-21 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-21 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [=====Fulfilment===== ↗](https://www.figma.com/design/1Ul7KYI9cC5hyjDXiQXgKI?node-id=0%3A1) (0 screens):
   screens inside this page:
@@ -5320,7 +5298,7 @@ pages:
 
 ## Sprint 22 - Q3 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/8hStwvi69xXqmQakAphhrv
-tags: #collection/sprint-22 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-22 #status/archive #role/seller #feat/sprint-bundle #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [==== FULLFILMENT NICH ==== ↗](https://www.figma.com/design/8hStwvi69xXqmQakAphhrv?node-id=1%3A2) (0 screens):
   screens inside this page:
@@ -5419,7 +5397,7 @@ pages:
 
 ## Sprint 23 - Q3 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/fZT48WaZIxrl1seMIvZ3DD
-tags: #collection/sprint-23 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-23 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/shipping #flow/pengiriman
 pages:
 [==== FULLFILMENT NICH ==== ↗](https://www.figma.com/design/fZT48WaZIxrl1seMIvZ3DD?node-id=0%3A1) (0 screens):
   screens inside this page:
@@ -5515,7 +5493,7 @@ pages:
 
 ## Sprint 24 - Q3 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/4xD1sg6QuVaSW3u8DYJyhz
-tags: #collection/sprint-24 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-24 #status/archive #role/seller #feat/sprint-bundle #flow/invoice #flow/tagihan #flow/shipping #flow/pengiriman
 pages:
 [==== FULLFILMENT NICH ==== ↗](https://www.figma.com/design/4xD1sg6QuVaSW3u8DYJyhz?node-id=4%3A37030) (1 screens):
   screens inside this page:
@@ -5606,7 +5584,7 @@ pages:
 
 ## Sprint 25 - Q3 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/dcWwP1nz4bOpDDWgCgAUIl
-tags: #collection/sprint-25 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-25 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/approval #flow/persetujuan #flow/shipping #flow/pengiriman
 pages:
 [========= WIDY ========= ↗](https://www.figma.com/design/dcWwP1nz4bOpDDWgCgAUIl?node-id=0%3A1) (9 screens):
   screens inside this page:
@@ -5709,7 +5687,7 @@ pages:
 
 ## Sprint 26 - Q4 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/rv7jRwY6jlTF9kbtENmMIc
-tags: #collection/sprint-26 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-26 #status/archive #role/seller #feat/sprint-bundle #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/shipping #flow/pengiriman
 pages:
 [===== WIDY Control Tower ========= ↗](https://www.figma.com/design/rv7jRwY6jlTF9kbtENmMIc?node-id=805%3A53309) (0 screens):
   screens inside this page:
@@ -5826,7 +5804,7 @@ pages:
 
 ## Sprint 27 - Q4 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/AZiQfIiHfqXlJq0Xk6X5WC
-tags: #collection/sprint-27 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-27 #status/archive #role/seller #feat/sprint-bundle #flow/shipping #flow/pengiriman
 pages:
 [========== WIDY =========== ↗](https://www.figma.com/design/AZiQfIiHfqXlJq0Xk6X5WC?node-id=0%3A1) (5 screens):
   screens inside this page:
@@ -5891,7 +5869,7 @@ pages:
 
 ## Sprint 28 - Q4 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/DHiePLyBVJZ0xAoliIqbLT
-tags: #collection/sprint-28 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-28 #status/archive #role/seller #feat/sprint-bundle #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [========== WIDY =========== ↗](https://www.figma.com/design/DHiePLyBVJZ0xAoliIqbLT?node-id=0%3A1) (5 screens):
   screens inside this page:
@@ -5970,7 +5948,7 @@ pages:
 
 ## Sprint 29 - Q4 2023 (last edited 2026-01-29)
 url: https://www.figma.com/design/q59n9YsIYPgujXBdQ9zBV3
-tags: #collection/sprint-29 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-29 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [========== WIDY =========== ↗](https://www.figma.com/design/q59n9YsIYPgujXBdQ9zBV3?node-id=0%3A1) (0 screens):
   screens inside this page:
@@ -6049,7 +6027,7 @@ pages:
 
 ## Sprint 30 - Q4 2023 (last edited 2026-03-03)
 url: https://www.figma.com/design/qYDK9bsAJ44DwNosEbmc3T
-tags: #collection/sprint-30 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-30 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [========== WIDY =========== ↗](https://www.figma.com/design/qYDK9bsAJ44DwNosEbmc3T?node-id=0%3A1) (10 screens):
   screens inside this page:
@@ -6209,7 +6187,7 @@ pages:
 
 ## Sprint 32 - Q1 2024 (last edited 2026-01-29)
 url: https://www.figma.com/design/YHPClsvEJVQ6JKIdu8B5L5
-tags: #collection/sprint-32 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-32 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/approval #flow/persetujuan
 pages:
 [- widy ↗](https://www.figma.com/design/YHPClsvEJVQ6JKIdu8B5L5?node-id=0%3A1) (10 screens):
   screens inside this page:
@@ -6267,7 +6245,7 @@ pages:
 
 ## Sprint 33 - Q1 2024 (last edited 2026-08-04)
 url: https://www.figma.com/design/if8XjpLilHzarhxU8WcdI5
-tags: #collection/sprint-33 #status/archive #role/seller #feat/sprint-bundle
+tags: #collection/sprint-33 #status/archive #role/seller #feat/sprint-bundle #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [- widy ↗](https://www.figma.com/design/if8XjpLilHzarhxU8WcdI5?node-id=0%3A1) (10 screens):
   screens inside this page:
@@ -6576,7 +6554,7 @@ pages:
 
 ## Smooets - Buyer Group - Desktop (last edited 2026-01-29)
 url: https://www.figma.com/design/rlQwfvpmFXgBTCZLQs2sQP
-tags: #collection/smooets-2022 #status/archive #role/buyer-group #role/buyer #feat/general #prod/smooets
+tags: #collection/smooets-2022 #status/archive #role/buyer-group #role/buyer #feat/general #prod/smooets #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/rfq #flow/penawaran #flow/quotation #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [Cover ↗](https://www.figma.com/design/rlQwfvpmFXgBTCZLQs2sQP?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -7321,7 +7299,7 @@ pages:
 
 ## Smooets - Buyer Manager - Desktop (last edited 2026-01-29)
 url: https://www.figma.com/design/ekGF6DIpZaL4DLy3AfQwaJ
-tags: #collection/smooets-2022 #status/archive #role/buyer-manager #feat/general #prod/smooets
+tags: #collection/smooets-2022 #status/archive #role/buyer-manager #feat/general #prod/smooets #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/rfq #flow/penawaran #flow/quotation #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/approval #flow/persetujuan #flow/shipping #flow/pengiriman
 pages:
 [Cover ↗](https://www.figma.com/design/ekGF6DIpZaL4DLy3AfQwaJ?node-id=217%3A130220) (2 screens):
   screens inside this page:
@@ -7790,7 +7768,7 @@ pages:
 
 ## Smooets - Buyer Retail - Desktop (last edited 2026-01-29)
 url: https://www.figma.com/design/VU8fqWZnqP9YRucWJWY8D4
-tags: #collection/smooets-2022 #status/archive #role/buyer-retail #role/buyer #feat/general #prod/smooets
+tags: #collection/smooets-2022 #status/archive #role/buyer-retail #role/buyer #feat/general #prod/smooets #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [Cover ↗](https://www.figma.com/design/VU8fqWZnqP9YRucWJWY8D4?node-id=273%3A89293) (1 screens):
   screens inside this page:
@@ -8199,7 +8177,7 @@ pages:
 
 ## Smooets - CMS (last edited 2026-08-07)
 url: https://www.figma.com/design/cquGYsTszLf6f2jkl8lBWs
-tags: #collection/smooets-2022 #status/archive #role/mimin #feat/general #prod/smooets
+tags: #collection/smooets-2022 #status/archive #role/mimin #feat/general #prod/smooets #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Voucher List ↗](https://www.figma.com/design/cquGYsTszLf6f2jkl8lBWs?node-id=0%3A1) (26 screens · 10 headings):
   headings:
@@ -8561,7 +8539,7 @@ pages:
 
 ## Smooets - Seller - Desktop (last edited 2026-07-27)
 url: https://www.figma.com/design/YWxItO5x2cS4eyLo2hvQ7W
-tags: #collection/smooets-2022 #status/archive #role/seller #feat/general #prod/smooets
+tags: #collection/smooets-2022 #status/archive #role/seller #feat/general #prod/smooets #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Cover ↗](https://www.figma.com/design/YWxItO5x2cS4eyLo2hvQ7W?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -9150,7 +9128,7 @@ pages:
 
 ## Smooets - Seller - Mobile (last edited 2026-01-29)
 url: https://www.figma.com/design/LSNfxJr6BaHo7yMZYvqg70
-tags: #collection/smooets-2022 #status/archive #role/seller #feat/platformmobile #prod/smooets
+tags: #collection/smooets-2022 #status/archive #role/seller #feat/platformmobile #prod/smooets #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [Cover ↗](https://www.figma.com/design/LSNfxJr6BaHo7yMZYvqg70?node-id=3083%3A209486) (1 screens):
   screens inside this page:
@@ -9888,7 +9866,7 @@ pages:
 
 ## Smooets - Seller Transaksi - Desktop (last edited 2026-01-29)
 url: https://www.figma.com/design/oLteBt92CDAQWe916kkhXr
-tags: #collection/smooets-2022 #status/archive #role/seller #feat/order-trx #prod/smooets
+tags: #collection/smooets-2022 #status/archive #role/seller #feat/order-trx #prod/smooets #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [List Transaksi ↗](https://www.figma.com/design/oLteBt92CDAQWe916kkhXr?node-id=1%3A186480) (23 screens · 9 headings):
   headings:
@@ -10254,7 +10232,7 @@ pages:
 
 ## Smooets - Seller Transaksi 2 - Desktop (last edited 2026-01-29)
 url: https://www.figma.com/design/Fv0mIDDJ2YPA6tAn9chKTW
-tags: #collection/smooets-2022 #status/archive #role/seller #feat/order-trx #prod/smooets
+tags: #collection/smooets-2022 #status/archive #role/seller #feat/order-trx #prod/smooets #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [Cover ↗](https://www.figma.com/design/Fv0mIDDJ2YPA6tAn9chKTW?node-id=152%3A149679) (1 screens):
   screens inside this page:
@@ -10873,7 +10851,7 @@ pages:
 
 ## PaDi DS v3.0 (last edited 2026-10-21)
 url: https://www.figma.com/design/eJ2zmG6e6i86o9aVdCg95k
-tags: #collection/master #status/master #role/all #feat/design-system
+tags: #collection/master #status/master #role/all #feat/design-system #flow/shipping #flow/pengiriman
 pages:
 [logo ↗](https://www.figma.com/design/eJ2zmG6e6i86o9aVdCg95k?node-id=7207%3A227402) (6 screens):
   screens inside this page:
@@ -11347,7 +11325,7 @@ pages:
 
 ## Homepage* (last edited 2026-09-15)
 url: https://www.figma.com/design/w4yOAJvGvZKp3O6DxBY4N5
-tags: #status/archive #role/all #feat/homepage-landing
+tags: #status/archive #role/all #feat/homepage-landing #flow/rfq #flow/penawaran #flow/quotation #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/w4yOAJvGvZKp3O6DxBY4N5?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -11408,7 +11386,7 @@ pages:
 
 ## IA Flow Blueprint (last edited 2026-09-15)
 url: https://www.figma.com/design/dOhblQ5AUQivQS2pZymXbq
-tags: #status/archive #role/all #feat/design-system
+tags: #status/archive #role/all #feat/design-system #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [padiumkm.id ↗](https://www.figma.com/design/dOhblQ5AUQivQS2pZymXbq?node-id=0%3A1) (40 screens · 10 headings):
   headings:
@@ -11603,7 +11581,7 @@ pages:
 
 ## Multiplatform Legion - Base Variable Foundation UI Kit v3 Component () (last edited 2026-09-15)
 url: https://www.figma.com/design/5XnC0SDcAfDMq8Tt9hrXUF
-tags: #status/archive #role/all #feat/design-system
+tags: #status/archive #role/all #feat/design-system #flow/invoice #flow/tagihan
 pages:
 [Changelog ↗](https://www.figma.com/design/5XnC0SDcAfDMq8Tt9hrXUF?node-id=14830%3A4381) (5 screens · 1 headings):
   headings:
@@ -15791,7 +15769,7 @@ pages:
 
 ## PaDi DS - AI Playground (last edited 2026-09-15)
 url: https://www.figma.com/design/aVtoUSurMFxgBmCZEz69ip
-tags: #status/archive #role/all #feat/design-system
+tags: #status/archive #role/all #feat/design-system #flow/rfq #flow/penawaran #flow/quotation #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [Design Catalogue ↗](https://www.figma.com/design/aVtoUSurMFxgBmCZEz69ip?node-id=82742%3A1555) (13 screens · 2 headings):
   headings:
@@ -17999,7 +17977,7 @@ pages:
 
 ## PaDi Design System v2 (Copy) (last edited 2026-09-15)
 url: https://www.figma.com/design/kBGxTjRtRvqO1Oorpiq5Ev
-tags: #status/archive #role/all #feat/design-system
+tags: #status/archive #role/all #feat/design-system #flow/shipping #flow/pengiriman
 pages:
 [guide ↗](https://www.figma.com/design/kBGxTjRtRvqO1Oorpiq5Ev?node-id=87746%3A5770) (0 screens):
   screens inside this page:
@@ -18202,7 +18180,7 @@ pages:
 
 ## PaDi Design System v2 (Copy) (last edited 2026-09-15)
 url: https://www.figma.com/design/fbvlpyqDGqljmNja29ghlJ
-tags: #status/archive #role/all #feat/design-system
+tags: #status/archive #role/all #feat/design-system #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir
 pages:
 [Icon Standard* ↗](https://www.figma.com/design/fbvlpyqDGqljmNja29ghlJ?node-id=82777%3A40639) (899 screens · 2 headings):
   headings:
@@ -20079,7 +20057,7 @@ pages:
 
 ## PaDi Design System v2.0 (Copy) (last edited 2026-09-15)
 url: https://www.figma.com/design/VD1eo9cXSiZBnV93iIvnaR
-tags: #status/archive #role/all #feat/design-system
+tags: #status/archive #role/all #feat/design-system #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [Flow Arrow ↗](https://www.figma.com/design/VD1eo9cXSiZBnV93iIvnaR?node-id=83562%3A9292) (2 screens · 6 headings):
   headings:
@@ -22246,7 +22224,7 @@ pages:
 
 ## PaDi Design System v2.0 Legion (last edited 2026-09-15)
 url: https://www.figma.com/design/4MZogVRR8WMKzK5qBt66mv
-tags: #status/archive #role/all #feat/design-system
+tags: #status/archive #role/all #feat/design-system #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [Flow Arrow ↗](https://www.figma.com/design/4MZogVRR8WMKzK5qBt66mv?node-id=83562%3A9292) (1 screens · 6 headings):
   headings:
@@ -24489,7 +24467,7 @@ pages:
 
 ## PaDi Pattern Dashboard - Mimin v1.0 (last edited 2026-09-15)
 url: https://www.figma.com/design/Qelo2wrySSHiEy7PtgAOkO
-tags: #status/archive #role/mimin #feat/dashboard-analytics
+tags: #status/archive #role/mimin #feat/dashboard-analytics #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Thumbnail ↗](https://www.figma.com/design/Qelo2wrySSHiEy7PtgAOkO?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -25188,7 +25166,7 @@ pages:
 
 ## Header / Footer 👈 [PAKE FILE INI] (last edited 2026-10-19)
 url: https://www.figma.com/design/AYO6qZQr64ruOaX1ImsM72
-tags: #collection/master #status/master #role/all #feat/nav-layout
+tags: #collection/master #status/master #role/all #feat/nav-layout #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Page 2 ↗](https://www.figma.com/design/AYO6qZQr64ruOaX1ImsM72?node-id=2001%3A84221) (21 screens):
   screens inside this page:
@@ -25234,7 +25212,7 @@ pages:
 
 ## Pesanan / Transaksi 👈 [PAKE FILE INI] (last edited 2026-10-20)
 url: https://www.figma.com/design/TD8poWJhgSpupttZN8YGm8
-tags: #collection/master #status/master #role/all #feat/order-trx
+tags: #collection/master #status/master #role/all #feat/order-trx #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/shipping #flow/pengiriman
 pages:
 [Permintaan Pembelian - Buyer Manager ↗](https://www.figma.com/design/TD8poWJhgSpupttZN8YGm8?node-id=27%3A198248) (10 screens · 1 headings):
   headings:
@@ -25716,7 +25694,7 @@ pages:
 
 ## Blueprint (last edited 2026-09-23)
 url: https://www.figma.com/design/Ce10UfunDBVaU06m1iF5U9
-tags: #status/archive #role/all #feat/general
+tags: #status/archive #role/all #feat/general #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/rfq #flow/penawaran #flow/quotation #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [General Flow Buyer B2B ↗](https://www.figma.com/design/Ce10UfunDBVaU06m1iF5U9?node-id=0%3A1) (38 screens · 8 headings):
   headings:
@@ -26193,7 +26171,7 @@ pages:
 
 ## Buyer / Daftar & Detail Transaksi v1.0 (last edited 2026-09-25)
 url: https://www.figma.com/design/736qROV9HOC8VxWTNC89DE
-tags: #status/archive #role/buyer #feat/order-trx
+tags: #status/archive #role/buyer #feat/order-trx #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/shipping #flow/pengiriman
 pages:
 [start here ↗](https://www.figma.com/design/736qROV9HOC8VxWTNC89DE?node-id=3488%3A24214) (75 screens · 17 headings):
   headings:
@@ -26357,7 +26335,7 @@ pages:
 
 ## Daftar & Detail Transaksi [Seller][Buyer] / Revamp (last edited 2026-09-25)
 url: https://www.figma.com/design/eBWvSSVc1mndTWFtSs23F6
-tags: #status/archive #role/buyer #role/seller #feat/order-trx
+tags: #status/archive #role/buyer #role/seller #feat/order-trx #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [2025 ↗](https://www.figma.com/design/eBWvSSVc1mndTWFtSs23F6?node-id=1022%3A35819) (55 screens · 10 headings):
   headings:
@@ -26643,7 +26621,7 @@ pages:
 
 ## Dashboard Buyer Revamp (last edited 2026-09-15)
 url: https://www.figma.com/design/mpdbT8iOm1Qx4zqs4J3nJp
-tags: #status/archive #role/buyer #feat/dashboard-analytics
+tags: #status/archive #role/buyer #feat/dashboard-analytics #flow/top #flow/tempo #flow/termin
 pages:
 [Buyer Retail ↗](https://www.figma.com/design/mpdbT8iOm1Qx4zqs4J3nJp?node-id=78%3A23693) (12 screens):
   screens inside this page:
@@ -26710,7 +26688,7 @@ pages:
 
 ## Dashboard Seller Revamp (last edited 2026-09-15)
 url: https://www.figma.com/design/blP0SxhzVK65ruLox6rFJd
-tags: #status/archive #role/seller #feat/dashboard-analytics
+tags: #status/archive #role/seller #feat/dashboard-analytics #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/top #flow/tempo #flow/termin
 pages:
 [v1 ↗](https://www.figma.com/design/blP0SxhzVK65ruLox6rFJd?node-id=0%3A1) (6 screens):
   screens inside this page:
@@ -26779,7 +26757,7 @@ pages:
 
 ## Design Handover Documentation v2 (Copy) (last edited 2026-09-15)
 url: https://www.figma.com/design/to3gh0QHJOC51Cq5dsYA8z
-tags: #status/archive #role/all #feat/general
+tags: #status/archive #role/all #feat/general #flow/bast #flow/serah-terima #flow/handover
 pages:
 [Page 1 ↗](https://www.figma.com/design/to3gh0QHJOC51Cq5dsYA8z?node-id=0%3A1) (6 screens · 3 headings):
   headings:
@@ -26799,7 +26777,7 @@ pages:
 
 ## ERP merah putih landing page (last edited 2026-10-19)
 url: https://www.figma.com/design/AlngvdtaxETXnJJ2L0bkMF
-tags: #status/archive #role/all #feat/homepage-landing #feat/open-api-erp #prod/kdkmp
+tags: #status/archive #role/all #feat/homepage-landing #feat/open-api-erp #prod/kdkmp #flow/po #flow/pesanan-pembelian #flow/purchase-order
 pages:
 [design ↗](https://www.figma.com/design/AlngvdtaxETXnJJ2L0bkMF?node-id=0%3A1) (32 screens · 2 headings):
   headings:
@@ -26950,7 +26928,7 @@ pages:
 
 ## Hasil Audit Intern Q4 2024 (last edited 2026-09-15)
 url: https://www.figma.com/design/ZRgD2kl5dLWWvLWMPRRgbV
-tags: #status/archive #role/all #feat/general
+tags: #status/archive #role/all #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order
 pages:
 [Document ↗](https://www.figma.com/design/ZRgD2kl5dLWWvLWMPRRgbV?node-id=0%3A1) (0 screens):
   screens inside this page:
@@ -26969,7 +26947,7 @@ pages:
 
 ## Kebutuhan DM (Flow transaksi dan eProc) (last edited 2026-09-15)
 url: https://www.figma.com/design/7chPTvGLnNv6yceeOLvLK1
-tags: #status/archive #role/all #feat/order-trx #feat/tender-eproc
+tags: #status/archive #role/all #feat/order-trx #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Flow transaksi ↗](https://www.figma.com/design/7chPTvGLnNv6yceeOLvLK1?node-id=0%3A1) (7 screens):
   screens inside this page:
@@ -27230,7 +27208,7 @@ pages:
 
 ## New Add Product (last edited 2026-10-21)
 url: https://www.figma.com/design/6AG9LSx1GAag28roAt2luP
-tags: #status/archive #role/all #feat/product-mgmt
+tags: #status/archive #role/all #feat/product-mgmt #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/6AG9LSx1GAag28roAt2luP?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -27308,7 +27286,7 @@ pages:
 
 ## PaDiKasir Bazar (last edited 2026-09-15)
 url: https://www.figma.com/design/k3FZELxUP5V4kn7E2SKlGf
-tags: #status/archive #role/all #feat/general #prod/padikasir
+tags: #status/archive #role/all #feat/general #prod/padikasir #flow/pos #flow/kasir
 pages:
 [🌁 Thumbnail ↗](https://www.figma.com/design/k3FZELxUP5V4kn7E2SKlGf?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -27551,7 +27529,7 @@ pages:
 
 ## Post Trx - Logo Squad (last edited 2026-09-15)
 url: https://www.figma.com/design/uDsVpSgfuiWBfbM68ibUtG
-tags: #status/archive #role/all #feat/order-trx #feat/shipping-fulfilment
+tags: #status/archive #role/all #feat/order-trx #feat/shipping-fulfilment #flow/shipping #flow/pengiriman
 pages:
 [Page 1 ↗](https://www.figma.com/design/uDsVpSgfuiWBfbM68ibUtG?node-id=0%3A1) (14 screens · 6 headings):
   headings:
@@ -27579,7 +27557,7 @@ pages:
 
 ## SAPA UMKM (last edited 2026-09-15)
 url: https://www.figma.com/design/BQIuJMWz9jvHsiC0rUibqv
-tags: #status/archive #role/all #feat/general
+tags: #status/archive #role/all #feat/general #flow/pos #flow/kasir
 pages:
 [Page 1 ↗](https://www.figma.com/design/BQIuJMWz9jvHsiC0rUibqv?node-id=0%3A1) (6 screens):
   screens inside this page:
@@ -27592,7 +27570,7 @@ pages:
 
 ## Seller / Daftar & Detail Pesanan v0.9 (last edited 2026-09-25)
 url: https://www.figma.com/design/9Qz68xDV6vLEk8BagiIF7s
-tags: #status/archive #role/seller #feat/order-trx
+tags: #status/archive #role/seller #feat/order-trx #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [daftar & detail pesanan ↗](https://www.figma.com/design/9Qz68xDV6vLEk8BagiIF7s?node-id=2185%3A99404) (12 screens):
   screens inside this page:
@@ -27737,7 +27715,7 @@ pages:
 
 ## Subscription v1.0 (last edited 2026-09-15)
 url: https://www.figma.com/design/tmGB8BqHWY3rs6jhpm1bvB
-tags: #status/archive #role/all #feat/general
+tags: #status/archive #role/all #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/top #flow/tempo #flow/termin
 pages:
 [Thumbnails ↗](https://www.figma.com/design/tmGB8BqHWY3rs6jhpm1bvB?node-id=1885%3A58153) (1 screens · 2 headings):
   headings:
@@ -27991,7 +27969,7 @@ pages:
 
 ## Buyer / Invoice (last edited 2026-09-25)
 url: https://www.figma.com/design/xqJfZaQgoTcotRAbdomCfp
-tags: #collection/master #status/master #role/buyer #feat/docs-tax-invoice
+tags: #collection/master #status/master #role/buyer #feat/docs-tax-invoice #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [Invoice ↗](https://www.figma.com/design/xqJfZaQgoTcotRAbdomCfp?node-id=0%3A1) (3 screens):
   screens inside this page:
@@ -28001,7 +27979,7 @@ pages:
 
 ## Dokumen BAST, BAST (revisi), BA Rekon (last edited 2026-09-25)
 url: https://www.figma.com/design/eHOIlOJbQPaEQQD7MFwseo
-tags: #collection/master #status/master #role/all #feat/docs-tax-invoice
+tags: #collection/master #status/master #role/all #feat/docs-tax-invoice #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [Page 1 ↗](https://www.figma.com/design/eHOIlOJbQPaEQQD7MFwseo?node-id=0%3A1) (5 screens):
   screens inside this page:
@@ -28013,7 +27991,7 @@ pages:
 
 ## Instruksi Pembayaran (last edited 2026-10-21)
 url: https://www.figma.com/design/6AmQqVaNykcXDv4LcWyOe6
-tags: #collection/master #status/master #role/all #feat/docs-tax-invoice #feat/payment
+tags: #collection/master #status/master #role/all #feat/docs-tax-invoice #feat/payment #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [Page 1 ↗](https://www.figma.com/design/6AmQqVaNykcXDv4LcWyOe6?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -28024,7 +28002,7 @@ pages:
 
 ## Buyer / Batalkan Pesanan v1.0 (last edited 2026-08-31)
 url: https://www.figma.com/design/AtZ3bbM5A4gQir69VWwYmG
-tags: #collection/master #status/master #role/buyer #feat/order-trx
+tags: #collection/master #status/master #role/buyer #feat/order-trx #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/AtZ3bbM5A4gQir69VWwYmG?node-id=855%3A80792) (1 screens · 2 headings):
   headings:
@@ -28110,7 +28088,7 @@ pages:
 
 ## Buyer / Batalkan Pesanan v1.1 (last edited 2026-07-13)
 url: https://www.figma.com/design/F8dOMdU8POHc6hoRfH2ewP
-tags: #collection/master #status/master #role/buyer #feat/order-trx
+tags: #collection/master #status/master #role/buyer #feat/order-trx #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/F8dOMdU8POHc6hoRfH2ewP?node-id=855%3A80792) (1 screens · 2 headings):
   headings:
@@ -28222,7 +28200,7 @@ pages:
 
 ## Buyer / Detail PR v1.0 (last edited 2026-08-31)
 url: https://www.figma.com/design/FOE6zFksUjbAEhPYkBWvio
-tags: #collection/master #status/master #role/buyer #feat/pr-po-approval
+tags: #collection/master #status/master #role/buyer #feat/pr-po-approval #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/approval #flow/persetujuan
 pages:
 [Page 1 ↗](https://www.figma.com/design/FOE6zFksUjbAEhPYkBWvio?node-id=0%3A1) (9 screens):
   screens inside this page:
@@ -28238,7 +28216,7 @@ pages:
 
 ## Buyer / Homepage v1.0 (last edited 2026-10-20)
 url: https://www.figma.com/design/SCDj1EupODnGMf7L4JSlRX
-tags: #collection/master #status/master #role/buyer #feat/homepage-landing
+tags: #collection/master #status/master #role/buyer #feat/homepage-landing #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [page ↗](https://www.figma.com/design/SCDj1EupODnGMf7L4JSlRX?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -28257,7 +28235,7 @@ pages:
 
 ## Buyer / Mobile app (last edited 2026-10-19)
 url: https://www.figma.com/design/1K6k0ocIo4ll65B2OGo98O
-tags: #collection/master #status/master #role/buyer #feat/platformmobile
+tags: #collection/master #status/master #role/buyer #feat/platformmobile #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [📱 Main Flow ↗](https://www.figma.com/design/1K6k0ocIo4ll65B2OGo98O?node-id=106%3A9366) (272 screens · 37 headings):
   headings:
@@ -29637,7 +29615,7 @@ pages:
 
 ## Top Up (last edited 2026-07-27)
 url: https://www.figma.com/design/fN5JQXcjQfRx38LeheArwY
-tags: #collection/master #status/master #role/buyer #feat/payment
+tags: #collection/master #status/master #role/buyer #feat/payment #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [🖥️ Dekstop ↗](https://www.figma.com/design/fN5JQXcjQfRx38LeheArwY?node-id=0%3A1) (0 screens):
   screens inside this page:
@@ -29695,7 +29673,7 @@ pages:
 
 ## Mimin / Buyer Group (last edited 2026-07-06)
 url: https://www.figma.com/design/prpH5qvbI9kbgpX8UriXEo
-tags: #collection/master #status/master #role/buyer-group #role/buyer #role/mimin #feat/general
+tags: #collection/master #status/master #role/buyer-group #role/buyer #role/mimin #feat/general #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Mimin - Buyer Group ↗](https://www.figma.com/design/prpH5qvbI9kbgpX8UriXEo?node-id=0%3A1) (4 screens):
   screens inside this page:
@@ -29780,7 +29758,7 @@ pages:
 
 ## Mimin / Tender Kilat (last edited 2026-06-09)
 url: https://www.figma.com/design/1pSi9fM0Uy0BXUx4R8D9HC
-tags: #collection/master #status/master #role/mimin #feat/tender-eproc
+tags: #collection/master #status/master #role/mimin #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [Mimin - Tender Kilat ↗](https://www.figma.com/design/1pSi9fM0Uy0BXUx4R8D9HC?node-id=0%3A1) (5 screens):
   screens inside this page:
@@ -29842,7 +29820,7 @@ pages:
 
 ## [Mimin PaDi] Pinjaman (last edited 2026-09-28)
 url: https://www.figma.com/design/iJTJGP5bEuXfo3qaUX9ZJM
-tags: #collection/master #status/master #role/mimin #feat/login-auth #feat/financing
+tags: #collection/master #status/master #role/mimin #feat/login-auth #feat/financing #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/iJTJGP5bEuXfo3qaUX9ZJM?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -29928,7 +29906,7 @@ pages:
 
 ## Seller / MOBILE APP (last edited 2026-09-24)
 url: https://www.figma.com/design/VUhDqJzgxONirmXeYyweKT
-tags: #collection/master #status/master #role/seller #feat/platformmobile
+tags: #collection/master #status/master #role/seller #feat/platformmobile #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [Feedback Tambah Kategori Perusahaan ↗](https://www.figma.com/design/VUhDqJzgxONirmXeYyweKT?node-id=4529%3A209812) (3 screens · 1 headings):
   headings:
@@ -30864,7 +30842,7 @@ pages:
 
 ## Seller - CRUD Produk (last edited 2026-07-21)
 url: https://www.figma.com/design/BYYbgBFiWsRQxodt4zAvpe
-tags: #collection/master #status/master #role/seller #feat/product-mgmt #prod/torasera
+tags: #collection/master #status/master #role/seller #feat/product-mgmt #prod/torasera #flow/shipping #flow/pengiriman
 pages:
 [Thumbnail ↗](https://www.figma.com/design/BYYbgBFiWsRQxodt4zAvpe?node-id=2068%3A5265) (1 screens):
   screens inside this page:
@@ -30992,7 +30970,7 @@ pages:
 
 ## CT Dashboard - Revamp (last edited 2026-09-08)
 url: https://www.figma.com/design/bmLkQZVYLM2wcFlbblt4OP
-tags: #status/active #role/all #feat/dashboard-analytics
+tags: #status/active #role/all #feat/dashboard-analytics #flow/invoice #flow/tagihan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/bmLkQZVYLM2wcFlbblt4OP?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -31131,7 +31109,7 @@ pages:
 
 ## CT Dashboard - Transisi Platform CT (last edited 2026-10-16)
 url: https://www.figma.com/design/BqpQ76WEA7hN9neqk44U8B
-tags: #status/active #role/all #feat/dashboard-analytics
+tags: #status/active #role/all #feat/dashboard-analytics #flow/invoice #flow/tagihan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/BqpQ76WEA7hN9neqk44U8B?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -31501,7 +31479,7 @@ pages:
 
 ## Rencana Belanja (last edited 2026-01-26)
 url: https://www.figma.com/design/3x9zAAnuFN6CqLUWyJIFfb
-tags: #status/active #role/all #feat/pr-po-approval #feat/dashboard-analytics
+tags: #status/active #role/all #feat/pr-po-approval #feat/dashboard-analytics #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/approval #flow/persetujuan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/3x9zAAnuFN6CqLUWyJIFfb?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -32205,7 +32183,7 @@ pages:
 
 ## IA Flow dashboard open API (last edited 2026-06-09)
 url: https://www.figma.com/design/aQniiTELZKecYSNFDkIIuI
-tags: #status/active #role/all #feat/dashboard-analytics #feat/open-api-erp
+tags: #status/active #role/all #feat/dashboard-analytics #feat/open-api-erp #flow/approval #flow/persetujuan
 pages:
 [Page 1 ↗](https://www.figma.com/design/aQniiTELZKecYSNFDkIIuI?node-id=0%3A1) (10 screens):
   screens inside this page:
@@ -32377,7 +32355,7 @@ pages:
 
 ## Marketplace - Formulir Isian Tambahan Telkomsel (last edited 2026-01-26)
 url: https://www.figma.com/design/CZ0xFkfJ58d9zDaldrQrud
-tags: #status/active #role/all #feat/checkout
+tags: #status/active #role/all #feat/checkout #flow/pr #flow/permintaan-pembelian #flow/purchase-request
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/CZ0xFkfJ58d9zDaldrQrud?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -32507,7 +32485,7 @@ pages:
 
 ## Marketplace - Unggah Faktur Pajak Telkomsel (last edited 2026-07-24)
 url: https://www.figma.com/design/BJjesfkZ0n306jJH8GgY4A
-tags: #status/active #role/all #feat/docs-tax-invoice
+tags: #status/active #role/all #feat/docs-tax-invoice #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/BJjesfkZ0n306jJH8GgY4A?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -33295,7 +33273,7 @@ pages:
 
 ## 12. [DIS] Saldo Pendapatan (Seller) (last edited 2026-09-24)
 url: https://www.figma.com/design/ae7sI01KC4oSAk27g3Fq08
-tags: #status/active #role/seller #feat/disbursement-saldo
+tags: #status/active #role/seller #feat/disbursement-saldo #flow/invoice #flow/tagihan #flow/approval #flow/persetujuan
 pages:
 [Flow ↗](https://www.figma.com/design/ae7sI01KC4oSAk27g3Fq08?node-id=64%3A245718) (0 screens):
   screens inside this page:
@@ -33421,7 +33399,7 @@ pages:
 
 ## 3. [DIS] Disbursement Data Summary & Popup KLPD (last edited 2026-06-25)
 url: https://www.figma.com/design/aAaB7B8oqFCZ3Y0Z2QZcoC
-tags: #status/active #role/buyer #feat/disbursement-saldo
+tags: #status/active #role/buyer #feat/disbursement-saldo #flow/invoice #flow/tagihan #flow/approval #flow/persetujuan
 pages:
 [Bulk Disbursement ↗](https://www.figma.com/design/aAaB7B8oqFCZ3Y0Z2QZcoC?node-id=3299%3A61127) (5 screens):
   screens inside this page:
@@ -33574,7 +33552,7 @@ pages:
 
 ## 7. [DIS] PJDD - Faktur Biaya Transaksi (last edited 2025-08-15)
 url: https://www.figma.com/design/Qql4aKmjmnpAGduXkNaFwI
-tags: #status/active #role/all #feat/order-trx #feat/docs-tax-invoice #feat/payment #feat/disbursement-saldo
+tags: #status/active #role/all #feat/order-trx #feat/docs-tax-invoice #feat/payment #feat/disbursement-saldo #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [Seller ↗](https://www.figma.com/design/Qql4aKmjmnpAGduXkNaFwI?node-id=1%3A51308) (14 screens):
   screens inside this page:
@@ -33639,7 +33617,7 @@ pages:
 
 ## Amandemen PO (last edited 2026-10-21)
 url: https://www.figma.com/design/ZpKwhiyxCDiaGyBMjNZxub
-tags: #status/active #role/all #feat/pr-po-approval #feat/disbursement-saldo
+tags: #status/active #role/all #feat/pr-po-approval #feat/disbursement-saldo #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [buyer & seller ↗](https://www.figma.com/design/ZpKwhiyxCDiaGyBMjNZxub?node-id=0%3A1) (18 screens · 2 headings):
   headings:
@@ -33682,7 +33660,7 @@ pages:
 
 ## Approval Perubahan Rekening Mimin (last edited 2025-02-28)
 url: https://www.figma.com/design/mRDgFVMGqFEHHO5t6TLAgm
-tags: #status/active #role/mimin #feat/account-profile #feat/pr-po-approval #feat/disbursement-saldo
+tags: #status/active #role/mimin #feat/account-profile #feat/pr-po-approval #feat/disbursement-saldo #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/approval #flow/persetujuan
 pages:
 [DESIGN ↗](https://www.figma.com/design/mRDgFVMGqFEHHO5t6TLAgm?node-id=0%3A1) (4 screens):
   screens inside this page:
@@ -33743,7 +33721,7 @@ pages:
 
 ## Fitur Approval PO CMS Mimin (3pl + Financer) (last edited 2024-09-11)
 url: https://www.figma.com/design/MYNeKQZ9nweC7ysFnFnW6p
-tags: #status/active #role/mimin #role/financier #feat/pr-po-approval #feat/disbursement-saldo
+tags: #status/active #role/mimin #role/financier #feat/pr-po-approval #feat/disbursement-saldo #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/approval #flow/persetujuan
 pages:
 [Page 1 ↗](https://www.figma.com/design/MYNeKQZ9nweC7ysFnFnW6p?node-id=0%3A1) (4 screens · 5 headings):
   headings:
@@ -33760,7 +33738,7 @@ pages:
 
 ## Kendala Perpajakan / Ubah Komponen Pajak / Buyer (last edited 2026-01-23)
 url: https://www.figma.com/design/ggsyGN8byYiYuwXbeMxACV
-tags: #status/active #role/buyer #feat/docs-tax-invoice #feat/disbursement-saldo #feat/open-api-erp
+tags: #status/active #role/buyer #feat/docs-tax-invoice #feat/disbursement-saldo #feat/open-api-erp #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [Page 1 ↗](https://www.figma.com/design/ggsyGN8byYiYuwXbeMxACV?node-id=0%3A1) (6 screens · 1 headings):
   headings:
@@ -33775,7 +33753,7 @@ pages:
 
 ## SLA Disbursement (last edited 2026-10-07)
 url: https://www.figma.com/design/qGv0aNuFJvi7XvhADMGvNn
-tags: #status/active #role/all #feat/shipping-fulfilment #feat/disbursement-saldo
+tags: #status/active #role/all #feat/shipping-fulfilment #feat/disbursement-saldo #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [Page 1 ↗](https://www.figma.com/design/qGv0aNuFJvi7XvhADMGvNn?node-id=0%3A1) (6 screens):
   screens inside this page:
@@ -33788,7 +33766,7 @@ pages:
 
 ## Seller Bayar BTP (last edited 2026-04-08)
 url: https://www.figma.com/design/59gq0OTI0vPKNc03HTgQgM
-tags: #status/active #role/seller #feat/payment #feat/disbursement-saldo
+tags: #status/active #role/seller #feat/payment #feat/disbursement-saldo #flow/top #flow/tempo #flow/termin
 pages:
 [2.0 ↗](https://www.figma.com/design/59gq0OTI0vPKNc03HTgQgM?node-id=1105%3A12483) (8 screens):
   screens inside this page:
@@ -33808,7 +33786,7 @@ pages:
 
 ## Update Order / Resolution Center / Solution Center (last edited 2026-10-13)
 url: https://www.figma.com/design/8IOU0FxRk1zTMya50kzqdy
-tags: #status/active #role/all #feat/order-trx #feat/disbursement-saldo
+tags: #status/active #role/all #feat/order-trx #feat/disbursement-saldo #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan
 pages:
 [mimin update - disable update order ↗](https://www.figma.com/design/8IOU0FxRk1zTMya50kzqdy?node-id=3957%3A25780) (3 screens):
   screens inside this page:
@@ -34113,7 +34091,7 @@ pages:
 
 ## Dashboard - User Financier (last edited 2026-10-19)
 url: https://www.figma.com/design/fNmJJ4X6ZZ2UWS9UBpTFST
-tags: #status/active #role/financier #feat/financing #feat/dashboard-analytics
+tags: #status/active #role/financier #feat/financing #feat/dashboard-analytics #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan
 pages:
 [login ↗](https://www.figma.com/design/fNmJJ4X6ZZ2UWS9UBpTFST?node-id=1643%3A18127) (6 screens):
   screens inside this page:
@@ -34197,7 +34175,7 @@ pages:
 
 ## Dashboard Seller (Pinjaman) -> Penyedia Pinjaman - Revamp june 2026 (last edited 2026-06-29)
 url: https://www.figma.com/design/egUXKrnoOIHAN4IJp4ZCVx
-tags: #status/active #role/seller #feat/login-auth #feat/financing #feat/dashboard-analytics
+tags: #status/active #role/seller #feat/login-auth #feat/financing #feat/dashboard-analytics #flow/invoice #flow/tagihan
 pages:
 [[Dashboard Pinjaman] [Penyedia Pinjaman] [Multi Invoice Financing] Revamp ↗](https://www.figma.com/design/egUXKrnoOIHAN4IJp4ZCVx?node-id=0%3A1) (8 screens):
   screens inside this page:
@@ -34212,7 +34190,7 @@ pages:
 
 ## PO Financing Revival (last edited 2026-10-21)
 url: https://www.figma.com/design/SyAvzqHZ3gn9wg41RphSnB
-tags: #status/active #role/all #feat/financing
+tags: #status/active #role/all #feat/financing #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/approval #flow/persetujuan
 pages:
 [po financing ↗](https://www.figma.com/design/SyAvzqHZ3gn9wg41RphSnB?node-id=0%3A1) (27 screens · 1 headings):
   headings:
@@ -34321,7 +34299,7 @@ pages:
 
 ## Pinjaman Tersedia -> Pinjaman Berlangsung - Multi Invoice Financing [Seller][Mimin] (last edited 2026-10-19)
 url: https://www.figma.com/design/pfmtot96MHesIvppqRCT8l
-tags: #status/active #role/seller #role/mimin #feat/login-auth #feat/docs-tax-invoice #feat/financing
+tags: #status/active #role/seller #role/mimin #feat/login-auth #feat/docs-tax-invoice #feat/financing #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [1.0 ↗](https://www.figma.com/design/pfmtot96MHesIvppqRCT8l?node-id=0%3A1) (14 screens):
   screens inside this page:
@@ -34372,7 +34350,7 @@ pages:
 
 ## [MIMIN] Invoice Financing / Detail Pinjaman - Update status manual (last edited 2026-10-12)
 url: https://www.figma.com/design/fqBpnjGyx7j7AMWP1NXkbL
-tags: #status/active #role/mimin #feat/login-auth #feat/docs-tax-invoice #feat/financing
+tags: #status/active #role/mimin #feat/login-auth #feat/docs-tax-invoice #feat/financing #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [mimin - update pinjaman secara manual ↗](https://www.figma.com/design/fqBpnjGyx7j7AMWP1NXkbL?node-id=567%3A808) (4 screens):
   screens inside this page:
@@ -34383,7 +34361,7 @@ pages:
 
 ## [Pegadaian][Seller][Mimin] Nilai Sisa Bayar ke Financier dan Nilai Saldo Rekening Pendamping (last edited 2026-08-20)
 url: https://www.figma.com/design/2dsJQqyDTvi4hr7XBx7cAF
-tags: #status/active #role/seller #role/mimin #role/financier #feat/login-auth #feat/account-profile #feat/disbursement-saldo #feat/financing
+tags: #status/active #role/seller #role/mimin #role/financier #feat/login-auth #feat/account-profile #feat/disbursement-saldo #feat/financing #flow/invoice #flow/tagihan
 pages:
 [Page 1 ↗](https://www.figma.com/design/2dsJQqyDTvi4hr7XBx7cAF?node-id=0%3A1) (2 screens):
   screens inside this page:
@@ -34813,7 +34791,7 @@ pages:
 
 ## VP - Q2 2024 (last edited 2026-10-19)
 url: https://www.figma.com/design/2d8D4UbMn7WdwEZKzEdCZ8
-tags: #status/archive #role/all #feat/financing
+tags: #status/archive #role/all #feat/financing #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/2d8D4UbMn7WdwEZKzEdCZ8?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -34882,7 +34860,7 @@ pages:
 
 ## VP - Requirement Invoice Financing (last edited 2026-09-15)
 url: https://www.figma.com/design/fZacMYdiw3ayNXww3uyLMn
-tags: #status/archive #role/all #feat/docs-tax-invoice #feat/financing
+tags: #status/archive #role/all #feat/docs-tax-invoice #feat/financing #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/fZacMYdiw3ayNXww3uyLMn?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -34955,7 +34933,7 @@ pages:
 
 ## VP Design Q1 2023 (last edited 2026-09-15)
 url: https://www.figma.com/design/zYXQC2Hq0UmEJnHRedtjuD
-tags: #status/archive #role/all #feat/financing
+tags: #status/archive #role/all #feat/financing #flow/invoice #flow/tagihan
 pages:
 [Page 4 ↗](https://www.figma.com/design/zYXQC2Hq0UmEJnHRedtjuD?node-id=142%3A68122) (0 screens):
   screens inside this page:
@@ -35108,7 +35086,7 @@ pages:
 
 ## [Admin Perusahaan] Pengaturan / Rekening / Financing - Rekening terpusat admin perusahaan (last edited 2026-09-15)
 url: https://www.figma.com/design/MGECmZTzOqpqaNZ4DfrhXa
-tags: #status/archive #role/admin-perusahaan #feat/account-profile #feat/financing #feat/open-api-erp
+tags: #status/archive #role/admin-perusahaan #feat/account-profile #feat/financing #feat/open-api-erp #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/MGECmZTzOqpqaNZ4DfrhXa?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -35125,7 +35103,7 @@ pages:
 
 ## [Seller] Dashboard (Financing) (last edited 2026-09-15)
 url: https://www.figma.com/design/SzfEi4cPDveUuLn1kYVuxq
-tags: #status/archive #role/seller #feat/financing #feat/dashboard-analytics
+tags: #status/archive #role/seller #feat/financing #feat/dashboard-analytics #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/SzfEi4cPDveUuLn1kYVuxq?node-id=0%3A1) (2 screens · 4 headings):
   headings:
@@ -35209,7 +35187,7 @@ pages:
 
 ## [Seller] Dashboard (incl. Financing) (last edited 2026-09-15)
 url: https://www.figma.com/design/SBArW4hlvhma8GOkcONJo9
-tags: #status/archive #role/seller #feat/financing #feat/dashboard-analytics
+tags: #status/archive #role/seller #feat/financing #feat/dashboard-analytics #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/SBArW4hlvhma8GOkcONJo9?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -35319,7 +35297,7 @@ pages:
 
 ## [Seller] Email Financing (last edited 2026-09-15)
 url: https://www.figma.com/design/UQa8fhcEBfPeEeGO6hqyjt
-tags: #status/archive #role/seller #feat/financing #feat/notif-email
+tags: #status/archive #role/seller #feat/financing #feat/notif-email #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan
 pages:
 [🖥️ Desktop ↗](https://www.figma.com/design/UQa8fhcEBfPeEeGO6hqyjt?node-id=2102%3A29451) (10 screens · 1 headings):
   headings:
@@ -35348,7 +35326,7 @@ pages:
 
 ## [Seller] Financing - Eksplorasi (last edited 2026-09-15)
 url: https://www.figma.com/design/UVM27BKtzLjQDanDxzSZWO
-tags: #status/archive #role/seller #feat/financing
+tags: #status/archive #role/seller #feat/financing #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/UVM27BKtzLjQDanDxzSZWO?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -35467,7 +35445,7 @@ pages:
 
 ## [Seller] Landing Page Financing 1 (last edited 2026-09-15)
 url: https://www.figma.com/design/o0zyMIGTmMdChOHad9VEMU
-tags: #status/archive #role/seller #feat/homepage-landing #feat/financing
+tags: #status/archive #role/seller #feat/homepage-landing #feat/financing #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan
 pages:
 [🖥️ Desktop ↗](https://www.figma.com/design/o0zyMIGTmMdChOHad9VEMU?node-id=2102%3A29451) (15 screens · 21 headings):
   headings:
@@ -35616,7 +35594,7 @@ pages:
 
 ## [Seller] Pinjaman Tersedia - add Syariah (last edited 2026-09-15)
 url: https://www.figma.com/design/z5iwEgyVdTcubuuUbFs4bw
-tags: #status/archive #role/seller #feat/login-auth #feat/financing
+tags: #status/archive #role/seller #feat/login-auth #feat/financing #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/z5iwEgyVdTcubuuUbFs4bw?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -35818,7 +35796,7 @@ pages:
 
 ## [Seller] Pinjaman Tersedia - old permintaan persetujuan pinjaman (last edited 2026-10-19)
 url: https://www.figma.com/design/l2dKB8hV7s2WFtrMh9mehA
-tags: #status/archive #role/seller #feat/login-auth #feat/financing
+tags: #status/archive #role/seller #feat/login-auth #feat/financing #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/approval #flow/persetujuan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/l2dKB8hV7s2WFtrMh9mehA?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -36025,7 +36003,7 @@ pages:
 
 ## [Seller] Pinjaman Tersedia / Saya - Master | Landing Page | Seller Center (last edited 2026-09-15)
 url: https://www.figma.com/design/ZYx5QFJawNqHe38xQW7B3N
-tags: #status/archive #role/seller #feat/login-auth #feat/homepage-landing #feat/financing
+tags: #status/archive #role/seller #feat/login-auth #feat/homepage-landing #feat/financing #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin
 pages:
 [Pinjaman Tersedia ↗](https://www.figma.com/design/ZYx5QFJawNqHe38xQW7B3N?node-id=0%3A1) (6 screens):
   screens inside this page:
@@ -36083,7 +36061,7 @@ pages:
 
 ## [Seller] Pinjaman Tersedia / Saya - PO Financing Freeze | Email (last edited 2026-09-15)
 url: https://www.figma.com/design/qrtq0RLJu6fbk8SQg6AnIG
-tags: #status/archive #role/seller #feat/login-auth #feat/financing #feat/notif-email
+tags: #status/archive #role/seller #feat/login-auth #feat/financing #feat/notif-email #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan
 pages:
 [PO Financing Freeze ↗](https://www.figma.com/design/qrtq0RLJu6fbk8SQg6AnIG?node-id=0%3A1) (11 screens · 5 headings):
   headings:
@@ -36113,7 +36091,7 @@ pages:
 
 ## Adjustment Section Dokumen Seller, Buyer, dan Mimin (last edited 2026-02-03)
 url: https://www.figma.com/design/84qnzSSOuKZJ4MqNG6hlc2
-tags: #status/active #role/buyer #role/seller #role/mimin #feat/shipping-fulfilment #feat/docs-tax-invoice
+tags: #status/active #role/buyer #role/seller #role/mimin #feat/shipping-fulfilment #feat/docs-tax-invoice #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/shipping #flow/pengiriman
 pages:
 [Design ↗](https://www.figma.com/design/84qnzSSOuKZJ4MqNG6hlc2?node-id=0%3A1) (8 screens · 4 headings):
   headings:
@@ -36136,7 +36114,7 @@ pages:
 
 ## Beli Logistik POS (last edited 2026-01-26)
 url: https://www.figma.com/design/Hu6epV2jXEuLwrz4ifaauB
-tags: #status/active #role/all #feat/shipping-fulfilment
+tags: #status/active #role/all #feat/shipping-fulfilment #flow/pos #flow/kasir #flow/shipping #flow/pengiriman
 pages:
 [1.0 ↗](https://www.figma.com/design/Hu6epV2jXEuLwrz4ifaauB?node-id=0%3A1) (4 screens · 1 headings):
   headings:
@@ -36161,7 +36139,7 @@ pages:
 
 ## Denda Pengiriman Terlambat [Payment Flow] [Notification] [Daftar Detail Transaksi] [Dokumen BAST] (last edited 2026-09-22)
 url: https://www.figma.com/design/E9hwRf9fLIZwfKI1uaF4WW
-tags: #status/active #role/all #feat/order-trx #feat/shipping-fulfilment #feat/docs-tax-invoice #feat/payment #feat/notif-email
+tags: #status/active #role/all #feat/order-trx #feat/shipping-fulfilment #feat/docs-tax-invoice #feat/payment #feat/notif-email #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/approval #flow/persetujuan #flow/shipping #flow/pengiriman
 pages:
 [ultimate ↗](https://www.figma.com/design/E9hwRf9fLIZwfKI1uaF4WW?node-id=195%3A7946) (32 screens):
   screens inside this page:
@@ -36220,7 +36198,7 @@ pages:
 
 ## Detail Transaksi - Dokumen Lainnya (last edited 2026-02-19)
 url: https://www.figma.com/design/rwp1yLhcHHDtQXN691ByXK
-tags: #status/active #role/all #feat/order-trx #feat/shipping-fulfilment #feat/docs-tax-invoice
+tags: #status/active #role/all #feat/order-trx #feat/shipping-fulfilment #feat/docs-tax-invoice #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/shipping #flow/pengiriman
 pages:
 [dekstop ↗](https://www.figma.com/design/rwp1yLhcHHDtQXN691ByXK?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -36235,7 +36213,7 @@ pages:
 
 ## GLID Project (last edited 2026-01-26)
 url: https://www.figma.com/design/4UvvGyeH4YjxWaozWMbApe
-tags: #status/active #role/all #feat/shipping-fulfilment
+tags: #status/active #role/all #feat/shipping-fulfilment #flow/shipping #flow/pengiriman
 pages:
 [v3 ↗](https://www.figma.com/design/4UvvGyeH4YjxWaozWMbApe?node-id=246%3A21295) (4 screens · 1 headings):
   headings:
@@ -36265,7 +36243,7 @@ pages:
 
 ## Kurir Pribadi - Upload Bukti Pengiriman (last edited 2026-01-26)
 url: https://www.figma.com/design/Ap7dEkB5YWv9GqMvTdZdgi
-tags: #status/active #role/seller #feat/shipping-fulfilment
+tags: #status/active #role/seller #feat/shipping-fulfilment #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/shipping #flow/pengiriman
 pages:
 [v1 ↗](https://www.figma.com/design/Ap7dEkB5YWv9GqMvTdZdgi?node-id=0%3A1) (4 screens):
   screens inside this page:
@@ -36279,7 +36257,7 @@ pages:
 
 ## Manajemen Penerimaan Pesanan Buyer (Terima Sebagian) (Copy) (last edited 2026-08-04)
 url: https://www.figma.com/design/FdXFGXMgTxa1sipT5rkoKb
-tags: #status/active #role/buyer #feat/order-trx #feat/shipping-fulfilment
+tags: #status/active #role/buyer #feat/order-trx #feat/shipping-fulfilment #flow/bast #flow/serah-terima #flow/handover #flow/shipping #flow/pengiriman
 pages:
 [desktop ↗](https://www.figma.com/design/FdXFGXMgTxa1sipT5rkoKb?node-id=0%3A1) (10 screens · 3 headings):
   headings:
@@ -36323,7 +36301,7 @@ pages:
 
 ## Manajemen Penerimaan Pesanan Buyer (Terima Sebagian) + case Denda (last edited 2026-10-05)
 url: https://www.figma.com/design/luGg1MC97KLH06JG4c5CQt
-tags: #status/active #role/buyer #feat/order-trx #feat/shipping-fulfilment
+tags: #status/active #role/buyer #feat/order-trx #feat/shipping-fulfilment #flow/bast #flow/serah-terima #flow/handover #flow/shipping #flow/pengiriman
 pages:
 [fase 1 - desktop ↗](https://www.figma.com/design/luGg1MC97KLH06JG4c5CQt?node-id=0%3A1) (10 screens · 1 headings):
   headings:
@@ -36383,7 +36361,7 @@ pages:
 
 ## Mandatory Surat Jalan dan Hide Button (last edited 2026-02-12)
 url: https://www.figma.com/design/ZF5VNrmFPMukvtznhd46mR
-tags: #status/active #role/all #feat/shipping-fulfilment
+tags: #status/active #role/all #feat/shipping-fulfilment #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [dekstop ↗](https://www.figma.com/design/ZF5VNrmFPMukvtznhd46mR?node-id=0%3A1) (4 screens):
   screens inside this page:
@@ -36402,7 +36380,7 @@ pages:
 
 ## Nomor VA setelah Tagihan (last edited 2026-01-26)
 url: https://www.figma.com/design/hG0NuuFwzQIolDBLuKTWkA
-tags: #status/active #role/all #feat/shipping-fulfilment #feat/payment
+tags: #status/active #role/all #feat/shipping-fulfilment #feat/payment #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [v1 ↗](https://www.figma.com/design/hG0NuuFwzQIolDBLuKTWkA?node-id=0%3A1) (5 screens):
   screens inside this page:
@@ -36414,7 +36392,7 @@ pages:
 
 ## Pre Order (last edited 2026-01-26)
 url: https://www.figma.com/design/7M3GnHqJyVVZ8of8zEPtfo
-tags: #status/active #role/all #feat/product-mgmt #feat/shipping-fulfilment
+tags: #status/active #role/all #feat/product-mgmt #feat/shipping-fulfilment #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/shipping #flow/pengiriman
 pages:
 [Preorder - Desktop ↗](https://www.figma.com/design/7M3GnHqJyVVZ8of8zEPtfo?node-id=4%3A80659) (11 screens · 1 headings):
   headings:
@@ -36461,7 +36439,7 @@ pages:
 
 ## Re-Order (last edited 2026-01-26)
 url: https://www.figma.com/design/rihBljxzmaH6xMp88CxSBo
-tags: #status/active #role/all #feat/cart #feat/shipping-fulfilment
+tags: #status/active #role/all #feat/cart #feat/shipping-fulfilment #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/rfq #flow/penawaran #flow/quotation #flow/invoice #flow/tagihan #flow/shipping #flow/pengiriman
 pages:
 [v1 ↗](https://www.figma.com/design/rihBljxzmaH6xMp88CxSBo?node-id=0%3A1) (13 screens · 4 headings):
   headings:
@@ -36513,7 +36491,7 @@ pages:
 
 ## SLA Terima Tagihan Buyer (last edited 2026-01-26)
 url: https://www.figma.com/design/jXHETPc82CVfkXuLycPRxW
-tags: #status/active #role/buyer #feat/shipping-fulfilment
+tags: #status/active #role/buyer #feat/shipping-fulfilment #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [v1 ↗](https://www.figma.com/design/jXHETPc82CVfkXuLycPRxW?node-id=0%3A1) (4 screens):
   screens inside this page:
@@ -36531,7 +36509,7 @@ pages:
 
 ## Shipping Subscription (last edited 2026-01-26)
 url: https://www.figma.com/design/QDnmoBLHOz5lOoA2T5JanJ
-tags: #status/active #role/all #feat/login-auth #feat/shipping-fulfilment
+tags: #status/active #role/all #feat/login-auth #feat/shipping-fulfilment #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [v5 ↗](https://www.figma.com/design/QDnmoBLHOz5lOoA2T5JanJ?node-id=425%3A119581) (28 screens · 1 headings):
   headings:
@@ -36713,7 +36691,7 @@ pages:
 
 ## Surat Pernyataan for seller non PKP (last edited 2026-10-05)
 url: https://www.figma.com/design/S5MbhYs8Pz80zmMpk8DzZd
-tags: #status/active #role/seller #feat/shipping-fulfilment #feat/docs-tax-invoice
+tags: #status/active #role/seller #feat/shipping-fulfilment #feat/docs-tax-invoice #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/approval #flow/persetujuan #flow/shipping #flow/pengiriman
 pages:
 [Surat Pernyataan for seller non PKP ↗](https://www.figma.com/design/S5MbhYs8Pz80zmMpk8DzZd?node-id=0%3A1) (8 screens):
   screens inside this page:
@@ -36757,7 +36735,7 @@ pages:
 
 ## Transaksi: Dalam Pengiriman [Terima Pesanan] (last edited 2026-10-05)
 url: https://www.figma.com/design/fSib6Bw034FdHFYHsXOkrv
-tags: #status/active #role/buyer #feat/order-trx #feat/shipping-fulfilment
+tags: #status/active #role/buyer #feat/order-trx #feat/shipping-fulfilment #flow/bast #flow/serah-terima #flow/handover #flow/shipping #flow/pengiriman
 pages:
 [Dalam Pengiriman ↗](https://www.figma.com/design/fSib6Bw034FdHFYHsXOkrv?node-id=0%3A1) (3 screens):
   screens inside this page:
@@ -36828,7 +36806,7 @@ pages:
 
 ## cms mimin seller setting sla diproses / tagihan diterima (last edited 2026-01-26)
 url: https://www.figma.com/design/57HlLvZ7RPueGl4bUgoW6D
-tags: #status/active #role/seller #role/mimin #feat/shipping-fulfilment
+tags: #status/active #role/seller #role/mimin #feat/shipping-fulfilment #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [v1 ↗](https://www.figma.com/design/57HlLvZ7RPueGl4bUgoW6D?node-id=0%3A1) (11 screens · 5 headings):
   headings:
@@ -36995,7 +36973,7 @@ pages:
 
 ## Mimin - CMS (last edited 2026-08-07)
 url: https://www.figma.com/design/YpXVloEVeShWj0dsidotBH
-tags: #status/active #role/mimin #feat/general
+tags: #status/active #role/mimin #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/rfq #flow/penawaran #flow/quotation #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/YpXVloEVeShWj0dsidotBH?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -37206,7 +37184,7 @@ pages:
 
 ## Mimin - CMS (Copy) (last edited 2026-06-23)
 url: https://www.figma.com/design/izYf3JkW05wB6R28OxLQll
-tags: #status/active #role/mimin #feat/general
+tags: #status/active #role/mimin #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/rfq #flow/penawaran #flow/quotation #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/izYf3JkW05wB6R28OxLQll?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -37434,7 +37412,7 @@ pages:
 
 ## Checkout - Pengiriman - Payment (last edited 2026-09-24)
 url: https://www.figma.com/design/NvA4uLylM6UM3HkRBC9hzw
-tags: #status/active #role/buyer #feat/checkout #feat/shipping-fulfilment #feat/payment
+tags: #status/active #role/buyer #feat/checkout #feat/shipping-fulfilment #feat/payment #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/invoice #flow/tagihan #flow/shipping #flow/pengiriman
 pages:
 [Flag list ↗](https://www.figma.com/design/NvA4uLylM6UM3HkRBC9hzw?node-id=2099%3A29274) (255 screens):
   screens inside this page:
@@ -37823,7 +37801,7 @@ pages:
 
 ## E-Faktur (last edited 2026-01-26)
 url: https://www.figma.com/design/lYR7HG1slGqlfUidYH3ZSa
-tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment
+tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin
 pages:
 [v9 Deactivate & Reactivate ↗](https://www.figma.com/design/lYR7HG1slGqlfUidYH3ZSa?node-id=5996%3A23570) (3 screens):
   screens inside this page:
@@ -38205,7 +38183,7 @@ pages:
 
 ## E-Faktur Prototype (last edited 2026-01-26)
 url: https://www.figma.com/design/xrNl7zJPyVol9XJWNTDKW5
-tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment
+tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [Page 1 ↗](https://www.figma.com/design/xrNl7zJPyVol9XJWNTDKW5?node-id=0%3A1) (22 screens · 8 headings):
   headings:
@@ -38243,7 +38221,7 @@ pages:
 
 ## E-Sign E-Meterai v4 (last edited 2026-01-26)
 url: https://www.figma.com/design/WNTXRtZ4lHf94AJA3cVgGB
-tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment
+tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [limit nominal ↗](https://www.figma.com/design/WNTXRtZ4lHf94AJA3cVgGB?node-id=1587%3A22531) (3 screens):
   screens inside this page:
@@ -38338,7 +38316,7 @@ pages:
 
 ## E-Sign E-Meterai v4.1 - Limit Quota (last edited 2026-01-26)
 url: https://www.figma.com/design/W7KmiCAoSmFTOHltdKnmsX
-tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment
+tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [user journey ↗](https://www.figma.com/design/W7KmiCAoSmFTOHltdKnmsX?node-id=0%3A1) (15 screens · 22 headings):
   headings:
@@ -38470,7 +38448,7 @@ pages:
 
 ## E-Sign E-Meterai v4.2 - Revisi Penandatangan (halt) (last edited 2026-01-26)
 url: https://www.figma.com/design/02uqOH3i4JBuo6mijkRS6e
-tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment
+tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [v4.2 ↗](https://www.figma.com/design/02uqOH3i4JBuo6mijkRS6e?node-id=0%3A1) (17 screens · 2 headings):
   headings:
@@ -38497,7 +38475,7 @@ pages:
 
 ## E-Sign E-Meterai v4.3 - Add Visibility for Feature (last edited 2026-01-26)
 url: https://www.figma.com/design/BtlJ7VJnuIdXh8i17dd3qG
-tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment
+tags: #status/active #role/all #feat/docs-tax-invoice #feat/payment #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [4.3 ↗](https://www.figma.com/design/BtlJ7VJnuIdXh8i17dd3qG?node-id=0%3A1) (7 screens · 5 headings):
   headings:
@@ -38530,7 +38508,7 @@ pages:
 
 ## Setting Pembayaran Tempo (last edited 2026-01-26)
 url: https://www.figma.com/design/tJ7ndXbMU73dnlxWBEJUlY
-tags: #status/active #role/all #feat/payment
+tags: #status/active #role/all #feat/payment #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/top #flow/tempo #flow/termin
 pages:
 [alt. 3 - fixed durations ↗](https://www.figma.com/design/tJ7ndXbMU73dnlxWBEJUlY?node-id=103%3A10735) (7 screens · 1 headings):
   headings:
@@ -38696,7 +38674,7 @@ pages:
 
 ## Keranjang (last edited 2026-09-08)
 url: https://www.figma.com/design/U9FhKkLv5eaAoXf7boOV7P
-tags: #status/active #role/buyer #feat/cart
+tags: #status/active #role/buyer #feat/cart #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/U9FhKkLv5eaAoXf7boOV7P?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -38861,7 +38839,7 @@ pages:
 
 ## Kurir Pribadi, Byteship dan POS (last edited 2025-10-01)
 url: https://www.figma.com/design/wR8Gk8Yy2Jco9mXfYDQ34J
-tags: #status/active #role/seller #feat/shipping-fulfilment
+tags: #status/active #role/seller #feat/shipping-fulfilment #flow/top #flow/tempo #flow/termin #flow/pos #flow/kasir #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/wR8Gk8Yy2Jco9mXfYDQ34J?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -38964,7 +38942,7 @@ pages:
 
 ## Mimin Trx - Permintaan Pembelian (last edited 2025-09-24)
 url: https://www.figma.com/design/PnhoBrwduiE9vxB2qvMWW1
-tags: #status/active #role/buyer #role/mimin #feat/pr-po-approval
+tags: #status/active #role/buyer #role/mimin #feat/pr-po-approval #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/pos #flow/kasir #flow/approval #flow/persetujuan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/PnhoBrwduiE9vxB2qvMWW1?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -39068,7 +39046,7 @@ pages:
 
 ## New Checkout Prototype (last edited 2026-07-23)
 url: https://www.figma.com/design/vqBtrnaiI21CZ2eO6AZQXn
-tags: #status/active #role/buyer #feat/checkout
+tags: #status/active #role/buyer #feat/checkout #flow/top #flow/tempo #flow/termin
 pages:
 [Thumbnail ↗](https://www.figma.com/design/vqBtrnaiI21CZ2eO6AZQXn?node-id=68%3A8184) (1 screens · 2 headings):
   headings:
@@ -39126,7 +39104,7 @@ pages:
 
 ## Q4 2024 - Checkout Process Mobile (last edited 2025-09-24)
 url: https://www.figma.com/design/oXpJM1jIPB7vJG2PJCYlGt
-tags: #status/archive #role/buyer #feat/checkout #feat/platformmobile
+tags: #status/archive #role/buyer #feat/checkout #feat/platformmobile #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/oXpJM1jIPB7vJG2PJCYlGt?node-id=0%3A1) (2 screens · 7 headings):
   headings:
@@ -39224,7 +39202,7 @@ pages:
 
 ## Revamp CO process -> Detail PR (last edited 2026-09-11)
 url: https://www.figma.com/design/PveRWyo0PJzGdThvQLJxMy
-tags: #status/active #role/buyer #feat/checkout #feat/pr-po-approval
+tags: #status/active #role/buyer #feat/checkout #feat/pr-po-approval #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/PveRWyo0PJzGdThvQLJxMy?node-id=0%3A1) (2 screens · 7 headings):
   headings:
@@ -39584,7 +39562,7 @@ pages:
 
 ## Revisi Pesanan - 2025 (last edited 2026-08-26)
 url: https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il
-tags: #status/active #role/all #feat/order-trx
+tags: #status/active #role/all #feat/order-trx #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/approval #flow/persetujuan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -39810,7 +39788,7 @@ pages:
 
 ## Trx - Checkout & payment (last edited 2026-07-14)
 url: https://www.figma.com/design/LnadK6RKxwZzJKpa0ArJRS
-tags: #status/active #role/buyer #feat/checkout #feat/payment
+tags: #status/active #role/buyer #feat/checkout #feat/payment #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/LnadK6RKxwZzJKpa0ArJRS?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -40009,7 +39987,7 @@ pages:
 
 ## Trx - Produk Jasa (last edited 2026-05-18)
 url: https://www.figma.com/design/RkH7rv9Q7SJtl5OFANrEp0
-tags: #status/active #role/all #feat/product-mgmt
+tags: #status/active #role/all #feat/product-mgmt #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/bast #flow/serah-terima #flow/handover #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/RkH7rv9Q7SJtl5OFANrEp0?node-id=0%3A1) (1 screens · 3 headings):
   headings:
@@ -40453,7 +40431,7 @@ pages:
 
 ## Trx - Produk Jasa [Termin 3.2] (last edited 2026-04-29)
 url: https://www.figma.com/design/o2EQmN0Exam0IfmDBHhI5k
-tags: #status/active #role/all #feat/product-mgmt
+tags: #status/active #role/all #feat/product-mgmt #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/o2EQmN0Exam0IfmDBHhI5k?node-id=0%3A1) (1 screens · 3 headings):
   headings:
@@ -40540,7 +40518,7 @@ pages:
 
 ## Trx - Prototype Termin (last edited 2026-07-14)
 url: https://www.figma.com/design/9LwFGTFflM3MgLTjfE0naw
-tags: #status/active #role/all #feat/general
+tags: #status/active #role/all #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/9LwFGTFflM3MgLTjfE0naw?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -40782,7 +40760,7 @@ pages:
 
 ## [Trx] Dokumen Pendukung PR (last edited 2026-10-12)
 url: https://www.figma.com/design/1wbGLblEEDTSwocpDAOKVn
-tags: #status/active #role/buyer #feat/pr-po-approval #feat/docs-tax-invoice
+tags: #status/active #role/buyer #feat/pr-po-approval #feat/docs-tax-invoice #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/approval #flow/persetujuan
 pages:
 [Page 1 ↗](https://www.figma.com/design/1wbGLblEEDTSwocpDAOKVn?node-id=0%3A1) (2 screens):
   screens inside this page:
@@ -40791,7 +40769,7 @@ pages:
 
 ## - Buyer - KLPD (last edited 2026-01-26)
 url: https://www.figma.com/design/X704rleHUMDwchHxF8kWDb
-tags: #status/active #role/buyer #feat/general
+tags: #status/active #role/buyer #feat/general #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/X704rleHUMDwchHxF8kWDb?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -41144,7 +41122,7 @@ pages:
 
 ## Disco - Eksplorasi (last edited 2026-01-26)
 url: https://www.figma.com/design/YqGKHFS7uZlUR6RMFS5f28
-tags: #status/active #role/all #feat/general
+tags: #status/active #role/all #feat/general #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/YqGKHFS7uZlUR6RMFS5f28?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -41416,7 +41394,7 @@ pages:
 
 ## Disco - Homepage (last edited 2026-08-12)
 url: https://www.figma.com/design/uATMhYqgmdYWOInyew6V1l
-tags: #status/active #role/all #feat/homepage-landing
+tags: #status/active #role/all #feat/homepage-landing #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/uATMhYqgmdYWOInyew6V1l?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -41502,7 +41480,7 @@ pages:
 
 ## Disco - Katalog Tertutup (Mimin) (last edited 2026-01-26)
 url: https://www.figma.com/design/Ctfa8TPlgudN8hHsEqMXc7
-tags: #status/active #role/mimin #feat/discovery-pdp
+tags: #status/active #role/mimin #feat/discovery-pdp #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/Ctfa8TPlgudN8hHsEqMXc7?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -41672,7 +41650,7 @@ pages:
 
 ## Disco - Language Selector (last edited 2026-01-29)
 url: https://www.figma.com/design/5dmzleJSFaoncwbnKWyHvC
-tags: #status/active #role/all #feat/general
+tags: #status/active #role/all #feat/general #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/5dmzleJSFaoncwbnKWyHvC?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -41745,7 +41723,7 @@ pages:
 
 ## Disco - Product Detail Page (last edited 2026-09-17)
 url: https://www.figma.com/design/ZVMxZeZNm5kvs0IBNrzNht
-tags: #status/active #role/all #feat/discovery-pdp
+tags: #status/active #role/all #feat/discovery-pdp #flow/pajak #flow/tax-invoice #flow/top #flow/tempo #flow/termin #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/ZVMxZeZNm5kvs0IBNrzNht?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -41973,7 +41951,7 @@ pages:
 
 ## Disco - Tambah dan Ubah Produk (last edited 2026-10-20)
 url: https://www.figma.com/design/ePtBvglKZvWI9Hg2fzZs0l
-tags: #status/active #role/seller #feat/product-mgmt
+tags: #status/active #role/seller #feat/product-mgmt #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/ePtBvglKZvWI9Hg2fzZs0l?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -42313,7 +42291,7 @@ pages:
 
 ## Discovery - Dynamic Tempo (last edited 2026-05-18)
 url: https://www.figma.com/design/VZxByF102NwGpf7hZxRDRY
-tags: #status/active #role/all #feat/payment
+tags: #status/active #role/all #feat/payment #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/VZxByF102NwGpf7hZxRDRY?node-id=0%3A1) (1 screens · 3 headings):
   headings:
@@ -42517,7 +42495,7 @@ pages:
 
 ## Discovery - Q4 2025 (last edited 2026-01-26)
 url: https://www.figma.com/design/u7K544YwRNCmwhNVFGwdRx
-tags: #status/active #role/all #feat/general
+tags: #status/active #role/all #feat/general #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/u7K544YwRNCmwhNVFGwdRx?node-id=0%3A1) (2 screens · 8 headings):
   headings:
@@ -42560,7 +42538,7 @@ pages:
 
 ## Fitur Negosiasi (last edited 2026-05-18)
 url: https://www.figma.com/design/oAdCqwdiOhV1y5JEeXpqLE
-tags: #status/active #role/all #feat/negotiation
+tags: #status/active #role/all #feat/negotiation #flow/rfq #flow/penawaran #flow/quotation #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/oAdCqwdiOhV1y5JEeXpqLE?node-id=0%3A1) (2 screens · 8 headings):
   headings:
@@ -42787,7 +42765,7 @@ pages:
 
 ## PPN 1.1% (last edited 2026-06-23)
 url: https://www.figma.com/design/qtWU9T25qfxG66Jc5nB7yk
-tags: #status/active #role/all #feat/docs-tax-invoice
+tags: #status/active #role/all #feat/docs-tax-invoice #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [Page 1 ↗](https://www.figma.com/design/qtWU9T25qfxG66Jc5nB7yk?node-id=0%3A1) (8 screens):
   screens inside this page:
@@ -42808,7 +42786,7 @@ pages:
 
 ## Pengaturan Akun (last edited 2026-01-26)
 url: https://www.figma.com/design/XvZJW2NBtW6PvVkhsiYR3a
-tags: #status/active #role/all #feat/account-profile
+tags: #status/active #role/all #feat/account-profile #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/XvZJW2NBtW6PvVkhsiYR3a?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -42884,7 +42862,7 @@ pages:
 
 ## Prototype Fitur Negosiasi (last edited 2026-01-26)
 url: https://www.figma.com/design/9K8P5arZwPdvsCuUlvU9Cc
-tags: #status/active #role/all #feat/negotiation
+tags: #status/active #role/all #feat/negotiation #flow/rfq #flow/penawaran #flow/quotation #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/9K8P5arZwPdvsCuUlvU9Cc?node-id=0%3A1) (2 screens · 8 headings):
   headings:
@@ -43017,7 +42995,7 @@ pages:
 
 ## RFQ Integration (FC & FPJP) (last edited 2026-04-24)
 url: https://www.figma.com/design/vFpwYO5kMP36QId7OFeMDO
-tags: #status/active #role/all #feat/tender-eproc
+tags: #status/active #role/all #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/vFpwYO5kMP36QId7OFeMDO?node-id=0%3A1) (2 screens · 8 headings):
   headings:
@@ -43046,7 +43024,7 @@ pages:
 
 ## Retensi (last edited 2026-09-08)
 url: https://www.figma.com/design/fJ04PVkN4Px4awnWJaV0LF
-tags: #status/active #role/all #feat/general
+tags: #status/active #role/all #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/fJ04PVkN4Px4awnWJaV0LF?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -43204,7 +43182,7 @@ pages:
 
 ## Authorized Seller (last edited 2026-09-02)
 url: https://www.figma.com/design/N7jJkGZwx11oaV92AshEjR
-tags: #status/active #role/seller #feat/login-auth
+tags: #status/active #role/seller #feat/login-auth #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/N7jJkGZwx11oaV92AshEjR?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -43248,7 +43226,7 @@ pages:
 
 ## Buyer Manager Multiple Buyer Group (last edited 2026-06-04)
 url: https://www.figma.com/design/ekzrYybQttVo9R9zCcenm4
-tags: #status/active #role/buyer-manager #role/buyer-group #feat/general
+tags: #status/active #role/buyer-manager #role/buyer-group #feat/general #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/ekzrYybQttVo9R9zCcenm4?node-id=0%3A1) (2 screens · 8 headings):
   headings:
@@ -43317,7 +43295,7 @@ pages:
 
 ## Buyer/Limitasi Checkout v1.0 (last edited 2026-06-17)
 url: https://www.figma.com/design/QZCDgFcUArQtDIqhNT1arZ
-tags: #status/active #role/buyer #feat/checkout
+tags: #status/active #role/buyer #feat/checkout #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Thumbnails ↗](https://www.figma.com/design/QZCDgFcUArQtDIqhNT1arZ?node-id=1885%3A58153) (1 screens · 2 headings):
   headings:
@@ -43362,7 +43340,7 @@ pages:
 
 ## Dokumen Pendukung SPPKP & Rekening Seller (last edited 2026-10-09)
 url: https://www.figma.com/design/Oh8hQRZATGjoUMOYbGEuk3
-tags: #status/active #role/seller #feat/register-kyc #feat/account-profile #feat/docs-tax-invoice
+tags: #status/active #role/seller #feat/register-kyc #feat/account-profile #feat/docs-tax-invoice #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [seller ↗](https://www.figma.com/design/Oh8hQRZATGjoUMOYbGEuk3?node-id=0%3A1) (11 screens):
   screens inside this page:
@@ -43545,7 +43523,7 @@ pages:
 
 ## Nama Toko (last edited 2026-10-15)
 url: https://www.figma.com/design/eezw2fNLa5Ibq4XbLKCURF
-tags: #status/active #role/seller #feat/account-profile
+tags: #status/active #role/seller #feat/account-profile #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/eezw2fNLa5Ibq4XbLKCURF?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -43693,7 +43671,7 @@ pages:
 
 ## Visit - Bantuan PaDi UMKM Revamp (last edited 2025-12-08)
 url: https://www.figma.com/design/Xr9V4YKE5tDprIFxBLoj01
-tags: #status/active #role/all #feat/general
+tags: #status/active #role/all #feat/general #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/Xr9V4YKE5tDprIFxBLoj01?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -43996,7 +43974,7 @@ pages:
 
 ## Visit - Export Data Pribadi (last edited 2025-09-24)
 url: https://www.figma.com/design/apz32b9FB14AF5qzmKwBLq
-tags: #status/active #role/all #feat/account-profile
+tags: #status/active #role/all #feat/account-profile #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/apz32b9FB14AF5qzmKwBLq?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -44516,7 +44494,7 @@ pages:
 
 ## Visit - Kurasi Seller Mimin (last edited 2026-08-07)
 url: https://www.figma.com/design/61dYxLUhYMROSoN1088eTE
-tags: #status/active #role/seller #role/mimin #feat/general
+tags: #status/active #role/seller #role/mimin #feat/general #flow/pos #flow/kasir
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/61dYxLUhYMROSoN1088eTE?node-id=0%3A1) (2 screens · 3 headings):
   headings:
@@ -45035,7 +45013,7 @@ pages:
 
 ## Visit - Manajemen Akses Owner v1.0 (last edited 2026-05-18)
 url: https://www.figma.com/design/f1Y89pG0KiErZIa3qgNN9s
-tags: #status/active #role/admin-perusahaan #feat/account-profile
+tags: #status/active #role/admin-perusahaan #feat/account-profile #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/f1Y89pG0KiErZIa3qgNN9s?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -45489,7 +45467,7 @@ pages:
 
 ## Visit - Pop Up Informasi  Kewajiban Pajak BG (last edited 2025-09-24)
 url: https://www.figma.com/design/rLyVrPxbeCd3WEYA0R5Oa3
-tags: #status/active #role/buyer-group #feat/docs-tax-invoice
+tags: #status/active #role/buyer-group #feat/docs-tax-invoice #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/rLyVrPxbeCd3WEYA0R5Oa3?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -45942,7 +45920,7 @@ pages:
 
 ## Visit - Revamp Menu Dokumen Mobile (last edited 2026-02-25)
 url: https://www.figma.com/design/B24PwwKgu8Q6gRjGJQOB3E
-tags: #status/active #role/all #feat/docs-tax-invoice #feat/platformmobile
+tags: #status/active #role/all #feat/docs-tax-invoice #feat/platformmobile #flow/invoice #flow/tagihan #flow/pajak #flow/tax-invoice
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/B24PwwKgu8Q6gRjGJQOB3E?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -46152,7 +46130,7 @@ pages:
 
 ## [Visit] Automated seller & Manual Buyer suspend system (last edited 2026-06-09)
 url: https://www.figma.com/design/y30P1Ixi2NPD7ljEzszTX5
-tags: #status/active #role/buyer #role/seller #feat/account-profile
+tags: #status/active #role/buyer #role/seller #feat/account-profile #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Seller Suspend ↗](https://www.figma.com/design/y30P1Ixi2NPD7ljEzszTX5?node-id=0%3A1) (8 screens · 4 headings):
   headings:
@@ -46269,7 +46247,7 @@ pages:
 
 ## Admin Perusahaan (last edited 2026-06-11)
 url: https://www.figma.com/design/88n8gmjvX5ZAr5a53HFEnv
-tags: #status/active #role/admin-perusahaan #feat/general
+tags: #status/active #role/admin-perusahaan #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/88n8gmjvX5ZAr5a53HFEnv?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -46539,7 +46517,7 @@ pages:
 
 ## Admin Perusahaan / Buyer Group Multi BG (last edited 2026-06-26)
 url: https://www.figma.com/design/9E2PuESRoLhLXPFoJsVHb4
-tags: #status/active #role/buyer-group #role/admin-perusahaan #role/buyer #feat/general
+tags: #status/active #role/buyer-group #role/admin-perusahaan #role/buyer #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Daftar Buyer Group ↗](https://www.figma.com/design/9E2PuESRoLhLXPFoJsVHb4?node-id=14910%3A126787) (2 screens · 4 headings):
   headings:
@@ -46703,7 +46681,7 @@ pages:
 
 ## Admin Perusahaan / Buyer Group Single BG (last edited 2026-09-10)
 url: https://www.figma.com/design/qy4kqL6xVXfX8LZwU30OjZ
-tags: #status/active #role/buyer-group #role/admin-perusahaan #role/buyer #feat/general
+tags: #status/active #role/buyer-group #role/admin-perusahaan #role/buyer #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Daftar Buyer Group ↗](https://www.figma.com/design/qy4kqL6xVXfX8LZwU30OjZ?node-id=14910%3A126787) (2 screens · 4 headings):
   headings:
@@ -46836,7 +46814,7 @@ pages:
 
 ## Admin Perusahaan / Daftar Pengguna (last edited 2026-06-25)
 url: https://www.figma.com/design/DKHrybWoYCIBL5WSja1zxf
-tags: #status/active #role/admin-perusahaan #feat/account-profile
+tags: #status/active #role/admin-perusahaan #feat/account-profile #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [[NEW] Daftar Pengguna ↗](https://www.figma.com/design/DKHrybWoYCIBL5WSja1zxf?node-id=13919%3A9014) (3 screens · 2 headings):
   headings:
@@ -46926,7 +46904,7 @@ pages:
 
 ## Admin Perusahaan sisanya belum dipisah2 (last edited 2026-06-11)
 url: https://www.figma.com/design/ZAoAyrLGI8sqFrOaaKRYZd
-tags: #status/active #role/admin-perusahaan #feat/general
+tags: #status/active #role/admin-perusahaan #feat/general #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/invoice #flow/tagihan #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan #flow/shipping #flow/pengiriman
 pages:
 [🖥️ Data Perusahaan - Daftar Penjual Binaan ↗](https://www.figma.com/design/ZAoAyrLGI8sqFrOaaKRYZd?node-id=4257%3A144356) (11 screens):
   screens inside this page:
@@ -46987,7 +46965,7 @@ pages:
 
 ## Approval Berjenjang (last edited 2026-06-10)
 url: https://www.figma.com/design/jormcDRjKI7AeeepVS3Agq
-tags: #status/active #role/admin-perusahaan #feat/pr-po-approval
+tags: #status/active #role/admin-perusahaan #feat/pr-po-approval #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/approval #flow/persetujuan #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [Page 1 ↗](https://www.figma.com/design/jormcDRjKI7AeeepVS3Agq?node-id=0%3A1) (1 screens):
   screens inside this page:
@@ -46995,7 +46973,7 @@ pages:
 
 ## [Buyer Staff|Manager|Admin] Approval Berjenjang (last edited 2026-07-16)
 url: https://www.figma.com/design/AXLDCoO58OfOMnZFkY0Rhg
-tags: #status/active #role/buyer-manager #role/buyer-staff #role/admin-perusahaan #feat/pr-po-approval
+tags: #status/active #role/buyer-manager #role/buyer-staff #role/admin-perusahaan #feat/pr-po-approval #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/top #flow/tempo #flow/termin #flow/approval #flow/persetujuan
 pages:
 [Buyer Staff ↗](https://www.figma.com/design/AXLDCoO58OfOMnZFkY0Rhg?node-id=0%3A1) (2 screens):
   screens inside this page:
@@ -47019,7 +46997,7 @@ pages:
 
 ## Buyer / Tender Kilat v1.0 (last edited 2026-08-31)
 url: https://www.figma.com/design/VaKrXBQMVXNyBg4HmZuBh3
-tags: #status/active #role/buyer #feat/tender-eproc
+tags: #status/active #role/buyer #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [Tender Kilat Buyer ↗](https://www.figma.com/design/VaKrXBQMVXNyBg4HmZuBh3?node-id=0%3A1) (20 screens · 8 headings):
   headings:
@@ -47065,7 +47043,7 @@ pages:
 
 ## Buyer / Tender Kilat v1.1 (last edited 2026-08-31)
 url: https://www.figma.com/design/4p3z7NArJpsDipMjCD6F1s
-tags: #status/active #role/buyer #feat/tender-eproc
+tags: #status/active #role/buyer #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation #flow/shipping #flow/pengiriman
 pages:
 [🎨 Mimin ↗](https://www.figma.com/design/4p3z7NArJpsDipMjCD6F1s?node-id=2007%3A50596) (4 screens):
   screens inside this page:
@@ -47147,7 +47125,7 @@ pages:
 
 ## Buyer / Tender Kilat v1.2 (last edited 2026-10-05)
 url: https://www.figma.com/design/cqn8z6OvFqGDKuwxTuNsTh
-tags: #status/active #role/buyer #feat/tender-eproc
+tags: #status/active #role/buyer #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [🎨 Mimin ↗](https://www.figma.com/design/cqn8z6OvFqGDKuwxTuNsTh?node-id=2007%3A50596) (6 screens):
   screens inside this page:
@@ -47205,7 +47183,7 @@ pages:
 
 ## CMS RFQ (last edited 2026-01-26)
 url: https://www.figma.com/design/M1Ei0WILBrVhLyjuujroSR
-tags: #status/active #role/mimin #feat/tender-eproc
+tags: #status/active #role/mimin #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/M1Ei0WILBrVhLyjuujroSR?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -47287,7 +47265,7 @@ pages:
 
 ## Flow RFQ (last edited 2026-01-26)
 url: https://www.figma.com/design/hHw8KDXQeyd5qSlsnfSjXW
-tags: #status/active #role/all #feat/tender-eproc
+tags: #status/active #role/all #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [Page 1 ↗](https://www.figma.com/design/hHw8KDXQeyd5qSlsnfSjXW?node-id=0%3A1) (0 screens · 5 headings):
   headings:
@@ -47301,7 +47279,7 @@ pages:
 
 ## Improve RFQ (last edited 2026-01-26)
 url: https://www.figma.com/design/LEe9BIRfhdFOjuf6dSOQVV
-tags: #status/active #role/all #feat/tender-eproc
+tags: #status/active #role/all #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation #flow/shipping #flow/pengiriman
 pages:
 [Thumbnail ↗](https://www.figma.com/design/LEe9BIRfhdFOjuf6dSOQVV?node-id=315%3A55882) (1 screens · 2 headings):
   headings:
@@ -47674,7 +47652,7 @@ pages:
 
 ## Konfigurasi Timeline & Notifikasi (last edited 2026-09-10)
 url: https://www.figma.com/design/WNPtDJ3j94H2FueizzzWWV
-tags: #status/active #role/all #feat/tender-eproc #feat/notif-email
+tags: #status/active #role/all #feat/tender-eproc #feat/notif-email #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/WNPtDJ3j94H2FueizzzWWV?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -47848,7 +47826,7 @@ pages:
 
 ## PaDi-eProc-Master (last edited 2026-09-02)
 url: https://www.figma.com/design/M7xp85OOJs4T1v6Z11Kv0i
-tags: #status/active #role/all #feat/tender-eproc
+tags: #status/active #role/all #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation #flow/top #flow/tempo #flow/termin
 pages:
 [Thumbnail ↗](https://www.figma.com/design/M7xp85OOJs4T1v6Z11Kv0i?node-id=3664%3A296545) (1 screens · 3 headings):
   headings:
@@ -48394,7 +48372,7 @@ pages:
 
 ## Buyer - RFQ (last edited 2026-05-20)
 url: https://www.figma.com/design/D9Jx6YzZoX1A3ozVi0ILDy
-tags: #status/active #role/buyer #feat/tender-eproc
+tags: #status/active #role/buyer #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation #flow/shipping #flow/pengiriman
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/D9Jx6YzZoX1A3ozVi0ILDy?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -48628,7 +48606,7 @@ pages:
 
 ## CMS eProc (last edited 2026-06-04)
 url: https://www.figma.com/design/hUBI6zLGDvfbNJWQfn686o
-tags: #status/active #role/mimin #feat/tender-eproc
+tags: #status/active #role/mimin #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/hUBI6zLGDvfbNJWQfn686o?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -48715,7 +48693,7 @@ pages:
 
 ## RFQ UX Audit (last edited 2025-05-16)
 url: https://www.figma.com/design/1oOTWk84230I7MhcaehiHa
-tags: #status/active #role/all #feat/tender-eproc
+tags: #status/active #role/all #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/1oOTWk84230I7MhcaehiHa?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -48771,7 +48749,7 @@ pages:
 
 ## Seller - RFQ (last edited 2025-09-25)
 url: https://www.figma.com/design/OhKXtUsTxygN84FRcw1ELR
-tags: #status/active #role/seller #feat/tender-eproc
+tags: #status/active #role/seller #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/OhKXtUsTxygN84FRcw1ELR?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -49109,7 +49087,7 @@ pages:
 
 ## eProc - Q1 2024 (last edited 2025-12-16)
 url: https://www.figma.com/design/z5KpoFxNGdelEivCXftEVH
-tags: #status/archive #role/all #feat/tender-eproc
+tags: #status/archive #role/all #feat/tender-eproc #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/z5KpoFxNGdelEivCXftEVH?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -49215,7 +49193,7 @@ pages:
 
 ## eProc - Q1 2025 (last edited 2025-09-11)
 url: https://www.figma.com/design/afNIf79fdGn7i4Nz5rEAC4
-tags: #status/active #role/all #feat/tender-eproc
+tags: #status/active #role/all #feat/tender-eproc #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/afNIf79fdGn7i4Nz5rEAC4?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -49274,7 +49252,7 @@ pages:
 
 ## eProc - Q1 2026 (last edited 2026-06-04)
 url: https://www.figma.com/design/7cd3ptRqGPCskz9Re10F9W
-tags: #status/active #role/all #feat/tender-eproc
+tags: #status/active #role/all #feat/tender-eproc #flow/po #flow/pesanan-pembelian #flow/purchase-order #flow/rfq #flow/penawaran #flow/quotation #flow/top #flow/tempo #flow/termin
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/7cd3ptRqGPCskz9Re10F9W?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -49320,7 +49298,7 @@ pages:
 
 ## eProc - Q2 2024 (last edited 2025-03-24)
 url: https://www.figma.com/design/11x4VfpBvAargYqM4rmkaw
-tags: #status/archive #role/all #feat/tender-eproc
+tags: #status/archive #role/all #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/11x4VfpBvAargYqM4rmkaw?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -49394,7 +49372,7 @@ pages:
 
 ## eProc - Q2 2026 (last edited 2026-04-20)
 url: https://www.figma.com/design/8oLsSCTmZspyHD3ZoJTBgI
-tags: #status/active #role/all #feat/tender-eproc
+tags: #status/active #role/all #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation #flow/top #flow/tempo #flow/termin #flow/buyer-group #flow/kelompok-pembeli
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/8oLsSCTmZspyHD3ZoJTBgI?node-id=0%3A1) (1 screens · 2 headings):
   headings:
@@ -49430,7 +49408,7 @@ pages:
 
 ## eProc - Q3 2024 (last edited 2026-05-26)
 url: https://www.figma.com/design/NcSk8huTRo4BohlmvzwYPi
-tags: #status/archive #role/all #feat/tender-eproc
+tags: #status/archive #role/all #feat/tender-eproc #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/NcSk8huTRo4BohlmvzwYPi?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -49562,7 +49540,7 @@ pages:
 
 ## eProc - Q3 2025 (last edited 2026-04-14)
 url: https://www.figma.com/design/j8BMMbffZ85MTrn7mBZiAk
-tags: #status/active #role/all #feat/tender-eproc
+tags: #status/active #role/all #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/j8BMMbffZ85MTrn7mBZiAk?node-id=0%3A1) (2 screens · 8 headings):
   headings:
@@ -49619,7 +49597,7 @@ pages:
 
 ## eProc - Q4 2023 (last edited 2026-05-26)
 url: https://www.figma.com/design/jlLcZgwQZnqiD7WG1vdDg1
-tags: #status/archive #role/all #feat/tender-eproc
+tags: #status/archive #role/all #feat/tender-eproc #flow/pr #flow/permintaan-pembelian #flow/purchase-request #flow/rfq #flow/penawaran #flow/quotation
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/jlLcZgwQZnqiD7WG1vdDg1?node-id=0%3A1) (2 screens · 2 headings):
   headings:
@@ -49870,7 +49848,7 @@ pages:
 
 ## eProc - Q4 2024 (last edited 2026-01-26)
 url: https://www.figma.com/design/PCv7jalsrfzPJN8CYiGPqM
-tags: #status/archive #role/all #feat/tender-eproc
+tags: #status/archive #role/all #feat/tender-eproc #flow/rfq #flow/penawaran #flow/quotation #flow/invoice #flow/tagihan
 pages:
 [📙 Thumbnail ↗](https://www.figma.com/design/PCv7jalsrfzPJN8CYiGPqM?node-id=0%3A1) (2 screens · 2 headings):
   headings:
