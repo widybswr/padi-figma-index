@@ -24,6 +24,16 @@ Epic 10:
   - responsive
   - Keranjang padikasir/one screen viewport
 Kebutuhan Urgent Responsive:
+  headings:
+  - 900
+  - US 8.7
+  - US 9.4
+  - US 8.8 & US 8.9
+  - US 8.10
+  - Back to dashboard with no warning at all
+  - Close modal, and keep the kasir’s session
+  - US 9.3
+  - New Cancel Pesanan
   screens inside this page:
   - Dashboard Seller/filled
   - On Scroll
@@ -91,6 +101,8 @@ url: https://www.figma.com/design/dn6g5bspnrczOIuRBAOduT
 tags: archive, archive / kdkmp, financier, financing, kdkmp
 pages:
 📙 Thumbnail:
+  headings:
+  - Flow pengajuan pembiayaan HIMBARA
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -105,6 +117,8 @@ url: https://www.figma.com/design/kWcD6eQXh20t0HZrdIaaOR
 tags: archive, archive / kdkmp, all, general, kdkmp
 pages:
 Candi Loro Digi 1:
+  headings:
+  - Main Design File DigiKoperasi KDKMP
   screens inside this page:
   - Icon
   - Splash Screen
@@ -134,6 +148,9 @@ Epic 5: Dashboard seller (Iteration):
   - Dashboard Seller/state kosong (shorting + ada data nya)
   - Dashboard Seller/transaksi padikasir/details
 Epic 6 & 7 Login:
+  headings:
+  - Epic 6
+  - Epic 7
   screens inside this page:
   - Beranda (Case Harian)
   - Beranda (Case Mingguan)
@@ -160,6 +177,18 @@ Epic 10:
   screens inside this page:
   - (no screens)
 Epic Post Launch (10-12):
+  headings:
+  - US 10.1 Post Launch
+  - US 10.1 Post Launch (Adjustment)
+  - US 10.3 Post Launch
+  - US 12.4 Post Launch
+  - Laporan Keuangan
+  - Pembiayaan
+  - US 10.2 dan 10.5
+  - US 10.4 : Deskripsi pada produk custom
+  - SNK
+  - Export daftar transaksi padi kasir
+  - Sync to accounting+
   screens inside this page:
   - Keranjang padikasir/one screen viewport
   - Frame 625245
@@ -270,6 +299,9 @@ SSO PIN:
   - Info PIN Belum Ada
   - Notes
 Kemitraan:
+  headings:
+  - PDF
+  - Full Konten Table
   screens inside this page:
   - Flow pengajuan baru -- Last Updated - for Preview
   - Kemitraan
@@ -318,6 +350,9 @@ entire prototype:
   screens inside this page:
   - v1
 coming soon page:
+  headings:
+  - ©2025 Koperasi Desa Merah Putih
+  - ©2025 Koperasi Desa Kelurahan Merah Putih
   screens inside this page:
   - Coming Soon Page 2
   - Coming Soon/apliaksi pembayaran
@@ -405,6 +440,10 @@ url: https://www.figma.com/design/JtPferIAT4JqMSV9IoRfS7
 tags: archive, archive / seller 2022-2024, seller, shipping fulfilment
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Ambil di Tempat
+  - PaDi UMKM - Seller
+  - Last Updated : 5 May 2023
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -444,6 +483,8 @@ pages:
   - Frame 48097695
   - Frame 48097706
 📱 Mobile:
+  headings:
+  - Ramadhan Festival
   screens inside this page:
   - mobile/akun/pengiriman/default
   - Frame 48097711
@@ -487,6 +528,10 @@ url: https://www.figma.com/design/Y9FkRr7Z8eHXxDzvkPimpK
 tags: archive, archive / seller 2022-2024, seller, order trx, payment
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Biaya Transaksi
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -568,6 +613,12 @@ Dashboard:
   screens inside this page:
   - Frame 6
 Biaya Transaksi Penjual:
+  headings:
+  - Rincian Biaya Kurir dan Asuransi
+  - BUMN
+  - PT. Telkom Indonesia (Persero) Tbk.
+  - Buyer Group
+  - PT. Indofarma Tbk - Divisi Procurement
   screens inside this page:
   - CMS Local Component
   - .expand icon
@@ -580,6 +631,8 @@ Biaya Transaksi Penjual:
   - table header
   - table content
 Banner:
+  headings:
+  - Desktop screen
   screens inside this page:
   - Banner
   - Mini Banner
@@ -593,6 +646,9 @@ Banner:
   - Desktop Banner
   - Mobile Banner
 Register:
+  headings:
+  - Mobile Responsive
+  - Negative Case
   screens inside this page:
   - Register - Empty
   - Register - Email wrong format
@@ -606,6 +662,9 @@ Register:
   - Frame 624920
   - Register
 Login:
+  headings:
+  - Mobile Responsive
+  - Negative Case
   screens inside this page:
   - Login - Fill Empty
   - Login - Kata Sandi / Email - Salah
@@ -614,6 +673,9 @@ Login:
   - Frame 624920
   - Register
 Forgot Password:
+  headings:
+  - Mobile Responsive
+  - Negative Case
   screens inside this page:
   - Lupa Password
   - Lupa Password - Filled
@@ -628,10 +690,18 @@ Forgot Password:
   - Register
   - Frame 624921
 Agent - Dashboard:
+  headings:
+  - OPSI 3
   screens inside this page:
   - Dashboard
   - Register
 Agent - Kode Referral:
+  headings:
+  - Mobile Responsive
+  - Flow Tambah Pengalaman Pekarjaan
+  - Detail Penjual Teregister
+  - Flow Hapus
+  - Negative Case
   screens inside this page:
   - Kode Referral
   - Kode Referral - Open Elipsis Delete
@@ -656,6 +726,8 @@ Admin - Dasboard:
   - Dashboard
   - Register
 Admin - Daftar Agent:
+  headings:
+  - Mobile Responsive
   screens inside this page:
   - Admin - Daftar Agent - Export Success
   - Admin - Daftar Agent
@@ -670,6 +742,11 @@ Admin - Kode Referral:
   - Admin - Kode Referal - Detail
   - Register
 Admin - Daftar Admin:
+  headings:
+  - Negative Case
+  - Flow Tambah
+  - Flow Edit
+  - Flow Hapus
   screens inside this page:
   - Admin - Daftar Admin
   - Admin - Daftar Admin - Success
@@ -684,6 +761,17 @@ Admin - Daftar Admin:
   - Frame 624965
   - Register
 Admin - Organisasi:
+  headings:
+  - Nama organisasi
+  - Provinsi
+  - Rumah bumn
+  - Aceh
+  - karang taruna
+  - 156
+  - 2300
+  - Organisasi
+  - jumlah agen
+  - Seller acquired
   screens inside this page:
   - Admin - Daftar Organisasi
   - Dashboard
@@ -694,6 +782,11 @@ Local Components:
   screens inside this page:
   - Browser
 Junk:
+  headings:
+  - OPSI 1
+  - OPSI 2
+  - OPSI 4
+  - Flow Ubah
   screens inside this page:
   - Kode Referral - Open Elipsis Edit
   - Kode Referral - Edit
@@ -707,6 +800,9 @@ url: https://www.figma.com/design/xH1uRu4Wxpbw1o3ZgjONiW
 tags: archive, archive / seller 2022-2024, seller, mimin, general
 pages:
 📙 Thumbnail:
+  headings:
+  - CMS
+  - PaDi UMKM - Seller
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -735,6 +831,16 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Default
+  - Opsi 1
+  - Opsi 2
+  - Expanded
+  - Halaman artikel
+  - Halaman bantuan
+  - Halaman beranda
+  - Halaman perusahaan
+  - Halaman gabung jadi penjual
   screens inside this page:
   - Frame 624755
   - Frame 624757
@@ -763,6 +869,10 @@ url: https://www.figma.com/design/ubSePZ2Vh5NVWan1sWM83k
 tags: archive, archive / seller 2022-2024, seller, homepage landing, dashboard analytics
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Dashboard
+  - PaDi UMKM - Seller
+  - Last Updated : 5 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -779,6 +889,8 @@ pages:
   - .pop rincian
   - .check me
 📱 Mobile:
+  headings:
+  - Pembelian Terbesar
   screens inside this page:
   - Frame 625226
   - Frame 624743
@@ -802,6 +914,11 @@ pages:
   - header home
   - .bottom menu
 📝 Notes Design & Technical Critique:
+  headings:
+  - Penjual
+  - 500
+  - 251
+  - Dashboard
   screens inside this page:
   - Desktop - 1
   - Frame 624794
@@ -831,6 +948,11 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - OPSI 1( Info fill )
+  - IF Jumlah Transaksi Ada
+  - IF ada Jumlah Transaksi Ada
+  - OPSI 1( Info Outline )
   screens inside this page:
   - desktop/dashboard/default
   - desktop/dashboard v2
@@ -854,6 +976,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - Jumlah Transaksi
   screens inside this page:
   - Dashboard
   - Frame 625229
@@ -867,6 +991,10 @@ url: https://www.figma.com/design/XpLjlpnQRj1d56x0z6pyNe
 tags: archive, archive / seller 2022-2024, seller, homepage landing
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Homepage
+  - PaDi UMKM - Seller
+  - Last Updated : 5 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -920,6 +1048,10 @@ url: https://www.figma.com/design/iXY0zwyG1LtyHKPeuCgept
 tags: archive, archive / seller 2022-2024, seller, login auth, register kyc, homepage landing
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Login
+  - PaDi UMKM - Seller
+  - Last Updated : 5 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -959,6 +1091,9 @@ pages:
   - Login - Password - Show
   - Login - Kata Sandi / Email - Salah
 📱 Mobile:
+  headings:
+  - Login
+  - Login - On Boarding State
   screens inside this page:
   - mobile/login/default
   - Frame 6002
@@ -1026,6 +1161,9 @@ Epic 5: Dashboard seller (Iteration):
   - Dashboard Seller/state kosong (shorting + ada data nya)
   - Dashboard Seller/transaksi padikasir/details
 Epic 6 & 7:
+  headings:
+  - Epic 6
+  - Epic 7
   screens inside this page:
   - Beranda (Case Harian)
   - Beranda (Case Mingguan)
@@ -1056,6 +1194,8 @@ entire prototype:
   screens inside this page:
   - v1
 coming soon page:
+  headings:
+  - ©2025 Koperasi Desa Merah Putih
   screens inside this page:
   - Coming Soon Page 2
 Archived:
@@ -1092,6 +1232,14 @@ Biaya Transaksi:
   - desktop/landing page/biaya transaksi/seller
   - desktop/tambah produk/harga produk
 🗑️Trash:
+  headings:
+  - pembatas antar tiap section
+  - ilustrasi to icon
+  - layout & penegas bg
+  - Hero Section
+  - Benefit
+  - Testimoni
+  - Langkah - langkah
   screens inside this page:
   - IDEASI
   - landing page DEA X PaDI
@@ -1192,6 +1340,8 @@ MU-4 Kalkulasi Pendapatan:
   screens inside this page:
   - (no screens)
 MU-5 Wording Kirim pesanan:
+  headings:
+  - Pilih filter
   screens inside this page:
   - Frame 624759
   - Frame 624761
@@ -1213,6 +1363,10 @@ url: https://www.figma.com/design/UKfNcUnx2fhePEmjzsPmgL
 tags: archive, archive / seller 2022-2024, seller, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur NPS
+  - PaDi UMKM - Seller
+  - Last Updated : 23 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -1220,10 +1374,14 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Desktop
   screens inside this page:
   - Seller - Data Product
   - Layanan Penjual - Bantuan Hukum
 📱 Mobile:
+  headings:
+  - Mobile
   screens inside this page:
   - Product - Data Product
 📝 Notes Design & Technical Critique:
@@ -1265,6 +1423,10 @@ url: https://www.figma.com/design/jkXpnPPG0s6pyB2ApurJ07
 tags: archive, archive / seller 2022-2024, seller, general, padikasir
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur PaDi Kasir
+  - PaDi UMKM - Seller
+  - Last Updated : 3 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -1275,6 +1437,8 @@ pages:
   screens inside this page:
   - (no screens)
 📱 Mobile:
+  headings:
+  - Rp580.000
   screens inside this page:
   - mobile/akun/transaksi offline/default/detail/card1
   - add item
@@ -1292,6 +1456,16 @@ pages:
   - filter tag
   - desktop/pengaturan/pengiriman/kurir ke3
 📝 Notes Design & Technical Critique:
+  headings:
+  - Pembelian Langsung (semua masuk Tab Pesanan)
+  - Pembelian Tempo (Tab Pesanan)
+  - Pembelian Tempo (Tab Tagihan)
+  - Pembelian Tempo (Tab Pembayaran)
+  - Belum diulas buyer
+  - Pembayaran Langsung
+  - Tab Pesanan
+  - Pembayaran Tempo
+  - Tab Tagihan
   screens inside this page:
   - desktop/daftar pesanan/default
   - desktop/daftar pesanan/pop rincian
@@ -1448,6 +1622,10 @@ url: https://www.figma.com/design/O0Xx5kQyOlWe2OrHJrGNtf
 tags: archive, archive / seller 2022-2024, seller, account profile, shipping fulfilment
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Pengaturan, Akun
+  - PaDi UMKM - Seller
+  - Last Updated : 5 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -1461,6 +1639,13 @@ pages:
   screens inside this page:
   - (no screens)
 🎨  Hi-Fi:
+  headings:
+  - Opsi 1
+  - Opsi 2
+  - Problem
+  - Current Design
+  - Idea
+  - Competitor
   screens inside this page:
   - Frame 1958764336
   - figma-section-title
@@ -1507,6 +1692,23 @@ FINAL:
   - Flow Utama (case sudah aktifin kurir toko)
   - Frame 1958764569
 🖥️ Desktop:
+  headings:
+  - tampilan pdp pas lagi libur
+  - pengaturan, pengiriman-dokumen tambah tab operasional toko
+  - tampilan seller page tambah jam operasional
+  - Flow Pengiriman Via Kurir
+  - Flow Pengiriman Pribadi
+  - Negative Case
+  - Pengiriman
+  - Open Dropdown Checklist Layanan Kurir
+  - Pengiriman Field Atau langsung klik all
+  - Checklist Layanan Kurir
+  - Konfirmasi Hapus Layanan Kurir
+  - Kosongkan data
+  - diinput kurang dari karakter/digit yang ditentukan
+  - Harus berupa angka
+  - Layanan Pengiriman Pribadi Active
+  - Layanan Pengiriman Pribadi Active Field
   screens inside this page:
   - desktop/pengaturan/pengiriman/default
   - desktop/pengaturan/pengiriman/kurir pribadi/default
@@ -1550,6 +1752,16 @@ FINAL:
   - desktop/pengaturan/pengiriman/kurir pribadi
   - Desktop Main Button
 📱 Mobile:
+  headings:
+  - Pengiriman
+  - Ongkir Tetap Ongkir Sama Ongkir Rata
+  - desktop mobile 2 section lainnya onboarding
+  - Negative Case
+  - Ketika langsung klik checkbox
+  - Expand dropdown
+  - Kosongkan data
+  - diinput kurang dari karakter/digit yang ditentukan
+  - Lampiran diatas 5MB
   screens inside this page:
   - mobile/akun/pengiriman/popup save
   - mobile/akun/jadwal operasional toko/default
@@ -1591,6 +1803,17 @@ FINAL:
   - Latset Exploration
   - Live
 trash:
+  headings:
+  - Provinsi
+  - Jarak
+  - Ubah
+  - rfewfefe
+  - dsweew
+  - wqdqwdwqd
+  - Dekstop
+  - Mobile alt 1
+  - Mobile alt 2
+  - Mobile alt 3
   screens inside this page:
   - Opsi 1
   - Current Design
@@ -1627,6 +1850,10 @@ url: https://www.figma.com/design/Fza02zKimVFsqE3iwX3jVW
 tags: archive, archive / seller 2022-2024, seller, account profile
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Pengaturan, Akun
+  - PaDi UMKM - Seller
+  - Last Updated : 5 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -1646,6 +1873,10 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - tampilan pdp pas lagi libur
+  - pengaturan, pengiriman-dokumen tambah tab operasional toko
+  - tampilan seller page tambah jam operasional
   screens inside this page:
   - desktop/pengaturan/profil/default
   - desktop/pengaturan/jadwal operasional toko/default
@@ -1697,6 +1928,10 @@ url: https://www.figma.com/design/eYFM9TVEYz4W8TuENFTOe3
 tags: archive, archive / seller 2022-2024, seller, order trx
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Pesanan, Transaksi
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -1704,6 +1939,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Filter
   screens inside this page:
   - tab menu
   - tab-menu-item
@@ -1724,6 +1961,16 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - Pembelian Langsung (semua masuk Tab Pesanan)
+  - Pembelian Tempo (Tab Pesanan)
+  - Pembelian Tempo (Tab Tagihan)
+  - Pembelian Tempo (Tab Pembayaran)
+  - Belum diulas buyer
+  - Pembayaran Langsung
+  - Tab Pesanan
+  - Pembayaran Tempo
+  - Tab Tagihan
   screens inside this page:
   - desktop/daftar pesanan/default
   - desktop/daftar pesanan/pop rincian
@@ -1751,6 +1998,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Title Card
   screens inside this page:
   - Transaksi - Pesanan
   - Daftar pesanan dekstop
@@ -1760,6 +2009,12 @@ pages:
   - Frame 1958763910
   - Frame 1958763911
 📱 Mobile:
+  headings:
+  - CARD OPSI 2
+  - CARD OPSI 3
+  - CARD OPSI 4
+  - CARD OPSI 5
+  - CARD OPSI 6
   screens inside this page:
   - mobile/daftar pesanan/default
   - .card pesanan
@@ -1790,6 +2045,15 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - Riwayat Laporan
+  - Action
+  - CARD OPSI 1.1
+  - CARD OPSI 1.2
+  - CARD OPSI 2
+  - CARD OPSI 3
+  - OPSI 2
+  - Text
   screens inside this page:
   - Transaksi - Pesanan
   - pop up dialog modal
@@ -1812,6 +2076,10 @@ url: https://www.figma.com/design/ZMiPveOuTHM76ElAdhnHby
 tags: archive, archive / seller 2022-2024, seller, order trx
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Pesanan, Transaksi
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -1819,6 +2087,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Filter
   screens inside this page:
   - tab menu
   - tab-menu-item
@@ -1839,6 +2109,16 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - Pembelian Langsung (semua masuk Tab Pesanan)
+  - Pembelian Tempo (Tab Pesanan)
+  - Pembelian Tempo (Tab Tagihan)
+  - Pembelian Tempo (Tab Pembayaran)
+  - Belum diulas buyer
+  - Pembayaran Langsung
+  - Tab Pesanan
+  - Pembayaran Tempo
+  - Tab Tagihan
   screens inside this page:
   - desktop/daftar pesanan/default
   - desktop/daftar pesanan/pop rincian
@@ -1895,6 +2175,8 @@ Tempo:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Info Padi soal simplify flow
   screens inside this page:
   - dekstop/detail pesanan/Pesanan Baru
   - dekstop/detail pesanan/Pesanan Ditolak
@@ -1967,6 +2249,10 @@ url: https://www.figma.com/design/A0FcN8uJXkprdJwKkktNDy
 tags: archive, archive / seller 2022-2024, seller, order trx, payment
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Pesanan, Transaksi
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -1974,6 +2260,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Filter
   screens inside this page:
   - tab menu
   - tab-menu-item
@@ -1994,6 +2282,16 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - Pembelian Langsung (semua masuk Tab Pesanan)
+  - Pembelian Tempo (Tab Pesanan)
+  - Pembelian Tempo (Tab Tagihan)
+  - Pembelian Tempo (Tab Pembayaran)
+  - Belum diulas buyer
+  - Pembayaran Langsung
+  - Tab Pesanan
+  - Pembayaran Tempo
+  - Tab Tagihan
   screens inside this page:
   - desktop/daftar pesanan/default
   - desktop/daftar pesanan/pop rincian
@@ -2021,6 +2319,14 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Entry point dari daftar pesanan
+  - Entry point dari daftar pesanan (Mobile)
+  - Entry point dari detail pesanan (Mobile)
+  - Entry point dari detail pesanan
+  - FLOW
+  - apa itu pembayaran tempo untuk siapa bedanya apa
+  - Informasi Pembayaran Tempo
   screens inside this page:
   - Transaksi - Pesanan Page 2
   - informasi pembayaran tempo
@@ -2058,6 +2364,10 @@ url: https://www.figma.com/design/VyC9VhhpCwbmTSpJuUv09o
 tags: archive, archive / seller 2022-2024, seller, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur List Produk
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -2089,6 +2399,8 @@ Tambah Produk Secara Bulk:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - mengubah
   screens inside this page:
   - Product - Data Product
   - Seller - Add Product
@@ -2132,6 +2444,10 @@ url: https://www.figma.com/design/4jILm9ZLEoOKfUbMFRQMQX
 tags: archive, archive / seller 2022-2024, seller, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur List Produk
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -2196,6 +2512,10 @@ url: https://www.figma.com/design/T0zSLWBBHSESTvuSrl9oM8
 tags: archive, archive / seller 2022-2024, seller, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur List Produk
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -2224,6 +2544,14 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Nama Produk
+  - link
+  - Deskripsi produk
+  - Stok Produk
+  - Dimensi Produk
+  - Lihat Produk
+  - Rp8.942.343
   screens inside this page:
   - desktop/data produk/default
   - catalogue pdf
@@ -2267,6 +2595,10 @@ url: https://www.figma.com/design/4TlH13fwu72M7w9uV22sw1
 tags: archive, archive / seller 2022-2024, seller, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Tambah/Ubah Produk V1
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -2295,6 +2627,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Specs
   screens inside this page:
   - tambah produk/default
   - tambah produk/filled
@@ -2335,6 +2669,10 @@ url: https://www.figma.com/design/yGh0StOInYcnAcbdLPD1Ci
 tags: archive, archive / seller 2022-2024, seller, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Tambah/Ubah Produk V2
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -2363,6 +2701,10 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - opsi
+  - Atur diskon
+  - Harga sebelum diskon
   screens inside this page:
   - tambah produk
   - .base varian
@@ -2373,6 +2715,8 @@ pages:
   - Frame 625358
   - Frame 625403
 📱 Mobile:
+  headings:
+  - mulai muncul opsi harga coret
   screens inside this page:
   - .base info produk
   - .base varian
@@ -2400,6 +2744,10 @@ url: https://www.figma.com/design/b7RPR5fUslTIsckKbT6KsN
 tags: archive, archive / seller 2022-2024, seller, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Tambah/Ubah Produk V2.1
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -2452,6 +2800,10 @@ url: https://www.figma.com/design/4r4dYBcZV9k4aKPskPaAa1
 tags: archive, archive / seller 2022-2024, seller, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Tambah/Ubah Produk V2.2
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -2504,6 +2856,10 @@ url: https://www.figma.com/design/iZRWMzF7NWZqL7SisPBK9X
 tags: archive, archive / seller 2022-2024, seller, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Tambah/Ubah Produk V2.3
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -2531,6 +2887,8 @@ pages:
   screens inside this page:
   - tambah produk
 🖥️ Desktop:
+  headings:
+  - -Nama Produk -Kategori -Harga
   screens inside this page:
   - Tambah Produk - Filled
   - Tambah Produk
@@ -2559,6 +2917,10 @@ url: https://www.figma.com/design/qcoFr3QDdepcXZ9KmqBUe1
 tags: archive, archive / seller 2022-2024, seller, shipping fulfilment, docs tax invoice
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur List Produk
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -2587,6 +2949,9 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - opsi 1
+  - opsi 3
   screens inside this page:
   - Message
   - tambah produk/default
@@ -2641,6 +3006,18 @@ Landing page:
   screens inside this page:
   - landing page agen
 Explore:
+  headings:
+  - kalo klik agen lanjut ke page bawah ini
+  - Dashboard
+  - Kode referral
+  - List kode referral
+  - List seller terdaftar
+  - List seller terverifikasi
+  - List seller sudah upload prduk/listing
+  - List seller sudah transaksi
+  - Detail kode referraL
+  - flow/proses
+  - contoh
   screens inside this page:
   - Dashboard agent
   - Frame 11351
@@ -2696,6 +3073,10 @@ url: https://www.figma.com/design/dcECATWY2OzyTQgYO6zFQZ
 tags: archive, archive / seller 2022-2024, seller, login auth, register kyc
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Login
+  - PaDi UMKM - Seller
+  - Last Updated : 5 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -2745,6 +3126,11 @@ pages:
   - filled
   - filled-errror case
 📱 Mobile:
+  headings:
+  - yes
+  - Login
+  - Register
+  - Atur ulang sandi
   screens inside this page:
   - info login
   - default
@@ -2768,6 +3154,16 @@ pages:
   screens inside this page:
   - Frame 624730
 🖥️ Desktop 2:
+  headings:
+  - Specs
+  - Step by step register di PaDi
+  - Buka email, lakukan konfirmasi lalu buat password.
+  - Foto produk dan isi deskripsi produk
+  - Konfirmasi Email
+  - Lengkapi Data Usaha
+  - Unggah Produk
+  - 4 Langkah Mudah Berjualan di PaDi:
+  - Install aplikasi PaDi UMKM & gabung sekarang juga!
   screens inside this page:
   - Frame 624719
   - Frame 624724
@@ -2808,6 +3204,10 @@ pages:
   - Frame 624736
   - Frame 624735
 📱 Mobile:
+  headings:
+  - Login
+  - Login - On Boarding State
+  - Specs
   screens inside this page:
   - mobile/login/default
   - Frame 6002
@@ -2838,6 +3238,9 @@ pages:
   - login
   - mobile bottom sheet
 📱 Mobile 2:
+  headings:
+  - Login
+  - Login - On Boarding State
   screens inside this page:
   - Frame 6002
   - Frame 6106
@@ -2894,6 +3297,8 @@ pages:
   - Frame 1320
   - Frame 1319
 📝 Notes Design & Technical Critique:
+  headings:
+  - Standart Seller Elektronik yang direkomendasikan
   screens inside this page:
   - Info - Beranda
   - bantuan
@@ -2972,6 +3377,10 @@ url: https://www.figma.com/design/K5PIKYtmFEh6Acs1t9SAJk
 tags: archive, archive / seller 2022-2024, seller, register kyc
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Onboarding
+  - PaDi UMKM - Seller
+  - Last Updated : 5 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -5975,6 +6384,9 @@ url: https://www.figma.com/design/6wjNW2XVgPT6YivjqS8cJv
 tags: 2022 origin design, smooets, archive, archive / smooets, mimin, agent, general
 pages:
 Register:
+  headings:
+  - Mobile Responsive
+  - Negative Case
   screens inside this page:
   - Register - Empty
   - Register - Email wrong format
@@ -5988,6 +6400,9 @@ Register:
   - Frame 624920
   - Register
 Login:
+  headings:
+  - Mobile Responsive
+  - Negative Case
   screens inside this page:
   - Login - Fill Empty
   - Login - Kata Sandi / Email - Salah
@@ -5996,6 +6411,9 @@ Login:
   - Frame 624920
   - Register
 Forgot Password:
+  headings:
+  - Mobile Responsive
+  - Negative Case
   screens inside this page:
   - Lupa Password
   - Lupa Password - Filled
@@ -6010,10 +6428,19 @@ Forgot Password:
   - Register
   - Frame 624921
 Agent - Dashboard:
+  headings:
+  - OPSI 3
   screens inside this page:
   - Dashboard
   - Register
 Agent - Kode Referral:
+  headings:
+  - Mobile Responsive
+  - Flow tambah kode referral
+  - Detail Penjual Teregister
+  - Flow Hapus
+  - Flow Edit
+  - Negative Case
   screens inside this page:
   - Kode Referral
   - Kode Referral - Export Success
@@ -6038,6 +6465,8 @@ Admin - Dasboard:
   - Dashboard
   - Register
 Admin - Daftar Agent:
+  headings:
+  - Mobile Responsive
   screens inside this page:
   - Admin - Daftar Agent - Export Success
   - Admin - Daftar Agent
@@ -6046,6 +6475,10 @@ Admin - Daftar Agent:
   - Admin - Daftar Agent - Detail
   - Register
 Admin - Kode Referral:
+  headings:
+  - Add kode referral untuk admin
+  - Edit kode referral untuk admin
+  - Detail kdoe referral
   screens inside this page:
   - Admin - Kode Referal
   - Admin - Kode Referal - Export Success
@@ -6059,6 +6492,11 @@ Admin - Kode Referral:
   - Frame 625021
   - Frame 6058
 Admin - Daftar Admin:
+  headings:
+  - Negative Case
+  - Flow Tambah
+  - Flow Edit
+  - Flow Hapus
   screens inside this page:
   - Admin - Daftar Admin
   - Admin - Daftar Admin - Success
@@ -6073,6 +6511,20 @@ Admin - Daftar Admin:
   - Frame 624965
   - Register
 Admin - Organisasi:
+  headings:
+  - Nama organisasi
+  - Provinsi
+  - Rumah bumn
+  - Aceh
+  - karang taruna
+  - 23
+  - 156
+  - 2300
+  - Organisasi
+  - jumlah agen
+  - Seller acquired
+  - action
+  - lihat detail
   screens inside this page:
   - Admin - Daftar Organisasi
   - Dashboard
@@ -6087,6 +6539,11 @@ Local Components:
   - Frame 625017
   - Browser
 Junk:
+  headings:
+  - OPSI 1
+  - OPSI 2
+  - OPSI 4
+  - Flow Ubah
   screens inside this page:
   - Kode Referral - Open Elipsis Edit
   - Kode Referral - Edit
@@ -6103,6 +6560,20 @@ Cover:
   screens inside this page:
   - Title Card
 Dokumen:
+  headings:
+  - PR
+  - Purchase Order (PO)
+  - BAST
+  - Instruksi Pembayaran
+  - Purchase Request (PR) 2 Pesanan
+  - Purchase Request (PR) 1 Pesanan
+  - Instruksi Pembayaran Buyer Group Tempo
+  - Instruksi Pembayaran Buyer Group Langsung
+  - Buyer Group Tempo
+  - Buyer Group Langsung
+  - Status Pesanan Diterima, Selesai
+  - Status Pembayaran Terverifikasi, Selesai
+  - LUNAS
   screens inside this page:
   - Frame 625056
   - Frame 625057
@@ -6125,6 +6596,31 @@ Dokumen:
   - Frame 625055
   - Dokumen - Invoice - Invoice - Group Tempo
 Hi-Fi Web Design Buyer:
+  headings:
+  - Chat Buyer Group
+  - Rule Terkirim, Sudah Terbaca, Gagal Kirim
+  - 1. belum ada yg baca sudah terkirim = centang abu satu
+  - 3. sudah dibaca semua orang = centang biru 2
+  - 4. gagal dikirim/pending
+  - Open Location
+  - Open Chat
+  - Search Seller
+  - Open Emoticon
+  - Open Attachment
+  - Send Image
+  - Send Document
+  - Send Emoticon
+  - Pilih Emoticon
+  - Typing
+  - Member Grop Offline
+  - Member Group Online
+  - Chat Scroll
+  - Notification On
+  - Share Location
+  - Chat Kosong
+  - Percakapan kosong
+  - Seller On
+  - Seller Off
   screens inside this page:
   - Checkout - Add Address - Hover Button
   - Kotak Pesan - Open Chat
@@ -6172,6 +6668,8 @@ Hi-Fi Web Design Buyer:
   - Frame 624828
   - Frame 624843
 Compare:
+  headings:
+  - Alternative
   screens inside this page:
   - Product Detail - After Click Compare
 Login:
@@ -6185,6 +6683,9 @@ Login:
   - Login - Password - Show
   - Login - Kata Sandi / Email - Salah
 Register:
+  headings:
+  - Register Buyer
+  - Email Template
   screens inside this page:
   - Register sebagai
   - Register as Buyer
@@ -6203,6 +6704,14 @@ Register:
   - Atur Kata Sandi - Filled
   - Atur Kata Sandi - Success
 Home & Discover:
+  headings:
+  - Home
+  - Discover Seller Page
+  - Category
+  - C J
+  - Level 1
+  - Level 2
+  - Level 3
   screens inside this page:
   - Home - Sebelum Login
   - Vendor Diampu BUMN - List
@@ -6241,6 +6750,11 @@ Home & Discover:
   - Home - Category - Header 1
   - Home - Category - Header 2
 Home & Discover Revisi:
+  headings:
+  - Suggestion Homepage
+  - Suggestion Product Detail
+  - Suggestion Pilih Alamat
+  - Seller belum upload foto
   screens inside this page:
   - Home
   - Product Detail - Informasi Produk
@@ -6269,6 +6783,8 @@ Feedback:
   - Register - Empty
   - Product Detail - 1 Review
 Lupa Password:
+  headings:
+  - Forgot Password
   screens inside this page:
   - Lupa Password - Empty
   - Lupa Password - Filled
@@ -6349,6 +6865,8 @@ Payment:
   - Payment - Bisnis - Bayar Tempo - Success
   - Payment - Success
 Biaya Transaksi & Kurir:
+  headings:
+  - Biaya Transaksi dan Kurir
   screens inside this page:
   - BIaya Transaksi & Kurir
   - BIaya Transaksi & Kurir - Tahun
@@ -6359,6 +6877,60 @@ Biaya Transaksi & Kurir:
   - BIaya Transaksi & Kurir - Dibayar
   - BIaya Transaksi & Kurir - Menunggu Pembayaran
 Daftar Transaksi:
+  headings:
+  - List Transaksi
+  - Staff/Buyer Group Pembayaran Langsung
+  - Staff/Buyer Group Pembayaran Tempo Khusus Telkom
+  - Staff/Buyer Group Pembayaran Tempo Non Telkom
+  - Daftar Transaksi Staff/Buyer Group : Ubah Pesanan
+  - Dokumen mengikuti status sebelumnya
+  - Terdapat Issue
+  - Tidak ada issue
+  - Daftar Transaksi State
+  - Daftar Transaksi Open Elipsis
+  - Active State
+  - Calendar Picked
+  - Menunggu Review Manager
+  - Disetujui Manager
+  - Ditolak Manager
+  - Diproses Penjual
+  - Menunggu Pembayaran
+  - Dibayar
+  - Selesai
+  - Pembayaran Terverifikasi
+  - Refund
+  - Refund Selesai
+  - Permintaan Perubahan
+  - Perubahan Diterima
+  - Perubahan Ditolak
+  - Ditolak Penjual
+  - Diterima Pembeli
+  - Penagihan
+  - Tagihan Diterima
+  - Tagihan Ditolak
+  - Dikirim
+  - Revisi
+  - Buyer Group Pembayaran Tempo
+  - Buyer Group Pembayaran Tempo Khusus Telkom
+  - Buyer Group Pembayaran Langsung
+  - Buyer Group Pembayaran Tempo Khusus Telkom
+  - Buyer Group Pembayaran Tempo Non Telkom
+  - Action
+  - Buyer Group Pembayaran Tempo Case lebih dari 1 penjual
+  - Case Lainnya
+  - Case: produk lebih dari 2
+  - Unduh PDF
+  - Ubah Pesanan
+  - produk lebih dari 2
+  - PPH lebih dari 2
+  - Otomatis by system
+  - Tempo
+  - General
+  - Action Lihat Perubahan
+  - Batal
+  - Expired
+  - Buyer Group Pembayaran Tempo dari Status Disetujui
+  - Status Batal jika trigger awal dari Menunggu Pembayaran
   screens inside this page:
   - Daftar Transaksi - Tagihan - Detail Pesanan - Diterima Pembeli
   - Frame 624844
@@ -6600,6 +7172,12 @@ Daftar Transaksi:
   - Selesai - Detail - Sesudah Beri Ulasan - Lihat Ulasan
   - Expired- Detail - Dokumen Penjual
 Ulasan:
+  headings:
+  - Ulasan - Menunggu Diulas
+  - Ulasan - Ulasan Saya
+  - Case pemberian bintang
+  - Scroll
+  - Success
   screens inside this page:
   - Menunggu Diulas - List
   - Menunggu Diulas - Search Nomor PO - Active
@@ -6620,11 +7198,15 @@ Ulasan:
   - Frame 11379
   - Frame 11380
 Request for Quotation:
+  headings:
+  - Request fo Quotation
   screens inside this page:
   - Request for Quotation
   - Request for Quotation - Filled
   - Request for Quotation - Error
 Profil:
+  headings:
+  - Profile Buyer Staff BUMN
   screens inside this page:
   - Profile - Detail
   - Profile - Informasi Umum - Filled
@@ -6653,6 +7235,8 @@ Profil:
   - Profile - Input Photo & Name - Nama Kosong
   - Profile - Input Photo & Name - Incorrect Format Foto
 Alamat:
+  headings:
+  - Address
   screens inside this page:
   - Alamat - List
   - Address - Add Address - Dropdown Kode Posss
@@ -6667,6 +7251,13 @@ Alamat:
   - Address - Empty List
   - Address - Set as Default
 Flow Utama:
+  headings:
+  - Start
+  - Homepage
+  - Login
+  - Lupa Kata Sandi
+  - Register
+  - Home, Category & Discover
   screens inside this page:
   - Login - Fill Empty
   - Login - On Boarding 2
@@ -6715,6 +7306,8 @@ Cover:
   - Transaksi - Pesanan
   - Title Card
 Profil:
+  headings:
+  - Profil Manager
   screens inside this page:
   - Profile - Detail - Empty
   - Profile - Input Photo & Name - Incorrect Format Foto
@@ -6743,6 +7336,31 @@ Profil:
   - Profile - Input Photo & Name - After Cancel
   - Profile - Input Photo & Name - Nama Kosong
 Chat:
+  headings:
+  - Chat Buyer Group
+  - Rule Terkirim, Sudah Terbaca, Gagal Kirim
+  - 1. belum ada yg baca sudah terkirim = centang abu satu
+  - 3. sudah dibaca semua orang = centang biru 2
+  - 4. gagal dikirim/pending
+  - Open Location
+  - Open Chat
+  - Search Seller
+  - Open Emoticon
+  - Open Attachment
+  - Send Image
+  - Send Document
+  - Send Emoticon
+  - Pilih Emoticon
+  - Typing
+  - Member Grop Offline
+  - Member Group Online
+  - Chat Scroll
+  - Notification On
+  - Share Location
+  - Chat Kosong
+  - Percakapan kosong
+  - Seller On
+  - Seller Off
   screens inside this page:
   - Kotak Pesan - Open Chat
   - Kotak Pesan - Member Group Offline
@@ -6789,6 +7407,14 @@ Chat:
   - Frame 624828
   - Frame 624843
 Permintaan Pembelian:
+  headings:
+  - Daftar Transaksi State
+  - Daftar Transaksi Open Elipsis
+  - Active State
+  - Empty
+  - Calendar Picked
+  - Search
+  - Berasal dari status req review ketika klik tombol tolak
   screens inside this page:
   - Permintaan Pembelian - Semua
   - Permintaan Pembelian - Menunggu Pembayaran
@@ -6813,6 +7439,59 @@ Permintaan Pembelian:
   - Daftar Transaksi - Selesai - Detail Pesanan - Expired
   - Frame 624862
 Transaksi:
+  headings:
+  - Staff/Buyer Group Pembayaran Langsung
+  - Dokumen mengikuti status sebelumnya
+  - Staff/Buyer Group Pembayaran Tempo Khusus Telkom
+  - Staff/Buyer Group Pembayaran Tempo Non Telkom
+  - List Transaksi
+  - Daftar Transaksi
+  - Terdapat Issue
+  - Tidak ada issue
+  - Otomatis by system
+  - Daftar Transaksi State
+  - Daftar Transaksi Open Elipsis
+  - Active State
+  - Calendar Picked
+  - Case Lainnya
+  - Case: produk lebih dari 2
+  - Unduh PDF
+  - General
+  - Request Review
+  - Request Disetujui
+  - Request Ditolak
+  - Diproses Penjual
+  - Menunggu Pembayaran
+  - Dibayar
+  - Selesai
+  - Pembayaran Terverifikasi
+  - Refund
+  - Refund Selesai
+  - Permintaan Perubahan
+  - Perubahan Diterima
+  - Perubahan Ditolak
+  - Ditolak Penjual
+  - Diterima Pembeli
+  - Penagihan
+  - Tagihan Diterima
+  - Tagihan Ditolak
+  - Dikirim
+  - Revisi
+  - Buyer Group Pembayaran Tempo
+  - Buyer Group Pembayaran Tempo Khusus Telkom
+  - Buyer Group Pembayaran Langsung
+  - Buyer Group Pembayaran Tempo Khusus Telkom
+  - Buyer Group Pembayaran Langsung Non Telkom
+  - Action
+  - Tolak
+  - Setuju
+  - PPH lebih dari 2
+  - Action Lihat Perubahan
+  - Batal
+  - Expired
+  - Buyer Group Pembayaran Tempo Telkom
+  - Buyer Group Pembayaran Tempo dari Status Disetujui
+  - Buyer Group Pembayaran Tempo non Telkom
   screens inside this page:
   - Daftar Transaksi - Tagihan - Detail Pesanan - Diterima Pembeli
   - Frame 624893
@@ -7023,6 +7702,8 @@ Transaksi:
   - Selesai - Detail - Sebelum Beri Ulasan - Beri Ulasan - Success
   - Selesai - Detail - Sesudah Beri Ulasan - Lihat Ulasan
 Pengguna:
+  headings:
+  - Pengguna Manager
   screens inside this page:
   - Pengguna Manager - Detail
   - Pengguna Manager - Add Staff - Success
@@ -7034,6 +7715,13 @@ Pengguna:
   - Pengguna Manager - Empty
   - Pengguna Manager - Delete
 Ulasan:
+  headings:
+  - Ulasan - Menunggu Diulas
+  - Ulasan - Ulasan Saya
+  - Case pemberian bintang
+  - Scroll
+  - Aspek pengukuran tidak lengkap saat diinput
+  - Success
   screens inside this page:
   - Menunggu Diulas - Detail
   - Menunggu Diulas - Ulasan Empty
@@ -7055,6 +7743,8 @@ Ulasan:
   - Frame 11381
   - Frame 11380
 Biaya Transaksi & Kurir:
+  headings:
+  - Biaya Transaksi dan Kurir
   screens inside this page:
   - Biaya Transaksi & Kurir - Semua
   - BIaya Transaksi & Kurir - Menunggu Pembayaran
@@ -7066,6 +7756,8 @@ Biaya Transaksi & Kurir:
   - BIaya Transaksi & Kurir
   - BIaya Transaksi & Kurir - Empty Data
 Request for Quotation:
+  headings:
+  - Request fo Quotation
   screens inside this page:
   - Request for Quotation - Empty
   - Request for Quotation - Filled
@@ -7092,6 +7784,9 @@ Login:
   - Login - Password - Show
   - Login - Kata Sandi / Email - Salah
 Register:
+  headings:
+  - Register Buyer
+  - Email Template
   screens inside this page:
   - Register sebagai
   - Register as Buyer
@@ -7108,6 +7803,8 @@ Register:
   - Atur Kata Sandi - Filled
   - Atur Kata Sandi - Success
 Lupa Password:
+  headings:
+  - Forgot Password
   screens inside this page:
   - Lupa Password - Empty
   - Lupa Password - Filled
@@ -7119,6 +7816,10 @@ Lupa Password:
   - Lupa Password - Reset Password - Filled
   - Lupa Password - Reset Password - Filled - Show
 Home & Discover:
+  headings:
+  - Home
+  - Discover Seller Page
+  - Category
   screens inside this page:
   - Home - Sebelum Login
   - Vendor Diampu BUMN - List
@@ -7213,6 +7914,13 @@ Payment:
   - Payment - Bisnis - Bayar Tempo - Success
   - Payment - Success
 Ulasan:
+  headings:
+  - Ulasan - Menunggu Diulas
+  - Ulasan - Ulasan Saya
+  - Case pemberian bintang
+  - Scroll
+  - Success
+  - Aspek pengukuran tidak lengkap saat diinput
   screens inside this page:
   - Menunggu Diulas
   - Menunggu Diulas - Ulasan Empty
@@ -7233,6 +7941,8 @@ Ulasan:
   - Frame 11380
   - Frame 11381
 Alamat Pengiriman:
+  headings:
+  - Address
   screens inside this page:
   - Address
   - Address - Set as Default
@@ -7247,6 +7957,8 @@ Alamat Pengiriman:
   - Address - Delete Address - Hover
   - Address - Delete Address Success
 Profil:
+  headings:
+  - Profil Retail
   screens inside this page:
   - Profile
   - Profile - Input Photo & Name
@@ -7274,6 +7986,29 @@ Profil:
   - Profile - Input Photo & Name - Incorrect Format Foto
   - Profile - Input Photo & Name - Nama Kosong
 Chat:
+  headings:
+  - Chat Buyer Group
+  - Rule Terkirim, Sudah Terbaca, Gagal Kirim
+  - 1. belum ada yg baca sudah terkirim = centang abu satu
+  - 3. sudah dibaca semua orang = centang biru 2
+  - 4. gagal dikirim/pending
+  - Open Location
+  - Open Chat
+  - Search Seller
+  - Open Emoticon
+  - Open Attachment
+  - Send Image
+  - Send Document
+  - Send Emoticon
+  - Pilih Emoticon
+  - Typing
+  - Chat Scroll
+  - Notification On
+  - Share Location
+  - Chat Kosong
+  - Percakapan kosong
+  - Seller On
+  - Seller Off
   screens inside this page:
   - Kotak Pesan - Open Chat
   - Kotak Pesan - Seller Notif On
@@ -7314,6 +8049,34 @@ Chat:
   - Frame 624828
   - Frame 624843
 Daftar Transaksi:
+  headings:
+  - List Transaksi
+  - Flow Pesanan Retail: Pembayaran Langsung
+  - Dokumen mengikuti status sebelumnya
+  - Action
+  - Terdapat Issue
+  - Tidak ada issue
+  - Otomatis by system
+  - Daftar Transaksi State
+  - Daftar Transaksi Open Elipsis
+  - Active State
+  - Calendar Picked
+  - Case: produk lebih dari 2
+  - General
+  - Menunggu Pembayaran
+  - Dibayar
+  - Diproses Penjual
+  - Diterima Pembeli
+  - Batal
+  - Status Batal jika trigger awal dari Diproses Penjual
+  - Expired untuk case 1 penjual
+  - Expired
+  - Otomatis by system ketika pindah ke status berikutnya
+  - Ditolak Penjual
+  - Refund
+  - Refund Selesai
+  - Dikirim
+  - Pembayaran Terferifikasi
   screens inside this page:
   - Transaksi - Berlangsung1
   - Transaksi - Berlangsung2
@@ -7398,6 +8161,9 @@ Daftar Transaksi:
   - Frame 624929
   - Menunggu Pembayaran - Detail
 Junk:
+  headings:
+  - Perubahan
+  - PPH lebih dari 2
   screens inside this page:
   - Daftar Transaksi - Perubahan
   - Daftar Transaksi - Perubahan - Detail Pesanan - Permintaan Perubahan
@@ -7414,6 +8180,17 @@ url: https://www.figma.com/design/cquGYsTszLf6f2jkl8lBWs
 tags: 2022 origin design, smooets, archive, archive / smooets, mimin, general
 pages:
 Voucher List:
+  headings:
+  - Voucher Tab Menu & Action
+  - DEFAUT
+  - Voucher Filter
+  - Search
+  - Filter Tipe
+  - Pressed
+  - Default
+  - Filter Jenis
+  - Filter Urutkan
+  - Export
   screens inside this page:
   - Admin - Voucher - Semua
   - Admin - Voucher - Aktif
@@ -7442,6 +8219,10 @@ Voucher List:
   - Frame 624957
   - Frame 6070
 Add Single Voucher:
+  headings:
+  - Wajib Diisi
+  - Tidak Valid
+  - LEBIH DARI MAKSIMAL
   screens inside this page:
   - Admin - Voucher - Semua
   - Admin - Voucher - Buat SIngle Voucher Empty
@@ -7495,6 +8276,13 @@ Add Single Voucher:
   - Frame 625162
   - Frame 625163
 Add Bulk Voucher:
+  headings:
+  - Add Single Voucher
+  - SPESIFIK
+  - KUOTA
+  - Wajib Diisi
+  - Tidak Valid
+  - LEBIH DARI MAKSIMAL
   screens inside this page:
   - Admin - Voucher - Semua
   - Admin - Voucher - Buat Massal Voucher Empty
@@ -7559,6 +8347,11 @@ Add Bulk Voucher:
   - Frame 625167
   - Frame 625168
 Detail Voucher:
+  headings:
+  - Voucher Tab Active
+  - Voucher Tab Tidak Aktif
+  - SPESIFIK
+  - KUOTA
   screens inside this page:
   - Frame 624948
   - Frame 625179
@@ -7583,6 +8376,17 @@ Detail Voucher:
   - Admin - Voucher - Tidak Aktif - Action
   - Admin - Voucher - Tidak Aktif
 Rule:
+  headings:
+  - Voucher Tab Menu & Action
+  - Voucher Filter
+  - Search
+  - Hover
+  - Pressed
+  - Default
+  - Filter Tipe
+  - Filter Jenis
+  - Filter Urutkan
+  - Reset Pressed
   screens inside this page:
   - Admin - Voucher - Semua
   - Admin - Voucher - Aktif
@@ -7619,6 +8423,8 @@ Rule:
   - Frame 624954
   - Frame 624957
 SSO:
+  headings:
+  - Text
   screens inside this page:
   - Virtual Expo PaDi
   - Virtual Expo PaDi - Login Empty
@@ -7634,6 +8440,14 @@ SSO:
   - Virtual Expo PaDi - Image Button-1
   - Virtual Expo PaDi SSO
 SuperAdmin SSO:
+  headings:
+  - SSO Tab Menu & Action
+  - DEFAUT
+  - Hover
+  - Pressed
+  - Default
+  - TAMBAH SSO
+  - UBAH SSO
   screens inside this page:
   - Super Admin - SSO - List
   - Super Admin - SSO - List Empty
@@ -7661,6 +8475,13 @@ User - Penjual:
   screens inside this page:
   - Admin - User - Penjual - Detail Penjual
 User - Buyer Group:
+  headings:
+  - Pressed
+  - Default
+  - TRANSAKSI
+  - PROFIL
+  - PENGGUNA
+  - ALAMAT PENGIRIMAN
   screens inside this page:
   - Admin - User - Buyer Group - Detail Buyer Group - Transaksi
   - Admin - User - Buyer Group - Detail Buyer Group - Profil
@@ -7690,6 +8511,13 @@ Design System:
   - Radio-Checbox
   - Switch
 Junk:
+  headings:
+  - ALTERNATIF 1
+  - ALTERNATIF 2
+  - SPESIFIK
+  - KUOTA
+  - Pressed
+  - Default
   screens inside this page:
   - Frame 625166
   - Admin - Voucher - Buat SIngle Voucher - Semua Produk
@@ -7729,6 +8557,20 @@ Bantuan Hukum:
   - Layanan Penjual - Bantuan Hukum
   - Layanan Penjual - Bantuan Hukum Pop Up
 Produk:
+  headings:
+  - Product
+  - Revisi 21 April 2022
+  - Jasa Revisi 31 Mei 2022
+  - Other Case
+  - Tab Menu
+  - Open Elipsis
+  - Aktif
+  - Terverifikasi
+  - Perlu Revisi
+  - STok Habis
+  - Tidak Aktif
+  - Dihapus
+  - Open Dropdown
   screens inside this page:
   - Data Produk - List
   - Data Produk - Save success
@@ -7784,6 +8626,32 @@ Produk:
   - tanpa pajak selected
   - Add Product - Filled - Jasa
 Chat:
+  headings:
+  - Chat Buyer Group
+  - Rule Terkirim, Sudah Terbaca, Gagal Kirim
+  - 1. belum ada yg baca sudah terkirim = centang abu satu
+  - 3. sudah dibaca semua orang = centang biru 2
+  - 4. gagal dikirim/pending
+  - Open Location
+  - Open Chat
+  - Chat Personal dengan Buyer
+  - Search Seller
+  - Open Emoticon
+  - Open Attachment
+  - Send Image
+  - Send Document
+  - Send Emoticon
+  - Pilih Emoticon
+  - Typing
+  - Member Grop Offline
+  - Member Group Online
+  - Chat Scroll
+  - Notification On
+  - Share Location
+  - Chat Kosong
+  - Percakapan kosong
+  - Seller On
+  - Seller Off
   screens inside this page:
   - Kotak Pesan - Open Chat
   - Kotak Pesan - Member Group Offline
@@ -7829,6 +8697,16 @@ Chat:
   - Frame 624828
   - Frame 624843
 Register:
+  headings:
+  - PENAMBAHAN PPH21 (REVISI 31 Mei 2022)
+  - SELLER DITOLAK
+  - Register Seller
+  - Email Template
+  - NIB YES
+  - NIB NO
+  - Negative
+  - Dropdown
+  - Save
   screens inside this page:
   - Register Seller - Refferal Code Invalid
   - Register - Empty
@@ -7898,6 +8776,12 @@ Forgot Password:
   - Lupa Password - Reset Password - Filled - Correct
   - Lupa Password - Reset Password - Filled - Show
 Dashboard:
+  headings:
+  - Dashboard 27 May 2022
+  - DITOLAK/DITERIMA/DIREVIEW
+  - DITOLAK
+  - DISETUJUI
+  - DIREVIEW
   screens inside this page:
   - Dashboard
   - Frame 624959
@@ -7920,6 +8804,9 @@ Dashboard:
   - Frame 624965
   - Frame 624967
 Transaksi: Ulasan:
+  headings:
+  - Ulasan: Penilaian Pembelian
+  - Ulasan: Rating Produk
   screens inside this page:
   - Transaksi - Penilaian Pembelian
   - Transaksi - Ulasan
@@ -7927,6 +8814,15 @@ Transaksi: Ulasan:
   - Transaksi - Ulasan - 3 Sub Kategori
   - Transaksi - Ulasan - Dropdown Kategori
 Dokumen:
+  headings:
+  - LUNAS
+  - Sales Order (SO)
+  - Proforma Invoice
+  - Instruksi Pembayaran
+  - Invoice
+  - Invoice Biaya Layanan
+  - BAST
+  - Surat Jalan
   screens inside this page:
   - Dokumen - Invoice - Performa Invoice - Group
   - Dokumen - Invoice - Invoice - Group Tempo
@@ -7949,6 +8845,107 @@ Dokumen:
   - Frame 625044
   - Frame 625042
 Setting:
+  headings:
+  - Keuangan: Bank
+  - Dokumen
+  - Pengalaman Pekerjaan
+  - Keuangan: Neraca
+  - Akun
+  - Pengaturan Perusahaan: Profil Perusahaan
+  - Pengaturan Perusahaan: Pemegang Saham
+  - Kata Sandi
+  - Pengiriman
+  - Flow Tambah Pengalaman Pekarjaan
+  - Negative Case
+  - Keuangan
+  - Edit Bank
+  - Open elipsis
+  - Tambah Pengalaman Pekerjaan
+  - Kosongkan Data
+  - diinput kurang dari karakter/digit yang ditentukan
+  - t Lampiran diatas 5MB
+  - hanya diinput dengan alphaumerik
+  - tidak bisa pilih tanggal kebelakang
+  - Lampiran diatas 1MB
+  - format tidak sesuai
+  - Tambah Pengalaman Dropdown Tahun Pekerjaan
+  - Tambah Pengalaman Pekerjaan Field
+  - Konfirmasi Hapus Pengalaman Pekerjaan
+  - Hapus Pengalaman Pekerjaan Berhasil
+  - Ubah Pengalaman Pekerjaan Dropdown Tahun Pekerjaan
+  - Ubah Pengalaman Pekerjaan Berhasil
+  - Ubah Pengalaman Pekerjaan Field
+  - Tambah Pengalaman Pekerjaan Berhasil
+  - Tambah Neraca
+  - Tambah Neraca Field
+  - Ubah Neraca
+  - Ubah Neraca Field
+  - Konfirmasi Hapus Neraca
+  - Hapus Neraca Berhasil
+  - Tambah Neraca Berhasil
+  - Form Kosong
+  - Tahun kurang dari karakter/digit yang ditentukan
+  - Hanya dapat diinput dengan angka
+  - Nilai aktiva tidak sama dengan nilai passiva + nilai ekuitas
+  - Ubah Neraca Berhasil
+  - Action ketika sudah pernah upload dokumen
+  - Belum pernah upload dokumen
+  - Sudah upload dokumen atau hapus dokumen
+  - Action ketika belum pernah upload dokumen
+  - Diinput kurang dari karakter yang ditentukan
+  - Edit Bank Field
+  - Disetujui
+  - Ditolak
+  - Direview
+  - no rek maksimal 16 digit
+  - Kata Sandi tidak memiliki 1 non alphanumerik
+  - Diinput dengan huruf/angka/alphanumerik
+  - Kata sandi baru harus sama dengan yang lama
+  - Jika upload dengan format yang salah
+  - Jika uplaod dengan diatas 300 KB
+  - Terlalu pendek
+  - No telp maksimal
+  - No telp tidak memakai spasi
+  - No telp tidak memakai karakter khusus atau huruf
+  - kosongkan nama seller
+  - kosongkan no handphone
+  - nama seller kurang dari 3 karakter
+  - Nomor handphone tidak boleh menggunakan spasi
+  - Nomor handphone maksimal 13 karakter
+  - Nomor handphone minimal 9 karakter
+  - Dropdown
+  - Flow Edit
+  - Flow Hapus
+  - Flow Tambah
+  - Revisi Akun:
+  - 4 April 2022
+  - Revisi Kata Sandi:
+  - Revisi Pengaturan Perusahaan: Profil Perusahaan:
+  - Revisi Keuangan: Bank
+  - Revisi Pengaturan Perusahaan: Pemegang Saham
+  - Revisi Keuangan: Neraca
+  - Button tambah dri active menjadi outline
+  - Revisi Pengalaman Pekerjaan
+  - Flow Ubah Pengalaman Pekarjaan
+  - Flow Hapus Pengalaman Pekarjaan
+  - Flow Tambah Neraca
+  - Flow Ubah Neraca
+  - Flow Hapus Neraca
+  - Revisi Dokumen
+  - Keuangan: Modal
+  - Flow Pengiriman Via Kurir
+  - Flow Pengiriman Pribadi
+  - Open Dropdown Checklist Layanan Kurir
+  - Pengiriman Field Atau langsung klik all
+  - Checklist Layanan Kurir
+  - Konfirmasi Hapus Layanan Kurir
+  - Harus berupa angka
+  - Layanan Pengiriman Pribadi Active
+  - Layanan Pengiriman Pribadi Active Field
+  - Revisi Pengiriman
+  - Mesin & Peralatan
+  - Keuangan: SPT Pajak Tahunan
+  - Pengaturan Perusahaan: SDM
   screens inside this page:
   - Frame 624963
   - Frame 625007
@@ -8137,11 +9134,15 @@ Cover:
   screens inside this page:
   - Title Card
 Feedback Tambah Kategori Perusahaan:
+  headings:
+  - MENAMBAHKAN KATEGORI PERUSAHAAN
   screens inside this page:
   - Profil
   - Profile - Edit Profile - Dropdown
   - Completed Data - Company Profile - Filled
 Hi-Fi Apps Mobile Seller:
+  headings:
+  - Side Menu
   screens inside this page:
   - Dashboard
   - Frame 624773
@@ -8154,6 +9155,16 @@ Hi-Fi Apps Mobile Seller:
   - Frame 6042
   - Frame 5997
 Product:
+  headings:
+  - Upload Foto Produk
+  - Export Produk
+  - Jasa Revisi 31 Mei 2022
+  - Jasa Revisi 26 Juli 2022
+  - Data Product Seller
+  - Revisi 21 April 2022
+  - Pengecualian Pemungutan PPh Pasal 22a
+  - Required Filled
+  - All Filled
   screens inside this page:
   - Seller - Add Jasa - Detail - Empty
   - Seller - Add Jasa - Filled Required
@@ -8211,6 +9222,14 @@ Forgot Password:
   - Account Activation - Success
   - Forgot Password - Filled Show Password
 Registrasi:
+  headings:
+  - Register Seler
+  - SELLER DITOLAK
+  - Atur Kata Sandi
+  - Negative Case
+  - NIB Yes
+  - Save Draft
+  - Dropdown
   screens inside this page:
   - Register Seller - Kode Referal Invalid
   - Register - FIll Empty
@@ -8253,6 +9272,8 @@ Registrasi:
   - Frame 624939
   - Frame 624938
 Login:
+  headings:
+  - Login - On Boarding State
   screens inside this page:
   - Frame 6109
   - Frame 6002
@@ -8275,6 +9296,12 @@ Bantuan Hukum:
   screens inside this page:
   - Layanan Penjual - Bantuan Hukum
 Dashboard:
+  headings:
+  - Dashboard 27 May 2022
+  - SELLER APPROVE/REJECTED/REVIEWED
+  - DITOLAK
+  - DIREVIEW
+  - DISETUJUI
   screens inside this page:
   - Dashboard
   - Frame 11371
@@ -8283,6 +9310,40 @@ Dashboard:
   - Frame 624960
   - Frame 624961
 Transaksi: Pesanan:
+  headings:
+  - Flow Pesanan Buyer Group: Tempo Non Telkom
+  - Flow Pesanan Retail: Pembayaran Langsung
+  - Flow Pesanan Buyer Group: Pembayaran Langsung
+  - List Transaksi Pesanan
+  - RINGKASAN PESANAN WAPU & NON-WAPU
+  - Detail Transaksi Pesanan
+  - Flow Pesanan Buyer Group: Tempo Telkom
+  - Lihat Detail
+  - Popup Salin
+  - Buyer Group Pembayaran Langsung
+  - Buyer Group Pembayaran Tempo
+  - Pesanan Baru
+  - Buyer Group Pembayaran Tempo No Review
+  - Buyer Group Pembayaran Tempo With Review
+  - Buyer Group Pembayaran Langsung No Review
+  - Buyer Group Pembayaran Langsung With Review
+  - Menunggu Pembayaran
+  - Tagihan Dibayar
+  - Pembayaran Terverifikasi
+  - Pesanan Diterima
+  - Retail Pembayaran Langsung
+  - Kirim Tagihan
+  - Tagihan Ditolak
+  - Buyer Group Pembayaran Tempo Khusus Telkom
+  - Tagihan Diterima
+  - Pembayaran Tempo
+  - Pembayaran Langsung
+  - Pembayaran Tempo Telkom
+  - Pembayaran Tempo Non Telkom
+  - WAPU
+  - NON-WAPU
+  - KURIR 3RD PARTY
+  - KURIR PRIBADI
   screens inside this page:
   - Transaksi - Detail Pesanan - Expired
   - Buyer Group - Pembayaran Langsung - Pesanan Baru - Transaksi
@@ -8486,12 +9547,23 @@ Menu Jasa:
   - Jasa -  Tambah Jasa - Filled
   - Label Opsi Pajak
 Chat:
+  headings:
+  - Chat: Kotak Masuk
+  - Chat Seller
   screens inside this page:
   - Frame 624813
   - Chat - Kotak Pesan
   - Helper
   - Frame 6127
 Dokumen:
+  headings:
+  - Sales Order (SO)
+  - Surat Jalan
+  - Proforma Invoice
+  - BAST
+  - Instruksi Pembayaran
+  - Invoice
+  - Invoice Biaya Layanan
   screens inside this page:
   - Frame 625041
   - Frame 625042
@@ -8512,6 +9584,11 @@ Dokumen:
   - Dokumen - Buyer Retail - Proforma Invoice
   - Dokumen - Instruksi Pembayaran
 Ulasan:
+  headings:
+  - Transaksi: Ulasan - Penilaian Pembelian
+  - Transaksi: Ulasan - Rating Produk
+  - Jika User memilih semua aspek penilaian
+  - Jika User tidak memilih semua aspek penilaian
   screens inside this page:
   - Frame 624951
   - Frame 624952
@@ -8534,6 +9611,69 @@ Ulasan:
   - Transaksi - Penilaian Pembelian - Filled
   - Transaksi - Penilaian Pembelian - Choosing Date
 Setting:
+  headings:
+  - Profile
+  - Pengaturan Perusahaan: Profil Perusahaan
+  - Dokumen
+  - Pengalaman Pekerjaan
+  - Mesin & Peralatan
+  - Pengiriman
+  - Atur Kata Sandi
+  - Lainnya
+  - Pengaturan Perusahaan: Pemegang Saham
+  - Pengaturan Perusahaan: SDM
+  - Keuangan: Bank
+  - Keuangan: Modal
+  - Keuangan: Neraca
+  - Keuangan: SPT Pajak Tahunan
+  - Before
+  - After
+  - Jika upload dengan format yang salah
+  - Negative Case
+  - Jika uplaod dengan diatas 300 KB
+  - Kosongkan nama seller
+  - Kosongkan data
+  - nama seller kurang dari 3 karakter
+  - terlalu pendek
+  - Kosongkan kolom nomor handphone
+  - no telp maksimal
+  - no telp tidak pakai spasi
+  - no telp tidak memakai karakter khusus atau huruf
+  - Nomor handphone tidak boleh menggunakan spasi
+  - Flow Tambah
+  - Flow Edit (belum ada dokumen)
+  - Pilih Tanggal
+  - Flow Edit
+  - Ketika langsung klik checkbox
+  - Expand dropdown
+  - Flow Edit (ada dokumen)
+  - Flow Hapus
+  - Flow Hapus Pemegang Saham
+  - Nomor handphone maksimal 13 karakter
+  - Nomor Handphone minimal 9 karakter
+  - Nama pemegang saham kosong dan presentase kepemilikan kosong
+  - kurang dari karakter yang ditentukan
+  - Input Pengalaman pekerjaan kurang dari 1 tahun
+  - Upload data lebih dari 5 MB
+  - Format tidak sesuai
+  - diinput kurang dari karakter yang ditentukan
+  - diinput dengan huruf/angka/alphanumerik
+  - hanya diinput dengan angka
+  - No rek maksimal 16 digit
+  - Tahun kurang dari karakter/digit yang ditentukan
+  - hanya dapat diinput dengan angka
+  - nilai aktiva tidak sama dengan nilai passiva + nilai ekuitas
+  - Kurang digit
+  - Hanya dapat input angka
+  - Wajib Diisi
+  - Kata sandi kurang dari 14 karakter
+  - Kata Sandi tidak memiliki 1 non alphanumerik
+  - Kata sandi baru harus sama dengan yang lama
+  - Note Setting:
+  - diinput kurang dari karakter/digit yang ditentukan
+  - hanya diinput dengan alphaumerik
+  - tidak bisa pilih tanggal kebelakang
+  - Lampiran diatas 5MB
   screens inside this page:
   - Profil
   - Lampiran
@@ -8729,6 +9869,16 @@ url: https://www.figma.com/design/oLteBt92CDAQWe916kkhXr
 tags: 2022 origin design, smooets, archive, archive / smooets, seller, order trx
 pages:
 List Transaksi:
+  headings:
+  - List Transaksi Pesanan
+  - Daftar Transaksi State Buyer Group
+  - General
+  - Daftar Transaksi Open Elipsis
+  - Active State
+  - Calendar Picked
+  - Case: produk lebih dari 2
+  - Pop Up Salin
+  - Sudah Unggah Dokumen
   screens inside this page:
   - Frame 624824
   - Frame 624849
@@ -8754,6 +9904,47 @@ List Transaksi:
   - Bank-logo-bsi
   - Bank-logo-bri
 Detail Transaksi:
+  headings:
+  - Detail Transaksi Pesanan
+  - Ringkasan Pesanan WAPU DAN NON-WAPU
+  - Feedback UAT 18 & 19 Agustus 2022
+  - Case sudah upload surat jalan
+  - Pesanan Baru
+  - WAPU
+  - NON-WAPU
+  - Expired
+  - Ditolak Penjual
+  - Dibatalkan Penjual
+  - Selesai
+  - Menunggu Pembayaran
+  - Perubahan
+  - Perubahan Ditolak
+  - Perubahan Diterima
+  - Pembayaran Terverifikasi
+  - Tagihan Dibayar
+  - Pesanan Diterima
+  - Kirim Tagihan
+  - Tagihan Ditolak
+  - Tagihan Diterima
+  - Diproses Penjual
+  - Dikirim
+  - Kurir Pribadi
+  - 3rd Party
+  - Buyer Group Pembayaran Langsung
+  - Buyer Group Pembayaran Langsung No Review
+  - Buyer Group Pembayaran Langsung With Review
+  - Buyer Group Pembayaran Tempo
+  - Buyer Group Pembayaran Tempo Khusus Telkom
+  - Action
+  - Buyer Group Pembayaran Tempo No Review
+  - Buyer Group Pembayaran Tempo With Review
+  - Buyer Retail
+  - Buyer Retail No Review
+  - Buyer Retail With Review
+  - No AWB ( Berlaku untuk semua jenis user)
+  - With AWB (Berlaku untuk semua jenis user)
+  - KURIR 3RD PARTY
+  - After 3 days AWB (Berlaku untuk semua jenis user)
   screens inside this page:
   - Buyer Group - Pembayaran Langsung - Pesanan Baru
   - Buyer Group - Pembayaran Tempo - Pesanan Baru
@@ -8938,6 +10129,15 @@ Detail Transaksi:
   - Seller
   - Pesanan Baru - Tolak Pesanan - Alasan Lainnya - Filled
 Flow Transaksi:
+  headings:
+  - Flow Pesanan Retail: Pembayaran Langsung
+  - Flow Pesanan Buyer Group: Pembayaran Langsung
+  - Flow Pesanan Buyer Group: Tempo Telkom
+  - Flow Pesanan Buyer Group: Tempo Non Telkom
+  - Kurir Pribadi
+  - Terdapat Issue
+  - 3rd Party
+  - Tidak ada issue
   screens inside this page:
   - Transaksi - Pesanan - Detail Payment Success
   - Transaksi - Pesanan - Detail Payment Success - Confrim Process
@@ -8966,6 +10166,25 @@ Flow Transaksi:
   - Frame 624842
   - Frame 624846
 Dokumen Transaksi:
+  headings:
+  - Instruksi Pembayaran
+  - Sales Order (SO)
+  - Invoice
+  - BAST
+  - Template Surat Jalan
+  - Dokumen
+  - LUNAS
+  - Buyer Group
+  - Buyer Retail
+  - Instruksi Pembayaran Buyer Group Tempo
+  - Buyer Group Tempo
+  - Buyer Group Langsung
+  - Buyer Retail Langsung
+  - Status Pesanan Diterima, Selesai
+  - Status Pembayaran Terverifikasi, Selesai
+  - Surat Jalan
+  - Proforma Invoice
+  - Invoice Biaya Layanan
   screens inside this page:
   - Dokumen - Invoice - Performa Invoice - Group
   - Dokumen - Invoice - Performa Invoice - Retail
@@ -9019,6 +10238,22 @@ Cover:
   screens inside this page:
   - Title Card
 CR Register 20 Mei 2022 [FIXED]:
+  headings:
+  - Lorem ipsum dolor si
+  - Step 1 - Badan Usaha
+  - Jenis Badan Usaha PT & CV
+  - Jenis Badan Usaha Perseorangan & Lainnya
+  - Step 2 - NIB
+  - Step 2 - KTP
+  - Step 3 - NPWP
+  - TETAP LANJUTKAN - Step 3 - NPWP
+  - Step 4 - PROFIL PERUSAHAAN
+  - TETAP LANJUTKAN - Step 4 - PROFIL PERUSAHAAN
+  - Step 5 - INFORMASI ALAMAT
+  - Negative Case
+  - Negative Case Ketika Hapus Semua Text
+  - Negative Case Ketika File Terlalu Besar
+  - Step 1 - SKB Pajak PPh 21
   screens inside this page:
   - Frame 625089
   - Frame 625180
@@ -9134,6 +10369,58 @@ CR Register 20 Mei 2022 [FIXED]:
   - Add Product - Detail - Empty
   - Setting - Document - Edit - Incorrect Format
 CR Upgrade Member Perseorangan:
+  headings:
+  - Case All Badge Before Upgrade Perseorangan/Lainnya
+  - GOLD
+  - DIAMOND
+  - DEFAULT
+  - DEFAULT EXPAND
+  - MENUNGGU VERIFIKASI
+  - MENUNGGU VERIFIKASI EXPAND
+  - UPGRADE GAGAL
+  - UPGRADE GAGAL EXPAND
+  - MEMENUHI 1 SYARAT
+  - MEMENUHI 2 SYARAT
+  - MEMENUHI 3 SYARAT
+  - MEMENUHI 4 SYARAT
+  - MEMENUHI 5 SYARAT
+  - MEMENUHI 6 SYARAT
+  - MEMENUHI 7 SYARAT
+  - MEMENUHI 8 SYARAT
+  - Silver
+  - Perseorangan/Lainnay - Upgrade Silver Member to Gold Member
+  - Negative Case
+  - Negative Case Ketika Hapus Semua Text
+  - Negative Case Ketika File Terlalu Besar
+  - NPWP
+  - NIB
+  - Perseorangan/Lainnya - Upgrade Gold Member to Diamond Member
+  - PT/CV - Upgrade Gold Member to Diamond Member
+  - PEMEGANG SAHAM
+  - KLIK DASHBOARD
+  - SDM
+  - DALAM KONDISI SUDAH SCROLL
+  - Kosongkan data
+  - Upload data lebih dari 5 MB
+  - Kurang dari karakter yang ditentukan
+  - NERACA
+  - SPT PAJAK TAHUNAN
+  - Modal
+  - Form Kosong
+  - Tahun kurang dari karakter/digit yang ditentukan
+  - Hanya dapat diinput dengan angka
+  - Nilai aktiva tidak sama dengan nilai passiva + nilai ekuitas
+  - format angka
+  - Format tidak sesuai
+  - Data Kosong
+  - diinput kurang dari karakter yang ditentukan
+  - hanya diinput dengan angka
+  - Pengalaman Pekerjaan
+  - diinput kurang dari karakter/digit yang ditentukan
+  - t Lampiran diatas 5MB
+  - Case All Badge Before Upgrade PT/CV
+  - TETAP LANJUTKAN - Step 3 - NPWP
+  - NIB Validation
   screens inside this page:
   - Setting - Job Experience
   - Setting - Job Experience - Filed
@@ -9344,6 +10631,23 @@ CR Upgrade Member Perseorangan:
   - Frame 625324
   - Frame 625325
 CR Transaksi Buyer Manager:
+  headings:
+  - Menunggu Review Manager
+  - Tempo
+  - Daftar Transaksi Lebih dari 1 Seller
+  - Ditolak Manager
+  - Revisi
+  - Buyer Group Pembayaran Tempo
+  - Buyer Group Pembayaran Tempo Case lebih dari 1 penjual
+  - Batal
+  - Buyer Group Pembayaran Tempo dari Status Disetujui
+  - PEMBAYARAN LANGSUNG
+  - Menunggu Pembayaran
+  - Dibayar
+  - Pembayaran Terverifikasi
+  - Expired
+  - Status Batal jika trigger awal dari Menunggu Pembayaran
+  - Daftar Transaksi Open Elipsis
   screens inside this page:
   - Frame 11378
   - Frame 624985
@@ -9387,6 +10691,23 @@ CR Transaksi Buyer Manager:
   - Frame 624812
   - Transaksi - Berlangsung  2
 CR Transaksi Buyer Staff:
+  headings:
+  - Menunggu Review Manager
+  - Tempo
+  - PEMBAYARAN LANGSUNG
+  - Ditolak Manager
+  - Menunggu Pembayaran
+  - Dibayar
+  - Pembayaran Terverifikasi
+  - Revisi
+  - Buyer Group Pembayaran Tempo
+  - Buyer Group Pembayaran Tempo Case lebih dari 1 penjual
+  - Batal
+  - Expired
+  - Buyer Group Pembayaran Tempo dari Status Disetujui
+  - Status Batal jika trigger awal dari Menunggu Pembayaran
+  - Daftar Transaksi Lebih dari 1 Seller
+  - Daftar Transaksi Open Elipsis
   screens inside this page:
   - Frame 11378
   - Frame 624985
@@ -9430,6 +10751,16 @@ CR Transaksi Buyer Staff:
   - Transaksi - Open Elipsis
   - Frame 624812
 CR Transaksi Buyer Retail:
+  headings:
+  - PEMBAYARAN LANGSUNG
+  - Menunggu Pembayaran
+  - Dibayar
+  - Pembayaran Terverifikasi
+  - Batal
+  - Expired
+  - Status Batal jika trigger awal dari Menunggu Pembayaran
+  - Daftar Transaksi Open Elipsis
+  - Daftar Transaksi Lebih dari 1 Seller
   screens inside this page:
   - Frame 624986
   - Frame 624922
@@ -9452,6 +10783,8 @@ CR Transaksi Buyer Retail:
   - Frame 624812
   - Frame 624988
 CR Produk Jasa:
+  headings:
+  - INITIATE
   screens inside this page:
   - Add Product - Filled - Jasa
   - Add Jasa - Filled Required
@@ -9469,6 +10802,11 @@ url: https://www.figma.com/design/fj7qHhJzpKbpkiHZKK0TLh
 tags: 2022 origin design, smooets, archive, archive / smooets, all, general
 pages:
 Page 1:
+  headings:
+  - QUARTERLY BRAINSTORM
+  - What will we...?
+  - How might we...?
+  - Who will...?
   screens inside this page:
   - Teammate 1
   - Teammate 2
@@ -9497,6 +10835,11 @@ url: https://www.figma.com/design/KCQ7V4TNpVi14Gzzk6X9kz
 tags: 2022 origin design, smooets, archive, archive / smooets, all, general
 pages:
 Page 1:
+  headings:
+  - QUARTERLY BRAINSTORM
+  - What will we...?
+  - How might we...?
+  - Who will...?
   screens inside this page:
   - Teammate 1
   - Teammate 2
@@ -9519,6 +10862,8 @@ logo:
   - logo torasera
   - logo padisera
 colors:
+  headings:
+  - Additional Color
   screens inside this page:
   - #009EA9
   - #182958
@@ -9539,6 +10884,9 @@ badge:
   screens inside this page:
   - badge
 button:
+  headings:
+  - page padding
+  - Section Gap
   screens inside this page:
   - button special / disabled with tooltip
   - button
@@ -9672,6 +11020,8 @@ flow arrow:
   screens inside this page:
   - flow button
 thumbnail:
+  headings:
+  - Heading
   screens inside this page:
   - Thumbnail
 
@@ -9680,6 +11030,8 @@ url: https://www.figma.com/design/In5vqn9Uz9fJSKEllww5XW
 tags: master, design system, all
 pages:
 outline:
+  headings:
+  - title
   screens inside this page:
   - Frame 35
   - Frame 38
@@ -9718,6 +11070,9 @@ bulk:
   screens inside this page:
   - Frame 67
 kategori:
+  headings:
+  - Barang
+  - Jasa
   screens inside this page:
   - Makanan dan Minuman
   - Alat Kesehatan
@@ -9768,6 +11123,8 @@ fixed:
   - .Base Modal
   - waiting after submit
 playground:
+  headings:
+  - Current: #3D88A5  Lebih baik: #2F6F88 atau #25607A
   screens inside this page:
   - .background
   - Frame 1
@@ -9849,6 +11206,12 @@ stock:
   - warning
   - Login
 splash screen + seller icon:
+  headings:
+  - Revision
+  - Artwork tanpa Logo
+  - option 4
+  - option 5
+  - option 6
   screens inside this page:
   - App Buyer Var 1
   - App Buyer Var 2
@@ -9874,6 +11237,24 @@ pages:
   screens inside this page:
   - (no screens)
 Icon System (Material Design Icons):
+  headings:
+  - Toggle
+  - Social
+  - Search
+  - Places
+  - Notification
+  - Navigation
+  - Maps
+  - Image
+  - Home
+  - Hardware
+  - File
+  - Editor
+  - Device
+  - Content
+  - Communication
+  - Alert
+  - Action
   screens inside this page:
   - Toggle
   - Social
@@ -9937,6 +11318,8 @@ Text Field  / ✅dev / ✅ Auto:
   screens inside this page:
   - Cover
 Slot:
+  headings:
+  - ❖ Replace Me
   screens inside this page:
   - Slot
 
@@ -9945,6 +11328,9 @@ url: https://www.figma.com/design/w4yOAJvGvZKp3O6DxBY4N5
 tags: archive, design system / archive, all, homepage landing
 pages:
 📙 Thumbnail:
+  headings:
+  - Homepage
+  - PaDi UMKM - Pre-Trx
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -10003,6 +11389,17 @@ url: https://www.figma.com/design/dOhblQ5AUQivQS2pZymXbq
 tags: archive, design system / archive, all, design system
 pages:
 padiumkm.id:
+  headings:
+  - START
+  - File Figma Homepage
+  - File Figma Buyer PDP
+  - File Figma Buyer Dashboard
+  - File Figma Notifikasi
+  - File Figma Pengaturan
+  - File Figma Keranjang
+  - Buyer B2B
+  - Shortcut Menuju Buyer Dashboard
+  - Menuju Proses Pembuatan Tender Kilat
   screens inside this page:
   - Frame 1
   - Frame 1958764219
@@ -10045,6 +11442,14 @@ padiumkm.id:
   - Header
   - Frame 1958764245
 seller.padiumkm.id:
+  headings:
+  - File Figma Homepage
+  - File Figma Buyer PDP
+  - File Figma Seller Dashboard
+  - File Figma Notifikasi
+  - File Figma Pengaturan
+  - Shortcut Menuju Buyer Dashboard
+  - Dashboard
   screens inside this page:
   - Frame 1958764220
   - Frame 1958764221
@@ -10088,6 +11493,24 @@ pages:
   screens inside this page:
   - (no screens)
 Icon System (Material Design Icons):
+  headings:
+  - Toggle
+  - Social
+  - Search
+  - Places
+  - Notification
+  - Navigation
+  - Maps
+  - Image
+  - Home
+  - Hardware
+  - File
+  - Editor
+  - Device
+  - Content
+  - Communication
+  - Alert
+  - Action
   screens inside this page:
   - Toggle
   - Social
@@ -10151,6 +11574,8 @@ Text Field  / ✅dev / ✅ Auto:
   screens inside this page:
   - Cover
 Slot:
+  headings:
+  - ❖ Replace Me
   screens inside this page:
   - Slot
 
@@ -10159,6 +11584,8 @@ url: https://www.figma.com/design/5XnC0SDcAfDMq8Tt9hrXUF
 tags: archive, design system / archive, all, design system
 pages:
 Changelog:
+  headings:
+  - Title
   screens inside this page:
   - changelog-dv
   - Typography
@@ -14332,6 +15759,8 @@ Spacing, Radius & Elevation:
   - spacing
   - typography
 Slot:
+  headings:
+  - ❖ Replace Me
   screens inside this page:
   - Slot
 --------- 🌐Thumbnail ---------:
@@ -14343,6 +15772,9 @@ url: https://www.figma.com/design/aVtoUSurMFxgBmCZEz69ip
 tags: archive, design system / archive, all, design system
 pages:
 Design Catalogue:
+  headings:
+  - Modal
+  - LgnStepper
   screens inside this page:
   - Logo
   - Action / Navigation
@@ -14358,18 +15790,30 @@ Design Catalogue:
   - Header & Footer
   - Icon
 Notes:
+  headings:
+  - struktur file figma
+  - next discussion
+  - berarti ga perlu distandarkan ya mas?
+  - bebas ini mas bisa didiskusiin aja
+  - oke ok noted mas
+  - bisa discuss lagi organisasi file figma gmn spy ga dobel2
+  - Latest aku coba bikin gini -nino
   screens inside this page:
   - Component
 Flow Arrow + Notes:
   screens inside this page:
   - (no screens)
 Updates:
+  headings:
+  - 2024 September
   screens inside this page:
   - (no screens)
 Logo*:
   screens inside this page:
   - PaDi Logo
 Colors System*:
+  headings:
+  - Additional Color
   screens inside this page:
   - #009EA9
   - #182958
@@ -14386,6 +15830,9 @@ Typography*:
   screens inside this page:
   - Typography
 Icon Standard*:
+  headings:
+  - std-Bulk
+  - title
   screens inside this page:
   - std-money-4
   - std-money-3
@@ -15288,6 +16735,8 @@ Icon Standard*:
   - wallet
   - AI
 Icon Bulk:
+  headings:
+  - Title
   screens inside this page:
   - bulk-search-status
   - bulk-search-favorite
@@ -16204,6 +17653,9 @@ Icon Bulk:
   - std-lock suspend permanen
   - std-lock suspend temp
 Icon Kategori:
+  headings:
+  - Barang
+  - Jasa
   screens inside this page:
   - Makanan dan Minuman
   - Alat Kesehatan
@@ -16236,6 +17688,10 @@ Icon Kategori:
   - Promo
   - Lihat Semua
 Illustration:
+  headings:
+  - Priority Support
+  - Exclusive Campaign
+  - Priority Seller
   screens inside this page:
   - General Success
   - General Maaf
@@ -16314,6 +17770,9 @@ Illustration:
   - user-dashboard
   - umkm-buyer
 MISC-Illustration:
+  headings:
+  - Revision
+  - Artwork tanpa Logo
   screens inside this page:
   - Splash Screen
   - Seller icon
@@ -16419,6 +17878,9 @@ LgnUpload*:
   - .Caption
   - Specs
 Modal *:
+  headings:
+  - 3:2 (900px × 600px)
+  - 2:3 (900px × 1350px)
   screens inside this page:
   - Base
   - .Base Modal
@@ -16507,6 +17969,8 @@ test:
   - Frame 2
   - Frame 1
 - Thumbnail -:
+  headings:
+  - Heading
   screens inside this page:
   - Cover
   - Thumbnail
@@ -16522,6 +17986,8 @@ Logo*:
   screens inside this page:
   - PaDi Logo
 Colors System*:
+  headings:
+  - Additional Color
   screens inside this page:
   - #009EA9
   - #182958
@@ -16717,6 +18183,9 @@ url: https://www.figma.com/design/fbvlpyqDGqljmNja29ghlJ
 tags: archive, design system / archive, all, design system
 pages:
 Icon Standard*:
+  headings:
+  - std-Bulk
+  - title
   screens inside this page:
   - std-money-4
   - std-money-3
@@ -17618,6 +19087,8 @@ Icon Standard*:
   - std-close-x
   - wallet
 Icon Bulk:
+  headings:
+  - Title
   screens inside this page:
   - bulk-search-status
   - bulk-search-favorite
@@ -18527,6 +19998,9 @@ Icon Bulk:
   - bulk-invoice
   - verif-bulk
 Icon Kategori:
+  headings:
+  - Barang
+  - Jasa
   screens inside this page:
   - Makanan dan Minuman
   - Alat Kesehatan
@@ -18559,6 +20033,9 @@ Icon Kategori:
   - Promo
   - Lihat Semua
 Illustration:
+  headings:
+  - Revision
+  - Artwork tanpa Logo
   screens inside this page:
   - Cover
   - Splash Screen
@@ -18583,13 +20060,30 @@ url: https://www.figma.com/design/VD1eo9cXSiZBnV93iIvnaR
 tags: archive, design system / archive, all, design system
 pages:
 Flow Arrow:
+  headings:
+  - adsadasda
+  - Flow Colors
+  - Netral
+  - 3366ff
+  - Positive
+  - 25974C
   screens inside this page:
   - Flow Colors
   - Logo PaDi Baru (1) 1
 PaDi Screen Map:
+  headings:
+  - Seller Dashboard (ga punya Homepage) LIVE
+  - Notification LIVE
+  - Login LIVE
+  - Seller Daftar & Detail Transaksi LIVE
+  - Seller Daftar & Tambah Produk LIVE
+  - Buyer Homepage LIVE
   screens inside this page:
   - (no screens)
 Design Catalogue:
+  headings:
+  - LgnStepper
+  - Modal
   screens inside this page:
   - Logo
   - Action / Navigation
@@ -18605,15 +20099,27 @@ Design Catalogue:
   - Header & Footer
   - Icon
 Notes:
+  headings:
+  - struktur file figma
+  - next discussion
+  - berarti ga perlu distandarkan ya mas?
+  - bebas ini mas bisa didiskusiin aja
+  - oke ok noted mas
+  - bisa discuss lagi organisasi file figma gmn spy ga dobel2
+  - Latest aku coba bikin gini -nino
   screens inside this page:
   - Component
 Updates:
+  headings:
+  - 2024 September
   screens inside this page:
   - (no screens)
 Logo*:
   screens inside this page:
   - PaDi Logo
 Colors System*:
+  headings:
+  - Additional Color
   screens inside this page:
   - #009EA9
   - #182958
@@ -18630,6 +20136,9 @@ Typography*:
   screens inside this page:
   - Typography
 Icon Standard*:
+  headings:
+  - std-Bulk
+  - title
   screens inside this page:
   - std-money-4
   - std-money-3
@@ -19539,6 +21048,8 @@ Icon Standard*:
   - mimin settings
   - mimin information
 Icon Bulk:
+  headings:
+  - Title
   screens inside this page:
   - bulk-search-status
   - bulk-search-favorite
@@ -20455,6 +21966,9 @@ Icon Bulk:
   - std-lock suspend permanen
   - std-lock suspend temp
 Icon Kategori:
+  headings:
+  - Barang
+  - Jasa
   screens inside this page:
   - Makanan dan Minuman
   - Alat Kesehatan
@@ -20487,6 +22001,9 @@ Icon Kategori:
   - Promo
   - Lihat Semua
 Illustration:
+  headings:
+  - Revision
+  - Artwork tanpa Logo
   screens inside this page:
   - Cover
   - Splash Screen
@@ -20527,6 +22044,9 @@ LgnButton [JGN DIPAKE]:
   - LgnButton
   - LgnButton2
 Button:
+  headings:
+  - belum
+  - Text
   screens inside this page:
   - Master Properties
   - button
@@ -20610,6 +22130,9 @@ LgnUpload*:
   - .Caption
   - Specs
 Modal * Y:
+  headings:
+  - 3:2 (900px × 600px)
+  - 2:3 (900px × 1350px)
   screens inside this page:
   - Base
   - .Base Modal
@@ -20693,6 +22216,8 @@ test:
   - Desktop - inter
   - Desktop - jakarta sans
 - Thumbnail -:
+  headings:
+  - Heading
   screens inside this page:
   - Cover
   - Thumbnail
@@ -20702,12 +22227,31 @@ url: https://www.figma.com/design/4MZogVRR8WMKzK5qBt66mv
 tags: archive, design system / archive, all, design system
 pages:
 Flow Arrow:
+  headings:
+  - adsadasda
+  - Flow Colors
+  - Netral
+  - 3366ff
+  - Positive
+  - 25974C
   screens inside this page:
   - Flow Colors
 PaDi Screen Map:
+  headings:
+  - Seller Dashboard (ga punya Homepage) LIVE
+  - Notification LIVE
+  - Login LIVE
+  - Mimin
+  - Seller Daftar & Detail Transaksi LIVE
+  - Seller Daftar & Tambah Produk LIVE
+  - Buyer Daftar Transaksi
+  - Buyer Homepage LIVE
   screens inside this page:
   - (no screens)
 Design Catalogue:
+  headings:
+  - LgnStepper
+  - Modal
   screens inside this page:
   - Logo
   - Action / Navigation
@@ -20723,9 +22267,19 @@ Design Catalogue:
   - Header & Footer
   - Icon
 Notes:
+  headings:
+  - struktur file figma
+  - next discussion
+  - berarti ga perlu distandarkan ya mas?
+  - bebas ini mas bisa didiskusiin aja
+  - oke ok noted mas
+  - bisa discuss lagi organisasi file figma gmn spy ga dobel2
+  - Latest aku coba bikin gini -nino
   screens inside this page:
   - Component
 Updates:
+  headings:
+  - 2024 September
   screens inside this page:
   - (no screens)
 Logo*:
@@ -20733,6 +22287,8 @@ Logo*:
   - PaDi Logo
   - Frame 1
 Colors System*:
+  headings:
+  - Additional Color
   screens inside this page:
   - #009EA9
   - #182958
@@ -20749,6 +22305,9 @@ Typography*:
   screens inside this page:
   - Typography
 Icon Standard*:
+  headings:
+  - std-Bulk
+  - title
   screens inside this page:
   - std-money-4
   - std-money-3
@@ -21658,6 +23217,8 @@ Icon Standard*:
   - mimin settings
   - mimin information
 Icon Bulk:
+  headings:
+  - Title
   screens inside this page:
   - bulk-search-status
   - bulk-search-favorite
@@ -22574,6 +24135,9 @@ Icon Bulk:
   - std-lock suspend permanen
   - std-lock suspend temp
 Icon Kategori:
+  headings:
+  - Barang
+  - Jasa
   screens inside this page:
   - Makanan dan Minuman
   - Alat Kesehatan
@@ -22606,6 +24170,9 @@ Icon Kategori:
   - Promo
   - Lihat Semua
 Illustration:
+  headings:
+  - Revision
+  - Artwork tanpa Logo
   screens inside this page:
   - Cover
   - Splash Screen
@@ -22646,6 +24213,9 @@ LgnButton [JGN DIPAKE]:
   - LgnButton
   - LgnButton2
 Button:
+  headings:
+  - belum
+  - Text
   screens inside this page:
   - Master Properties
   - button
@@ -22729,6 +24299,9 @@ LgnUpload*:
   - .Caption
   - Specs
 Modal * Y:
+  headings:
+  - 3:2 (900px × 600px)
+  - 2:3 (900px × 1350px)
   screens inside this page:
   - Base
   - .Base Modal
@@ -22809,6 +24382,8 @@ test:
   - Frame 2
   - Frame 1
 - Thumbnail -:
+  headings:
+  - Heading
   screens inside this page:
   - Cover
   - Thumbnail
@@ -22821,6 +24396,8 @@ Buyer component dump:
   screens inside this page:
   - Store Profile
 Sidebar:
+  headings:
+  - Title
   screens inside this page:
   - Sidebar Component
   - Component
@@ -22836,9 +24413,21 @@ Sidebar:
   - Icon/staff
   - Icon/retail
 Card Product SRP:
+  headings:
+  - Atomic
+  - Molecule
+  - Final
+  - Molecule2
   screens inside this page:
   - Latest
 Header NEW:
+  headings:
+  - Text
+  - Atomic
+  - Molecule
+  - Molecule 3
+  - Final
+  - Molecule 2
   screens inside this page:
   - .Top Banner
   - .dynamic button
@@ -22884,6 +24473,11 @@ Thumbnail:
   screens inside this page:
   - Thumbnail
 Components:
+  headings:
+  - PaDi Component
+  - Sidebar Header Content Table Card Widget
+  - Assemble the component to be a content features
+  - Mimin - CMS
   screens inside this page:
   - Component Table
   - CC-Table
@@ -22990,6 +24584,8 @@ Header:
   screens inside this page:
   - (no screens)
 Side/Bottom Nav:
+  headings:
+  - ringkasan toko: share toko preview toko uang2an penjualan?
   screens inside this page:
   - .sidebar item
   - .separator
@@ -23024,6 +24620,8 @@ url: https://www.figma.com/design/BCC4JQd1re3Lz32EmtzkoZ
 tags: archive, design system / archive, all, design system
 pages:
 📃 Guideline & Changelog (Read First):
+  headings:
+  - Text
   screens inside this page:
   - Foundation Setup
   - UI Kit Setup
@@ -23059,6 +24657,12 @@ Spacing, Radius & Elevation:
   - spacing
   - border
 New Pattern Cookies 🆕:
+  headings:
+  - if the user has given permission for cookies
+  - Card
+  - Card + BarChart
+  - Chip
+  - Navbar
   screens inside this page:
   - Cookies Banner Variant (Done)
   - .Body Card Pattern Cookies
@@ -23069,6 +24673,12 @@ New Pattern Cookies 🆕:
   - List Backlog for Request AI-DEV
   - Frame 1321314746
 Pattern Dashboard:
+  headings:
+  - All
+  - Page Form
+  - Login
+  - Navigation
+  - From Figma Community
   screens inside this page:
   - Local Component for Dashboard - Data Visualization
   - Local Component for Dashboard - Website Analytics Page
@@ -23079,6 +24689,15 @@ Pattern Dashboard:
   - Local Component for Dashboard
   - Recharts Asset - WIP
 Pattern Login & Register:
+  headings:
+  - READY FOR REVIEW INTERNAL
+  - RELEASE
+  - REVIEW TEAM TESTING
+  - COMPONENT BUG - NEED TO SOLVE
+  - ARCHIEVE
+  - READY TO RELEASE
+  - IN PROGRESS
+  - NOT STARTED/OLD
   screens inside this page:
   - Screen Title
   - STATUS/ REVIEW INTERNAL
@@ -23109,6 +24728,9 @@ Pattern Login & Register:
   - Alternatif Layout
   - Third Party SSO as a Primary Key
 Pattern AI Assistant (WIP)🚧:
+  headings:
+  - All
+  - Archieve
   screens inside this page:
   - Focus
   - Local Component
@@ -23117,6 +24739,27 @@ Pattern AI Assistant (WIP)🚧:
   - Conversation
   - Feedback
 Archieve Pattern AI Assistant (Delete soon):
+  headings:
+  - referensi
+  - Komponen
+  - Chat GPT - Input - Document & Image Attached
+  - Welcome Screen
+  - Sidebar Collapse dll
+  - Menu Legal Intelligence > Pilih Dokumen
+  - Menu Legal Intelligence > Upload Dokumen
+  - Welcome Screen, Dashboard, Pencarian, dan Tersimpan
+  - Menu Legal Intelligence
+  - Thinking
+  - Result
+  - Default
+  - Active
+  - Hover
+  - Chat GPT
+  - Copilot
+  - Gemini
+  - Perplexity
+  - Claude
+  - ax2 + bx + c = 0
   screens inside this page:
   - ChatGPT
   - Telis
@@ -23229,6 +24872,9 @@ Card - ✅ ✅:
   - LgnCard
   - card
 Chart 🚧 (WIP):
+  headings:
+  - In Progress
+  - Title
   screens inside this page:
   - Chart HeatMap
   - Treemap
@@ -23513,6 +25159,8 @@ url: https://www.figma.com/design/fSEZrkW40Prd2Ds6rZwT6V
 tags: archive, master files, all, notif email
 pages:
 Email:
+  headings:
+  - moved to HERE
   screens inside this page:
   - (no screens)
 
@@ -23567,6 +25215,8 @@ url: https://www.figma.com/design/TD8poWJhgSpupttZN8YGm8
 tags: master, master files, all, order trx
 pages:
 Permintaan Pembelian - Buyer Manager:
+  headings:
+  - → Link Detail PR
   screens inside this page:
   - buyer staff
   - buyer manager
@@ -23579,6 +25229,14 @@ Permintaan Pembelian - Buyer Manager:
   - Daftar Transaksi - Approval - Detail Pesanan - Disetujui
   - ss dr live
 Daftar Pesanan - Buyer Staff:
+  headings:
+  - dalam pengiriman
+  - Sedang Dikirim
+  - Menunggu Diambil
+  - Pesanan Diproses
+  - Siap Dikirim
+  - Diproses Penjual
+  - Selesai
   screens inside this page:
   - semua
   - empty
@@ -23732,6 +25390,11 @@ url: https://www.figma.com/design/BGrdpAJ4yICdcnr0KGPqrL
 tags: master, master files, buyer, discovery pdp
 pages:
 Page 2:
+  headings:
+  - Atomic
+  - Molecule
+  - Final
+  - Molecule2
   screens inside this page:
   - .Seller Location & Status
   - .Label Image (Product)
@@ -23762,6 +25425,9 @@ url: https://www.figma.com/design/abWzIAFrqrvUCPDiIDNOQi
 tags: master, master files, seller, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Task Force Premium seller
+  - PaDi UMKM - Task Force Premium Seller
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -23769,6 +25435,9 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Seller Name
+  - Purchase Order > Rp1M sebesar 0,25%
   screens inside this page:
   - Header
   - Pricing table
@@ -23793,6 +25462,8 @@ pages:
   - profile
   - profile 2
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -23800,6 +25471,8 @@ pages:
   screens inside this page:
   - (no screens)
 ✅ Wireframe:
+  headings:
+  - Text
   screens inside this page:
   - Landing page
   - Frame 8
@@ -23854,6 +25527,9 @@ pages:
   - Responsive
   - Exploration
 🖥️ Desktop Landing Page v.3:
+  headings:
+  - Simulasi Pendapatan dengan Termin
+  - Simulasi Pendapatan
   screens inside this page:
   - Tooltip preview v1
   - Tooltip preview v2
@@ -23985,6 +25661,8 @@ v1:
   - Payment Mobile
   - Koleksi Mobile
 Notes:
+  headings:
+  - Promo PILIHAN AMANAH
   screens inside this page:
   - case mobile: floating button
   - Frame 1958763992
@@ -24019,6 +25697,15 @@ url: https://www.figma.com/design/Ce10UfunDBVaU06m1iF5U9
 tags: archive, master files / archive, all, general
 pages:
 General Flow Buyer B2B:
+  headings:
+  - START
+  - File Figma Homepage
+  - File Figma Buyer PDP
+  - File Figma Buyer Dashboard
+  - File Figma Pengaturan
+  - File Figma Transaksi Buyer
+  - File Figma Keranjang
+  - File Figma Notifikasi
   screens inside this page:
   - Frame 1
   - Frame 1958764219
@@ -24059,6 +25746,15 @@ General Flow Buyer B2B:
   - Beli Lagi
   - Frame 1958764223
 General Flow Buyer Retail:
+  headings:
+  - START
+  - File Figma Homepage
+  - File Figma Buyer PDP
+  - File Figma Buyer Dashboard
+  - File Figma Pengaturan
+  - File Figma Transaksi Buyer
+  - File Figma Keranjang
+  - File Figma Notifikasi
   screens inside this page:
   - Frame 1958764275
   - Frame 1958764219
@@ -24096,6 +25792,15 @@ Keranjang:
   - Keranjang
   - Checkout + Payment
 General Flow Seller:
+  headings:
+  - START
+  - File Figma Homepage
+  - File Figma Buyer PDP
+  - File Figma Seller Dashboard
+  - File Figma Notifikasi
+  - File Figma Pengaturan
+  - Seller
+  - Shortcut Menuju Buyer Dashboard
   screens inside this page:
   - Frame 1
   - Frame 1958764219
@@ -24128,6 +25833,8 @@ General Flow Seller:
   - Transaksi Buyer
   - Non Login Homepage
 General Flow Tender Kilat Buyer:
+  headings:
+  - Menuju Proses Pembuatan Tender Kilat
   screens inside this page:
   - Homepage Login
   - Dropdown profil
@@ -24151,6 +25858,10 @@ url: https://www.figma.com/design/jHXpngTh0P8kp3qyDelY8y
 tags: archive, master files / archive, buyer, seller, general
 pages:
 PPT:
+  headings:
+  - Buyer Journey PaDi UMKM
+  - Title
+  - Seller Journey PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 01
   - Slide 16:9 - 99
@@ -24269,6 +25980,10 @@ PPT:
   - Slide 16:9 - 222
   - Slide 16:9 - 223
 PPT -  all user type:
+  headings:
+  - Buyer Journey PaDi UMKM
+  - Title
+  - Seller Journey PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 01
   - Slide 16:9 - 02
@@ -24350,6 +26065,9 @@ PPT -  all user type:
   - Slide 16:9 - 125
   - Slide 16:9 - 126
 PPT -  Buyer:
+  headings:
+  - Buyer Journey PaDi UMKM
+  - Title
   screens inside this page:
   - Slide 16:9 - 01
   - Slide 16:9 - 02
@@ -24396,6 +26114,9 @@ PPT -  Buyer:
   - Slide 16:9 - 49
   - Slide 16:9 - 99
 PPT -  Seller:
+  headings:
+  - Seller Journey PaDi UMKM
+  - Title
   screens inside this page:
   - Slide 16:9 - 100
   - Slide 16:9 - 101
@@ -24433,6 +26154,14 @@ PPT -  Seller:
   - Slide 16:9 - 125
   - Slide 16:9 - 126
 misc:
+  headings:
+  - Order Flow
+  - Staff Account
+  - Approval Flow
+  - Manager Account
+  - Receive Order Flow
+  - Staff / Manager Account
+  - Tempo Payment Flow
   screens inside this page:
   - Frame 1
   - Frame 2
@@ -24445,6 +26174,24 @@ url: https://www.figma.com/design/736qROV9HOC8VxWTNC89DE
 tags: archive, master files / archive, buyer, order trx
 pages:
 start here:
+  headings:
+  - Daftar Transaksi / Semua
+  - Daftar Transaksi / Disetujui
+  - Daftar Transaksi / Tagihan
+  - Daftar Transaksi / Pembayaran
+  - Daftar Transaksi / Diproses
+  - Daftar Transaksi / Dikirim
+  - Daftar Transaksi / Perubahan
+  - Daftar Transaksi / Refund
+  - Daftar Transaksi / Selesai
+  - Daftar Transaksi / Retensi
+  - Daftar Transaksi / Denda Transaksi
+  - Daftar Transaksi / Pembatalan
+  - Daftar Transaksi / Lainnya
+  - Detail Pesanan / Bayar Langsung
+  - Detail Pesanan / Bayar Tempo
+  - Detail Pesanan / Revisi Pesanan
+  - Daftar Transaksi / Diterima
   screens inside this page:
   - Buyer Staff
   - Seller
@@ -24522,6 +26269,8 @@ start here:
   - Daftar Transaksi / Diterima
   - Daftar Transaksi / Retensi
 Daftar & Detail Transaksi:
+  headings:
+  - → Link Detail PR
   screens inside this page:
   - Daftar Transaksi
   - Section-Alamat+Rincian
@@ -24558,6 +26307,9 @@ Trash:
   - Batalkan Pesanan
   - Daftar transaksi
 📙 Thumbnail:
+  headings:
+  - Daftar Transaksi
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 
@@ -24586,6 +26338,17 @@ url: https://www.figma.com/design/eBWvSSVc1mndTWFtSs23F6
 tags: archive, master files / archive, buyer, seller, order trx
 pages:
 2025:
+  headings:
+  - 2022-02-10 11:34:32 WIB
+  - Surat Jalan
+  - Pembelian Langsung (semua masuk Tab Pesanan)
+  - Pembelian Tempo (Tab Pesanan)
+  - Pembelian Tempo (Tab Tagihan)
+  - Pembelian Tempo (Tab Pembayaran)
+  - Belum diulas buyer
+  - Detail Transaksi Seller
+  - Detail Transaksi Buyer
+  - Diproses
   screens inside this page:
   - Desktop Card status
   - Frame 1958764476
@@ -24664,9 +26427,25 @@ post riset:
   screens inside this page:
   - detail alt 1
 FLOW TRANSAKSI SS DARI RAYHAN:
+  headings:
+  - BUYER STAFF
+  - BUYER MANAGER
+  - SELLER
   screens inside this page:
   - (no screens)
 Explore Widy:
+  headings:
+  - Alt. list layout
+  - Alt. Filter Section
+  - Alt. card dgn detail page atau tidak
+  - Alt. card buyer & Seller layout
+  - Pesanan
+  - Filter
+  - Pembelian Langsung (semua masuk Tab Pesanan)
+  - Pembelian Tempo (Tab Pesanan)
+  - Pembelian Tempo (Tab Tagihan)
+  - Pembelian Tempo (Tab Pembayaran)
+  - Belum diulas buyer
   screens inside this page:
   - Transaksi - Pesanan
   - Transaksi - Tagihan
@@ -24709,6 +26488,22 @@ Explore Widy:
   - Desktop Filter Drop down
   - Desktop Card status
 Explore stella:
+  headings:
+  - Buyer
+  - Seller
+  - Ebitda Positif
+  - Uang masuk > Uang keluar
+  - GMV
+  - 5000
+  - 2000
+  - 3000
+  - Revenue
+  - CVR
+  - Conversion rates jumlah transaksi/nominal
+  - AVG time
+  - AVGT
+  - Transaksi di padi
+  - Langsung
   screens inside this page:
   - Frame 1
   - Buyer / Daftar Transaksi
@@ -24717,6 +26512,16 @@ Explore stella:
   - Filter Pop Up
   - Desktop - 1
 Explore stella- new:
+  headings:
+  - Text
+  - PAGE DETAIL SELLER
+  - Disiapkan/dirposes
+  - Menuju pembeli
+  - penagihan
+  - pembayaran
+  - pencairan
+  - selesai
+  - Pesanan Siap Dikirim
   screens inside this page:
   - Desktop - 1
   - Desktop - 2
@@ -24769,6 +26574,15 @@ Explore stella- new:
   - Card
   - Option Status
 Explore A***a:
+  headings:
+  - tanggal coba diganti jd caption large
+  - coba pake stepper (gajadi, pengulangan informasi)
+  - coba tab summary transaksi dan pajak
+  - dibreakdown per component
+  - judul detail pesanan
+  - Detail Pesanan
+  - Detail Pesanan NEW
+  - Daftar Pesanan
   screens inside this page:
   - Android Large - 1
   - WF Detail Pesanan
@@ -24841,6 +26655,10 @@ Seller:
   - .base
   - Side Navigation 2026
 misc:
+  headings:
+  - Agak Lelet
+  - Cepat Tepat
+  - Sesuai Deadline
   screens inside this page:
   - Dashboard
   - Frame 1958763927
@@ -24884,6 +26702,9 @@ v1.1:
   screens inside this page:
   - full view
 misc:
+  headings:
+  - Info Penting
+  - Saldo Pendapatan: Rp. 100.000
   screens inside this page:
   - desktop/dashboard v3
   - Dashboard
@@ -24939,6 +26760,10 @@ url: https://www.figma.com/design/to3gh0QHJOC51Cq5dsYA8z
 tags: archive, master files / archive, all, general
 pages:
 Page 1:
+  headings:
+  - File Naming Template
+  - Page Organisation
+  - Example
   screens inside this page:
   - Project Brief
   - Documentation Table
@@ -24955,6 +26780,9 @@ url: https://www.figma.com/design/AlngvdtaxETXnJJ2L0bkMF
 tags: archive, master files / archive, all, homepage landing, open api erp, kdkmp
 pages:
 design:
+  headings:
+  - Text
+  - Count Number
   screens inside this page:
   - ERP Merah Putih (Opsi 2)
   - Mitra Kami
@@ -24989,6 +26817,11 @@ design:
   - .tab-item
   - Katalog Produk ERP Merah Putih
 trash:
+  headings:
+  - Tanya & Jawab
+  - Berapa lama proses verifikasi dokumen PO Financing?
+  - Apakah PO dapat digabung bila tidak memenuhi syarat minimal?
+  - ERP Merah Putih
   screens inside this page:
   - opsi 1
   - Beli Paket/v2
@@ -25009,6 +26842,10 @@ url: https://www.figma.com/design/hy1hS4bb1WNAAClpWlmmoj
 tags: archive, master files / archive, all, notif email
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Email
+  - PaDi UMKM - Seller
+  - Last Updated : 4 May 2023
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -25029,6 +26866,14 @@ url: https://www.figma.com/design/truAqFwGL1jJl4m8SqeVy4
 tags: archive, master files / archive, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -25118,6 +26963,8 @@ Adjustment flow transaksi:
   - Transaksi - Pesanan
   - Unggah Faktur Pajak
 1b Cara Transaksi Buyer Group:
+  headings:
+  - CASE JATUH TEMPO
   screens inside this page:
   - Case Bayar Langsung & Tempo
   - Case Bayar Termin
@@ -25135,6 +26982,14 @@ Tender Kilat - Seller:
   - Detail Penawaran
   - .Tambah Produk Jasa
 Tender Kilat - Buyer:
+  headings:
+  - Case Pertama Mengajukan Permintaan
+  - Buat Tender Kilat Isi Produk
+  - Daftar Tender Kilat
+  - Single Winner Tender Kilat
+  - Detail Penawaran
+  - Checkout Payment
+  - Buat Tender Kilat Upload File
   screens inside this page:
   - Frame 48097620
   - Frame 1958764267
@@ -25168,6 +27023,9 @@ url: https://www.figma.com/design/KmILq1K7qz4rB4TEju7PiA
 tags: archive, master files / archive, seller, login auth, homepage landing
 pages:
 📙 Thumbnail:
+  headings:
+  - Landing page Premium seller
+  - PaDi UMKM - Task Force Premium Seller
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -25184,6 +27042,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -25191,6 +27051,8 @@ pages:
   screens inside this page:
   - (no screens)
 ✅ Wireframe:
+  headings:
+  - Seller Name
   screens inside this page:
   - Landing page
   - .Bandingkan Produk
@@ -25302,6 +27164,9 @@ Utility:
   - Utility - Maintenance
   - Utility - Page not found
 Local Components:
+  headings:
+  - Navbar Content
+  - Existing Navbar Content
   screens inside this page:
   - Content
   - LgnFrame 48096225
@@ -25346,6 +27211,9 @@ url: https://www.figma.com/design/6AG9LSx1GAag28roAt2luP
 tags: archive, master files / archive, all, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Template Thumbnail project
+  - PaDi UMKM - [nama mini squad]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -25398,6 +27266,11 @@ url: https://www.figma.com/design/saRfoQS7nDTylvf91BXOTo
 tags: archive, master files / archive, all, notif email
 pages:
 v2:
+  headings:
+  - title max. 2 row content max. 3 row
+  - state: notif baru notif hovered notif sudah dibuka no notif
+  - notifkasi ada garis divider di bawahnya, kecuali yg terakhir
+  - *penggunaan icon to discuss
   screens inside this page:
   - Homepage
   - Notification
@@ -25442,6 +27315,9 @@ pages:
   screens inside this page:
   - (no screens)
 🔄 Design - Kasir:
+  headings:
+  - MacBook Pro M1 14inch 2021 Liquid Retina XDR 14,2 inci
+  - 1029131213242
   screens inside this page:
   - Katalog
   - Search
@@ -25482,6 +27358,13 @@ pages:
   - Create Akun Kasir
   - Kirim Bukti Transaksi
 🔄 Design - Revamp by Natalie:
+  headings:
+  - Rp500.000
+  - Rp100.000
+  - -Rp400.000
+  - -Rp50.000
+  - Rp600.000
+  - Content Title
   screens inside this page:
   - Kasir PaDi UMKM - Empty State
   - [hf] Keranjang - draft
@@ -25565,6 +27448,10 @@ pages:
   - General - System Error
   - User Journey Map
 🔄 Design - Dasboard:
+  headings:
+  - Item
+  - MacBook Pro M1 14inch 2021 Liquid Retina XDR 14,2 inci
+  - 1029131213242
   screens inside this page:
   - Login
   - Login - Filled
@@ -25586,6 +27473,9 @@ pages:
   - Status Pesanan
   - Contoh Cetak QR Produk
 🔄 Design - Archive:
+  headings:
+  - Lihat Detail
+  - Dicetak pada 12 Juni 2024 11.41 WIB
   screens inside this page:
   - Katalog
   - Keranjang - Jika lebih dari 1 toko
@@ -25617,6 +27507,8 @@ url: https://www.figma.com/design/Nl5LNRgyW5ULsUgJEb7cri
 tags: archive, master files / archive, seller, account profile
 pages:
 Ubah No. Handphone - Desktop:
+  headings:
+  - Resend OTP
   screens inside this page:
   - Profile - Email & Telepon - Filled
   - OTP Salah
@@ -25627,6 +27519,8 @@ Ubah No. Handphone - Desktop:
   - Frame 1958764332
   - Limit OTP SMS
 Ubah No. Handphone - Mobile:
+  headings:
+  - Resend OTP
   screens inside this page:
   - seller
   - Setting - Account
@@ -25638,6 +27532,13 @@ url: https://www.figma.com/design/uDsVpSgfuiWBfbM68ibUtG
 tags: archive, master files / archive, all, order trx, shipping fulfilment
 pages:
 Page 1:
+  headings:
+  - PADI UMKM Post Trax
+  - AYAM
+  - AYAMathon
+  - Amanah Ya solusikan Akurat Menuju EBITDA+
+  - Amanah YUK solusikan Akurat Menuju EBITDA+
+  - Q1 2024
   screens inside this page:
   - Frame 3
   - Frame 10
@@ -25726,6 +27627,29 @@ keb. fullfill:
   - Kurir Pribadi
   - 3PL
 refrensi:
+  headings:
+  - Retail
+  - Bisnis - Langsung
+  - Bisnis - Tempo
+  - Pembayaran Langsung
+  - Tab Pesanan
+  - Pembayaran Tempo
+  - Tab Tagihan
+  - Tab Pembayaran
+  - Tab Selesai
+  - Tab Perubahan
+  - Tab Lainnya
+  - Detail
+  - Pembelian Langsung (semua masuk Tab Pesanan)
+  - Pembelian Tempo (Tab Pesanan)
+  - Pembelian Tempo (Tab Tagihan)
+  - Pembelian Tempo (Tab Pembayaran)
+  - Belum diulas buyer
+  - Bisnis / Pembayaran Langsung
+  - Other Case
+  - Bisnis / Pembayaran Tempo
+  - Bisnis / Pembayaran Termin
+  - Pesanan
   screens inside this page:
   - Desktop Card status
   - mobile/detail pesanan/pembayaran langsung
@@ -25794,9 +27718,29 @@ url: https://www.figma.com/design/tmGB8BqHWY3rs6jhpm1bvB
 tags: archive, master files / archive, all, general
 pages:
 Thumbnails:
+  headings:
+  - Fitur Subscription
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 flow (latest):
+  headings:
+  - RECURRING PROCESS
+  - Seller
+  - Buyer
+  - Mimin
+  - Alt 1, With List benefit
+  - Pesanan Aktif
+  - Pesanan Aktif n+1
+  - Penagihan
+  - Perlu Dibayar
+  - Pesanan Baru
+  - Sedang Diproses
+  - Ditolak
+  - Menunggu Konfirmasi
+  - Jatuh Tempo
+  - Tidak Aktif
+  - Payment belum dilakukan
   screens inside this page:
   - Pesanan Aktif
   - Pesanan Aktif n+1
@@ -25847,6 +27791,23 @@ flow (latest):
   - Payment
   - Data Produk Mobile
 flow:
+  headings:
+  - RECURRING PROCESS
+  - Seller
+  - Buyer
+  - Mimin
+  - Alt 1, With List benefit
+  - Pesanan Aktif
+  - Pesanan Aktif n+1
+  - Penagihan
+  - Perlu Dibayar
+  - Pesanan Baru
+  - Sedang Diproses
+  - Ditolak
+  - Menunggu Konfirmasi
+  - Jatuh Tempo
+  - Tidak Aktif
+  - Payment belum dilakukan
   screens inside this page:
   - Pesanan Aktif
   - Pesanan Aktif n+1
@@ -25893,9 +27854,17 @@ flow:
   - Payment
   - Data Produk Mobile
 archvive:
+  headings:
+  - Alt 2, Without List benefit
   screens inside this page:
   - .Search Result - Produk
 notes:
+  headings:
+  - Mang sigit
+  - Frans/bagi ke yg merah
+  - Mas banu/widy
+  - PDP
+  - Pesanan Baru
   screens inside this page:
   - .base info produk
   - Frame 1958764284
@@ -25914,6 +27883,9 @@ url: https://www.figma.com/design/cKIsbWKnHIteH7T24fVMKV
 tags: archive, master files / archive, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Template Thumbnail project
+  - PaDi UMKM - [nama mini squad]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -25921,12 +27893,16 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - asdasd
   screens inside this page:
   - Frame 1
 📱 Mobile:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -25966,6 +27942,14 @@ url: https://www.figma.com/design/IPuHT9R6oldpmvhQQNV0xt
 tags: archive, master files / archive, all, discovery pdp, dashboard analytics
 pages:
 Page 1:
+  headings:
+  - “Kategori” lebih tebal
+  - Separator ditiadakan
+  - jarak konsisten
+  - highlight stylenya sama
+  - size disesuaikan
+  - Kategori dibuat full
+  - garis border bawah ini selalu ada
   screens inside this page:
   - Frame 6096
   - .HeaderMid
@@ -26021,6 +28005,9 @@ url: https://www.figma.com/design/AtZ3bbM5A4gQir69VWwYmG
 tags: master, master files / master buyer, buyer, order trx
 pages:
 📙 Thumbnail:
+  headings:
+  - Daftar Transaksi
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🖥️ Desktop - Batalkan Pesanan:
@@ -26037,6 +28024,16 @@ pages:
   - Frame 1958764567
   - case chat pesanan ditolak
 Page 1:
+  headings:
+  - Bukti Pengiriman
+  - No. Sales Order : VSO-2023-05-17-8041851
+  - Sudarsono +628927532834 AWB : 0353728
+  - Tanggal Pengiriman : 2022-02-13 11:34:32 WIB
+  - Tanggal Penerimaan : 2022-02-13 11:34:32 WIB
+  - Kurir Pribadi
+  - Status pesanan
+  - Biteship
+  - Pembayaran Langsung (Buyer Retail)
   screens inside this page:
   - Daftar Transaksi - Approval - Detail Pesanan - Request Review
   - Daftar Transaksi - Approval - Detail Pesanan - Disetujui
@@ -26094,6 +28091,9 @@ url: https://www.figma.com/design/F8dOMdU8POHc6hoRfH2ewP
 tags: master, master files / master buyer, buyer, order trx
 pages:
 📙 Thumbnail:
+  headings:
+  - Daftar Transaksi
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🖥️ Desktop - Batalkan Pesanan:
@@ -26111,6 +28111,16 @@ pages:
   - Batalkan Pesanan
   - case chat pesanan ditolak
 Page 1:
+  headings:
+  - Bukti Pengiriman
+  - No. Sales Order : VSO-2023-05-17-8041851
+  - Sudarsono +628927532834 AWB : 0353728
+  - Tanggal Pengiriman : 2022-02-13 11:34:32 WIB
+  - Tanggal Penerimaan : 2022-02-13 11:34:32 WIB
+  - Kurir Pribadi
+  - Status pesanan
+  - Biteship
+  - Pembayaran Langsung (Buyer Retail)
   screens inside this page:
   - Daftar Transaksi - Approval - Detail Pesanan - Request Review
   - Daftar Transaksi - Approval - Detail Pesanan - Disetujui
@@ -26228,6 +28238,44 @@ url: https://www.figma.com/design/1K6k0ocIo4ll65B2OGo98O
 tags: master, master files / master buyer, buyer, platformmobile
 pages:
 📱 Main Flow:
+  headings:
+  - Item
+  - Search
+  - Search Result
+  - Seller page
+  - Chat wa template
+  - sorting - Buyer
+  - sorting - Seller
+  - Filter - Buyer
+  - Product Detail Page
+  - Cart
+  - Check out
+  - Buyer got notice and get approval
+  - Case detail pesanan ada varian
+  - Case ketika dokumen tidak ada
+  - Choose project type
+  - Pilih Tanggal
+  - Case Asuransi Pengiriman
+  - Promo
+  - Pilih Alamat
+  - New Payment
+  - Pembayaran Tempo (Buyer Group)
+  - Pembayaran Langsung (Buyer Retail)
+  - Pembayaran Langsung - (Buyer Group)
+  - Filter - Seller
+  - Title Card
+  - Status pesanan
+  - Untuk Bagian Tempo
+  - Metode bayar Langsung
+  - Metode bayar Tempo
+  - Discover
+  - Purchase
+  - Payment
+  - Waiting/Status Pemesanan
+  - Ubah Komponen Pajak
+  - Puas Banget!
+  - Ditolak seller
+  - Show ongkir
   screens inside this page:
   - Frame 624930
   - Frame 624931
@@ -26512,6 +28560,16 @@ pages:
   - Home Page Mobile
   - PDP
 🏠 Homepage:
+  headings:
+  - Homepage - After Login
+  - State Ketika Slider berjalan
+  - Homepage - Before Login
+  - Lihat Semua
+  - Produk Pilihan Untuk Kamu
+  - Kategori Kebutuhan Kantor
+  - Kategori Elektronik
+  - Vendor diampu BUMN
+  - Toko Rekomendasi
   screens inside this page:
   - Bottom Bar
   - Frame 5997
@@ -26529,6 +28587,8 @@ pages:
   - Lihat Semua - Produk Pilihan
   - Search Result - Produk
 🔠 Kategori:
+  headings:
+  - Cat
   screens inside this page:
   - Frame 5997
   - Frame 11371
@@ -26536,6 +28596,15 @@ pages:
   - Frame 11372
   - Frame 11303
 🛍  Proses Transaksi:
+  headings:
+  - Pembayaran Tempo - Buyer Group - Telkom
+  - Pembayaran Tempo - Buyer Group - Non Telkom
+  - Item
+  - Case Jika Tidak Ada Issue
+  - Case Dok Pajak Sudah Di Upload
+  - Pembayaran Langsung - Buyer Group/Retail
+  - Case Ditolak Seller & Refund
+  - Case Jika Ada Issue
   screens inside this page:
   - Frame 624930
   - Frame 624945
@@ -26622,6 +28691,10 @@ pages:
   - Frame 624993
   - Frame 624994
 💸  Daftar Transaksi:
+  headings:
+  - Item
+  - Status pesanan
+  - Upload bukti pembayaran
   screens inside this page:
   - Frame 624882
   - Frame 624883
@@ -26710,23 +28783,43 @@ pages:
   - Frame 624944
   - Frame 624945
 📣 Promo:
+  headings:
+  - Promo
+  - Search Promo
   screens inside this page:
   - Search Result - Produk
   - Frame 5986
   - Frame 5987
   - Frame 625188
 💬 Chat:
+  headings:
+  - Chat Buyer Staff
   screens inside this page:
   - Chat - Kotak Pesan
   - Frame 6093
   - Frame 624813
   - Frame 6127
 💰 Seller Loan Notification:
+  headings:
+  - Item
   screens inside this page:
   - Frame 2
   - Frame 6068
   - Frame 6072
 👤 Profile:
+  headings:
+  - Sangat Puas!
+  - Item
+  - Akun
+  - Belum Ada Penilaian
+  - Negative Case
+  - Case Icon Eyen Show
+  - Puas!
+  - Cukup!
+  - Tidak Puas!
+  - Sangat Tidak Puas!
+  - Case pemberian bintang
+  - Case No Avatar
   screens inside this page:
   - Ulasan Saya - Lihat Detail
   - Akun
@@ -26769,6 +28862,10 @@ pages:
   screens inside this page:
   - (no screens)
 📋 Prototype:
+  headings:
+  - Title Card
+  - Item
+  - Status pesanan
   screens inside this page:
   - Login
   - Login Onboard
@@ -26968,6 +29065,18 @@ pages:
   screens inside this page:
   - (no screens)
 🧩 Local Components - Temp:
+  headings:
+  - Components
+  - Login
+  - Homepage
+  - Search
+  - Product Detail Page
+  - Profile
+  - Daftar Transaksi
+  - Payment
+  - Status Pesanan
+  - Chat
+  - Month
   screens inside this page:
   - Login Onboard
   - button-cart
@@ -27001,6 +29110,59 @@ pages:
   screens inside this page:
   - (no screens)
 📱 Main Flow (old):
+  headings:
+  - Item
+  - Homepage - After Login
+  - State Ketika Slider berjalan
+  - Login
+  - Search
+  - Search Result
+  - Seller page
+  - Chat wa template
+  - sorting - Buyer
+  - sorting - Seller
+  - Filter - Buyer
+  - Product Detail Page
+  - Cart
+  - Check out
+  - Buyer got notice and get approval
+  - Case detail pesanan ada varian
+  - Case ketika dokumen tidak ada
+  - Choose project type
+  - Pilih Tanggal
+  - Case Asuransi Pengiriman
+  - Promo
+  - Pilih Alamat
+  - Homepage - Before Login
+  - New Payment
+  - Pembayaran Tempo (Buyer Group)
+  - Pembayaran Langsung (Buyer Retail)
+  - Pembayaran Langsung - (Buyer Group)
+  - Filter - Seller
+  - Title Card
+  - Login - On Boarding State
+  - Status pesanan
+  - Untuk Bagian Tempo
+  - Metode bayar Langsung
+  - Metode bayar Tempo
+  - Discover
+  - Purchase
+  - Payment
+  - Waiting/Status Pemesanan
+  - Start
+  - Register
+  - Forgot Password
+  - Lihat Semua
+  - Ubah Kata Sandi
+  - Produk Pilihan Untuk Kamu
+  - Kategori Kebutuhan Kantor
+  - Kategori Elektronik
+  - Vendor diampu BUMN
+  - Toko Rekomendasi
+  - Ubah Komponen Pajak
+  - Puas Banget!
+  - Ditolak seller
+  - Show ongkir
   screens inside this page:
   - Frame 624930
   - Frame 624931
@@ -27295,6 +29457,23 @@ pages:
   - Frame 624954
   - Frame 624955
 🗑  Unused:
+  headings:
+  - Upload Bukti Bayar
+  - ksh snackbar sukses
+  - ksh konf ktika simpan
+  - Other Alternative
+  - khusus ditolak seller
+  - Title Card
+  - Item
+  - Alamat tersimpan
+  - Tambah
+  - Tambah/edit alamat
+  - Detail alamat
+  - Koordinat alamat
+  - Take picture on gallery or camera
+  - Status pesanan
+  - Ubah Komponen Pajak
+  - Case ketika Pajak lebih dari 3
   screens inside this page:
   - Loader
   - Frame 1510
@@ -27615,10 +29794,22 @@ ss oca:
   screens inside this page:
   - (no screens)
 trash:
+  headings:
+  - Muncul di template
   screens inside this page:
   - Trash
   - ideas
 Page 1:
+  headings:
+  - from excel, scheduled, error no csv uploaded
+  - title char over limit
+  - deeplink text char over limit
+  - error ratio image
+  - error csv
+  - status cancelled
+  - Butuh Dana untuk Membantu Usaha Anda?
+  - from excel, scheduled
+  - all seller, send now
   screens inside this page:
   - modal list user
   - modal lihat image
@@ -27632,6 +29823,9 @@ url: https://www.figma.com/design/iJTJGP5bEuXfo3qaUX9ZJM
 tags: master, master files / master mimin, mimin, login auth, financing
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Pinjaman (Mimin)
+  - PaDi UMKM - Vertical Product
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -27646,6 +29840,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -27662,6 +29858,12 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - MENU PO FINANCING PADA MIMIN
+  - WHITELIST SELLER
+  - BLACKLIST BUYER
+  - Detail Pinjaman
+  - Menunggu Proses Pengajuan
   screens inside this page:
   - Section 1
 📱 Mobile Responsive / Mobile App:
@@ -27707,11 +29909,15 @@ url: https://www.figma.com/design/VUhDqJzgxONirmXeYyweKT
 tags: master, master files / master seller, seller, platformmobile
 pages:
 Feedback Tambah Kategori Perusahaan:
+  headings:
+  - MENAMBAHKAN KATEGORI PERUSAHAAN
   screens inside this page:
   - Profil
   - Profile - Edit Profile - Dropdown
   - Completed Data - Company Profile - Filled
 Hi-Fi Apps Mobile Seller:
+  headings:
+  - Side Menu
   screens inside this page:
   - Dashboard
   - Frame 624773
@@ -27724,6 +29930,16 @@ Hi-Fi Apps Mobile Seller:
   - Frame 6042
   - Frame 5997
 Product:
+  headings:
+  - Upload Foto Produk
+  - Export Produk
+  - Jasa Revisi 31 Mei 2022
+  - Jasa Revisi 26 Juli 2022
+  - Data Product Seller
+  - Revisi 21 April 2022
+  - Pengecualian Pemungutan PPh Pasal 22a
+  - Required Filled
+  - All Filled
   screens inside this page:
   - Seller - Add Jasa - Detail - Empty
   - Seller - Add Jasa - Filled Required
@@ -27781,6 +29997,14 @@ Forgot Password:
   - Account Activation - Success
   - Forgot Password - Filled Show Password
 Registrasi:
+  headings:
+  - Register Seler
+  - SELLER DITOLAK
+  - Atur Kata Sandi
+  - Negative Case
+  - NIB Yes
+  - Save Draft
+  - Dropdown
   screens inside this page:
   - Register Seller - Kode Referal Invalid
   - Register - FIll Empty
@@ -27823,6 +30047,8 @@ Registrasi:
   - Frame 624939
   - Frame 624938
 Login:
+  headings:
+  - Login - On Boarding State
   screens inside this page:
   - Frame 6109
   - Frame 6002
@@ -27845,6 +30071,12 @@ Bantuan Hukum:
   screens inside this page:
   - Layanan Penjual - Bantuan Hukum
 Dashboard:
+  headings:
+  - Dashboard 27 May 2022
+  - SELLER APPROVE/REJECTED/REVIEWED
+  - DITOLAK
+  - DIREVIEW
+  - DISETUJUI
   screens inside this page:
   - Dashboard
   - Frame 11371
@@ -27853,6 +30085,20 @@ Dashboard:
   - Frame 624960
   - Frame 624961
 Transaksi: Pesanan:
+  headings:
+  - Flow Pesanan Buyer Group: Tempo Non Telkom
+  - Flow Pesanan Retail: Pembayaran Langsung
+  - Flow Pesanan Buyer Group: Pembayaran Langsung
+  - List Transaksi Pesanan
+  - RINGKASAN PESANAN WAPU & NON-WAPU
+  - Detail Transaksi Pesanan
+  - Flow Pesanan Buyer Group: Tempo Telkom
+  - Lihat Detail
+  - Case: produk lebih dari 2
+  - WAPU
+  - NON-WAPU
+  - KURIR 3RD PARTY
+  - KURIR PRIBADI
   screens inside this page:
   - Transaksi - Detail Pesanan - Expired
   - Buyer Group - Pembayaran Langsung - Pesanan Baru - Transaksi
@@ -28056,12 +30302,23 @@ Menu Jasa:
   - Jasa -  Tambah Jasa - Filled
   - Label Opsi Pajak
 Chat:
+  headings:
+  - Chat: Kotak Masuk
+  - Chat Seller
   screens inside this page:
   - Frame 624813
   - Chat - Kotak Pesan
   - Helper
   - Frame 6127
 Dokumen:
+  headings:
+  - Sales Order (SO)
+  - Surat Jalan
+  - Proforma Invoice
+  - BAST
+  - Instruksi Pembayaran
+  - Invoice
+  - Invoice Biaya Layanan
   screens inside this page:
   - Frame 625041
   - Frame 625042
@@ -28082,6 +30339,11 @@ Dokumen:
   - Dokumen - Buyer Retail - Proforma Invoice
   - Dokumen - Instruksi Pembayaran
 Ulasan:
+  headings:
+  - Transaksi: Ulasan - Penilaian Pembelian
+  - Transaksi: Ulasan - Rating Produk
+  - Jika User memilih semua aspek penilaian
+  - Jika User tidak memilih semua aspek penilaian
   screens inside this page:
   - Frame 624951
   - Frame 624952
@@ -28104,6 +30366,68 @@ Ulasan:
   - Transaksi - Penilaian Pembelian - Filled
   - Transaksi - Penilaian Pembelian - Choosing Date
 Setting:
+  headings:
+  - Profile
+  - Pengaturan Perusahaan: Profil Perusahaan
+  - Dokumen
+  - Pengalaman Pekerjaan
+  - Mesin & Peralatan
+  - Pengiriman
+  - Atur Kata Sandi
+  - Lainnya
+  - Pengaturan Perusahaan: Pemegang Saham
+  - Pengaturan Perusahaan: SDM
+  - Keuangan: Bank
+  - Keuangan: Modal
+  - Keuangan: Neraca
+  - Keuangan: SPT Pajak Tahunan
+  - Before
+  - Jika upload dengan format yang salah
+  - Negative Case
+  - Jika uplaod dengan diatas 300 KB
+  - Kosongkan nama seller
+  - Kosongkan data
+  - nama seller kurang dari 3 karakter
+  - terlalu pendek
+  - Kosongkan kolom nomor handphone
+  - no telp maksimal
+  - no telp tidak pakai spasi
+  - no telp tidak memakai karakter khusus atau huruf
+  - Nomor handphone tidak boleh menggunakan spasi
+  - Flow Tambah
+  - Flow Edit (belum ada dokumen)
+  - Pilih Tanggal
+  - Flow Edit
+  - Ketika langsung klik checkbox
+  - Expand dropdown
+  - Flow Edit (ada dokumen)
+  - Flow Hapus
+  - Flow Hapus Pemegang Saham
+  - Nomor handphone maksimal 13 karakter
+  - Nomor Handphone minimal 9 karakter
+  - Nama pemegang saham kosong dan presentase kepemilikan kosong
+  - kurang dari karakter yang ditentukan
+  - Input Pengalaman pekerjaan kurang dari 1 tahun
+  - Upload data lebih dari 5 MB
+  - Format tidak sesuai
+  - diinput kurang dari karakter yang ditentukan
+  - diinput dengan huruf/angka/alphanumerik
+  - hanya diinput dengan angka
+  - No rek maksimal 16 digit
+  - Tahun kurang dari karakter/digit yang ditentukan
+  - hanya dapat diinput dengan angka
+  - nilai aktiva tidak sama dengan nilai passiva + nilai ekuitas
+  - Kurang digit
+  - Hanya dapat input angka
+  - Wajib Diisi
+  - Kata sandi kurang dari 14 karakter
+  - Kata Sandi tidak memiliki 1 non alphanumerik
+  - Kata sandi baru harus sama dengan yang lama
+  - Note Setting:
+  - diinput kurang dari karakter/digit yang ditentukan
+  - hanya diinput dengan alphaumerik
+  - tidak bisa pilih tanggal kebelakang
+  - Lampiran diatas 5MB
   screens inside this page:
   - Profil
   - Lampiran
@@ -28392,6 +30716,8 @@ Local Component:
   screens inside this page:
   - (no screens)
 Hi-Fi:
+  headings:
+  - Title
   screens inside this page:
   - Login
   - Frame 1958764295
@@ -28525,6 +30851,8 @@ Hi-Fi:
   screens inside this page:
   - .Tambah Produk Barang
 Local Component:
+  headings:
+  - Tambah Produk
   screens inside this page:
   - header
   - content header
@@ -28671,6 +30999,9 @@ pages:
   screens inside this page:
   - (no screens)
 ✅ Login:
+  headings:
+  - Error Case
+  - Label
   screens inside this page:
   - Login
   - Overlay
@@ -28754,6 +31085,9 @@ Progress 0% - Dashboard Retail:
   screens inside this page:
   - (no screens)
 🗑️ Cemetery:
+  headings:
+  - To Do:
+  - Label
   screens inside this page:
   - As a BUMN (Account BUMN)
   - Flow
@@ -28804,6 +31138,9 @@ pages:
   screens inside this page:
   - (no screens)
 ✅ Login:
+  headings:
+  - Error Case
+  - Label
   screens inside this page:
   - Login
   - Overlay
@@ -28812,6 +31149,13 @@ pages:
   - Design Idea Control Tower Announcement Bar
   - Announcement Pop Up
 ✅ Transisi CT Baru:
+  headings:
+  - New Flow
+  - Klik CT Baru
+  - Klik Tombol Close "X"
+  - Berhasil
+  - Gagal
+  - User Buka Control padi.umkm
   screens inside this page:
   - Login
   - Login Old
@@ -28920,6 +31264,9 @@ Playground CT Transisi:
   - Backup Facebook After Revised
   - YouTube Thumbnail Fixed Group
 🗑️ Cemetery:
+  headings:
+  - To Do:
+  - Label
   screens inside this page:
   - As a BUMN (Account BUMN)
   - Flow
@@ -28988,6 +31335,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Cemetery:
+  headings:
+  - Data Benar?
   screens inside this page:
   - Transaksi
   - Frame 427319410
@@ -29029,6 +31378,9 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Design - Desktop:
+  headings:
+  - Error Case
+  - Label
   screens inside this page:
   - Login
   - BUMN e-Procurement / Belanja PDN
@@ -29058,6 +31410,9 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Design - Desktop:
+  headings:
+  - Error Case
+  - Label
   screens inside this page:
   - Login
   - BUMN e-Procurement / Belanja PDN
@@ -29261,6 +31616,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Design - Desktop v2:
+  headings:
+  - bulk selection
   screens inside this page:
   - Transaksi (User BUMN)
   - Transaksi / Pop Up / Download Data Transaksi
@@ -29279,6 +31636,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Cemetery:
+  headings:
+  - Data Benar?
   screens inside this page:
   - Transaksi
   - Frame 427319410
@@ -29359,6 +31718,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Cemetery:
+  headings:
+  - Data Benar?
   screens inside this page:
   - Transaksi
   - Frame 427319410
@@ -29407,6 +31768,8 @@ pages:
   screens inside this page:
   - (no screens)
 🧩 Local Component:
+  headings:
+  - Detail Broadcast Chat Otomatis
   screens inside this page:
   - konten
   - Frame 1958764117
@@ -29537,6 +31900,14 @@ url: https://www.figma.com/design/srBrfVAtsapjPs4ORdZpoK
 tags: active, core, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -29594,6 +31965,9 @@ url: https://www.figma.com/design/HUntytoVyGHSxbnSZ8l2pu
 tags: active, core, all, chat
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Chat
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -29616,6 +31990,8 @@ pages:
   - date picker
   - load
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -29690,6 +32066,17 @@ Chat Notification:
   - Opsi 1
   - handling pesan lainnnya
 Fitur Reply Bubble:
+  headings:
+  - Default
+  - Buyer
+  - Seller
+  - Click more
+  - Reply no attachment
+  - Reply with attachment + long text
+  - Reply text(Slide)
+  - Reply text
+  - Attachment
+  - Sent
   screens inside this page:
   - Chat
   - Frame 624879
@@ -29816,6 +32203,25 @@ url: https://www.figma.com/design/TiV8GozFNkTfUYsuhFg9DV
 tags: active, core, all, open api erp
 pages:
 Page 1:
+  headings:
+  - Step 1: Setup customer profile
+  - Awareness
+  - Consideration
+  - Acquistion
+  - Service
+  - Loyalty
+  - Touchpoints
+  - Instructions Text
+  - Jane Doe
+  - Actions
+  - Experience
+  - Oppurtunities
+  - Pain Points
+  - New to FigJam?
+  - IA Planning
+  - FigJam
+  - Customer journey map
+  - Key
   screens inside this page:
   - Quick Guide
   - New to FigJam
@@ -29839,6 +32245,8 @@ pages:
   screens inside this page:
   - (no screens)
 🧩 Local Component:
+  headings:
+  - Title
   screens inside this page:
   - Navbar, Hero
   - Programmer-amico 1
@@ -29929,6 +32337,19 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Cemetery:
+  headings:
+  - POP UP “Terjadi kesalahan pada data mandatory”
+  - POP UP FORM PERBAIKAN DATA
+  - Sukses
+  - Perbaiki sendiri
+  - Kembalikan ke buyer staff
+  - Menunggu Persetujuan
+  - Disetujui
+  - Munculkan FC NUMBER
+  - Ke status revisi
+  - ubah data
+  - Kembali ke checkout
+  - Payment
   screens inside this page:
   - Transaksi
 
@@ -29946,6 +32367,11 @@ pages:
   screens inside this page:
   - Local Compionent
 📜 Information Architecture:
+  headings:
+  - Page need to be created
+  - High level journey
+  - Info switch mode bisa pake spt ini, saat di halaman checkout
+  - Why?
   screens inside this page:
   - Ideation
 ✅ Wireframe:
@@ -29970,6 +32396,9 @@ pages:
   screens inside this page:
   - (no screens)
 Design - Desktop after UAT:
+  headings:
+  - Daftar Permintaan Pembelian
+  - Daftar Transaksi setelah penagihan
   screens inside this page:
   - Menunggu Disetujui
   - Disetujui
@@ -29977,6 +32406,19 @@ Design - Desktop after UAT:
   - Menunggu Pembayaran
   - Annotation
 🗑️ Cemetery:
+  headings:
+  - POP UP “Terjadi kesalahan pada data mandatory”
+  - POP UP FORM PERBAIKAN DATA
+  - Sukses
+  - Perbaiki sendiri
+  - Kembalikan ke buyer staff
+  - Menunggu Persetujuan
+  - Disetujui
+  - Munculkan FC NUMBER
+  - Ke status revisi
+  - ubah data
+  - Kembali ke checkout
+  - Payment
   screens inside this page:
   - Transaksi
 
@@ -29996,6 +32438,11 @@ pages:
   - _Dropdown Edit Limit Transaksi
   - _Dropdown Delete Limit Transaksi
 📜 Information Architecture:
+  headings:
+  - Page need to be created
+  - High level journey
+  - Info switch mode bisa pake spt ini, saat di halaman checkout
+  - Why?
   screens inside this page:
   - Ideation
 ✅ Wireframe:
@@ -30018,6 +32465,11 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Cemetery:
+  headings:
+  - Admin bumn
+  - buyer group
+  - buyer staff
+  - buyer mgr
   screens inside this page:
   - Alternative 1 - Navbar
   - [ SMB-268 ] Open API Telkomsel - Opsi Kategori Belanja
@@ -30106,6 +32558,15 @@ url: https://www.figma.com/design/opkvX6vr4OKjdCi6L7euHj
 tags: active, core, all, dashboard analytics
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - Control Tower
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -30133,10 +32594,15 @@ url: https://www.figma.com/design/MmyB3l3DdaVuDnxtZwdfzT
 tags: active, core, all, dashboard analytics, open api erp
 pages:
 📙 Thumbnail:
+  headings:
+  - New Dashboard OPEN API
+  - PaDi UMKM - Core
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -30282,11 +32748,21 @@ pages:
   - Body Content
   - more
 📜 Information Architecture:
+  headings:
+  - Page need to be created
+  - Information Architecture
+  - High level journey
   screens inside this page:
   - Page need to be created
   - Information Architecture
   - High level journey
 ✅ Wireframe:
+  headings:
+  - Notifications
+  - Sandbox
+  - Summary
+  - Integration
+  - dasdfsfsdfsdfdsfdfd
   screens inside this page:
   - Login
   - Frame 8
@@ -30403,6 +32879,8 @@ pages:
   screens inside this page:
   - (no screens)
 🧩 Local Component:
+  headings:
+  - Title
   screens inside this page:
   - Navbar, Hero
   - Programmer-amico 1
@@ -30461,6 +32939,15 @@ url: https://www.figma.com/design/wQqn6R1UAY8yQdLNfYhbS7
 tags: active, core, seller, chat
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - Broadcast Chat
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -30597,6 +33084,8 @@ pages:
   screens inside this page:
   - (no screens)
 🧩 Local Component:
+  headings:
+  - User
   screens inside this page:
   - .Expanded-Menubar
   - .Menubar
@@ -30653,6 +33142,19 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Cemetery:
+  headings:
+  - POP UP “Terjadi kesalahan pada data mandatory”
+  - POP UP FORM PERBAIKAN DATA
+  - Sukses
+  - Perbaiki sendiri
+  - Kembalikan ke buyer staff
+  - Menunggu Persetujuan
+  - Disetujui
+  - Munculkan FC NUMBER
+  - Ke status revisi
+  - ubah data
+  - Kembali ke checkout
+  - Payment
   screens inside this page:
   - Transaksi
 
@@ -30661,6 +33163,9 @@ url: https://www.figma.com/design/6281b3OzpbD8hrPMoi4Ah5
 tags: active, core, all, chat
 pages:
 📙 Thumbnail:
+  headings:
+  - Template Thumbnail project
+  - PaDi UMKM - [nama mini squad]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -30668,6 +33173,8 @@ pages:
   screens inside this page:
   - pesan pengumuman
 📝 Notes Design:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -30724,6 +33231,8 @@ v3. Menu informasi pencairan dana:
   screens inside this page:
   - Informasi Pencairan Dana
 v2. Menu pencairan pisah dr daftar transaksi:
+  headings:
+  - Daftar Pencairan Dana
   screens inside this page:
   - Saldo Masuk
   - Empty State
@@ -30770,6 +33279,15 @@ Flow:
   screens inside this page:
   - (no screens)
 1. Mimin - Approval 3PL, Voucher, Invoice Financing:
+  headings:
+  - Nomor PO
+  - Tanggal Diajukan
+  - Approve
+  - Tolak
+  - Menunggu Approval
+  - User
+  - Deskripsi
+  - : Mimin/Tim Ops
   screens inside this page:
   - local component
   - unused
@@ -30793,12 +33311,25 @@ Flow:
   - pop up 1
   - pop up 2
 3. Mimin - Disbursement Approval - Penarikan Saldo:
+  headings:
+  - Polos
+  - Disbursement ID
+  - Tanggal Diajukan
+  - Summary
+  - Check
   screens inside this page:
   - local component
   - unused
   - Mimin - Approval Disbursement
   - Seller - Riwayat
 v1:
+  headings:
+  - Active State
+  - Desktop
+  - Mobile
+  - Status Penarikan Saldo
+  - Error Case
+  - Label
   screens inside this page:
   - Final Dashboard Seller
   - Expand Menu Filter
@@ -30817,6 +33348,8 @@ v1:
   - Sukses
   - Kata sandi
 Page 5:
+  headings:
+  - 2025 GOES TO SG, BISMILLAH!
   screens inside this page:
   - Final Dashboard Seller
   - Frame 1958764124
@@ -30955,6 +33488,12 @@ Popup KLPD:
   screens inside this page:
   - Frame 1
 trash:
+  headings:
+  - Belum upload faktu
+  - Gagal
+  - Saldo masuk
+  - Selesai
+  - SUKSES?
   screens inside this page:
   - tabel
   - ubah 1 data
@@ -30995,6 +33534,9 @@ v2 - Mobile:
   - Entry Point - Profile & Notifikasi
   - Ubah Rekening
 v1:
+  headings:
+  - Tambah Rekening
+  - Ubah Rekening
   screens inside this page:
   - Saldo Refund - Dashboard
   - Tarik Saldo
@@ -31044,6 +33586,13 @@ Mimin:
   - Case filter/Sorting
   - Tab Baru
 Email:
+  headings:
+  - EMAIL SUBJECT:
+  - Faktur Pajak Bulan Desember 2023 Sudah Terbit!
+  - Terlambat Mengunggah Bukti Potong!
+  - Kamu Belum Mengunggah Bukti Potong!
+  - Kamu Belum Mengunggah Revisi Bukti Potong!
+  - Bukti potong salah, silahkan revisi lagi!
   screens inside this page:
   - email subject
   - email desktop width: 600px
@@ -31071,6 +33620,9 @@ url: https://www.figma.com/design/ZpKwhiyxCDiaGyBMjNZxub
 tags: active, disbursement, all, pr po approval, disbursement saldo
 pages:
 buyer & seller:
+  headings:
+  - barang
+  - jasa
   screens inside this page:
   - meminta persetujuan buyer manager
   - buyer manager menerima notif amandemen po ditolak seller
@@ -31099,6 +33651,8 @@ admin bumn:
   - filled
   - .Admin perusahaan/ Detail Buyer Group
 trash:
+  headings:
+  - tidak
   screens inside this page:
   - dekstop 1.0
   - seller trx status setelah amandemen po disetujui (barang)
@@ -31123,11 +33677,31 @@ url: https://www.figma.com/design/22H1WfUSV0zMYbO6xnBXLe
 tags: active, disbursement, all, order trx, disbursement saldo, notif email
 pages:
 Saldo Pendapatan:
+  headings:
+  - EMAIL SUBJECT:
+  - Pencairan Dana Transaksi Gagal!
+  - Penarikan Saldo Pendapatan Berhasil!
+  - Penarikan Dana Transaksi Sedang Diproses
+  - Pencairan Dana ke Saldo Pendapatan Gagal
+  - Pencairan Dana Transaksi Sedang Diproses
+  - Pencairan Dana Transaksi Gagal
+  - Pencairan Dana Transaksi Berhasil Masuk ke Saldo Pendapatan
+  - Pencairan Dana Transaksi Berhasil Masuk ke Rekening!
   screens inside this page:
   - mobile
   - email subject
   - email desktop width: 600px
 Saldo Refund:
+  headings:
+  - EMAIL SUBJECT:
+  - Pencairan Dana Transaksi Gagal!
+  - Penarikan Saldo Refund Berhasil!
+  - Penarikan Dana Transaksi Sedang Diproses
+  - Pencairan Dana ke Saldo Refund Gagal
+  - Pencairan Dana Transaksi Sedang Diproses
+  - Pencairan Dana Transaksi Gagal
+  - Pencairan Dana Transaksi Berhasil Masuk ke Saldo Refund
+  - Pencairan Dana Transaksi Berhasil Masuk ke Rekening!
   screens inside this page:
   - mobile
   - email subject
@@ -31150,6 +33724,12 @@ url: https://www.figma.com/design/MYNeKQZ9nweC7ysFnFnW6p
 tags: active, disbursement, mimin, financier, pr po approval, disbursement saldo
 pages:
 Page 1:
+  headings:
+  - Nomor PO
+  - Tanggal Diajukan
+  - Approve
+  - Tolak
+  - Menunggu Approval
   screens inside this page:
   - CMS Mimin - Disbursement
   - filter lainnya
@@ -31161,6 +33741,8 @@ url: https://www.figma.com/design/ggsyGN8byYiYuwXbeMxACV
 tags: active, disbursement, buyer, docs tax invoice, disbursement saldo, open api erp
 pages:
 Page 1:
+  headings:
+  - Proposed
   screens inside this page:
   - Frame 1958763906
   - Frame 1958763907
@@ -31244,6 +33826,18 @@ Update order:
   - Notifikasi Buyer Staf persetujuan manager
   - Notifikasi Buyer Staf persetujuan seller
 ↳ Buyer Manager Self-Service:
+  headings:
+  - Approval Manager
+  - Notifikasi dari Seller
+  - Menunggu Persetujuan
+  - Jatuh Tempo
+  - Menunggu Pembayaran
+  - Disetujui
+  - Diproses
+  - Dikirim
+  - Diterima
+  - Ditolak Manager
+  - Buyer Manager
   screens inside this page:
   - Frame 1958764204
   - Approval
@@ -31273,6 +33867,9 @@ Update order:
   screens inside this page:
   - .
 Trash:
+  headings:
+  - Perubahan Data Disetujui Penjual
+  - Pembatalan Ditolak Penjual
   screens inside this page:
   - Frame 1958764212
   - Frame 1958764567
@@ -31350,6 +33947,11 @@ update order v7:
   - Detail Transaksi
   - detail update order
 update order v6:
+  headings:
+  - Invoice 1
+  - Invoice 2
+  - Detail Update Order
+  - Detail transaksi & dokumen
   screens inside this page:
   - Update Order
   - dokumen upload
@@ -31376,12 +33978,17 @@ v1:
   screens inside this page:
   - penjual
 v2:
+  headings:
+  - ini tuh platformnya dibuat untuk user buyer pertamina
   screens inside this page:
   - User BUMN Update Order in New Platform
   - User BUMN Cek Update Order in New Platform
   - User BUMN Terima Email Disetujui atau Dibatalkan
   - Seller Terima Email Update Order
 v3:
+  headings:
+  - Dokumen dengan pilihan: Upload, Hapus
+  - Dokumen dengan pilihan: Ubah, Upload, Hapus
   screens inside this page:
   - penjual
   - Frame 625299
@@ -31423,6 +34030,10 @@ v5:
   - Frame 1958764054
   - Simpan Perubahan
 trash:
+  headings:
+  - Invoice 1
+  - Invoice 2
+  - Detail transaksi & dokumen
   screens inside this page:
   - Detail Update Order Termin
   - Frame 1958764103
@@ -31456,6 +34067,8 @@ Desain:
   - Multiple Verif
   - Pilihan Metode Verif
 Trash:
+  headings:
+  - Upload CSV
   screens inside this page:
   - List Transaksi
   - Dekstop
@@ -31489,12 +34102,18 @@ login:
   - create password - case belum pernah ada password sebelumnya (NEW USER)
   - login - error case
 dashboard / data summary:
+  headings:
+  - Export Page
+  - Semua Pinjaman
   screens inside this page:
   - Data Summary
   - case sort pressed
   - Data Summary / Empty
   - Frame 1958764305
 dashboard / semua pinjaman:
+  headings:
+  - Detail Pinjaman
+  - Unduh Summary
   screens inside this page:
   - table single PO
   - Semua Pinjaman
@@ -31505,6 +34124,8 @@ dashboard / semua pinjaman:
   - Semua Pinjaman / Single PO
   - Semua Pinjaman / Multiple PO
 ↳ detail pinjaman:
+  headings:
+  - Update Data
   screens inside this page:
   - Unduh
   - Detail Pinjaman with Scoring Penjual 1.1
@@ -31572,6 +34193,8 @@ url: https://www.figma.com/design/SyAvzqHZ3gn9wg41RphSnB
 tags: active, financing, all
 pages:
 po financing:
+  headings:
+  - link artefak: [Seller] Pinjaman Tersedia - old
   screens inside this page:
   - [seller] ajukan PO financing
   - [seller] pinjaman tersedia
@@ -31750,6 +34373,9 @@ url: https://www.figma.com/design/gZC8hhFOEhZeT0ppPpdY3X
 tags: active, financing, seller, dashboard analytics
 pages:
 📙 Thumbnail:
+  headings:
+  - Dashboard Analytic
+  - PaDi UMKM - [Vertical Product]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -31757,6 +34383,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Ringkasan Penjualan
   screens inside this page:
   - new Info
   - Title
@@ -31767,6 +34395,8 @@ pages:
   - Right Sidebar
   - Chart Tooltips
 📝 Notes/Requirements:
+  headings:
+  - EKSPLORASI - Dashboard Analytic
   screens inside this page:
   - IA Dashboard Analytic
   - Analytics Dashboard
@@ -31816,6 +34446,8 @@ v1.0:
   - Menu : Pinjaman
   - Ajukan Pinjaman
 Detail Pinjaman Saya:
+  headings:
+  - Pinjaman
   screens inside this page:
   - Detail Pinjaman Berlangsung
   - Frame 625288
@@ -31857,6 +34489,8 @@ url: https://www.figma.com/design/y1vJtEcuKvnTtf0XD2BY21
 tags: active, financing / ajukan pinjaman, financier, login auth, financing
 pages:
 latest design v3:
+  headings:
+  - Data Kerabat
   screens inside this page:
   - Pinjaman Saya
   - Ajukan Pinjaman
@@ -31886,6 +34520,8 @@ misc:
   - Pinjaman Tersedia Mobile - 3
   - Unselected
 ↳ Playground:
+  headings:
+  - Data Kerabat
   screens inside this page:
   - Daftar & Pengajuan Limit
   - Ajukan Pinjaman
@@ -31919,6 +34555,9 @@ misc:
   - Input Nilai Pinjaman
   - Bank Raya Financier - Web
 🗂 ARCHIVES:
+  headings:
+  - Kirim Link Pengajuan Pinjaman
+  - (+62) 817 6314 302
   screens inside this page:
   - Kirim Link
   - bank financier
@@ -32036,6 +34675,8 @@ v1.1:
   - LgnCard
   - Master Properties
 v1:
+  headings:
+  - case tepat waktu
   screens inside this page:
   - Info Success Rate - Dekstop
   - Ajukan Pinjaman - Desktop
@@ -32045,6 +34686,8 @@ v1:
   - Ajukan Pinjaman - Mobile
   - Review Setelah Pinjaman Selesai - Desktop
 misc:
+  headings:
+  - +email klo bounce +notifikasi
   screens inside this page:
   - POF detail
   - Frame 5981
@@ -32080,6 +34723,10 @@ url: https://www.figma.com/design/LvQ9hZ4zTF0T7FmGwUwUoL
 tags: archive, financing / archive, all, login auth, financing, platformmobile
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur
+  - PaDi UMKM - Vertical Product
+  - Pinjaman Tersedia Mobile Webview
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -32093,6 +34740,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -32109,6 +34758,9 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - PO FINANCING
+  - INVOICE FINANCING
   screens inside this page:
   - Frame 5
   - Frame 6
@@ -32142,6 +34794,9 @@ url: https://www.figma.com/design/2d8D4UbMn7WdwEZKzEdCZ8
 tags: archive, financing / archive, all, financing
 pages:
 📙 Thumbnail:
+  headings:
+  - VP - Q2 2024
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -32208,6 +34863,9 @@ url: https://www.figma.com/design/fZacMYdiw3ayNXww3uyLMn
 tags: archive, financing / archive, all, docs tax invoice, financing
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Requirement Invoice Financing
+  - PaDi UMKM - Vertical Product
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -32221,6 +34879,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -32237,9 +34897,19 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Direct ke page Pengaturan di bagian dokumen
+  - Mandatory Dokumen untuk IF
+  - NPWP
+  - EMPTY STATE (NO ELIGIBLE INVOICE)
+  - Anda sudah dapat menggunakan fitur Invoice Financing!
   screens inside this page:
   - PO Financing
 📱 Mobile Responsive / Mobile App:
+  headings:
+  - EMPTY STATE (NO ELIGIBLE INVOICE)
+  - Direct ke page Pengaturan di bagian dokumen
+  - Dokumen sudah diupload semua (namun belum disetujui)
   screens inside this page:
   - Pinjaman Tersedia Mobile - 3
   - Pinjaman Tersedia Mobile - 8
@@ -32272,10 +34942,19 @@ Page 4:
   screens inside this page:
   - (no screens)
 DT-102 Info entry point IF baru:
+  headings:
+  - 1024 x 532
+  - Opsi 1
+  - Opsi 2
   screens inside this page:
   - Section 1
   - Frame 5981
 DT-142 CTA landing page IF:
+  headings:
+  - Sudah Login?
+  - Belum
+  - HOVER
+  - Masuk Ke masing masing web financier
   screens inside this page:
   - Landing Page Website
   - Invoice Financing Mobile
@@ -32297,6 +34976,10 @@ DT-142 CTA landing page IF:
   screens inside this page:
   - Landing Page Mobile
 👨‍💻 DT 161 - Simulasi IF Seller Center - Web:
+  headings:
+  - Text
+  - nominal invoice
+  - tempo
   screens inside this page:
   - Frame 1958763863
   - Frame 1958763868
@@ -32328,6 +35011,8 @@ DT-142 CTA landing page IF:
   - Last slide
   - .
 🎨 DT 183 - Simulasi IF Landing Page - Mobile:
+  headings:
+  - Pinjaman Tersedia
   screens inside this page:
   - Input Invoice
   - Landing Page Mobile
@@ -32343,6 +35028,15 @@ Page 15:
   screens inside this page:
   - (no screens)
 👨‍💻🎨🚧 Trashes:
+  headings:
+  - Pinjaman tersedia
+  - Login
+  - 1024 x 532
+  - terjdbadjkb
+  - Opsi 1
+  - Opsi 2
+  - Opsi 3
+  - OPSI 2 ( tambah jd button)
   screens inside this page:
   - Frame 11322
   - Frame 1958763862
@@ -32395,6 +35089,9 @@ url: https://www.figma.com/design/MGECmZTzOqpqaNZ4DfrhXa
 tags: archive, financing / archive, admin perusahaan, account profile, financing, open api erp
 pages:
 📙 Thumbnail:
+  headings:
+  - Template Thumbnail project
+  - PaDi UMKM - [nama mini squad]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -32409,6 +35106,11 @@ url: https://www.figma.com/design/SzfEi4cPDveUuLn1kYVuxq
 tags: archive, financing / archive, seller, financing, dashboard analytics
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur
+  - Seller Dashboard (Financing)
+  - PaDi UMKM - Vertical Product
+  - Pinjaman Tersedia Mobile Webview
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -32422,6 +35124,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -32438,6 +35142,12 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - PO & IF
+  - IF ONLY
+  - H O V E R
+  - SETIAP CARDNYA DIHOVER
+  - Info Penting
   screens inside this page:
   - PO & IF (TOP 50 SELLER)
   - Hover "i" icons
@@ -32448,6 +35158,11 @@ pages:
   - PO Financing
   - Invoice Financing
 📱 Mobile Responsive / Mobile App:
+  headings:
+  - PO & IF
+  - IF ONLY
+  - H O V E R
+  - Info Penting
   screens inside this page:
   - Top 50 Seller
   - Information
@@ -32475,6 +35190,9 @@ url: https://www.figma.com/design/SBArW4hlvhma8GOkcONJo9
 tags: archive, financing / archive, seller, financing, dashboard analytics
 pages:
 📙 Thumbnail:
+  headings:
+  - Dashboard Financing
+  - PaDi UMKM - Vertical Product
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -32511,6 +35229,24 @@ pages:
   - nav
   - persetujuan
 📝 Notes Design & Technical Critique:
+  headings:
+  - ON HOVER
+  - RATING SELLER
+  - Dashboard seller
+  - Upload Dokumen yang dibutuhkan
+  - 70 /100%
+  - 45 /100%
+  - Mengajukan Pinjaman 10 X
+  - Pinjaman Disetujui 10 X
+  - Gold Seller
+  - Progress Gold Seller
+  - Dinda Mareta Seller sejak Februari 2020
+  - Cara Meningkatkan Level Gold Seller
+  - Lihat keuntungan sebagai Pro Seller
+  - Status Toko
+  - Info seputar status keanggotaan Toko Anda
+  - 100 X Transaksi Dilakukan
+  - 1000 X Transaksi Dilakukan
   screens inside this page:
   - Frame 1958763861
   - Dashboard Financing
@@ -32527,6 +35263,22 @@ pages:
   screens inside this page:
   - mobile dashboard financing
 🗑️ Trash:
+  headings:
+  - Total Transaksi yang Telah diajukan
+  - Rp200.000.000
+  - Rp1.500.000
+  - Dana Sedang Diproses
+  - Tagihan PO Financing
+  - Rp15.000.000
+  - Tagihan Lewat Jatuh Tempo Rp10.000.000
+  - Tagihan Invoice Financing
+  - Rp0
+  - Tagihan Lewat Jatuh Tempo Rp0
+  - PO & IF
+  - H O V E R
+  - Lihat Detail
+  - Informasi terkait Financing
+  - Info Penting
   screens inside this page:
   - Dashboard Financing
   - Frame 1958764107
@@ -32548,6 +35300,8 @@ url: https://www.figma.com/design/UQa8fhcEBfPeEeGO6hqyjt
 tags: archive, financing / archive, seller, financing, notif email
 pages:
 🖥️ Desktop:
+  headings:
+  - EMAIL Invoice Financing untuk Seller
   screens inside this page:
   - PO FINANCING
   - Frame 624824
@@ -32575,6 +35329,9 @@ url: https://www.figma.com/design/UVM27BKtzLjQDanDxzSZWO
 tags: archive, financing / archive, seller, financing
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Eksplorasi
+  - PaDi UMKM - Vertical Product
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -32607,6 +35364,19 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - EKSPLORASI
+  - EKSPLORASI - Dashboard Analytic
+  - Banner untuk Promosi Financier Premium
+  - Keuntungan Menjadi Premium Seller
+  - Fitur Khusus Premium Seller
+  - Cara Upgrade Menjadi Premium Seller
+  - Hal yang Sering Ditanyakan
+  - Dukungan Promosi
+  - Web Desktop
+  - Mobile Apps
+  - Tanpa icon “i” Hover di status langsung muncul tooltip
+  - bikin navbar blomm selesai
   screens inside this page:
   - Frame 1958764026
   - Dashboard Financing
@@ -32638,6 +35408,22 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash/Archive:
+  headings:
+  - Text
+  - ON HOVER
+  - RATING SELLER?
+  - CORAT CORET
+  - Total Transaksi yang Telah diajukan
+  - Rp200.000.000
+  - Rp1.500.000
+  - Dana Sedang Diproses
+  - Informasi terkait Financing
+  - Lihat keuntungan sebagai Pro Seller
+  - Pinjaman
+  - Investree
+  - Selamat datang di Dashboard Financier!
+  - Daftar Pengajuan
+  - Transaksi yang telah diajukan ke Anda.
   screens inside this page:
   - Frame 1958764028
   - Dashboard 1
@@ -32662,6 +35448,28 @@ url: https://www.figma.com/design/o0zyMIGTmMdChOHad9VEMU
 tags: archive, financing / archive, seller, homepage landing, financing
 pages:
 🖥️ Desktop:
+  headings:
+  - EXISTING LANDING PAGE
+  - PO FINANCING
+  - SIMULASI PINJAMAN
+  - KATA MEREKA (TESTIMONI)
+  - PERSYARATAN
+  - EXPAND FAQ (PO)
+  - INVOICE FINANCING
+  - IF NAVBAR DIKLIK
+  - LANDING PAGE
+  - Tanya & Jawab
+  - Berapa lama proses verifikasi dokumen PO Financing?
+  - Apakah PO dapat digabung bila tidak memenuhi syarat minimal?
+  - Pinjaman Diajukan
+  - Siapkan Dokumen dan Lengkapi Data Informasi yang Diperlukan
+  - Kata Mereka
+  - Tunggu apa lagi? Gunakan fitur Pinjaman sekarang!
+  - Butuh Dana untuk Membantu Usaha Anda?
+  - Simulasikan Pinjaman Anda dengan Mudah di sini!
+  - Yuk ajukan Pinjaman sekarang di sini!
+  - Simulasikan Pinjaman
+  - Berapa lama proses verifikasi dokumen Invoice Financing?
   screens inside this page:
   - PO
   - IF
@@ -32679,6 +35487,19 @@ pages:
   - DATA INFORMASI
   - DOKUMEN UMUM
 📱 Mobile Responsive / Mobile App:
+  headings:
+  - Kata Mereka
+  - Cara Pengajuan
+  - PO Financing
+  - Invoice Financing
+  - Pop-up Simulasi Pinjaman
+  - Kenapa Harus Menggunakan Fitur Financing?
+  - Jenis Pinjaman
+  - Tunggu apa lagi? Gunakan fitur Pinjaman sekarang!
+  - Tanya & Jawab
+  - Ajukan Pinjamanmu sekarang!
+  - Keuntungan
+  - Penyedia Pinjaman
   screens inside this page:
   - Frame 1
   - Landing Page
@@ -32690,6 +35511,31 @@ pages:
   - Hamburg Menu
   - FAQ - PO ANSWER
 Progress Before Final Design <3:
+  headings:
+  - FAQ BAIKNYA DIPISAH ANTARA PO DAN IF?
+  - FAQ SESUAI DENGAN EXISTING AJA JAWABAN MINTA MBA LAVIE
+  - EXPLORE BAGIAN SINI (CASE ADA LEBIH DARI 2 JENIS PINJAMAN)
+  - CARA PENGGUNAAN = CARA PENGAJUAN?
+  - KALAU YG ADA LANDING PAGE TERSENDIRI?
+  - LEBIH ENAK LIHAT YG GINI,DIBEDAKAN PO DAN IF
+  - LOGO OJK HARUS LEBIH VISIBLE
+  - BACA LEBIH LANJUT KEMANA YA?
+  - ADA PENGULANGAN DI PENJELASAN PINJAMAN DAN JENIS PINJAMAN?
+  - COPY UNTUK MUDAH ADA REVISI
+  - LOGO OJK PERLU GAK DI ATAS?
+  - WARNA ICON DISAMAIN
+  - padding disamain!
+  - benchmark!!
+  - Kenapa Harus Menggunakan Fitur Financing?
+  - Jenis Financing
+  - Kata Mereka
+  - Cara Pengajuan
+  - Irfan Yulanda Sinar Jaya Safety
+  - Baca Persyaratan Penyedia Pinjaman
+  - Siapkan Dokumen yang Diperlukan
+  - Pinjaman Diajukan
+  - Butuh Dana untuk Membantu Usaha Anda?
+  - PO Financing
   screens inside this page:
   - Frame 48097679
   - Frame 48097680
@@ -32703,6 +35549,9 @@ Progress Before Final Design <3:
   - Frame 625348
   - Invoice Financing
 📙 Thumbnail:
+  headings:
+  - Fitur Landing Page Finance
+  - PaDi UMKM - Vertical Product
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -32718,6 +35567,14 @@ Progress Before Final Design <3:
   screens inside this page:
   - Card Financier
 📝 Notes Design & Technical Critique:
+  headings:
+  - Cepat
+  - asdasdasd
+  - Pinjaman Diajukan
+  - Tanya & Jawab
+  - Kata Mereka
+  - Apa saja dokumen yang perlu disiapkan?
+  - Butuh Dana untuk Membantu Usaha Anda?
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -32740,6 +35597,9 @@ url: https://www.figma.com/design/z5iwEgyVdTcubuuUbFs4bw
 tags: archive, financing / archive, seller, login auth, financing
 pages:
 📙 Thumbnail:
+  headings:
+  - Invoice Financing Syariah
+  - PaDi UMKM - Vertical Product
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -32755,6 +35615,14 @@ pages:
   screens inside this page:
   - Card Financier
 📝 Notes Design & Technical Critique:
+  headings:
+  - Cepat
+  - asdasdasd
+  - Pinjaman Diajukan
+  - Tanya & Jawab
+  - Kata Mereka
+  - Apa saja dokumen yang perlu disiapkan?
+  - Butuh Dana untuk Membantu Usaha Anda?
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -32771,6 +35639,31 @@ pages:
   - Mobile
   - Loc COmp (Ignore this)
 Progress Before Final Design <3:
+  headings:
+  - FAQ BAIKNYA DIPISAH ANTARA PO DAN IF?
+  - FAQ SESUAI DENGAN EXISTING AJA JAWABAN MINTA MBA LAVIE
+  - EXPLORE BAGIAN SINI (CASE ADA LEBIH DARI 2 JENIS PINJAMAN)
+  - CARA PENGGUNAAN = CARA PENGAJUAN?
+  - KALAU YG ADA LANDING PAGE TERSENDIRI?
+  - LEBIH ENAK LIHAT YG GINI,DIBEDAKAN PO DAN IF
+  - LOGO OJK HARUS LEBIH VISIBLE
+  - BACA LEBIH LANJUT KEMANA YA?
+  - ADA PENGULANGAN DI PENJELASAN PINJAMAN DAN JENIS PINJAMAN?
+  - COPY UNTUK MUDAH ADA REVISI
+  - LOGO OJK PERLU GAK DI ATAS?
+  - WARNA ICON DISAMAIN
+  - padding disamain!
+  - benchmark!!
+  - Kenapa Harus Menggunakan Fitur Financing?
+  - Jenis Financing
+  - Kata Mereka
+  - Cara Pengajuan
+  - Irfan Yulanda Sinar Jaya Safety
+  - Baca Persyaratan Penyedia Pinjaman
+  - Siapkan Dokumen yang Diperlukan
+  - Pinjaman Diajukan
+  - Butuh Dana untuk Membantu Usaha Anda?
+  - PO Financing
   screens inside this page:
   - Frame 48097679
   - Frame 48097680
@@ -32811,6 +35704,36 @@ Progress Before Final Design <3:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - Lengkapi Dokumen
+  - Lengkapi Dokumen yang dibutuhkan
+  - Pilih transaksi dan Penyedia Pinjaman
+  - Mengajukan Pinjaman
+  - Menunggu persetujuan Pembeli
+  - Menunggu validasi Penyedia Pinjaman
+  - Pinjaman dicairkan oleh Penyedia Pinjaman
+  - Dokumen
+  - Solusi Pembiayaan Usaha bagi Seller PaDi UMKM
+  - Ajukan Pinjaman
+  - Butuh Dana untuk Membantu Usaha Anda?
+  - Kenapa Harus Menggunakan Fitur Financing?
+  - PO Financing
+  - Jenis Pinjaman
+  - Kata Mereka
+  - Tunggu apa lagi? Gunakan fitur Pinjaman sekarang!
+  - Tanya & Jawab
+  - OPSI 1 SELLER MENGAJUKAN PINJAMAN DI PO FINANCING
+  - TASK:
+  - Seller akan melakukan pengajuan pinjaman sampai berhasil
+  - SUDAH SELESAI!
+  - OPSI 2 SELLER MENGAJUKAN PINJAMAN DI PO FINANCING
+  - OPSI 3 SELLER MENGAJUKAN PINJAMAN DI PO FINANCING
+  - Riwayat Pinjaman masih kosong
+  - Setelah select check box, button saya setuju enable
+  - Seller diminta untuk melengkapi dokumen lagi
+  - Belum ada pinjaman yang diajukan
+  - Yaah, Anda belum dapat menggunakan fitur PO Financing!
+  - Anda sudah dapat menggunakan fitur PO Financing!
   screens inside this page:
   - Frame 625348
   - Loan
@@ -32876,6 +35799,9 @@ url: https://www.figma.com/design/l2dKB8hV7s2WFtrMh9mehA
 tags: archive, financing / archive, seller, login auth, financing
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur PO Financing
+  - PaDi UMKM - Vertical Product
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -32914,6 +35840,10 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Seller diminta untuk melengkapi dokumen lagi
+  - Pinjaman berlangsung
+  - Direct ke page Pengaturan di bagian dokumen
   screens inside this page:
   - Frame 1958764008
   - Pinjaman Berlangsung
@@ -32934,6 +35864,9 @@ pages:
   - Registrasi PO Financing Diproses
   - IF Financing
 📱 Mobile Responsive / Mobile App:
+  headings:
+  - Direct ke page Pengaturan di bagian dokumen
+  - Dokumen sudah diupload semua (namun belum disetujui)
   screens inside this page:
   - Pinjaman Tersedia Mobile - 3
   - Pinjaman Tersedia Mobile - 8
@@ -32946,6 +35879,21 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Setelah select check box, button saya setuju enable
+  - Seller diminta untuk melengkapi dokumen lagi
+  - Button “Ajukan Pinjaman” menjadi disable
+  - Button “Ajukan Pinjaman” menjadi enable
+  - Ada alasan penolakan dari pembeli
+  - By default sudah terpilih “Semua - Semua Status”
+  - Total tagihan akan berubah sesuai tab yg dipilih (PO/IF)
+  - Label
+  - REGISTRASI PO FINANCING
+  - APPROVAL BUMN
+  - TUTORIAL FINANCING
+  - PENGAJUAN PINJAMAN PO FINANCING
+  - Anda sudah dapat menggunakan fitur PO Financing!
+  - Direct ke page Pengaturan di bagian dokumen
   screens inside this page:
   - REGISTRASI PO FINANCING
   - APPROVAL BUMN
@@ -32964,6 +35912,18 @@ pages:
   - permohonan amandemen po
   - action - tanpa lihat detail
 📱 Mobile Responsive / Mobile App:
+  headings:
+  - Direct ke page Pengaturan di bagian dokumen
+  - Dokumen sudah diupload semua (namun belum disetujui)
+  - Riwayat Pinjaman masih kosong
+  - REGISTRASI
+  - PENGAJUAN PINJAMAN
+  - APPROVAL BUMN
+  - EMPTY STATE
+  - ERROR CASE
+  - REQUEST REFRESH
+  - By default sudah terpilih “Semua Status”
+  - Button “Ajukan Pinjaman” menjadi disable
   screens inside this page:
   - Pinjaman Tersedia Mobile - 3
   - Pinjaman Tersedia Mobile - 8
@@ -33010,6 +35970,9 @@ pages:
   screens inside this page:
   - (no screens)
 🗞️ Prototype (UT Purpose):
+  headings:
+  - upload dokumen di profile
+  - Belum ada pinjaman yang diajukan
   screens inside this page:
   - Detail Pinjaman
   - Riwayat Pinjaman
@@ -33021,6 +35984,9 @@ pages:
   - PO Financing -  Empty State
   - master modal
 🗞️ Prototype:
+  headings:
+  - upload dokumen di profile
+  - Belum ada pinjaman yang diajukan
   screens inside this page:
   - Detail Pinjaman
   - Riwayat Pinjaman
@@ -33098,6 +36064,12 @@ url: https://www.figma.com/design/qrtq0RLJu6fbk8SQg6AnIG
 tags: archive, financing / archive, seller, login auth, financing, notif email
 pages:
 PO Financing Freeze:
+  headings:
+  - Pinjaman Tersedia
+  - Pinjaman Berlangsung
+  - Email
+  - Sudah Ada Pinjaman
+  - Belum Ada Pinjaman
   screens inside this page:
   - Ajukan Pinjaman
   - Pinjaman Tersedia
@@ -33111,6 +36083,9 @@ PO Financing Freeze:
   - INVOICE FINANCING
   - Frame 624825
 link figma prev. version:
+  headings:
+  - VP - Invoice Financing Syariah
+  - VP - PO Financing
   screens inside this page:
   - (no screens)
 
@@ -33119,6 +36094,11 @@ url: https://www.figma.com/design/84qnzSSOuKZJ4MqNG6hlc2
 tags: active, fulfilment, buyer, seller, mimin, shipping fulfilment, docs tax invoice
 pages:
 Design:
+  headings:
+  - Seller
+  - Buyer
+  - Default
+  - Signed
   screens inside this page:
   - Problem
   - Solution
@@ -33137,6 +36117,8 @@ url: https://www.figma.com/design/Hu6epV2jXEuLwrz4ifaauB
 tags: active, fulfilment, all, shipping fulfilment
 pages:
 1.0:
+  headings:
+  - Error >50KG
   screens inside this page:
   - Layanan Logistik
   - Modal
@@ -33194,6 +36176,9 @@ ultimate:
   - Buyer Ajukan Denda Ulang
   - Denda Disetujui
 mimin:
+  headings:
+  - Permohonan Persetujuan Denda
+  - Permohonan Banding Denda
   screens inside this page:
   - Daftar Transaksi
   - Detail transaksi - Disetujui
@@ -33231,6 +36216,8 @@ url: https://www.figma.com/design/4UvvGyeH4YjxWaozWMbApe
 tags: active, fulfilment, all, shipping fulfilment
 pages:
 v3:
+  headings:
+  - Case 2 line
   screens inside this page:
   - Buyer Side
   - Seller Side Pesanan Baru
@@ -33240,6 +36227,8 @@ v3:
   screens inside this page:
   - (no screens)
 v2:
+  headings:
+  - Case 2 line
   screens inside this page:
   - Buyer Side
   - Frame 625229
@@ -33271,6 +36260,10 @@ url: https://www.figma.com/design/FdXFGXMgTxa1sipT5rkoKb
 tags: active, fulfilment, buyer, order trx, shipping fulfilment
 pages:
 desktop:
+  headings:
+  - Buyer
+  - Seller
+  - Kendala Pesanan
   screens inside this page:
   - buyer / daftar transaksi / dikirim - desktop
   - Buyer - Notifikasi
@@ -33283,6 +36276,9 @@ desktop:
   - Buyer - Email
   - dekstop 1.0
 backup:
+  headings:
+  - Buyer
+  - Seller
   screens inside this page:
   - buyer / daftar transaksi / dikirim - desktop
   - dekstop 1.0
@@ -33308,6 +36304,8 @@ url: https://www.figma.com/design/luGg1MC97KLH06JG4c5CQt
 tags: active, fulfilment, buyer, order trx, shipping fulfilment
 pages:
 fase 1 - desktop:
+  headings:
+  - Nama produk tidak dapat diubah setelah produk ditayangkan
   screens inside this page:
   - BUYER
   - BAST non Telkom
@@ -33320,6 +36318,8 @@ fase 1 - desktop:
   - Tunda Penerimaan Pesanan
   - case 2 barang
 fase 2 - desktop:
+  headings:
+  - Nama produk tidak dapat diubah setelah produk ditayangkan
   screens inside this page:
   - Dokumen - BA Rekon
   - Dokumen - BAST
@@ -33335,6 +36335,10 @@ mimin:
   - revisi diterima/ditolak langsung ke status berikutnya
   - revisi diterima langsung ke status berikutnya
 backup:
+  headings:
+  - Buyer
+  - Seller
+  - Kendala Pesanan
   screens inside this page:
   - buyer / daftar transaksi / dikirim - desktop
   - dekstop 1.0
@@ -33391,6 +36395,8 @@ url: https://www.figma.com/design/7M3GnHqJyVVZ8of8zEPtfo
 tags: active, fulfilment, all, product mgmt, shipping fulfilment
 pages:
 Preorder - Desktop:
+  headings:
+  - disable 45 hari pertama karena masuk durasi PO
   screens inside this page:
   - Pre / Disco / Seller
   - Pre / Disco / Buyer
@@ -33436,6 +36442,11 @@ url: https://www.figma.com/design/rihBljxzmaH6xMp88CxSBo
 tags: active, fulfilment, all, cart, shipping fulfilment
 pages:
 v1:
+  headings:
+  - Action “Beli Lagi” ada di status: sbb:
+  - Menu “Beli Lagi”
+  - Highlight fitur baru
+  - Multiple add to cart
   screens inside this page:
   - Transaksi
   - Frame 1958764197
@@ -33451,6 +36462,10 @@ v1:
   - Daftar Transaksi - Tagihan - Detail Pesanan - Penagihan - Menunggu Pembayaran
   - Case Gagal Add Product
 entry point:
+  headings:
+  - Nama toko berubah jadi lokasi toko
+  - Desktop
+  - Mobile
   screens inside this page:
   - home
   - on hover
@@ -33458,6 +36473,8 @@ entry point:
   - beli lagi
   - section
 notes:
+  headings:
+  - Status “Beli Lagi”
   screens inside this page:
   - LgnSnackbar
   - Transaksi
@@ -33495,6 +36512,8 @@ url: https://www.figma.com/design/QDnmoBLHOz5lOoA2T5JanJ
 tags: active, fulfilment, all, login auth, shipping fulfilment
 pages:
 v5:
+  headings:
+  - Ke Screen Ini
   screens inside this page:
   - Step 2. Pilih Metode Pembayaran
   - ERR: Voucher Promo Habis
@@ -33525,6 +36544,9 @@ v5:
   - Extra Cases
   - Ubah Kurir (old)
 v4:
+  headings:
+  - Sukses navbar
+  - Buyer Group Pembayaran Tempo
   screens inside this page:
   - Pilih Pembayaran
   - Voucher Promo Habis
@@ -33553,6 +36575,8 @@ v4:
   - Dikirim - Detail - Buyer Group Pembayaran Tempo
   - Dikirim - Detail - Lacak Pesanan
 v3:
+  headings:
+  - Sukses navbar
   screens inside this page:
   - Pilih Pembayaran
   - Voucher Promo Habis
@@ -33571,6 +36595,10 @@ v3:
   - kembali ke Daftar Pesanan (belum bayar)
   - Batalkan Pesanan
 v2 alt 1 - pilihan kurpri di dalam 'pilih durasi>lainnya':
+  headings:
+  - Desktop
+  - Mobile
+  - PosAja?
   screens inside this page:
   - .
   - list pesanan
@@ -33592,6 +36620,10 @@ v2 alt 1 - pilihan kurpri di dalam 'pilih durasi>lainnya':
   - Frame 1958764064
   - pembayaran berhasil
 v1:
+  headings:
+  - Desktop
+  - Mobile
+  - PosAja?
   screens inside this page:
   - list pesanan
   - dekstop/pembayaran langsung
@@ -33618,6 +36650,10 @@ Page 7:
   screens inside this page:
   - (no screens)
 v2 alt 2 - pilihan kurpri di dalam 'pilih durasi>reguler>pilih kurir':
+  headings:
+  - Desktop
+  - Mobile
+  - PosAja?
   screens inside this page:
   - .
   - list pesanan
@@ -33639,6 +36675,9 @@ v2 alt 2 - pilihan kurpri di dalam 'pilih durasi>reguler>pilih kurir':
   - Frame 1958764064
   - pembayaran berhasil
 misc:
+  headings:
+  - diterima buyer gak pake lama
+  - Kirim Pesanan
   screens inside this page:
   - .content
   - .master modal
@@ -33679,6 +36718,11 @@ Mandatory Upload Surat Pernyataan:
   - Document
   - Document - Edit Document
 Archieve:
+  headings:
+  - Seller
+  - Buyer
+  - Default
+  - Signed
   screens inside this page:
   - Upload csv
   - Setting - Document - Edit
@@ -33765,6 +36809,12 @@ url: https://www.figma.com/design/57HlLvZ7RPueGl4bUgoW6D
 tags: active, fulfilment, seller, mimin, shipping fulfilment
 pages:
 v1:
+  headings:
+  - Body Text
+  - CMS - Mimin - Setting SLA “Pesanan Diproses”
+  - Seller - Homepage - popup info SLA baru
+  - Seller Mobile - Push notif segera kirim pesanan
+  - FRIDAY, FEBRUARY 17
   screens inside this page:
   - Homepage
   - Frame 1958764013
@@ -33781,6 +36831,8 @@ v1 - add sla tagihan diterima:
   screens inside this page:
   - Daftar Transaksi
 misc:
+  headings:
+  - Title
   screens inside this page:
   - .Base Modal
   - modal sla diproses
@@ -33816,6 +36868,10 @@ url: https://www.figma.com/design/WERrgS6hnyJlXGa8DWfY3K
 tags: active, landing page designs, seller, homepage landing, torasera
 pages:
 brand biru padi:
+  headings:
+  - Full Scroll
+  - Full Scroll logo BUMN
+  - On Hover
   screens inside this page:
   - landing page torasera
   - full_witdh_logo_bumn
@@ -33891,6 +36947,9 @@ Landing Page:
   - Landingpage B2B #4
   - Landingpage #3
 Thumbnail:
+  headings:
+  - Landing Page B2B
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 
@@ -33917,6 +36976,9 @@ url: https://www.figma.com/design/YpXVloEVeShWj0dsidotBH
 tags: active, mimin, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Mimin CMS
+  - PaDi UMKM - Mimin CMS
   screens inside this page:
   - Thumbnail 16:9
 🧩 Local Component:
@@ -33965,6 +37027,10 @@ pages:
   - Detail transaksi
   - MacBook Pro 14" - 1
 📝 Notes Design & Technical Critique:
+  headings:
+  - Pressed
+  - Default
+  - PENGGUNA
   screens inside this page:
   - Flow Opsi 1 Role Unassigned
   - Flow Opsi 2 Turun ke Company Staff
@@ -34006,6 +37072,9 @@ pages:
   screens inside this page:
   - Update Order Mimin
 🖥️  [PRE] Desktop - User:
+  headings:
+  - Pindah Group Pengguna
+  - Tambah Pengguna
   screens inside this page:
   - Reset Limit OTP
   - Buyer Group
@@ -34100,6 +37169,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - OPSI 2
   screens inside this page:
   - Homapage 3
   - Shipment Fee
@@ -34116,6 +37187,9 @@ url: https://www.figma.com/design/izYf3JkW05wB6R28OxLQll
 tags: active, mimin, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Mimin CMS
+  - PaDi UMKM - Mimin CMS
   screens inside this page:
   - Thumbnail 16:9
 🧩 Local Component:
@@ -34162,6 +37236,10 @@ pages:
   - .Section
   - Bill
 📝 Notes Design & Technical Critique:
+  headings:
+  - Pressed
+  - Default
+  - PENGGUNA
   screens inside this page:
   - Flow Opsi 1 Role Unassigned
   - Flow Opsi 2 Turun ke Company Staff
@@ -34200,6 +37278,9 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️  [PRE] Desktop - User:
+  headings:
+  - Pindah Group Pengguna
+  - Tambah Pengguna
   screens inside this page:
   - Reset Limit OTP
   - Buyer Group
@@ -34263,6 +37344,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - OPSI 2
   screens inside this page:
   - Homapage 3
   - Shipment Fee
@@ -34279,6 +37362,8 @@ url: https://www.figma.com/design/4dUollmBBaqOXY6DTUGimA
 tags: active, mimin, seller, general
 pages:
 1.0:
+  headings:
+  - Belum Penagihan
   screens inside this page:
   - Belum Penagihan
   - Report
@@ -34286,6 +37371,8 @@ pages:
   - lebih dari 2 transaksi
   - All Seller
 misc:
+  headings:
+  - Belum Penagihan
   screens inside this page:
   - Belum Penagihan
 
@@ -34642,6 +37729,8 @@ Mobile:
   - Frame 624859
   - Frame 624860
 payment method suggestion:
+  headings:
+  - Ringkasan Belanja
   screens inside this page:
   - Frame 624854
   - Frame 624845
@@ -34695,6 +37784,10 @@ All CC - Revise:
   - Payment - Success
   - Frame 6088
 qris:
+  headings:
+  - Dicetak oleh: (Kode NNS)
+  - NAMA MERCHANT
+  - NMID: 00000000000000000
   screens inside this page:
   - Payment Confirmation
   - Frame 624848
@@ -34752,6 +37845,13 @@ v7 - freeze dulu:
   - sertel uploaded
   - E-Faktur Terbit
 v6:
+  headings:
+  - Pengaturan / Dokumen
+  - NEW
+  - Menu placement
+  - tambah nsfp single
+  - tambah nsfp bulk
+  - status tetap ‘diterima’ tapi ada flagging e-faktur gagal
   screens inside this page:
   - e-faktur \ empty
   - Seller - Desktop
@@ -34821,6 +37921,20 @@ v5 30/09/24 Add Entry Point:
   - modal revisi faktur pajak
   - Frame 1958764320
 v5 11/09/24 PJAP:
+  headings:
+  - empty state sudah upload sertel bisa tambah nsfp
+  - sudah tambah 1 nsfp sertel akan expired
+  - filter batal
+  - filter gagal terbit
+  - tambah nsfp single
+  - tambah nsfp bulk
+  - Pengaturan / Dokumen
+  - Default
+  - sudah aktif, masih jauh dari expired
+  - sudah aktif, mendekati expired
+  - expried
+  - Ke Halaman Awal Sebelum Aktivasi
+  - status tetap ‘diterima’ tapi ada flagging e-faktur gagal
   screens inside this page:
   - E-Faktur Pajak
   - Tambah NSFP
@@ -34837,12 +37951,28 @@ v5 11/09/24 PJAP:
   - Case Transaksi Gagal Generate E-Faktur - 4
   - Pelajari Lebih Lanjut
 v5 mobile 11/09/24 PJAP:
+  headings:
+  - Pengaturan / Dokumen
   screens inside this page:
   - Case Unggah Ulang Faktur Pajak
   - Registrasi
   - Entry Point
   - Unggah Sertifikat Elektronik
 v4:
+  headings:
+  - empty state belum upload efaktur belum bisa tambah nsfp
+  - empty state sudah upload sertel bisa tambah nsfp
+  - sudah tambah 1 nsfp sertel akan expired
+  - filter batal
+  - tambah nsfp single
+  - tambah nsfp bulk
+  - Pengaturan / Dokumen
+  - status tetap ‘diterima’ tapi ada flagging e-faktur gagal
+  - Default
+  - sudah aktif, masih jauh dari expired
+  - sudah aktif, mendekati expired
+  - expried
+  - Ke Halaman Awal Sebelum Aktivasi
   screens inside this page:
   - Login
   - E-Faktur Pajak
@@ -34868,6 +37998,18 @@ v4:
   - NEW check kode transaksi klo mau aktifin fitur
   - modal / image
 v4 - mobile:
+  headings:
+  - sudah tambah 1 nsfp sertel akan expired
+  - filter batal
+  - filter gagal terbit
+  - empty state belum upload efaktur belum bisa tambah nsfp
+  - Default
+  - sudah aktif, masih jauh dari expired
+  - sudah aktif, mendekati expired
+  - expried
+  - tambah nsfp single
+  - tambah nsfp bulk
+  - beberapa sorting hanya bisa di kategori efaktur terbit
   screens inside this page:
   - E-Faktur Pajak
   - Section Sertifikat Elektronik
@@ -34937,6 +38079,9 @@ v1:
   - nsfp habis 1
   - nsfp habis 3
 notes:
+  headings:
+  - tombol active setelah <3 minggu sebelum expired
+  - tp kalo ada perlu perubahan gmn
   screens inside this page:
   - nsfp tambah 12
   - nsfp tambah 13
@@ -35041,6 +38186,15 @@ url: https://www.figma.com/design/xrNl7zJPyVol9XJWNTDKW5
 tags: active, payment, all, docs tax invoice
 pages:
 Page 1:
+  headings:
+  - tambah nsfp single
+  - tambah nsfp bulk
+  - empty state sudah upload sertel bisa tambah nsfp
+  - sudah tambah 1 nsfp sertel akan expired
+  - filter batal
+  - filter gagal terbit
+  - Unggah Sertifikat Elektronik
+  - Tambah NSFP
   screens inside this page:
   - login 1
   - login 2
@@ -35132,6 +38286,17 @@ v1:
   - komponen
   - bottom-sheet
 misc:
+  headings:
+  - Entry point/button
+  - forms Modal/page
+  - Status menunggu verifikasi
+  - Email, notif, pop up sukses di page e sign
+  - Tampilan esign yg ready to use, sudah sukses konek privy
+  - Email, notif, pop up reject
+  - notifikasi, email, pop up pas buka page e sign/materai
+  - Pesanan
+  - Your wallet is empty
+  - UX Flow
   screens inside this page:
   - empty illustration 1
   - nsfp tambah 32
@@ -35154,6 +38319,29 @@ url: https://www.figma.com/design/W7KmiCAoSmFTOHltdKnmsX
 tags: active, payment, all, docs tax invoice
 pages:
 user journey:
+  headings:
+  - Ingin menagih pembayaran untuk pesanan yang sudah diterima
+  - melihat notifikasi pembubuhan tanda tangan gagal
+  - Buyer create Purchase Order perlu esign gak perlu esign
+  - Pesanan Masuk
+  - Pesanan Diterima BAST esign emat
+  - Tagihan dikirim invoice esign emat
+  - memeriksa kenapa gagal
+  - melihat solusi supaya bisa melanjutkan tanda tangan dokumen
+  - Periksa transaksi yang bermasalah
+  - Melihat solusi yang ditawarkan
+  - Apakah Mau Membubuhkan E-Sign dan E-Meterai?
+  - Apakah Kuota Mencukupi?
+  - Apakah Mau Membubuhkan E-Sign Saja?
+  - Apakah Mau Membubuhkan E-Meterai Saja?
+  - Apakah Mau Top Up?
+  - Login ke PaDi
+  - Menu E-Sign & E-Meterai Tampilan Sisa Quota
+  - Pilih Dokumen pada Transaksi Tampilan Sisa Quota
+  - Sisa kuota diperbarui secara otomatis.
+  - Selesai Dokumen Dapat Diunduh
+  - Notifikasi Kuota habis
+  - Start
   screens inside this page:
   - User Journey Map
   - flow / cabang
@@ -35171,6 +38359,16 @@ user journey:
   - Frame 32
   - Frame 28
 ppt ideation:
+  headings:
+  - Ideation Session
+  - E-Sign & E-Meterai Usage Cost
+  - Worst Possible Idea
+  - Worst Possible Idea, Example
+  - Scenario:
+  - Worst Possible Idea:
+  - Timebox:
+  - 8 menit
+  - Worst Possible Idea, Exercise
   screens inside this page:
   - Slide 16:9 - 1
   - Slide 16:9 - 2
@@ -35182,6 +38380,9 @@ hasil ideation:
   screens inside this page:
   - (no screens)
 wireframe:
+  headings:
+  - Text
+  - Purchase Order
   screens inside this page:
   - nsfp main
   - Frame 1958764334
@@ -35218,6 +38419,8 @@ Final UI:
   - modal informasi
   - Filter
 trash:
+  headings:
+  - Opsional?
   screens inside this page:
   - Frame 1958764334
   - Frame 1958764362
@@ -35248,6 +38451,9 @@ url: https://www.figma.com/design/02uqOH3i4JBuo6mijkRS6e
 tags: active, payment, all, docs tax invoice
 pages:
 v4.2:
+  headings:
+  - before
+  - after
   screens inside this page:
   - Frame 1958764289
   - Frame 1958764291
@@ -35272,6 +38478,12 @@ url: https://www.figma.com/design/BtlJ7VJnuIdXh8i17dd3qG
 tags: active, payment, all, docs tax invoice
 pages:
 4.3:
+  headings:
+  - case belum daftar E-Sign & E-Meterai
+  - case di status lain
+  - Buyer
+  - Seller
+  - case sudah daftar E-Sign & E-Meterai
   screens inside this page:
   - Dikirim - Detail - Buyer Group Pembayaran Tempo
   - Daftar Transaksi
@@ -35299,6 +38511,8 @@ url: https://www.figma.com/design/tJ7ndXbMU73dnlxWBEJUlY
 tags: active, payment, all
 pages:
 alt. 3 - fixed durations:
+  headings:
+  - Masa Pembayaran Tempo
   screens inside this page:
   - default
   - Frame 28
@@ -35308,6 +38522,10 @@ alt. 3 - fixed durations:
   - mobile/detail pesanan lama/pembayaran langsung
   - Full
 buyer side:
+  headings:
+  - penambahan informasi tentang pembayaran
+  - before
+  - after
   screens inside this page:
   - Frame 2
   - Frame 1
@@ -35319,6 +38537,8 @@ buyer side:
   - Frame 4
   - Payment - Retail
 alt. 2 - table desktop:
+  headings:
+  - Masa Pembayaran Tempo
   screens inside this page:
   - default
   - aktifkan berhasil
@@ -35399,6 +38619,13 @@ url: https://www.figma.com/design/MEb5E3T0QKykAZ5SLpTT8y
 tags: active, payment, all, order trx
 pages:
 Page 1:
+  headings:
+  - Search
+  - Retry Update
+  - Batch Details
+  - Multi-Select
+  - Create Update Status
+  - max height 600, content scroll
   screens inside this page:
   - Detail Update Status Transaksi
   - Update Status Transaksi
@@ -35416,6 +38643,12 @@ url: https://www.figma.com/design/TmCMv5knQodxEgNl4l1bTM
 tags: active, transaction, all, general
 pages:
 Page 1:
+  headings:
+  - Retensi Uang Jaminan atau Garansi
+  - Proses checkout
+  - Purchase Request
+  - Fulfillment
+  - Disbursement
   screens inside this page:
   - (no screens)
 
@@ -35444,12 +38677,19 @@ url: https://www.figma.com/design/U9FhKkLv5eaAoXf7boOV7P
 tags: active, transaction, buyer, cart
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Keranjang
+  - PaDi UMKM -Trx
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Rp10.000.000
+  - Ringkasan Belanja
+  - Pesanan 1
   screens inside this page:
   - .Catatan Untuk Penjual
   - .Produk Di Keranjang
@@ -35473,6 +38713,13 @@ pages:
   - Pre / Transaction / Buyer
   - Checkout
 📱 Mobile:
+  headings:
+  - Jenis
+  - Product IA
+  - Nama prod
+  - Harga
+  - Property Prod
+  - Ringkasan Belanja
   screens inside this page:
   - .Catatan Produk Mobile
   - Frame 624786
@@ -35493,6 +38740,8 @@ pages:
   - Checkout
   - Payment
 📝 Notes Design & Technical Critique:
+  headings:
+  - Cart
   screens inside this page:
   - Frame 48097717
   - Frame 48097718
@@ -35577,6 +38826,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - Keranjang
   screens inside this page:
   - Homapage 3
   - .Preview Keranjang Opsi 3
@@ -35591,6 +38842,9 @@ url: https://www.figma.com/design/wR8Gk8Yy2Jco9mXfYDQ34J
 tags: active, transaction, seller, shipping fulfilment
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Kurir Pribadi, Byteship dan POS
+  - PaDi UMKM - Buyer-Trx
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 2
@@ -35604,6 +38858,8 @@ pages:
   screens inside this page:
   - Dokumen - Langsung - Retail
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -35620,6 +38876,12 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Bukti Pengiriman
+  - No. Sales Order : VSO-2023-05-17-8041851
+  - Sudarsono +628927532834 AWB : 0353728
+  - Tanggal Pengiriman : 2022-02-13 11:34:32 WIB
+  - Tanggal Penerimaan : 2022-02-13 11:34:32 WIB
   screens inside this page:
   - Dikirim - Detail - Buyer Group Pembayaran Tempo
   - Dikirim - Detail - Lacak Pesanan
@@ -35636,6 +38898,11 @@ pages:
   - Frame 1958763911
   - Frame 1958763914
 📱 Mobile Responsive / Mobile App:
+  headings:
+  - Kurir Pribadi
+  - Status pesanan
+  - Biteship
+  - Pembayaran Langsung (Buyer Retail)
   screens inside this page:
   - lacak
   - Frame 1958763861
@@ -35678,6 +38945,9 @@ url: https://www.figma.com/design/PnhoBrwduiE9vxB2qvMWW1
 tags: active, transaction, buyer, mimin, pr po approval
 pages:
 📙 Thumbnail:
+  headings:
+  - Mimin - Trx  Permintaan Pembelian
+  - PaDi UMKM - Visit
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -35701,6 +38971,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -35710,6 +38982,8 @@ pages:
   - Existing IA
   - New IA
 ✅ Wireframe:
+  headings:
+  - Text
   screens inside this page:
   - Frame 6067
   - Frame 1958764050
@@ -35775,6 +39049,9 @@ url: https://www.figma.com/design/vqBtrnaiI21CZ2eO6AZQXn
 tags: active, transaction, buyer, checkout
 pages:
 Thumbnail:
+  headings:
+  - New Checkout Process
+  - PaDi UMKM -Trx
   screens inside this page:
   - Cover
 local components:
@@ -35830,6 +39107,14 @@ url: https://www.figma.com/design/oXpJM1jIPB7vJG2PJCYlGt
 tags: archive, transaction, buyer, checkout, platformmobile
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - Checkout Process Mobile
+  - PaDi UMKM -Trx - Mobile
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -35920,6 +39205,14 @@ url: https://www.figma.com/design/PveRWyo0PJzGdThvQLJxMy
 tags: active, transaction, buyer, checkout, pr po approval
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - Revamp CO process -> Detail PR
+  - PaDi UMKM -Trx
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -35927,6 +39220,9 @@ pages:
   screens inside this page:
   - Relevant Docs
 📜 Wireframe/Playground:
+  headings:
+  - Pengiriman
+  - Ringkasan Belanja
   screens inside this page:
   - Voucher
   - Header
@@ -35978,6 +39274,8 @@ Existing UI + update with latest exploration:
   screens inside this page:
   - (no screens)
 ↳ Buyer B2B - Bayar Langsung & Tempo:
+  headings:
+  - Ringkasan Belanja
   screens inside this page:
   - Payment/DPP PMK 132/v2
   - Checkout
@@ -36091,6 +39389,11 @@ Existing UI + update with latest exploration:
   - Admin - Voucher - Semua
   - Admin - Voucher - Semua - status aktif
 ↳ Daftar PR Marketplace:
+  headings:
+  - Telkomsel
+  - B2B
+  - KLPD
+  - Retail
   screens inside this page:
   - B2B
   - Telkomsel
@@ -36113,6 +39416,8 @@ Existing UI + update with latest exploration:
   screens inside this page:
   - (no screens)
 ↳ Buyer Retail:
+  headings:
+  - ??????
   screens inside this page:
   - Detail Permintaan Pembelian
   - Checkout
@@ -36148,6 +39453,8 @@ Existing UI + update with latest exploration:
   - Keranjang Buyer
   - Keranjang Pre Order
 SPDPT 4064 - Improve checkout process - Buyer:
+  headings:
+  - Ringkasan Belanja
   screens inside this page:
   - Buyer Retail
   - Buyer B2B
@@ -36210,6 +39517,8 @@ Dupe - SPDPT 4066 - Improve Detail Permintaan Pembelian - Buyer 2:
   - Daftar Transaksi/ditolak
   - Daftar Transaksi/revisi
 Eksplorasi:
+  headings:
+  - PPN PPN dipungut pembeli PPh
   screens inside this page:
   - Buyer Retail
   - payment
@@ -36231,6 +39540,8 @@ Rekomendasi pembayaran cepat aktif:
   - Pengaturan
   - Pembayaran
 Unused:
+  headings:
+  - Ringkasan Belanja
   screens inside this page:
   - Checkout
   - Payment
@@ -36254,12 +39565,19 @@ url: https://www.figma.com/design/9dGlVBK80wiIViB1DyM7Il
 tags: active, transaction, all, order trx
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Revisi Pesanan 2025
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Rp10.000.000
+  - Ringkasan Belanja
+  - Pesanan 1
   screens inside this page:
   - .Catatan Untuk Penjual
   - .Produk Di Keranjang
@@ -36283,6 +39601,13 @@ pages:
   - Pre / Transaction / Buyer
   - Checkout
 📱 Mobile:
+  headings:
+  - Jenis
+  - Product IA
+  - Nama prod
+  - Harga
+  - Property Prod
+  - Ringkasan Belanja
   screens inside this page:
   - .Catatan Produk Mobile
   - Frame 624786
@@ -36303,6 +39628,8 @@ pages:
   - Checkout
   - Payment
 📝 Notes Design & Technical Critique:
+  headings:
+  - Cart
   screens inside this page:
   - Frame 48097717
   - Frame 48097718
@@ -36402,6 +39729,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - Keranjang
   screens inside this page:
   - Homapage 3
   - .Preview Keranjang Opsi 3
@@ -36418,6 +39747,9 @@ url: https://www.figma.com/design/avoGlQU1dINMM59IqOmq6X
 tags: active, transaction, seller, dashboard analytics
 pages:
 📙 Thumbnail:
+  headings:
+  - Seller Dashboard
+  - PaDi UMKM - Pre-Trx
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -36459,12 +39791,18 @@ url: https://www.figma.com/design/LnadK6RKxwZzJKpa0ArJRS
 tags: active, transaction, buyer, checkout, payment
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Checkout & Payment
+  - PaDi UMKM -Trx
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Alamat Pengiriman
+  - Pengiriman
   screens inside this page:
   - Address Section
   - Detail Item
@@ -36488,6 +39826,8 @@ pages:
   - .Tipe Proyek
   - .Product
 📱 Mobile:
+  headings:
+  - Bank BRI
   screens inside this page:
   - button-cart
   - Checkout
@@ -36519,22 +39859,35 @@ pages:
   screens inside this page:
   - (no screens)
 🔍  Exploration:
+  headings:
+  - Checkout flow
+  - Flow 1
+  - Flow 2
   screens inside this page:
   - Flow 1
   - Flow 2
   - User flow
 🔍  Exploration case gratis ongkir - 25 Nov 24:
+  headings:
+  - Checkout flow
+  - Flow 1
+  - Flow 2
   screens inside this page:
   - User flow
 🔄 Design:
   screens inside this page:
   - (no screens)
 🖥️ Dynamic Tempo:
+  headings:
+  - Ubah Tempo
   screens inside this page:
   - Checkout
   - Payment
   - Modal Ubah
 🖥️ Case Double Checkout:
+  headings:
+  - Apakah ada tab lain yang sedang membuka keranjang juga?
+  - Generate PO berhasil?
   screens inside this page:
   - Checkout
   - Payment
@@ -36637,12 +39990,21 @@ url: https://www.figma.com/design/RkH7rv9Q7SJtl5OFANrEp0
 tags: active, transaction, all, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Produk Jasa
+  - Last Updated : 4 May 2023
+  - PaDi UMKM - Buyer - Trx
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
   screens inside this page:
   - (no screens)
 🖥️ Web:
+  headings:
+  - old
+  - Alamat Pengiriman
+  - Pengiriman
+  - Anda akan meminta untuk melakukan revisi permintaan pesanan
   screens inside this page:
   - Setting Menu
   - Termin Card
@@ -36772,6 +40134,16 @@ pages:
   - Data Listing Produk
   - Data Produk - List
 🖥️ Transaksi - Phase 2:
+  headings:
+  - Approval
+  - Pembayaran
+  - Selesai
+  - Tidak selesai
+  - Diproses
+  - Tagihan
+  - Refund
+  - Perubahan
+  - Lainnya
   screens inside this page:
   - Frame 11381
   - Frame 11386
@@ -36815,6 +40187,9 @@ pages:
   - Dokumen - BAST
   - Checkout Proses
 🖥️  Termin - Phase 3:
+  headings:
+  - Before
+  - After
   screens inside this page:
   - Frame 48097605
   - Duplikat Produk
@@ -36956,6 +40331,10 @@ pages:
   - Frame 1958763952
   - Frame 1958763953
 🖥️  Mimin:
+  headings:
+  - Permintaan Pembelian Termin
+  - Termin
+  - ALAMAT PENGERJAAN
   screens inside this page:
   - Shipment Fee
   - Daftar Transaksi
@@ -37021,6 +40400,11 @@ Termin - Phase 3.2:
   - Transaksi - Semua 2
   - 3 Opsi suggestion
 🗑️ Unused:
+  headings:
+  - Selesai po
+  - Mengunggu persetujan
+  - Disetujui
+  - bisa pake persentage stepper
   screens inside this page:
   - Duplikat Produk
   - Frame 48097591
@@ -37050,6 +40434,10 @@ url: https://www.figma.com/design/o2EQmN0Exam0IfmDBHhI5k
 tags: active, transaction, all, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Produk Jasa Termin
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - Buyer TRX
   screens inside this page:
   - Cover
 --------------------------------:
@@ -37133,6 +40521,9 @@ url: https://www.figma.com/design/9LwFGTFflM3MgLTjfE0naw
 tags: active, transaction, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Prototype Termin
+  - PaDi UMKM - Transaction
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -37151,6 +40542,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -37179,6 +40572,9 @@ Dekstop:
   - Tipe Proyek
   - .PDP v2 Jasa
 🖥️ Desktop:
+  headings:
+  - Before
+  - After
   screens inside this page:
   - Frame 48097605
   - Duplikat Produk
@@ -37294,6 +40690,8 @@ Termin 3.1:
   screens inside this page:
   - (no screens)
 🗞️ Prototype:
+  headings:
+  - Setelah penjual unggah faktur, pembeli akan memeriksa
   screens inside this page:
   - Buyer Staff Role
   - Buyer Staff Role - Dashboard
@@ -37303,6 +40701,11 @@ Termin 3.1:
   - Daftar Transaksi
   - Seller - Detail Transaksi
 🗞️ Prototype (Duplicate):
+  headings:
+  - dari ui seller dashboard
+  - dari production pov seller
+  - POV Buyer:
+  - Setelah penjual unggah faktur, pembeli akan memeriksa
   screens inside this page:
   - Buyer Staff Role
   - Buyer Staff Role (UI update)
@@ -37369,9 +40772,15 @@ url: https://www.figma.com/design/X704rleHUMDwchHxF8kWDb
 tags: active, [discovery - identity] / discovery, buyer, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur KLPD
+  - PaDi UMKM - KLPD
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
+  headings:
+  - Specs
+  - Email dan Telepon
   screens inside this page:
   - Redirection
   - Dropdown
@@ -37387,6 +40796,10 @@ pages:
   - .Add Image
   - Frame 6069
 📝 Notes Design & Technical Critique:
+  headings:
+  - Pressed
+  - Default
+  - PENGGUNA
   screens inside this page:
   - Admin - User - Buyer Group - Detail Buyer Group - Pengguna
   - Frame 624952
@@ -37424,6 +40837,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - LUNAS
   screens inside this page:
   - Management PPN & PPH
   - Detail Transaksi Seller
@@ -37462,6 +40877,9 @@ url: https://www.figma.com/design/oniE1w9RshbaFRAJ8RLYp8
 tags: active, [discovery - identity] / discovery, all, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - Bandingkan Produk
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -37478,6 +40896,22 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - Keranjang
+  - Perbandingan Produk
+  - Informasi Produk
+  - MacBook Pro M1 14inch 2021
+  - Harga
+  - Stok
+  - Kategori
+  - Brand
+  - Min Pembelian
+  - 124
+  - Laptop
+  - Asus
+  - 5 Unit
+  - 1Kg
+  - Komputer & Laptop, Laptop, Laptop Consumer
   screens inside this page:
   - .Others Product Button
   - Frame 1
@@ -37520,6 +40954,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Klik "Copy Link" button
   screens inside this page:
   - New Revamp Bandingkan Produk
   - Button bandingkan produk
@@ -37559,6 +40995,9 @@ Brand Management - Desktop:
   - .card brand
   - .PDP v2
 Thumbnail:
+  headings:
+  - Discovery Brand Management
+  - PaDi UMKM - Seller
   screens inside this page:
   - Slide 16:9 - 1
 
@@ -37567,6 +41006,9 @@ url: https://www.figma.com/design/h9nI8N55vHyEoWuMe2ULYC
 tags: active, [discovery - identity] / discovery, all, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - Cari & Filter Dalam Kategori - Telkomsel
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -37621,6 +41063,9 @@ url: https://www.figma.com/design/9yrrLg1SOsLvPIKgDarlER
 tags: active, [discovery - identity] / discovery, all, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Discovery Data Produk
+  - PaDi UMKM - Seller
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -37680,6 +41125,9 @@ url: https://www.figma.com/design/YqGKHFS7uZlUR6RMFS5f28
 tags: active, [discovery - identity] / discovery, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Discovery Eksplorasi
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -37695,6 +41143,22 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - Keranjang
+  - Perbandingan Produk
+  - Informasi Produk
+  - MacBook Pro M1 14inch 2021
+  - Harga
+  - Stok
+  - Kategori
+  - Brand
+  - Min Pembelian
+  - 124
+  - Laptop
+  - Asus
+  - 5 Unit
+  - 1Kg
+  - Komputer & Laptop, Laptop, Laptop Consumer
   screens inside this page:
   - .Others Product Button
   - Frame 1
@@ -37774,6 +41238,9 @@ pages:
   - [mimin] info fair pricing
   - [seller] info fair pricing
 Thumbnail:
+  headings:
+  - Fitur Fair Pricing Seller & Buyer
+  - PaDi UMKM -Trx
   screens inside this page:
   - Slide 16:9 - 1
 
@@ -37782,12 +41249,17 @@ url: https://www.figma.com/design/FPwn5EiEjhk4AgUn5JFdou
 tags: active, [discovery - identity] / discovery, all, homepage landing, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - Discovery Home, Koleksi, SRP
+  - PaDi UMKM - Buyer
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
   screens inside this page:
   - Frame 6124
 🖥️ Desktop:
+  headings:
+  - Pencarian Populer
   screens inside this page:
   - Categori Card
   - Banner Online Expo
@@ -37866,6 +41338,8 @@ pages:
   - Dekstop - Koleksi & Filter
   - Mweb - Koleksi & Filter
 🖥️ Desktop - Picker Address:
+  headings:
+  - FILTER PKP NON KPK Custom MWEB
   screens inside this page:
   - Dekstop - Homepage -- picker address
 📱 Mobile:
@@ -37923,6 +41397,9 @@ url: https://www.figma.com/design/uATMhYqgmdYWOInyew6V1l
 tags: active, [discovery - identity] / discovery, all, homepage landing
 pages:
 📙 Thumbnail:
+  headings:
+  - Homepage Tender Kilat CC Button
+  - PaDi UMKM - [Discovery]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -37930,6 +41407,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - asdasd
   screens inside this page:
   - Frame 1
   - RFQ Section Homepage
@@ -38004,6 +41483,9 @@ url: https://www.figma.com/design/Ctfa8TPlgudN8hHsEqMXc7
 tags: active, [discovery - identity] / discovery, mimin, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - Mimin Katalog Tertutup
+  - PaDi UMKM - [Discovery]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -38017,6 +41499,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -38069,6 +41553,9 @@ url: https://www.figma.com/design/TFHBCgQxSuvRtoPSUaGOOy
 tags: active, [discovery - identity] / discovery, mimin, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Discovery Kurasi & Laporkan Produk
+  - PaDi UMKM - Buyer, Seller, CMS
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -38088,6 +41575,22 @@ pages:
   screens inside this page:
   - .Filter Toko Mobile
 📝 Notes Design & Technical Critique:
+  headings:
+  - Keranjang
+  - Perbandingan Produk
+  - Informasi Produk
+  - MacBook Pro M1 14inch 2021
+  - Harga
+  - Stok
+  - Kategori
+  - Brand
+  - Min Pembelian
+  - 124
+  - Laptop
+  - Asus
+  - 5 Unit
+  - 1Kg
+  - Komputer & Laptop, Laptop, Laptop Consumer
   screens inside this page:
   - .Others Product Button
   - Frame 1
@@ -38150,6 +41653,9 @@ url: https://www.figma.com/design/5dmzleJSFaoncwbnKWyHvC
 tags: active, [discovery - identity] / discovery, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Language Selector
+  - PaDi UMKM - [Discovery]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -38163,6 +41669,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -38218,12 +41726,17 @@ url: https://www.figma.com/design/ZVMxZeZNm5kvs0IBNrzNht
 tags: active, [discovery - identity] / discovery, all, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - Discovery Product Detail Page
+  - PaDi UMKM - Buyer
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Macbook Pro M1 14” 2021 256GB
   screens inside this page:
   - Harga Grosir Opsi 3
   - Popup Zoom Image
@@ -38247,6 +41760,11 @@ pages:
   - .PDP Selected Product Image
   - .Harga Tempo/Default
 📱 Mobile:
+  headings:
+  - Hemat Rp9.000.000
+  - Total Harga
+  - Rp81.000.000
+  - Rp37.500.000
   screens inside this page:
   - Harga Grosir
   - Pengiriman
@@ -38326,6 +41844,13 @@ Page 17:
   - Popup Kurir
   - Popup Pengiriman
 🗑️ Trash:
+  headings:
+  - inaproc lkpp
+  - tokopaedi
+  - + kalo ada button beli tempo gmn
+  - Pengiriman Kurir
+  - Jumlah Pembelian
+  - Biaya Pengiriman
   screens inside this page:
   - Zoom Image Opsi 2
   - Frame 6070
@@ -38352,6 +41877,9 @@ url: https://www.figma.com/design/eCVkVUxGfr6G5fHBHQK1Z3
 tags: active, [discovery - identity] / discovery, seller, account profile
 pages:
 📙 Thumbnail:
+  headings:
+  - Discovery Profil Seller
+  - PaDi UMKM - Buyer
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -38412,6 +41940,9 @@ url: https://www.figma.com/design/miTHCf3WI16gJ5Otz73nd1
 tags: active, [discovery - identity] / discovery, all, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - Search Result Page PaDi UMKM
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🖥️ Desktop:
@@ -38423,6 +41954,9 @@ url: https://www.figma.com/design/ePtBvglKZvWI9Hg2fzZs0l
 tags: active, [discovery - identity] / discovery, seller, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Discovery Tambah/Ubah Produk
+  - PaDi UMKM - Seller
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -38464,6 +41998,14 @@ pages:
   - dd
   - visibilitas produk mobile
 📱 Mobile:
+  headings:
+  - PDN
+  - Media Produk
+  - Informasi Produk
+  - TKDN
+  - Opsi Pajak
+  - Pengiriman
+  - Stok Produk
   screens inside this page:
   - .Tambah Jasa Mobile
   - .PDN Mobile
@@ -38632,6 +42174,9 @@ url: https://www.figma.com/design/Rof60BjQ49oK9L6uKzqpng
 tags: active, [discovery - identity] / discovery, seller, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - Discovery Toko Tutup
+  - PaDi UMKM - Buyer & Seller
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -38686,6 +42231,9 @@ url: https://www.figma.com/design/ynUzFkoOKxijANom0Zlshx
 tags: active, [discovery - identity] / discovery, all, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - Discovery Widget Cross-selling product dari MyIndibiz
+  - PaDi UMKM - Buyer & Seller
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -38746,6 +42294,10 @@ url: https://www.figma.com/design/VZxByF102NwGpf7hZxRDRY
 tags: active, [discovery - identity] / discovery, all, payment
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Dynamic Tempo
+  - PaDi UMKM - Discovery
+  - Last Updated : 6 Mar 2024
   screens inside this page:
   - Cover
 🧩 Local Component:
@@ -38802,6 +42354,11 @@ pages:
   screens inside this page:
   - (no screens)
 ✅ Wireframe:
+  headings:
+  - Keterangan Barang: Stock Habis
+  - Jenis Transaksi: Pre-Order, Termin, Tempo
+  - Kategori Produk: Produk UMKM, Produk Grosir
+  - Jenis Produk: Jasa, Barang
   screens inside this page:
   - .Tambah Produk Barang
   - .Table Data Tempo
@@ -38877,6 +42434,9 @@ url: https://www.figma.com/design/1uhRmWeNohQP1zcRP5ncft
 tags: active, [discovery - identity] / discovery, all, product mgmt
 pages:
 📙 Thumbnail:
+  headings:
+  - Pre Order
+  - PaDi UMKM - [Discovery]
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -38889,6 +42449,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -38936,6 +42498,15 @@ url: https://www.figma.com/design/u7K544YwRNCmwhNVFGwdRx
 tags: active, [discovery - identity] / discovery, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - Cart Tender Kilat
+  - PaDi UMKM - eProc
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -38970,6 +42541,15 @@ url: https://www.figma.com/design/oAdCqwdiOhV1y5JEeXpqLE
 tags: active, [discovery - identity] / discovery, all, negotiation
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - Fitur Negosiasi
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -39045,6 +42625,9 @@ pages:
   screens inside this page:
   - (no screens)
 🔄 Design Handoff:
+  headings:
+  - Buyer
+  - Seller
   screens inside this page:
   - Case nego langsung diterima (Buyer & Seller)
   - Case Seller ngajuin harga baru dan buyernya ngajuin nego lagi
@@ -39103,6 +42686,15 @@ url: https://www.figma.com/design/4tBhxIUIkVTCynGTeLaFz5
 tags: active, [discovery - identity] / discovery, all, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - Katalog Tertutup
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -39186,6 +42778,9 @@ Page 1:
   - [buyer] badge pdp mobile
   - PPN 1.1% selector
 thumbnail:
+  headings:
+  - Discovery PPN 1.1%
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 
@@ -39194,6 +42789,9 @@ url: https://www.figma.com/design/XvZJW2NBtW6PvVkhsiYR3a
 tags: active, [discovery - identity] / discovery, all, account profile
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Pengaturan Akun
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -39212,11 +42810,15 @@ pages:
   - Sidebar Staff Manager
   - Text Field
 📱 Mobile:
+  headings:
+  - Text
   screens inside this page:
   - Frame 624780
   - Wrap
   - Akun
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -39263,6 +42865,15 @@ url: https://www.figma.com/design/9K8P5arZwPdvsCuUlvU9Cc
 tags: active, [discovery - identity] / discovery, all, negotiation
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - Prototype Fitur Negosiasi
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -39338,6 +42949,12 @@ pages:
   screens inside this page:
   - (no screens)
 🤖 Prototype Buyer:
+  headings:
+  - H: 788px
+  - H normal screen resolution: 1080
+  - H normal design 1024
+  - dipotong denga height frame chrome 292
+  - dipotong denga height frame chrome 788
   screens inside this page:
   - 1. Buyer menginisiasi nego
   - 2. Buyer mendapati negosiasi diterima
@@ -39381,6 +42998,15 @@ url: https://www.figma.com/design/vFpwYO5kMP36QId7OFeMDO
 tags: active, [discovery - identity] / discovery, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - RFQ Integration (FC & FPJP)
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -39401,9 +43027,20 @@ url: https://www.figma.com/design/fJ04PVkN4Px4awnWJaV0LF
 tags: active, [discovery - identity] / discovery, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Retensi
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Slide 16:9 - 1
 📝 Requirement:
+  headings:
+  - Retensi Flow Jenis pembayaran Tempo
+  - Faktur pajaknya HANYA ada 1
+  - INV-2026-02-23-1111111111 = Rp 900.000
+  - User Flow - Retensi (Fulfillment Flow Detail)
+  - INV-RTN-2026-02-23-1111111112 = Rp 100.000
+  - Cart Page
+  - Checkout Page
   screens inside this page:
   - User Flow - Retensi (Fulfillment Flow Detail)
   - User Flow - Retensi (Upload product + Cart+checkout Flow Detail)
@@ -39521,12 +43158,17 @@ url: https://www.figma.com/design/WYABGwXvSBJh0Tujc4SPN4
 tags: active, [discovery - identity] / discovery, all, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - Bandingkan Produk
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -39543,6 +43185,9 @@ url: https://www.figma.com/design/N7jJkGZwx11oaV92AshEjR
 tags: active, [discovery - identity] / visit, seller, login auth
 pages:
 📙 Thumbnail:
+  headings:
+  - Authorized Seller
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -39584,6 +43229,15 @@ url: https://www.figma.com/design/ekzrYybQttVo9R9zCcenm4
 tags: active, [discovery - identity] / visit, buyer manager, buyer group, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Buyer Manager Multiple Buyer Group
+  - PaDi UMKM - Visit
+  - File Template
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -39596,6 +43250,8 @@ pages:
   screens inside this page:
   - (no screens)
 ↳ Admin Perusahaan:
+  headings:
+  - hyperlink ke file admin perusahaan
   screens inside this page:
   - Frame 1
 ↳ Buyer Manager:
@@ -39624,6 +43280,8 @@ pages:
   - Main Content
   - Daftar Pesanan / Buyer / Mobile
 ↳ Mimin:
+  headings:
+  - hyperlink ke file mimin
   screens inside this page:
   - Frame 1
 ↳ Walkthrough:
@@ -39640,6 +43298,9 @@ url: https://www.figma.com/design/QZCDgFcUArQtDIqhNT1arZ
 tags: active, [discovery - identity] / visit, buyer, checkout
 pages:
 Thumbnails:
+  headings:
+  - Fitur Limitasi Checkout
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 Limitasi Checkout:
@@ -39667,6 +43328,9 @@ url: https://www.figma.com/design/EDdL799ZVmjO7nxwSVgcds
 tags: active, [discovery - identity] / visit, mimin, general
 pages:
 Thumbnail:
+  headings:
+  - Blacklist No Hp
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 v1:
@@ -39703,6 +43367,9 @@ pengaturan dokumen seller:
   - .custom action
   - case tambah dokumen non pkp mobile
 thumbnail:
+  headings:
+  - Dokumen SPPKP
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 explore:
@@ -39725,6 +43392,9 @@ url: https://www.figma.com/design/YLmGjPFeRV00P0oGd5E3c5
 tags: active, [discovery - identity] / visit, all, login auth
 pages:
 📙 Thumbnail:
+  headings:
+  - LOGIN
+  - PaDi UMKM - Pre-Trx
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -39740,6 +43410,9 @@ pages:
   - Frame 1958763993
   - verifikasi email otp
 📝 Notes Design & Technical Critique:
+  headings:
+  - Seller
+  - Buyer
   screens inside this page:
   - Atur Cookies
   - Login Retail #1
@@ -39778,6 +43451,9 @@ pages:
   - .Selection
   - Login Flow by PIN
 🖥️ Desktop Login Mimin:
+  headings:
+  - Masuk ke Dashboard Mimin
+  - New Login Mimin (Propose)
   screens inside this page:
   - Frame 1
   - Frame 2
@@ -39850,6 +43526,9 @@ url: https://www.figma.com/design/eezw2fNLa5Ibq4XbLKCURF
 tags: active, [discovery - identity] / visit, seller, account profile
 pages:
 📙 Thumbnail:
+  headings:
+  - Branding Store
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -39903,6 +43582,10 @@ url: https://www.figma.com/design/VqLIctrcx2D2ykyCRSxAqG
 tags: active, [discovery - identity] / visit, seller, account profile
 pages:
 📙 Thumbnail:
+  headings:
+  - Branding Store
+  - Pop Up Nama Toko
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 🎨  Hi-Fi:
@@ -39916,6 +43599,9 @@ url: https://www.figma.com/design/EcxbywlwVpbhqEsDhZJ167
 tags: active, [discovery - identity] / visit, all, homepage landing
 pages:
 📙 Thumbnail:
+  headings:
+  - Jasa Landing page
+  - PaDi UMKM - Task Force Jasa
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -39923,12 +43609,16 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - asdasd
   screens inside this page:
   - Frame 1
 📱 Mobile:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -39936,6 +43626,8 @@ pages:
   screens inside this page:
   - (no screens)
 ✅ Wireframe:
+  headings:
+  - Default POV - Seller
   screens inside this page:
   - Wireframe landing page jasa - POV buyer
   - Frame 1958763944
@@ -39967,6 +43659,10 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - Pinjaman Diajukan
+  - Butuh Dana untuk Membantu Usaha Anda?
+  - Siapkan Dokumen dan Lengkapi Data Informasi yang Diperlukan
   screens inside this page:
   - Wireframe landing page jasa - POV buyer
   - V.3.2
@@ -39978,6 +43674,9 @@ url: https://www.figma.com/design/Xr9V4YKE5tDprIFxBLoj01
 tags: active, [discovery - identity] / visit, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Visit Bantuan PaDi UMKM
+  - PaDi UMKM - Visit
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -40003,13 +43702,20 @@ pages:
   - List Menu
   - Hero
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
 📜 Information Architecture:
+  headings:
+  - Sementara Link IA-nya & Eksplorasi Ada disini
   screens inside this page:
   - (no screens)
 ✅ Wireframe:
+  headings:
+  - WEB BANTUAN PADI
+  - CMS BANTUAN PADI
   screens inside this page:
   - Lo-Fi Buyer Retail
   - Bantuan After Iteration
@@ -40050,6 +43756,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - DESIGN ALTERNATIF
   screens inside this page:
   - Lo-Fi Awal
   - Bantuan
@@ -40066,6 +43774,9 @@ url: https://www.figma.com/design/O6CcakQaCyvYfTq0Q6jmMp
 tags: active, [discovery - identity] / visit, mimin, general
 pages:
 📙 Thumbnail:
+  headings:
+  - CMS Bantuan & InfoPaDi UMKM
+  - PaDi UMKM - Visit
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -40110,13 +43821,25 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
 📜 Information Architecture:
+  headings:
+  - AUDIT EXISTING INFO PADI
   screens inside this page:
   - Audit Existing
 ✅ Wireframe:
+  headings:
+  - List Artikel
+  - Artikel Editor
+  - Topik/Subtopik
+  - WP LAYOUT
+  - Ekplorasi
+  - Eksisting
+  - Text
   screens inside this page:
   - Bantuan v 1.0
   - CMS
@@ -40163,6 +43886,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - To Be Discuss
   screens inside this page:
   - Sidebar
   - Header
@@ -40195,6 +43920,9 @@ url: https://www.figma.com/design/2B1ZUeNIEEDlljfYfhhRRR
 tags: active, [discovery - identity] / visit, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Cookie Banner
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -40249,6 +43977,9 @@ url: https://www.figma.com/design/apz32b9FB14AF5qzmKwBLq
 tags: active, [discovery - identity] / visit, all, account profile
 pages:
 📙 Thumbnail:
+  headings:
+  - Export Data Pribadi
+  - PaDi UMKM
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -40262,6 +43993,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -40321,18 +44054,25 @@ url: https://www.figma.com/design/j5FDweHoiOzcwHBpprv5UM
 tags: active, [discovery - identity] / visit, all, login auth, notif email
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Email Pemberitahuan password telah diubah
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 2
 🧩 Local Component:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - asdasd
   screens inside this page:
   - Frame 1
 📱 Mobile:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -40374,6 +44114,9 @@ url: https://www.figma.com/design/sQHuFbMkSsYCH8H8nNlevA
 tags: active, [discovery - identity] / visit, all, login auth
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Force Change Password
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 --------------------------------:
@@ -40383,6 +44126,8 @@ pages:
   screens inside this page:
   - (no screens)
 ↪ Flow:
+  headings:
+  - Flow Your Screens
   screens inside this page:
   - On the Light
   - Component
@@ -40443,6 +44188,10 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Website:
+  headings:
+  - SYARAT DAN KETENTUAN PENYEDIAAN PLATFORM PENGAJUAN PENDANAAN
+  - 3 Langkah Mudah Menjadi B2B Buyer di PaDi UMKM:
+  - Specs
   screens inside this page:
   - .Register Responsive
   - Registration Page V1
@@ -40621,6 +44370,8 @@ url: https://www.figma.com/design/dPDd3pSkg54EkoTUFWnKt4
 tags: active, [discovery - identity] / visit, all, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Visit Info PaDi Revamp
   screens inside this page:
   - Slide 16:9 - 1
 ✏️ IA Revamp:
@@ -40635,6 +44386,22 @@ pages:
   - Ralali
   - PaDi UMKM
 📋 Moodboard:
+  headings:
+  - Drop Inspiration Here
+  - Developing a
+  - List some key adjectives here:
+  - color palette
+  - Selecting
+  - fonts
+  - Info PaDi Moodboarding Template
+  - Customizing
+  - your imagery
+  - Dribbble is our go-to for layout inspiration!
+  - Choose
+  - Custom illustration ? Go to: freepik Envato Pexels
+  - illustration
+  - freepik Envato Pexels is our go-to for layout inspiration!
+  - Design & Layout
   screens inside this page:
   - Color Palette
   - Fonts
@@ -40656,6 +44423,8 @@ pages:
   screens inside this page:
   - Interactive Component Mobile
 🗳️ Lo-Fi:
+  headings:
+  - Lo-Fi Fix Ada Disini
   screens inside this page:
   - Ref
   - Eksplorasi Lo-Fi
@@ -40728,6 +44497,10 @@ url: https://www.figma.com/design/61dYxLUhYMROSoN1088eTE
 tags: active, [discovery - identity] / visit, seller, mimin, general
 pages:
 📙 Thumbnail:
+  headings:
+  - (Kurasi Seller, Premium Seller, Kode Pos)
+  - Mimin
+  - PaDi UMKM - Visit
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -40751,6 +44524,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -40760,6 +44535,8 @@ pages:
   - Existing IA
   - New IA
 ✅ Wireframe:
+  headings:
+  - Text
   screens inside this page:
   - Frame 6067
   - Frame 1958764050
@@ -40840,6 +44617,9 @@ buyer:
   - profil toko
   - Frame 1958764238
 thumbnail:
+  headings:
+  - Dokumen SPPKP
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 explore:
@@ -40862,6 +44642,9 @@ url: https://www.figma.com/design/Shrmz8e2KIFUybdhab1vAj
 tags: active, [discovery - identity] / visit, all, account profile
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur List Device Connected
+  - PaDi UMKM - Visit
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -40908,6 +44691,9 @@ url: https://www.figma.com/design/Mx3NH685TJuF6KHJZMfmZp
 tags: active, [discovery - identity] / visit, all, login auth
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Login
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -40987,6 +44773,10 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop - Login v.1:
+  headings:
+  - Email Terdaftar
+  - Email Tidak Terdaftar
+  - Koneksi Terputus
   screens inside this page:
   - Desktop
   - Template OTP
@@ -41016,6 +44806,8 @@ pages:
   - SnK
   - Kebijakan Prviasi
 📱 Mobile:
+  headings:
+  - Specs
   screens inside this page:
   - .Mobile Login
   - Mobile Login - OTP SMS Fill Invalid
@@ -41046,6 +44838,9 @@ url: https://www.figma.com/design/D0jE86AVVux1C96knKAIfP
 tags: active, [discovery - identity] / visit, all, login auth
 pages:
 📙 Thumbnail:
+  headings:
+  - Login Multi Factor Auth.
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -41106,6 +44901,9 @@ url: https://www.figma.com/design/03OofSEaHDSvjjoNVLkGcq
 tags: active, [discovery - identity] / visit, all, login auth
 pages:
 📙 Thumbnail:
+  headings:
+  - Login by PIN
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -41144,6 +44942,9 @@ pages:
   - Email Notification
   - .Selection
 🖥️ Desktop v2:
+  headings:
+  - + OTP
+  - Dashboard
   screens inside this page:
   - Login Retail #1
   - Entrypoint Login
@@ -41215,6 +45016,9 @@ url: https://www.figma.com/design/f1Y89pG0KiErZIa3qgNN9s
 tags: active, [discovery - identity] / visit, admin perusahaan, account profile
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Manajemen Akses Owner
+  - PaDi UMKM
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 2
@@ -41331,6 +45135,9 @@ url: https://www.figma.com/design/tDEPpPsAp87lTcDBd9iBTm
 tags: active, [discovery - identity] / visit, all, homepage landing
 pages:
 📙 Thumbnail:
+  headings:
+  - Visit - Marketing Landing Page
+  - PaDi UMKM - Marketing Landing Page
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -41346,6 +45153,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - Kenapa harus menjadi Pembeli di PaDi UMKM
   screens inside this page:
   - V.3.3
   - Frame 1958763937
@@ -41357,6 +45166,8 @@ pages:
   screens inside this page:
   - (no screens)
 ✅ Wireframe:
+  headings:
+  - Mari Daftar Menjadi Pembeli B2B di PaDi UMKM
   screens inside this page:
   - V.1
   - V.2
@@ -41374,6 +45185,11 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop -- old:
+  headings:
+  - Dekstop
+  - Opsi 1
+  - Opsi 2
+  - Opsi 3
   screens inside this page:
   - landing page daftar pembeli
   - Informasi Rekening Bank
@@ -41389,6 +45205,12 @@ pages:
   - Frame 48097685
   - New V.1
 🖥️ Desktop:
+  headings:
+  - Tanya & Jawab
+  - Desktop
+  - Mobile Responsive
+  - on hover/on click
+  - onClick request success
   screens inside this page:
   - V.3.2
   - V.3.3
@@ -41405,6 +45227,9 @@ pages:
   - Illust1-Paylater
   - Frame 1958763968
 📱 Mobile Responsive / Mobile App:
+  headings:
+  - Mari Daftar Menjadi Pembeli B2B di PaDi UMKM
+  - Mari Daftar Menjadi Pembeli Perusahaan di PaDi UMKM
   screens inside this page:
   - V.3.3.1
   - Frame 1958763939
@@ -41421,6 +45246,10 @@ pages:
   - V.4.3.1
   - V.3.2
 🗑️ Trash:
+  headings:
+  - Opsi 3
+  - Opsi 1
+  - Versi design default
   screens inside this page:
   - Maintenance-cuate 1
   - Online consulting-amico
@@ -41452,6 +45281,15 @@ url: https://www.figma.com/design/qITETWOq0OjjHn0LH7eCAc
 tags: active, [discovery - identity] / visit, all, register kyc
 pages:
 📙 Thumbnail:
+  headings:
+  - Modal Perubahan Data NPWP
+  - PaDi UMKM - Visit
+  - File Template
+  - PaDi UMKM - Core
+  - PaDi UMKM - TRX
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -41515,6 +45353,9 @@ url: https://www.figma.com/design/UnyxnhfD2xhGXoLlpAJ67m
 tags: active, [discovery - identity] / visit, seller, account profile, notif email
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Perubahan Email Seller
+  - PaDi UMKM - Visit
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -41522,6 +45363,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Masukkan Kode Verifikasi
   screens inside this page:
   - .Heading
   - .fillotp
@@ -41534,6 +45377,8 @@ pages:
   screens inside this page:
   - OTP Mobile
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -41625,6 +45470,9 @@ url: https://www.figma.com/design/rLyVrPxbeCd3WEYA0R5Oa3
 tags: active, [discovery - identity] / visit, buyer group, docs tax invoice
 pages:
 📙 Thumbnail:
+  headings:
+  - Pop Up Informasi Kewajiban Pajak BG
+  - PaDi UMKM
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -41638,6 +45486,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -41654,6 +45504,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Versi 1
   screens inside this page:
   - 1
   - 6
@@ -41666,6 +45518,8 @@ pages:
   - Frame 6072
   - Error 500 State
 📱 Mobile Responsive / Mobile App:
+  headings:
+  - On Click
   screens inside this page:
   - 1
   - 2
@@ -41686,6 +45540,8 @@ pages:
   screens inside this page:
   - (no screens)
 🗑️ Trash:
+  headings:
+  - Versi 2
   screens inside this page:
   - 1
   - 5
@@ -41700,6 +45556,9 @@ url: https://www.figma.com/design/GhEanJgYq5Fq4IszR3sGsg
 tags: active, [discovery - identity] / visit, all, register kyc
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Register
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 --------------------------------:
@@ -41709,6 +45568,8 @@ pages:
   screens inside this page:
   - (no screens)
 ↪ Flow:
+  headings:
+  - Flow Your Screens
   screens inside this page:
   - On the Light
   - Component
@@ -41769,6 +45630,10 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Website:
+  headings:
+  - SYARAT DAN KETENTUAN PENYEDIAAN PLATFORM PENGAJUAN PENDANAAN
+  - 3 Langkah Mudah Menjadi B2B Buyer di PaDi UMKM:
+  - Specs
   screens inside this page:
   - .Register Responsive
   - Registration Page V1
@@ -41884,6 +45749,9 @@ url: https://www.figma.com/design/vd74qmpFkULOSMcRrZLT17
 tags: active, [discovery - identity] / visit, all, register kyc
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Register B2B
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 --------------------------------:
@@ -41893,6 +45761,8 @@ pages:
   screens inside this page:
   - (no screens)
 ↪ Flow:
+  headings:
+  - Flow Your Screens
   screens inside this page:
   - On the Light
   - Component
@@ -41949,6 +45819,10 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Website:
+  headings:
+  - SYARAT DAN KETENTUAN PENYEDIAAN PLATFORM PENGAJUAN PENDANAAN
+  - 3 Langkah Mudah Menjadi B2B Buyer di PaDi UMKM:
+  - Specs
   screens inside this page:
   - .Register Responsive
   - Registration Page V1
@@ -42049,6 +45923,9 @@ url: https://www.figma.com/design/B24PwwKgu8Q6gRjGJQOB3E
 tags: active, [discovery - identity] / visit, all, docs tax invoice, platformmobile
 pages:
 📙 Thumbnail:
+  headings:
+  - Jasa Landing page
+  - PaDi UMKM - Task Force Jasa
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -42069,6 +45946,9 @@ url: https://www.figma.com/design/9YXx9FKBjVgmgY63vQ8DWa
 tags: active, [discovery - identity] / visit, all, discovery pdp
 pages:
 📙 Thumbnail:
+  headings:
+  - SEO Text For Category and Child Category
+  - PaDi UMKM - Visit
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -42083,6 +45963,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -42134,6 +46016,9 @@ url: https://www.figma.com/design/vmLKW2ofHiBUAzrX8OrlJL
 tags: active, [discovery - identity] / visit, all, account profile
 pages:
 📙 Thumbnail:
+  headings:
+  - Ubah Nomor Handphone
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 🖥️ Design - Desktop:
@@ -42179,6 +46064,9 @@ url: https://www.figma.com/design/nwYH4yQwKI2wwkpVxs07Dm
 tags: active, [discovery - identity] / visit, seller, register kyc
 pages:
 📙 Thumbnail:
+  headings:
+  - Validasi NPWP Seller
+  - PaDi UMKM - Visit
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -42192,6 +46080,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -42243,6 +46133,11 @@ url: https://www.figma.com/design/y30P1Ixi2NPD7ljEzszTX5
 tags: active, [discovery - identity] / visit, buyer, seller, account profile
 pages:
 Seller Suspend:
+  headings:
+  - PaDi Kasir
+  - Tambah Produk
+  - Pinjaman
+  - Tender
   screens inside this page:
   - Dashboard Seller
   - Header
@@ -42268,6 +46163,9 @@ Buyer Group Suspend:
   - Penangguhan Permanen
   - Penangguhan terdampak dari induk peusahaan
 trash:
+  headings:
+  - Automated seller & Manual Buyer suspend system
+  - PaDi UMKM - Visit
   screens inside this page:
   - Desktop
   - Initial Search
@@ -42305,6 +46203,9 @@ pages:
   screens inside this page:
   - Buka Blokir User Retail
 📙 Thumbnail:
+  headings:
+  - Seller Aktivasi Buyer Retail
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 🖥️ Ubah no handphone, kata sandi, dan kode PIN:
@@ -42313,6 +46214,9 @@ pages:
   - Pengaturan Akun - Email Lama
   - Mobile
 🖥️ Prevent Login:
+  headings:
+  - Switching Profile Seller > Buyer (Akun Ditangguhkan)
+  - Switching Profile Seller > Buyer (Perubahan Dokumen)
   screens inside this page:
   - Dashboard Seller
   - 1
@@ -42346,6 +46250,9 @@ url: https://www.figma.com/design/88n8gmjvX5ZAr5a53HFEnv
 tags: active, [discovery - identity] / visit - admin perusahaan, admin perusahaan, general
 pages:
 📙 Thumbnail:
+  headings:
+  - Fitur Admin Perusahaan
+  - PaDi UMKM - Visit
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -42393,6 +46300,23 @@ pages:
   - Content
   - Profil
 ✅ Wireframe:
+  headings:
+  - Legion
+  - Padi Style
+  - Mimin
+  - Buyer CMS
+  - Transaksi
+  - profile
+  - Seller
+  - dashboard
+  - aktif 75%
+  - Tidak aktif 25%
+  - Daftar Transaksi State
+  - MENU PO FINANCING PADA MIMIN
+  - WHITELIST SELLER
+  - BLACKLIST BUYER
+  - Detail Pinjaman
+  - Menunggu Proses Pengajuan
   screens inside this page:
   - Admin Perusahaan / profile
   - Admin Perusahaan / dashboard
@@ -42467,6 +46391,8 @@ pages:
   - Profile Page
   - [New] Profile Page
 🖥️ Dashboard:
+  headings:
+  - Dashboard
   screens inside this page:
   - Section 1
   - Dashboard
@@ -42513,6 +46439,8 @@ pages:
   - Demosi Manager
   - UBAH DATA
 [New] [Frans] Buyer Group (Pengguna):
+  headings:
+  - Diarahkan Ke Flow Tambah Manager
   screens inside this page:
   - Ubah approval
   - Case manager tidak ditemukan
@@ -42592,10 +46520,21 @@ url: https://www.figma.com/design/9E2PuESRoLhLXPFoJsVHb4
 tags: active, [discovery - identity] / visit - admin perusahaan, buyer group, admin perusahaan, buyer, general
 pages:
 Daftar Buyer Group:
+  headings:
+  - Hapus BG
+  - Export
+  - Tambah BG
+  - Detail BG
   screens inside this page:
   - .Admin perusahaan/ Detail Buyer Group
   - Frame 1
 ↳ Tambah Buyer Group ⚠️:
+  headings:
+  - harusnya case ini di master comp pilih manager?
+  - ↳ Tambah Manager
+  - ↳ Pilih Manager
+  - ↳ Ubah Profil
+  - ↳ Detail Buyer Group
   screens inside this page:
   - filled
   - Section-Manager
@@ -42615,6 +46554,8 @@ Daftar Buyer Group:
   - Frame 1958764277
   - Frame 1958764278
 ↳ Hapus BG ⚠️:
+  headings:
+  - ↳ Detail Buyer Group - Purchase Request
   screens inside this page:
   - .Admin perusahaan/ Hapus Daftarl Buyer Group
   - .Admin perusahaan/ Detail Buyer Group
@@ -42622,6 +46563,8 @@ Daftar Buyer Group:
   - .Admin Perusahaan / Daftar Transaksi
   - Frame 1
 ↳ Detail Buyer Group / Profil:
+  headings:
+  - ↳Ubah Profile
   screens inside this page:
   - .Admin perusahaan/ Detail Buyer Group Pengguna
   - Frame 1
@@ -42629,6 +46572,15 @@ Daftar Buyer Group:
   screens inside this page:
   - .Admin perusahaan/ Detail Buyer Group Pengguna
 ↳ Detail Buyer Group / Pengguna ⚠️:
+  headings:
+  - ↳ Ubah Data Pengguna - Staff
+  - ↳ Hapus Pengguna
+  - ↳ Tambah Pengguna - Staff
+  - ↳ Pilih Dari Staff (Promosi)
+  - ↳ Tambah Pengguna Baru
+  - ↳ Check PR & PO
+  - ↳ Ubah Profil
+  - ↳ Detail Buyer Group
   screens inside this page:
   - Detail Buyer Group / Pengguna
   - Frame 3
@@ -42674,6 +46626,12 @@ local comp: data manager:
   - data manager 0
   - data manager 2
 local comp: check PR dan PO:
+  headings:
+  - ↳ Detail Buyer Group - Purchase Request
+  - ↳ Detail Buyer Group - Purchase Order
+  - Start
+  - Return: Failed
+  - Continue
   screens inside this page:
   - PR in progress
   - PO in progress
@@ -42697,12 +46655,22 @@ local comp: check PR dan PO:
   - Ganti Manager Opsi 2
   - Demosi Manager
 [New] [Frans] Buyer Group (Pengguna):
+  headings:
+  - Diarahkan Ke Flow Tambah Manager
   screens inside this page:
   - Ubah approval
   - Case manager tidak ditemukan
   - .Admin perusahaan/ Detail Buyer Group
   - .Admin perusahaan/ Detail Buyer Group Pengguna
 trash:
+  headings:
+  - ↳ Ubah Data Pengguna - Staff
+  - ↳ Hapus Pengguna
+  - ↳ Tambah Pengguna - Staff
+  - ↳ Pilih Manager
+  - ↳ Check PR & PO
+  - ↳ Ubah Profil
+  - ↳ Detail Buyer Group
   screens inside this page:
   - Frame 3
   - Frame 2
@@ -42716,10 +46684,21 @@ url: https://www.figma.com/design/qy4kqL6xVXfX8LZwU30OjZ
 tags: active, [discovery - identity] / visit - admin perusahaan, buyer group, admin perusahaan, buyer, general
 pages:
 Daftar Buyer Group:
+  headings:
+  - Hapus BG
+  - Export
+  - Tambah BG
+  - Detail BG
   screens inside this page:
   - .Admin perusahaan/ Detail Buyer Group
   - Frame 1
 ↳ Tambah Buyer Group ⚠️:
+  headings:
+  - harusnya case ini di master comp pilih manager?
+  - ↳ Tambah Approver
+  - ↳ Ganti Approver
+  - ↳ Ganti Reviewer
+  - ↳ Tambah Reviewer
   screens inside this page:
   - filled
   - Case Manager masih terdaftar di buyer group lain
@@ -42731,6 +46710,8 @@ Daftar Buyer Group:
   - Frame 2
   - Frame 3
 ↳ Hapus BG ⚠️ (?):
+  headings:
+  - ↳ Check PR & PO
   screens inside this page:
   - .Admin perusahaan/ Hapus Daftarl Buyer Group
   - .Admin perusahaan/ Detail Buyer Group
@@ -42738,6 +46719,8 @@ Daftar Buyer Group:
   - .Admin Perusahaan / Daftar Transaksi
   - Frame 1958764285
 ↳ Detail Buyer Group / Profil:
+  headings:
+  - ↳Ubah Profile
   screens inside this page:
   - .Admin perusahaan/ Detail Buyer Group Pengguna
   - Frame 1
@@ -42745,6 +46728,18 @@ Daftar Buyer Group:
   screens inside this page:
   - .Admin perusahaan/ Detail Buyer Group Pengguna
 ↳ Detail Buyer Group / Pengguna ⚠️:
+  headings:
+  - ↳ Ubah Data Staff
+  - ↳ Ubah Data Approver
+  - ↳ Hapus Staff
+  - ↳ Ubah Data Reviewer
+  - ↳ Hapus Reviewer
+  - ↳ Tambah Staff
+  - ↳ Promosi Staff
+  - ↳ Tambah Reviewer
+  - ↳ Ganti Reviewer
+  - ↳ Ganti Approver
+  - ↳ Check PR & PO
   screens inside this page:
   - Detail Buyer Group / Pengguna
   - Frame 3
@@ -42804,6 +46799,12 @@ local comp: section manager dan staff:
   - section manager detail bg
   - section staff
 local comp: check PR dan PO:
+  headings:
+  - ↳ Detail Buyer Group - Purchase Request
+  - ↳ Detail Buyer Group - Purchase Order
+  - Start
+  - Return: Failed
+  - Continue
   screens inside this page:
   - PR in progress
   - PO in progress
@@ -42816,6 +46817,9 @@ url: https://www.figma.com/design/DKHrybWoYCIBL5WSja1zxf
 tags: active, [discovery - identity] / visit - admin perusahaan, admin perusahaan, account profile
 pages:
 [NEW] Daftar Pengguna:
+  headings:
+  - Detail Pengguna
+  - Tambah Pengguna
   screens inside this page:
   - Daftar Pengguna
   - Frame 1
@@ -42824,6 +46828,10 @@ pages:
   screens inside this page:
   - ↳ Tambah Manager
 ↳ Detail Pengguna / Profil:
+  headings:
+  - Ubah Pengguna User sudah Aktivasi
+  - Ubah Pengguna User belum Aktivasi
+  - Hapus Pengguna
   screens inside this page:
   - Sudah Aktivasi
   - Frame 1
@@ -42840,6 +46848,9 @@ pages:
   - .Admin perusahaan/ Detail Buyer Group
   - Modal
 ↳ Detail Pengguna / Buyer Group:
+  headings:
+  - ↳ Pilih Manager
+  - ↳ Check PR & PO
   screens inside this page:
   - Belum Aktivasi
   - Sudah Aktivasi
@@ -42864,6 +46875,8 @@ url: https://www.figma.com/design/qqUrrb5OYARZykmhwQTadf
 tags: active, [discovery - identity] / visit - admin perusahaan, admin perusahaan, dashboard analytics
 pages:
 🖥️ Dashboard:
+  headings:
+  - Dashboard
   screens inside this page:
   - Section 1
   - Dashboard
@@ -42987,6 +47000,15 @@ url: https://www.figma.com/design/VaKrXBQMVXNyBg4HmZuBh3
 tags: active, [discovery - identity] / eproc, buyer, tender eproc
 pages:
 Tender Kilat Buyer:
+  headings:
+  - Case Pertama Mengajukan Permintaan
+  - Buat Tender Kilat Isi Produk
+  - Daftar Tender Kilat
+  - Single Winner Tender Kilat
+  - Detail Penawaran
+  - Checkout Payment
+  - Buat Tender Kilat Upload File
+  - Detail tender kilat
   screens inside this page:
   - Frame 48097620
   - Frame 1958764267
@@ -43030,6 +47052,8 @@ pages:
   - Kelola RFQ
   - Mimin / Tender Kilat
 🎨 Tender Kilat:
+  headings:
+  - Checkout Payment
   screens inside this page:
   - Alamat
   - daftar penawaran
@@ -43067,6 +47091,15 @@ pages:
   - Detail Penawaran
   - .Tambah Produk Jasa
 🎨 Tender Kilat Buyer (unused):
+  headings:
+  - Case Pertama Mengajukan Permintaan
+  - Buat Tender Kilat Isi Produk
+  - Daftar Tender Kilat
+  - Single Winner Tender Kilat
+  - Detail Penawaran
+  - Checkout Payment
+  - Buat Tender Kilat Upload File
+  - Detail tender kilat
   screens inside this page:
   - Frame 48097620
   - Frame 1958764267
@@ -43103,6 +47136,8 @@ pages:
   - Mimin / Detail Permintaan
   - Mimin / Detail Penawaran
 🎨 Tender Kilat:
+  headings:
+  - Checkout Payment
   screens inside this page:
   - Alamat
   - daftar penawaran
@@ -43151,6 +47186,9 @@ url: https://www.figma.com/design/M1Ei0WILBrVhLyjuujroSR
 tags: active, [discovery - identity] / eproc, mimin, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - CMS RFQ
+  - PaDi UMKM - [Kelola RFQ]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -43158,12 +47196,16 @@ pages:
   screens inside this page:
   - Status
 🖥️ Desktop:
+  headings:
+  - asdasd
   screens inside this page:
   - Frame 1
 📱 Mobile:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Frame 1958763861
 📜 Information Architecture:
@@ -43179,6 +47221,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - 647488
   screens inside this page:
   - CMS
   - Back
@@ -43224,6 +47268,12 @@ url: https://www.figma.com/design/hHw8KDXQeyd5qSlsnfSjXW
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 Page 1:
+  headings:
+  - Batal
+  - Tambah
+  - Upload
+  - BUYER
+  - MINI SPRINT
   screens inside this page:
   - (no screens)
 
@@ -43232,9 +47282,20 @@ url: https://www.figma.com/design/LEe9BIRfhdFOjuf6dSOQVV
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 Thumbnail:
+  headings:
+  - Fitur Upload File
+  - PaDi UMKM - eProc
   screens inside this page:
   - Slide 16:9 - 1
 🗞️ Prototype/UT Buyer:
+  headings:
+  - Beranda Permintaan Penawaran Buat Permintaan Penawaran
+  - Flow Buyer Pertama Kali Pengajuan RFQ
+  - Case Pertama Mengajukan Permintaan
+  - Alamat Pengiriman
+  - Case Sudah Mengajukan Permintaan / Penawaran Masuk
+  - Case Mengubah Permintaan / Kedaluwarsa
+  - Size Standar Marvel
   screens inside this page:
   - A-file-Daftar RFQ berhasil-snackbar
   - Detail RFQ
@@ -43363,6 +47424,12 @@ Thumbnail:
   - Field terisi - after pick image
   - Size Frame Marvel
 🗞️ Prototype/UT Buyer  - test dian - baru:
+  headings:
+  - Flow Buyer Pertama Kali Pengajuan RFQ
+  - Case Pertama Mengajukan Permintaan
+  - Alamat Pengiriman
+  - Case Sudah Mengajukan Permintaan / Penawaran Masuk
+  - Case Mengubah Permintaan / Kedaluwarsa
   screens inside this page:
   - A-file-Daftar RFQ berhasil-snackbar
   - Detail RFQ
@@ -43450,6 +47517,14 @@ Thumbnail:
   - modal tambah produk
   - B-Daftar RFQ
 🗞️ Prototype/UT Buyer - test dian:
+  headings:
+  - Upload File - Hide Harga
+  - sudah live
+  - Flow Buyer Pertama Kali Pengajuan RFQ
+  - Ukuran screen
+  - Modal popup dibuat sesuai jgn modal nya sesuai screen design
+  - 1440 * 900 / 1440 * 1080
+  - Input Produk - Harga Tampil
   screens inside this page:
   - RFQ-Kategori
   - Muat Data
@@ -43494,6 +47569,11 @@ Thumbnail:
   - Frame 48097622
   - Frame 48097623
 Buyer Desktop:
+  headings:
+  - Upload File - Harga Tampil
+  - Input Produk - Harga Tampil
+  - Input Produk - Case Hide Estimate Harga
+  - Upload File - Hide Harga
   screens inside this page:
   - RFQ-Deffault
   - RFQ
@@ -43508,6 +47588,8 @@ Buyer Desktop:
   - RFQ-sub kategori
   - Frame 48097617
 Seller Desktop:
+  headings:
+  - Permintaan Penawaran
   screens inside this page:
   - Seller - Permintaan Penawaran
   - Seller - Permintaan Penawaran-Favorit
@@ -43534,6 +47616,8 @@ Seller Desktop:
   - Frame 1958763913
   - Frame 48097578
 Buyer Responsive:
+  headings:
+  - Add Permintaan - Upload File
   screens inside this page:
   - Buat Permintaan-Barang-upload file
   - Buat Permintaan-Barang-upload file error
@@ -43558,6 +47642,8 @@ Unused:
   screens inside this page:
   - B-Detail Penawaran
 CMS [Sementara]:
+  headings:
+  - 2023-01-25 10:24:26
   screens inside this page:
   - Kelola RFQ - Detail Permintaan
   - Riwayat
@@ -43569,10 +47655,15 @@ url: https://www.figma.com/design/WNPtDJ3j94H2FueizzzWWV
 tags: active, [discovery - identity] / eproc, all, tender eproc, notif email
 pages:
 📙 Thumbnail:
+  headings:
+  - Template Thumbnail project
+  - PaDi UMKM - [nama mini squad]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
 📝 Notes:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -43583,6 +47674,8 @@ pages:
   - Daftar Produk
   - Alamat
 🎨  Desktop Design:
+  headings:
+  - DONE
   screens inside this page:
   - Daftar RFQ
   - RFQ Tambah Produk
@@ -43606,6 +47699,9 @@ pages:
   - Kelola RFQ - Detail Permintaan - File
   - Kelola RFQ - Detail Penawaran
 🗑️ Archive:
+  headings:
+  - Tanggal Akhir Perubahan Penawaran
+  - existing kaya sekarang
   screens inside this page:
   - Daftar RFQ
   - RFQ Tambah Produk
@@ -43622,9 +47718,16 @@ url: https://www.figma.com/design/9gDUn9JTrEel3yMTfVit8E
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 Thumbnail:
+  headings:
+  - Fitur Tender BUMN
+  - PaDi UMKM - eProc
+  - Last Updated : 05 May 2023
   screens inside this page:
   - Slide 16:9 - 1
 📝 Notes Design & Technical Critique:
+  headings:
+  - Landing
+  - User Flow Kit
   screens inside this page:
   - Paths
   - Arrows / Dotted
@@ -43635,6 +47738,12 @@ Thumbnail:
   - Nodes
   - Conditions
 TenderBUMN-eksplorasi:
+  headings:
+  - Detail Tender
+  - Landingpage
+  - Responsive
+  - Desktop Filter Dropdown
+  - Item
   screens inside this page:
   - Landing Page
   - Landing Page - Responsive
@@ -43653,6 +47762,23 @@ TenderBUMN-eksplorasi:
   - Frame 48097602
   - Frame 1958763906
 Page 1:
+  headings:
+  - Cari Berdasarkan
+  - Nama BUMN
+  - Rentang Waktu Registrasi
+  - Rentang HPS
+  - Informasi Pengadaan
+  - Status Tender
+  - Seller
+  - Rp 100.000.000
+  - Daftar Tender
+  - Landing Page
+  - List Tender
+  - Detail Tender
+  - Responsive
+  - Pengadaan & Pemasangan Outsider Plan Fiber Optic Witel 3
+  - Desktop Filter Dropdown
+  - Item
   screens inside this page:
   - List Tender
   - List Tender-Case pilih filter
@@ -43703,9 +47829,26 @@ url: https://www.figma.com/design/M7xp85OOJs4T1v6Z11Kv0i
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 Thumbnail:
+  headings:
+  - Fitur RFQ
+  - PaDi UMKM - eProc
+  - Last Updated : 20 April 2023
   screens inside this page:
   - Slide 16:9 - 1
 Buat Tender:
+  headings:
+  - Alamat Pengiriman
+  - Buat Tender Baru
+  - Informasi Umum
+  - Detail Kebutuhan Barang dan Jasa
+  - Dokumen
+  - Daftar Dokumen
+  - Belum Terdapat Dokumen
+  - Procurement Excellence BUMN
+  - Portal Informasi Tender BUMN
+  - Informasi Pengadaan
+  - Detail Tender
+  - PENGADAAN & PEMASANGAN OUTSIDER PLAN FIBER OPTIC WITEL XYZ
   screens inside this page:
   - BUMN_Buat Tender
   - BUMN_Buat Tender_Informasi
@@ -43724,6 +47867,13 @@ Buat Tender:
   - Landing Page
   - Detail Tender
 Landing Page RFQ:
+  headings:
+  - Opsi 1
+  - Non Login
+  - Login
+  - Responsive
+  - Buyer
+  - Seller
   screens inside this page:
   - Landing Page RFQ
   - Landing Page RFQ-Seller
@@ -43750,6 +47900,16 @@ Landing Page RFQ:
   - warning
   - RFQ-Daftar RFQ
 Desktop RFQ Buyer:
+  headings:
+  - Daftar RFQ
+  - Edit RFQ from daftar RFQ page
+  - Batalkan RFQ from daftar RFQ page
+  - Search daftar RFQ
+  - Search not found
+  - Detail RFQ
+  - sudah live
+  - Chat (sudah live)
+  - Add RFQ
   screens inside this page:
   - RFQ
   - Error case
@@ -43775,6 +47935,19 @@ Desktop RFQ Buyer:
   - Frame 48097611
   - Frame 48097600
 Desktop RFQ Seller:
+  headings:
+  - Todo
+  - Done
+  - ID/Nama/Perusahaan Pengguna
+  - Permintaan Penawaran
+  - Permintaan Penawaran (Case sudah ajukan penawaran)
+  - Detail permintaan penawaran
+  - buat penawaran
+  - Daftar Penawaran
+  - Draft Penawaran
+  - Buat Produk
+  - Sudah Live
+  - Detail Pembayaran
   screens inside this page:
   - Seller - Data Product
   - Seller - Dashboard
@@ -43818,6 +47991,18 @@ Desktop RFQ Seller:
   - ringkasan pesanan
   - Pilih Produk
 RFQ Responsive web-Buyer:
+  headings:
+  - Add RFQ
+  - Component
+  - Daftar RFQ
+  - Detail RFQ
+  - Edit RFQ from Daftar / Detail RFQ page
+  - Batalkan RFQ from Daftar / Detail RFQ page
+  - Search Daftar RFQ
+  - Search Not Found
+  - Flow FIlter
+  - Alamat
+  - Sudah Live
   screens inside this page:
   - Detail Permintaan
   - Frame 6115
@@ -43896,6 +48081,18 @@ RFQ Responsive web-Buyer:
   - Bar Search + Filter
   - Breadcrumb responsive-buyer
 RFQ Responsive web-Seller:
+  headings:
+  - Title Jenis Usaha Harga Statu
+  - Permintaan Penawaran
+  - Sidebar Seller
+  - Detail permintaan penawaran
+  - Buat Penawaran
+  - Daftar Penawaran
+  - Draft Penawaran
+  - Buat Produk
+  - Component
+  - Item
+  - Sudah Live
   screens inside this page:
   - Filter Penawaran
   - Pilih Jasa
@@ -43952,6 +48149,11 @@ RFQ Responsive web-Seller:
   screens inside this page:
   - (no screens)
 Desktop Buyer:
+  headings:
+  - Penawaran Masuk
+  - Add Permintaan
+  - Case Dibatalkan
+  - Checkout (sudah live)
   screens inside this page:
   - Dibatalkan
   - .dekstop/status/pembayaran langsung
@@ -43970,11 +48172,18 @@ Desktop Buyer:
   - Product Detail - Informasi Produk
   - Frame 48097583
 Desktop Seller:
+  headings:
+  - Permintaan Penawaran
   screens inside this page:
   - Seller - Data Product
   - Frame 1958763908
   - Desktop Filter Drop down
 ------ Component ------:
+  headings:
+  - Nama Nama Produk wajib diisi
+  - Kategori Produk Kategori Produk wajib diisi
+  - Sub Kategori Produk Sub Kategori Produk wajib diisi
+  - Estimasi Harga Harga wajib diisi Harga tidak boleh nol
   screens inside this page:
   - Button new
   - .Placeholder
@@ -43995,6 +48204,9 @@ Card:
   - List Produk RFQ
   - Status Pesanan Desktop
 Trash:
+  headings:
+  - barang/jasa pembeli/kampeninya desc
+  - pake yg ini yg baru
   screens inside this page:
   - Buat Penawaran - Barang
   - Seller - Data Product
@@ -44035,6 +48247,11 @@ Trash:
   - Daftar Penawaran
   - Daftar RFQ-Semua
 Template Email:
+  headings:
+  - Contoh
+  - Kirimkan Penawaran Terbaikmu, Segera!
+  - Banner Dashboard
+  - Banner Blast Email
   screens inside this page:
   - Banner Email RFQ-Buyer
   - Banner Email RFQ-Seller
@@ -44051,6 +48268,10 @@ url: https://www.figma.com/design/BEQZPbcGZyZQPHV9jRA5Xx
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 Portal Tender BUMN:
+  headings:
+  - Portal - List View
+  - Portal - Thumbnail View
+  - Detail Tender
   screens inside this page:
   - Portal - List view
   - Portal - Detail Tender #1
@@ -44065,11 +48286,28 @@ Portal Tender BUMN:
   - Frame 1958764031
   - Frame 1958764032
 Old:
+  headings:
+  - PT. Perusahaan Listrik Negara (PLN)
+  - PEKERJAAN PEMBORONGAN WTP & WWTP PLTU XYZ
+  - 2 hari yang lalu
+  - PENGADAAN ALAT TULIS KANTOR DIVISI KEUANGAN
+  - Cari Berdasarkan
+  - Nama BUMN
+  - Rentang Waktu Registrasi
+  - Rentang HPS
+  - Informasi Pengadaan
+  - Status Tender
+  - Procurement Excellence BUMN
+  - Portal Informasi Tender BUMN
   screens inside this page:
   - Landing Page
   - Frame 1958764030
   - Filter
 Thumbnail:
+  headings:
+  - Portal Tender BUMN
+  - PaDi UMKM - eProc
+  - Last Updated : 11 Juni 2026
   screens inside this page:
   - Slide 16:9 - 1
 
@@ -44078,6 +48316,9 @@ url: https://www.figma.com/design/quGw2ckMFARJ6ejKCW0oHF
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - Template Thumbnail project
+  - PaDi UMKM - [nama fitur]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -44085,12 +48326,16 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - asdasd
   screens inside this page:
   - Frame 1
 📱 Mobile:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -44130,6 +48375,9 @@ url: https://www.figma.com/design/D9Jx6YzZoX1A3ozVi0ILDy
 tags: active, [discovery - identity] / eproc, buyer, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - Buyer (Permintaan)
+  - PaDi UMKM - [RFQ]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -44137,12 +48385,16 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - asdasd
   screens inside this page:
   - Frame 1
 📱 Mobile:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -44159,6 +48411,13 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - Beranda Permintaan Penawaran Buat Permintaan Penawaran
+  - Flow Buyer Pertama Kali Pengajuan RFQ
+  - Case Pertama Mengajukan Permintaan
+  - Case Sudah Mengajukan Permintaan / Penawaran Masuk
+  - Case Mengubah Permintaan / Kedaluwarsa
+  - Size Standar Marvel
   screens inside this page:
   - A-file-Daftar RFQ berhasil-snackbar
   - Detail RFQ
@@ -44273,6 +48532,18 @@ pages:
   - Field terisi - after pick image
   - Size Frame Marvel
 🖥️ Updated:
+  headings:
+  - Beranda Permintaan Penawaran Buat Permintaan Penawaran
+  - Flow Buyer Pertama Kali Pengajuan Tender Kilat
+  - Case Pertama Mengajukan Permintaan
+  - Buat Tender Kilat Isi Produk
+  - Daftar Tender Kilat
+  - Multiple Winner Tender Kilat
+  - Single Winner Tender Kilat
+  - Detail Penawaran
+  - Checkout Payment
+  - Buat Tender Kilat Upload File
+  - Case Sudah Mengajukan Permintaan / Penawaran Masuk
   screens inside this page:
   - Flow Buyer Pertama Kali Pengajuan
   - Frame 48097620
@@ -44338,6 +48609,9 @@ url: https://www.figma.com/design/hUBI6zLGDvfbNJWQfn686o
 tags: active, [discovery - identity] / eproc, mimin, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - CMS RFQ
+  - PaDi UMKM - [Kelola RFQ]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -44345,12 +48619,16 @@ pages:
   screens inside this page:
   - Status
 🖥️ Desktop:
+  headings:
+  - asdasd
   screens inside this page:
   - Frame 1
 📱 Mobile:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Frame 1958763861
 📜 Information Architecture:
@@ -44366,6 +48644,8 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - 647488
   screens inside this page:
   - CMS V.1
   - Back
@@ -44416,6 +48696,9 @@ url: https://www.figma.com/design/1oOTWk84230I7MhcaehiHa
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - RFQ UX Audit
+  - PaDi UMKM - Product design eProc
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -44428,6 +48711,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -44467,6 +48752,9 @@ url: https://www.figma.com/design/OhKXtUsTxygN84FRcw1ELR
 tags: active, [discovery - identity] / eproc, seller, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - Seller (Penwaran)
+  - PaDi UMKM - [RFQ]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -44474,12 +48762,16 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - asdasd
   screens inside this page:
   - Frame 1
 📱 Mobile:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -44496,6 +48788,17 @@ pages:
   screens inside this page:
   - (no screens)
 🖥️ Desktop:
+  headings:
+  - ID/Nama/Perusahaan Pengguna
+  - Permintaan Penawaran
+  - Permintaan Penawaran (Case sudah ajukan penawaran)
+  - Detail permintaan penawaran
+  - buat penawaran
+  - Daftar Penawaran
+  - Draft Penawaran
+  - Buat Produk
+  - Sudah Live
+  - Detail Pembayaran
   screens inside this page:
   - Seller - Data Product
   - Seller - Dashboard
@@ -44541,6 +48844,14 @@ pages:
   - Seller - Permintaan Penawaran
   - Buat Penawaran - Tambah Produk Dropdown V2
 🖥️ Desktop - newest update:
+  headings:
+  - Permintaan Penawaran
+  - Detail permintaan penawaran
+  - buat penawaran
+  - Daftar Penawaran
+  - Draft Penawaran
+  - Buat Produk
+  - Sudah Live
   screens inside this page:
   - Seller - Data Product
   - Seller - Data Product/favorit aktif
@@ -44591,6 +48902,12 @@ pages:
   screens inside this page:
   - (no screens)
 🗞️ Prototype:
+  headings:
+  - Permintaan Penawaran (Case ajukan penawaran)
+  - Login
+  - Ubah Penawaran
+  - Batalkan Penawaran
+  - Draft Penawaran
   screens inside this page:
   - Seller - Dashboard
   - Seller - Dashboard banner
@@ -44662,9 +48979,16 @@ url: https://www.figma.com/design/RHfMtC9e2QBNg6fPkVQ5iS
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 Thumbnail:
+  headings:
+  - Fitur Tender BUMN
+  - PaDi UMKM - eProc
+  - Last Updated : 05 May 2023
   screens inside this page:
   - Slide 16:9 - 1
 📝 Notes Design & Technical Critique:
+  headings:
+  - Landing
+  - User Flow Kit
   screens inside this page:
   - Paths
   - Arrows / Dotted
@@ -44675,6 +48999,12 @@ Thumbnail:
   - Nodes
   - Conditions
 TenderBUMN-eksplorasi:
+  headings:
+  - Detail Tender
+  - Landingpage
+  - Responsive
+  - Desktop Filter Dropdown
+  - Item
   screens inside this page:
   - Landing Page
   - Landing Page - Responsive
@@ -44693,6 +49023,23 @@ TenderBUMN-eksplorasi:
   - Frame 48097602
   - Frame 1958763906
 Page 1:
+  headings:
+  - Cari Berdasarkan
+  - Nama BUMN
+  - Rentang Waktu Registrasi
+  - Rentang HPS
+  - Informasi Pengadaan
+  - Status Tender
+  - Seller
+  - Rp 100.000.000
+  - Daftar Tender
+  - Landing Page
+  - List Tender
+  - Detail Tender
+  - Responsive
+  - Pengadaan & Pemasangan Outsider Plan Fiber Optic Witel 3
+  - Desktop Filter Dropdown
+  - Item
   screens inside this page:
   - List Tender
   - List Tender-Case pilih filter
@@ -44743,6 +49090,9 @@ url: https://www.figma.com/design/z5KpoFxNGdelEivCXftEVH
 tags: archive, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - RFQ - Q1 2024
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -44758,6 +49108,8 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -44781,6 +49133,9 @@ SPR 630 - Filter RFQ Tertutup/Terbuka Dashboard:
   screens inside this page:
   - Transaksi
 SPR 631 - Filter RFQ Tertutup/Terbuka CMS:
+  headings:
+  - Terbuka
+  - Tertutup
   screens inside this page:
   - Frame 1
   - Frame 2
@@ -44818,6 +49173,10 @@ SPR 726 - no. rfq detail transaksi:
   - Menunggu Review
   - Daftar RFQ
 🗑️ Trash:
+  headings:
+  - Tanya & Jawab
+  - Berapa lama proses verifikasi dokumen PO Financing?
+  - Apakah PO dapat digabung bila tidak memenuhi syarat minimal?
   screens inside this page:
   - Frame 48097650
   - PO
@@ -44837,10 +49196,15 @@ url: https://www.figma.com/design/afNIf79fdGn7i4Nz5rEAC4
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - eProc Q1 2025
+  - PaDi UMKM - TRX Checkout
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
 ℹ️ Relevant Documents:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -44877,6 +49241,9 @@ pages:
   screens inside this page:
   - Daftar TK
 🗑️ Trash:
+  headings:
+  - Seller
+  - Buyer
   screens inside this page:
   - .Section-Document
   - Daftar RFQ
@@ -44888,6 +49255,9 @@ url: https://www.figma.com/design/7cd3ptRqGPCskz9Re10F9W
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - RFQ - Q1 2026
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -44898,6 +49268,8 @@ pages:
   - dropdown
   - informasi penjual
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -44929,6 +49301,9 @@ url: https://www.figma.com/design/11x4VfpBvAargYqM4rmkaw
 tags: archive, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - RFQ - Q2 2024
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -45000,6 +49375,9 @@ url: https://www.figma.com/design/8oLsSCTmZspyHD3ZoJTBgI
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - Disco - eProc Q2 2026
+  - PaDi UMKM
   screens inside this page:
   - Slide 16:9 - 1
 🧩 Local Component:
@@ -45015,6 +49393,8 @@ pages:
   - .Profil Seller
   - PDP Mobile
 🎨 Re-Assign PIC Tender Kilat:
+  headings:
+  - Title
   screens inside this page:
   - .Admin perusahaan/ Detail Buyer Group
   - Daftar RFQ
@@ -45031,6 +49411,9 @@ url: https://www.figma.com/design/NcSk8huTRo4BohlmvzwYPi
 tags: archive, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - eProc Q3 - 2024
+  - PaDi UMKM - [eProc]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -45062,6 +49445,8 @@ pages:
   - Filter mobile rfq new
   - Sorting RFQ new
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
@@ -45158,6 +49543,15 @@ url: https://www.figma.com/design/j8BMMbffZ85MTrn7mBZiAk
 tags: active, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - File Template
+  - PaDi UMKM - Visit
+  - PaDi UMKM - Core
+  - eProc - Q3 2025
+  - PaDi UMKM - eProc
+  - Last Updated : 6 Mar 2024
+  - PaDi UMKM - VP
+  - PaDi UMKM - Discovery
   screens inside this page:
   - Cover
   - Thumbnail
@@ -45206,10 +49600,16 @@ url: https://www.figma.com/design/jlLcZgwQZnqiD7WG1vdDg1
 tags: archive, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - RFQ Q4 2023
+  - PaDi UMKM - [RFQ]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
 🧩  🖥️ Local Component Desktop:
+  headings:
+  - Buyer staff staging
+  - Buyer staff Prod
   screens inside this page:
   - Filter
   - Tab Filter
@@ -45262,6 +49662,9 @@ pages:
   - Dashboard RFQ Card
   - Info Penjual
 🧩  📱 Local Component Mobile:
+  headings:
+  - Informasi Penawaran
+  - Informasi Produk
   screens inside this page:
   - Mobile Card Placeholder
   - Sorting RFQ
@@ -45289,6 +49692,9 @@ pages:
   screens inside this page:
   - (no screens)
 📝 Notes Design & Technical Critique:
+  headings:
+  - BUYER
+  - Legend
   screens inside this page:
   - RFQ Tambah Produk
   - Daftar Penawaran
@@ -45445,6 +49851,9 @@ url: https://www.figma.com/design/PCv7jalsrfzPJN8CYiGPqM
 tags: archive, [discovery - identity] / eproc, all, tender eproc
 pages:
 📙 Thumbnail:
+  headings:
+  - eProc Q4 - 2024
+  - PaDi UMKM - [eProc]
   screens inside this page:
   - 1600x960
   - Slide 16:9 - 1
@@ -45479,6 +49888,8 @@ pages:
   - Filter mobile rfq new
   - Sorting RFQ new
 📝 Notes Design & Technical Critique:
+  headings:
+  - asdasdasd
   screens inside this page:
   - Pinjaman Tersedia
   - Frame 1958763861
