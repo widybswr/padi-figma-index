@@ -364,61 +364,43 @@
       border-color: var(--primary);
     }
 
-    .file-url-line {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 11px;
-      color: var(--text-dim);
-      margin-bottom: 8px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .file-url-line a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-    .file-url-line a:hover {
-      text-decoration: underline;
-    }
-
-    /* Tags line */
+    /* Tags at bottom of card */
     .tags-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px;
-      align-items: center;
-      margin-bottom: 10px;
+      gap: 6px;
+      align-items: baseline;
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid rgba(51, 65, 85, 0.3);
     }
     .tags-label {
       font-family: ui-monospace, monospace;
-      font-size: 11px;
+      font-size: 11.5px;
       color: var(--text-dim);
       margin-right: 2px;
     }
-    .tag-badge {
+    .tag-muted, .tag-badge {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
-      font-size: 10.5px;
-      padding: 2px 6px;
-      border-radius: 4px;
-      background: var(--accent-tag-bg);
-      border: 1px solid var(--accent-tag-border);
-      color: #93c5fd;
+      font-size: 11.5px;
+      color: var(--text-dim);
       cursor: pointer;
-      transition: all 0.12s;
+      text-decoration: none;
+      background: none;
+      border: none;
+      padding: 0;
+      transition: color 0.15s;
     }
-    .tag-badge:hover {
-      background: rgba(56, 189, 248, 0.18);
-      border-color: var(--primary);
-      color: var(--text);
+    .tag-muted:hover, .tag-badge:hover {
+      color: var(--primary);
+      text-decoration: underline;
     }
-    .tag-badge.flow {
-      background: var(--accent-flow-bg);
-      border-color: var(--accent-flow-border);
+    .tag-muted.flow, .tag-badge.flow {
+      color: #648a7c;
+    }
+    .tag-muted.flow:hover, .tag-badge.flow:hover {
       color: var(--accent-flow);
-    }
-    .tag-badge.flow:hover {
-      background: rgba(16, 185, 129, 0.22);
-      border-color: #10b981;
+      text-decoration: underline;
     }
 
     /* Accordion Bar */
@@ -437,7 +419,7 @@
       cursor: pointer;
       user-select: none;
       transition: all 0.15s;
-      margin-top: auto;
+      margin-top: 8px;
     }
     .accordion-bar:hover {
       background: rgba(56, 189, 248, 0.08);
@@ -616,7 +598,7 @@
           <div id="statsBar">Showing 432 files</div>
           <div class="toolbar-actions">
             <button type="button" class="btn-tool" id="btnToggleAllAccordions" onclick="toggleAllAccordions()">
-              <span>↕</span> Expand All
+              <span>↕</span> Collapse All
             </button>
             <button type="button" class="btn-tool primary" id="btnCopyMd" onclick="copyFilteredMarkdown()">
               <span>📋</span> Copy Markdown
@@ -646,7 +628,7 @@
       pageSize: 48
     };
 
-    let allAccordionsOpen = false;
+    let allAccordionsOpen = true;
 
     function toggleCardAccordion(bar) {
       const content = bar.nextElementSibling;
@@ -743,6 +725,8 @@
         const matchName = f.name && f.name.toLowerCase().includes(q);
         const matchTags = f.obsidian_tags && f.obsidian_tags.some(t => t.toLowerCase().includes(q));
         const matchPages = f.deep_pages && f.deep_pages.some(p => {
+          const hasScreens = (p.screen_count > 0) || (p.screen_names && p.screen_names.length > 0);
+          if (!hasScreens) return false;
           return p.page_name.toLowerCase().includes(q) ||
                  (p.headings && p.headings.some(h => h.toLowerCase().includes(q))) ||
                  (p.screen_names && p.screen_names.some(sn => sn.toLowerCase().includes(q)));
@@ -767,26 +751,28 @@
         const fileUrl = f.url || `https://www.figma.com/design/${f.key}`;
         const lastMod = f.last_modified || "Unknown";
 
-        // Tags badges
+        // Tags muted text at bottom of card
         let tagsHtml = "";
         if (f.obsidian_tags && f.obsidian_tags.length > 0) {
           tagsHtml = f.obsidian_tags.map(t => {
             const isFlow = t.startsWith("#flow/");
-            return `<span class="tag-badge ${isFlow ? 'flow' : ''}" onclick="setTagFilter('${t}')" title="Filter by ${t}">${t}</span>`;
+            return `<span class="tag-muted ${isFlow ? 'flow' : ''}" onclick="setTagFilter('${t}')" title="Filter by ${t}">${t}</span>`;
           }).join(" ");
         } else {
-          tagsHtml = `<span style="color:var(--text-dim);font-size:11px;">#uncategorized</span>`;
+          tagsHtml = `<span style="color:var(--text-dim);font-size:11.5px;font-family:ui-monospace,monospace;">#uncategorized</span>`;
         }
 
-        // Pages List
+        // Pages List - hide pages with 0 screens
         let pagesHtml = "";
-        if (f.deep_pages && f.deep_pages.length > 0) {
-          pagesHtml = f.deep_pages.map(p => {
+        const validPages = (f.deep_pages || []).filter(p => (p.screen_count > 0) || (p.screen_names && p.screen_names.length > 0));
+
+        if (validPages.length > 0) {
+          pagesHtml = validPages.map(p => {
             const encId = p.page_id ? p.page_id.replace(':', '%3A') : '';
             const pUrl = encId ? `${fileUrl}?node-id=${encId}` : fileUrl;
             
             let metrics = [];
-            metrics.push(`${p.screen_count || 0} screens`);
+            metrics.push(`${p.screen_count || (p.screen_names ? p.screen_names.length : 0)} screens`);
             if (p.headings && p.headings.length > 0) {
               metrics.push(`${p.headings.length} headings`);
             }
@@ -808,18 +794,9 @@
             if (p.screen_names && p.screen_names.length > 0) {
               screensList = `
                 <div class="sub-section">
-                  <div class="sub-label">screens inside this page:</div>
+                  <div class="sub-label">screens:</div>
                   <ul class="item-list">
                     ${p.screen_names.map(sn => `<li>${escapeHtml(sn)}</li>`).join("")}
-                  </ul>
-                </div>
-              `;
-            } else {
-              screensList = `
-                <div class="sub-section">
-                  <div class="sub-label">screens inside this page:</div>
-                  <ul class="item-list">
-                    <li style="color:var(--text-dim);">(no screens)</li>
                   </ul>
                 </div>
               `;
@@ -837,18 +814,16 @@
             `;
           }).join("");
         } else {
-          pagesHtml = `<div style="color:var(--text-dim);font-size:12px;margin-left:12px;">(no pages indexed)</div>`;
+          pagesHtml = `<div style="color:var(--text-dim);font-size:12px;margin:4px 0 4px 8px;">(no screens indexed)</div>`;
         }
 
-        const pageCount = f.deep_pages ? f.deep_pages.length : 0;
+        const pageCount = validPages.length;
         let totalScreens = 0;
         let totalHeadings = 0;
-        if (f.deep_pages) {
-          f.deep_pages.forEach(p => {
-            totalScreens += (p.screen_count || 0);
-            totalHeadings += (p.headings ? p.headings.length : 0);
-          });
-        }
+        validPages.forEach(p => {
+          totalScreens += (p.screen_count || 0);
+          totalHeadings += (p.headings ? p.headings.length : 0);
+        });
         let accMetrics = [`${pageCount} pages`, `${totalScreens} screens`];
         if (totalHeadings > 0) accMetrics.push(`${totalHeadings} headings`);
         const accText = `▶ pages (${accMetrics.join(' · ')})`;
@@ -867,15 +842,6 @@
               </div>
             </div>
 
-            <div class="file-url-line">
-              url: <a href="${fileUrl}" target="_blank" rel="noopener">${fileUrl}</a>
-            </div>
-
-            <div class="tags-row">
-              <span class="tags-label">tags:</span>
-              ${tagsHtml}
-            </div>
-
             <!-- Accordion Toggle Bar -->
             <div class="accordion-bar ${isOpen ? 'open' : ''}" onclick="toggleCardAccordion(this)">
               <span>${accText}</span>
@@ -887,6 +853,11 @@
               <div class="pages-container">
                 ${pagesHtml}
               </div>
+            </div>
+
+            <div class="tags-row">
+              <span class="tags-label">tags:</span>
+              ${tagsHtml}
             </div>
           </article>
         `;
@@ -928,14 +899,15 @@
       const tags = (f.obsidian_tags && f.obsidian_tags.length > 0) ? f.obsidian_tags.join(' ') : '#uncategorized';
       md += `tags: ${tags}\n`;
       md += `pages:\n`;
-      if (!f.deep_pages || f.deep_pages.length === 0) {
-        md += `  (no pages indexed)\n`;
+      const validPages = (f.deep_pages || []).filter(p => (p.screen_count > 0) || (p.screen_names && p.screen_names.length > 0));
+      if (validPages.length === 0) {
+        md += `  (no screens indexed)\n`;
       } else {
-        f.deep_pages.forEach(p => {
+        validPages.forEach(p => {
           const encId = p.page_id ? p.page_id.replace(':', '%3A') : '';
           const pUrl = encId ? `${f.url}?node-id=${encId}` : f.url;
           const pLink = pUrl ? `[${p.page_name} ↗](${pUrl})` : p.page_name;
-          const screenCount = p.screen_count || 0;
+          const screenCount = p.screen_count || (p.screen_names ? p.screen_names.length : 0);
           const hCount = (p.headings && p.headings.length) || 0;
           let metrics = [`${screenCount} screens`];
           if (hCount > 0) metrics.push(`${hCount} headings`);
@@ -946,13 +918,11 @@
               md += `  - ${h}\n`;
             });
           }
-          md += `  screens inside this page:\n`;
+          md += `  screens:\n`;
           if (p.screen_names && p.screen_names.length > 0) {
             p.screen_names.forEach(sn => {
               md += `  - ${sn}\n`;
             });
-          } else {
-            md += `  - (no screens)\n`;
           }
         });
       }
