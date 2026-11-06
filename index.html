@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>figma smb log (updated October 26, 2026)</title>
+  <title>Figma SMB Index</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <style>
@@ -123,14 +123,11 @@
       align-items: center;
       gap: 8px;
     }
-    .app-title span.date-badge {
-      font-size: 11px;
-      font-weight: 500;
-      background: rgba(56, 189, 248, 0.12);
-      color: var(--primary);
-      padding: 2px 8px;
-      border-radius: 4px;
-      border: 1px solid rgba(56, 189, 248, 0.25);
+    .app-title span.app-updated {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--text-dim);
+      margin-left: 6px;
     }
 
     /* Core DS Pinned Quick Links */
@@ -235,41 +232,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
       font-size: 13px;
       color: var(--text-muted);
-    }
-    .toolbar-actions {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-    }
-    .btn-tool {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      color: var(--text-muted);
-      border-radius: 6px;
-      padding: 6px 12px;
-      font-size: 12px;
-      font-weight: 500;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.15s;
-    }
-    .btn-tool:hover {
-      color: var(--text);
-      border-color: var(--primary);
-    }
-    .btn-tool.primary {
-      background: rgba(56, 189, 248, 0.12);
-      border-color: rgba(56, 189, 248, 0.3);
-      color: var(--primary);
-    }
-    .btn-tool.primary:hover {
-      background: rgba(56, 189, 248, 0.2);
     }
 
     /* The 3-Column Log Stream Grid */
@@ -403,49 +367,21 @@
       text-decoration: underline;
     }
 
-    /* Accordion Bar */
-    .accordion-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(15, 23, 42, 0.7);
-      border: 1px solid rgba(51, 65, 85, 0.5);
-      border-radius: 6px;
-      padding: 6px 10px;
+    /* Pages Scrollable Window */
+    .pages-header {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
       font-size: 11px;
       font-weight: 600;
       color: var(--text-muted);
-      cursor: pointer;
-      user-select: none;
-      transition: all 0.15s;
-      margin-top: 8px;
+      margin-top: 10px;
+      margin-bottom: 6px;
     }
-    .accordion-bar:hover {
-      background: rgba(56, 189, 248, 0.08);
-      border-color: var(--primary);
-      color: var(--text);
-    }
-    .accordion-bar.open {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-      border-color: rgba(56, 189, 248, 0.4);
-      background: rgba(56, 189, 248, 0.06);
-      color: var(--primary);
-    }
-    .acc-chevron {
-      font-size: 11px;
-      color: var(--text-dim);
-      transition: transform 0.15s;
-    }
-    .accordion-content {
-      border: 1px solid rgba(56, 189, 248, 0.3);
-      border-top: none;
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px;
+    .pages-scroll-box {
+      border: 1px solid rgba(51, 65, 85, 0.45);
+      border-radius: 6px;
       background: #0f172a;
       padding: 10px 12px;
-      max-height: 420px;
+      max-height: 380px;
       overflow-y: auto;
     }
 
@@ -571,8 +507,8 @@
     <header class="top-app-bar">
       <div class="top-bar-inner">
         <div class="app-title">
-          <span>📄</span> figma smb log
-          <span class="date-badge">updated October 26, 2026</span>
+          <span>📄</span> Figma SMB Index
+          <span class="app-updated">last updated 26 Oct 2026</span>
         </div>
         <div class="core-ds-bar">
           <span class="core-ds-label">Core DS:</span>
@@ -596,17 +532,6 @@
         </div>
         <div class="toolbar-row">
           <div id="statsBar">Showing 432 files</div>
-          <div class="toolbar-actions">
-            <button type="button" class="btn-tool" id="btnToggleAllAccordions" onclick="toggleAllAccordions()">
-              <span>↕</span> Collapse All
-            </button>
-            <button type="button" class="btn-tool primary" id="btnCopyMd" onclick="copyFilteredMarkdown()">
-              <span>📋</span> Copy Markdown
-            </button>
-            <button type="button" class="btn-tool" onclick="downloadMarkdownFile()">
-              <span>📥</span> Download .md
-            </button>
-          </div>
         </div>
       </section>
 
@@ -628,30 +553,7 @@
       pageSize: 48
     };
 
-    let allAccordionsOpen = true;
 
-    function toggleCardAccordion(bar) {
-      const content = bar.nextElementSibling;
-      const isOpen = content.style.display !== "none";
-      content.style.display = isOpen ? "none" : "block";
-      bar.classList.toggle("open", !isOpen);
-      const chevron = bar.querySelector(".acc-chevron");
-      if (chevron) chevron.innerText = isOpen ? "▾" : "▴";
-    }
-
-    function toggleAllAccordions() {
-      allAccordionsOpen = !allAccordionsOpen;
-      document.querySelectorAll(".accordion-content").forEach(c => {
-        c.style.display = allAccordionsOpen ? "block" : "none";
-      });
-      document.querySelectorAll(".accordion-bar").forEach(bar => {
-        bar.classList.toggle("open", allAccordionsOpen);
-        const chevron = bar.querySelector(".acc-chevron");
-        if (chevron) chevron.innerText = allAccordionsOpen ? "▴" : "▾";
-      });
-      const btn = document.getElementById("btnToggleAllAccordions");
-      if (btn) btn.innerHTML = allAccordionsOpen ? "<span>↕</span> Collapse All" : "<span>↕</span> Expand All";
-    }
 
     async function sha256(str) {
       const buf = new TextEncoder().encode(str);
@@ -824,10 +726,8 @@
           totalScreens += (p.screen_count || 0);
           totalHeadings += (p.headings ? p.headings.length : 0);
         });
-        let accMetrics = [`${pageCount} pages`, `${totalScreens} screens`];
-        if (totalHeadings > 0) accMetrics.push(`${totalHeadings} headings`);
-        const accText = `▶ pages (${accMetrics.join(' · ')})`;
-        const isOpen = allAccordionsOpen;
+        let pageMetrics = [`${pageCount} pages`, `${totalScreens} screens`];
+        if (totalHeadings > 0) pageMetrics.push(`${totalHeadings} headings`);
 
         return `
           <article class="file-block">
@@ -842,14 +742,8 @@
               </div>
             </div>
 
-            <!-- Accordion Toggle Bar -->
-            <div class="accordion-bar ${isOpen ? 'open' : ''}" onclick="toggleCardAccordion(this)">
-              <span>${accText}</span>
-              <span class="acc-chevron">${isOpen ? '▴' : '▾'}</span>
-            </div>
-
-            <!-- Collapsible Pages Content -->
-            <div class="accordion-content" style="display: ${isOpen ? 'block' : 'none'};">
+            <div class="pages-header">pages (${pageMetrics.join(' · ')}):</div>
+            <div class="pages-scroll-box">
               <div class="pages-container">
                 ${pagesHtml}
               </div>
@@ -891,67 +785,6 @@
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
-    }
-
-    function generateFileMarkdown(f) {
-      let md = `## ${f.name} (last edited ${f.last_modified || 'Unknown'})\n`;
-      if (f.url) md += `url: ${f.url}\n`;
-      const tags = (f.obsidian_tags && f.obsidian_tags.length > 0) ? f.obsidian_tags.join(' ') : '#uncategorized';
-      md += `tags: ${tags}\n`;
-      md += `pages:\n`;
-      const validPages = (f.deep_pages || []).filter(p => (p.screen_count > 0) || (p.screen_names && p.screen_names.length > 0));
-      if (validPages.length === 0) {
-        md += `  (no screens indexed)\n`;
-      } else {
-        validPages.forEach(p => {
-          const encId = p.page_id ? p.page_id.replace(':', '%3A') : '';
-          const pUrl = encId ? `${f.url}?node-id=${encId}` : f.url;
-          const pLink = pUrl ? `[${p.page_name} ↗](${pUrl})` : p.page_name;
-          const screenCount = p.screen_count || (p.screen_names ? p.screen_names.length : 0);
-          const hCount = (p.headings && p.headings.length) || 0;
-          let metrics = [`${screenCount} screens`];
-          if (hCount > 0) metrics.push(`${hCount} headings`);
-          md += `${pLink} (${metrics.join(' · ')}):\n`;
-          if (p.headings && p.headings.length > 0) {
-            md += `  headings:\n`;
-            p.headings.forEach(h => {
-              md += `  - ${h}\n`;
-            });
-          }
-          md += `  screens:\n`;
-          if (p.screen_names && p.screen_names.length > 0) {
-            p.screen_names.forEach(sn => {
-              md += `  - ${sn}\n`;
-            });
-          }
-        });
-      }
-      return md + '\n';
-    }
-
-    function copyFilteredMarkdown() {
-      const btn = document.getElementById("btnCopyMd");
-      if (!lastFilteredFiles || lastFilteredFiles.length === 0) return;
-      let fullMd = "# figma smb log (updated October 26, 2026)\n\n---\n\n";
-      fullMd += lastFilteredFiles.map(f => generateFileMarkdown(f)).join('');
-      navigator.clipboard.writeText(fullMd).then(() => {
-        const orig = btn.innerHTML;
-        btn.innerHTML = '<span>✓</span> Copied Markdown!';
-        setTimeout(() => { btn.innerHTML = orig; }, 2000);
-      });
-    }
-
-    function downloadMarkdownFile() {
-      if (!lastFilteredFiles || lastFilteredFiles.length === 0) return;
-      let fullMd = "# figma smb log (updated October 26, 2026)\n\n---\n\n";
-      fullMd += lastFilteredFiles.map(f => generateFileMarkdown(f)).join('');
-      const blob = new Blob([fullMd], { type: 'text/markdown;charset=utf-8' });
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = 'Figma-SMB-Log.md';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
     }
 
     window.addEventListener("DOMContentLoaded", () => {
