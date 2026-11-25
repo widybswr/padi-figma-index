@@ -114,11 +114,12 @@
       margin: 0 auto;
       min-height: var(--app-bar-h);
       padding: 10px 24px;
-      display: flex;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 720px) minmax(0, 1fr);
       align-items: center;
       gap: 18px;
     }
-    .brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .brand { display: flex; align-items: center; gap: 10px; justify-self: start; min-width: 0; overflow: hidden; }
     .brand-mark {
       width: 28px; height: 28px;
       border-radius: 8px;
@@ -145,9 +146,7 @@
 
     .search-inline {
       position: relative;
-      flex: 1 1 auto;
-      min-width: 220px;
-      max-width: 760px;
+      width: 100%;
       display: flex;
       align-items: center;
     }
@@ -209,8 +208,8 @@
     .sort-wrap {
       display: inline-flex;
       align-items: center;
+      justify-self: end;
       gap: 7px;
-      flex-shrink: 0;
       color: var(--text-dim);
       font-size: 10.5px;
       text-transform: uppercase;
@@ -282,9 +281,14 @@
     @media (max-width: 1024px) { .log-stream { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 720px)  { .log-stream { grid-template-columns: 1fr; } }
 
+    /* Mid widths: tighten the centred search so the brand still fits */
+    @media (max-width: 1200px) {
+      .top-bar-inner { grid-template-columns: minmax(0, 1fr) minmax(200px, 460px) minmax(0, 1fr); }
+    }
+
     /* Narrow screens: search drops to its own full-width row */
     @media (max-width: 760px) {
-      .top-bar-inner { flex-wrap: wrap; gap: 8px 12px; padding: 10px 14px; }
+      .top-bar-inner { display: flex; flex-wrap: wrap; gap: 8px 12px; padding: 10px 14px; }
       .brand { flex: 1 1 auto; }
       .search-inline { order: 3; flex: 1 1 100%; max-width: none; min-width: 0; }
       .sort-wrap { margin-left: auto; }
