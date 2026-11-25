@@ -16,7 +16,6 @@
       --primary: #38bdf8;
       --primary-soft: rgba(56, 189, 248, 0.12);
       --radius: 12px;
-      --card-h: 460px;
       --app-bar-h: 64px;
     }
 
@@ -274,7 +273,10 @@
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 14px;
-      align-items: stretch;
+      align-items: start;
+      /* masonry packing: 8px tracks, each card spans ceil((h+gap)/22) */
+      grid-auto-rows: 8px;
+      grid-auto-flow: row dense;
     }
     @media (max-width: 1400px) { .log-stream { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
     @media (max-width: 1024px) { .log-stream { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -292,7 +294,6 @@
 
     /* ── File Card (flat, same bg as page) ────────────────── */
     .file-block {
-      height: var(--card-h);
       background: transparent;
       border: 1px solid var(--card-border);
       border-radius: var(--radius);
@@ -333,7 +334,7 @@
     .btn-icon {
       background: transparent;
       border: 1px solid var(--card-border);
-      color: var(--text-muted);
+      color: #c3d0e2;
       border-radius: 6px;
       padding: 3px 6px;
       font-size: 10.5px;
@@ -347,28 +348,12 @@
     }
     .btn-icon:hover { color: var(--text); border-color: #37507a; }
 
-    /* Scrollable page window — fills the fixed card height */
+    /* Page list — flows with the card, no inner scrolling */
     .pages-scroll-box {
-      flex: 1 1 auto;
-      min-height: 0;
-      overflow-y: auto;
-      overscroll-behavior: contain;
-      border: 1px solid rgba(28, 41, 66, 0.7);
-      border-radius: 8px;
-      background: transparent;
-      padding: 9px 10px;
-      scrollbar-width: thin;
-      scrollbar-color: #2a3b55 transparent;
+      flex: 0 0 auto;
+      overflow: visible;
+      padding: 0;
     }
-    .pages-scroll-box::-webkit-scrollbar { width: 7px; }
-    .pages-scroll-box::-webkit-scrollbar-track { background: transparent; }
-    .pages-scroll-box::-webkit-scrollbar-thumb {
-      background: #2a3b55;
-      border-radius: 999px;
-      border: 2px solid transparent;
-      background-clip: content-box;
-    }
-    .pages-scroll-box::-webkit-scrollbar-thumb:hover { background: #3a5074; background-clip: content-box; }
 
     .page-item {
       margin-bottom: 8px;
@@ -386,11 +371,11 @@
     .page-link {
       font-size: 12px;
       font-weight: 600;
-      color: var(--primary);
+      color: #dde5f0;
       text-decoration: none;
       word-break: break-word;
     }
-    .page-link:hover { text-decoration: underline; }
+    .page-link:hover { color: #ffffff; text-decoration: underline; text-decoration-color: #4b5c78; }
     .sub-section { margin-top: 2px; }
     .sub-label {
       font-family: ui-monospace, monospace;
@@ -548,7 +533,6 @@
       document.getElementById("appSub").textContent = `last updated 26 Oct 2026 · ${files.length} files`;
       document.getElementById("sortSelect").value = state.sort;
       render();
-      requestAnimationFrame(updateCardHeight);
     }
 
     document.getElementById("lockPass")?.addEventListener("keydown", e => {
@@ -646,17 +630,6 @@
         try { document.execCommand("copy"); done(); } catch (e) {}
         document.body.removeChild(ta);
       }
-    }
-
-    /* ── Card height: always fits the fold ───────────────── */
-    function updateCardHeight() {
-      const stream = document.getElementById("logStream");
-      if (!stream) return;
-      const bar = document.querySelector(".top-app-bar");
-      if (bar) document.documentElement.style.setProperty("--app-bar-h", bar.offsetHeight + "px");
-      const top = stream.getBoundingClientRect().top + window.scrollY;
-      const avail = window.innerHeight - top - 24;
-      document.documentElement.style.setProperty("--card-h", Math.max(300, Math.min(avail, 900)) + "px");
     }
 
     /* ── Search: commits on Enter / button only ──────────── */
@@ -790,6 +763,8 @@
           </article>`;
       }).join("");
 
+      packCards();
+
       const lm = document.getElementById("loadMoreContainer");
       if (showing < total) {
         const remaining = total - showing;
@@ -800,15 +775,27 @@
       }
     }
 
+    /* Pack cards so they hug their content without leaving row gaps */
+    function packCards() {
+      const grid = document.getElementById("logStream");
+      if (!grid) return;
+      const track = 8, rowGap = 14, step = track + rowGap;
+      grid.querySelectorAll(".file-block").forEach(card => {
+        card.style.gridRowEnd = "auto";
+        const span = Math.max(1, Math.ceil((card.offsetHeight + rowGap) / step));
+        card.style.gridRowEnd = "span " + span;
+      });
+    }
+
     function loadMore() {
       state.visibleCount += state.pageSize;
       render();
     }
 
-    let resizeTimer;
+    let packTimer;
     window.addEventListener("resize", () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(updateCardHeight, 120);
+      clearTimeout(packTimer);
+      packTimer = setTimeout(packCards, 120);
     });
 
     window.addEventListener("DOMContentLoaded", () => {
