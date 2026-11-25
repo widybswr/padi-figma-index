@@ -351,6 +351,8 @@
       transition: border-color 0.15s, color 0.15s;
     }
     .btn-icon:hover { color: var(--text); border-color: #37507a; }
+    .btn-copy { font-weight: 600; letter-spacing: 0.01em; padding: 3px 7px; }
+    .btn-copy.copied { color: #bfe8a0; border-color: #4f7a3d; }
 
     /* Page list — flows with the card, no inner scrolling */
     .pages-scroll-box {
@@ -620,9 +622,13 @@
 
     function copyFigmaUrl(url, btn) {
       const done = () => {
-        const orig = btn.innerHTML;
-        btn.innerHTML = "✓";
-        setTimeout(() => { btn.innerHTML = orig; }, 1400);
+        const orig = btn.textContent;
+        btn.textContent = "Copied ✓";
+        btn.classList.add("copied");
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.classList.remove("copied");
+        }, 1400);
       };
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url).then(done).catch(() => {});
@@ -759,7 +765,7 @@
                 <span class="file-edited">last edited ${escapeHtml(lastMod)}</span>
               </div>
               <div class="file-actions">
-                <button type="button" class="btn-icon" onclick="copyFigmaUrl('${fileUrl}', this)" title="Copy Figma URL">📋</button>
+                <button type="button" class="btn-icon btn-copy" onclick="copyFigmaUrl('${fileUrl}', this)" title="Copy Figma URL">Copy URL</button>
                 <a href="${fileUrl}" target="_blank" rel="noopener" class="btn-icon" title="Open in Figma">↗</a>
               </div>
             </div>
